@@ -1,0 +1,107 @@
+document_id: B042
+bibliographic:
+  title: Hydropower impacts on riverine biodiversity
+  authors: [Fengzhi He, Christiane Zarfl, Klement Tockner, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2024
+  doi: 10.1038/s43017-024-00596-0
+  review_type: narrative
+overall_review_design:
+  review_objective: Synthesise hydropower impacts on biodiversity across river network positions and evaluate mitigation options
+  review_scope: ecological impacts of reservoir and non-reservoir hydropower plants, upstream to downstream to cumulative network scale
+  review_mode: expert narrative synthesis organised along spatial position in the river network
+  article_architecture: [Abstract, Introduction, Upstream impacts, Downstream impacts, Downstream floodplains, Cumulative impacts of HPs, Mitigating the impacts, Summary and future perspectives, Box 1, Table 1]
+  organizing_principle: spatial-positional (upstream -> downstream -> floodplain) then scalar (cumulative) then intervention-focused
+  number_of_major_sections: 7
+introduction_pattern:
+  opening_move: global development statistics of hydropower build-out as quantitative hook
+  problem_contextualization: fragmentation and flow regulation consequences quantified (reservoir capacity vs global discharge)
+  fragmentation_statement: "the majority of research has focused on ... certain taxonomic groups" and specific settings
+  gap_or_need_statement: need for management operating across river-reach and basin scales accounting for connectivity
+  review_objective_statement: roadmap sentence promising upstream-then-downstream treatment of biodiversity impacts
+  scope_definition: implicit — defined by connectivity dimensions shown in framework figure
+  contribution_statement: network-scale integration rather than single-taxonomy or single-dam focus
+  roadmap_pattern: present ("We discuss the upstream" ... then downstream, cumulative, mitigation)
+section_architecture:
+  section_order: [Introduction, Upstream impacts, Downstream impacts, Downstream floodplains, Cumulative impacts, Mitigating the impacts, Summary and future perspectives]
+  dominant_logic: spatial position along longitudinal river gradient
+  chronological_logic: partial (impacts evolving over reservoir age)
+  thematic_logic: central (position themes)
+  mechanism_logic: central (connectivity pathways)
+  scale_logic: central (reach -> basin -> global cumulative)
+  region_logic: none
+  method_logic: none
+  transition_between_sections: ["downstream section opens after upstream effects established", "mitigation section follows impact inventory as response turn"]
+argumentation:
+  dominant_argument_pattern: mechanism claim -> quantified case evidence -> generalisation with reversal caveats
+  claim_evidence_relation: each impact pathway supported by before-after numbers from named rivers
+  comparison_pattern: with-reservoir vs without-reservoir schemes; salmonid vs non-salmonid fishway performance
+  contradiction_handling: negative-impact narrative explicitly qualified ("HP-induced alterations do not always negatively affect species")
+  boundary_condition_handling: impact magnitude conditioned on plant type, climate zone and species group
+  limitation_handling: sparse-evidence admissions for run-of-river systems flagged directly
+  gap_identification_pattern: intervention-efficacy gap — no design works across species
+synthesis:
+  synthesis_unit: mechanism (connectivity dimension x river section)
+  study_by_study_ratio: low-medium
+  multi_source_synthesis_pattern: ["percent-change cases stacked into one directional conclusion", "global aggregate statistics framing local findings", "mitigation table consolidating measures by impact type"]
+  consensus_pattern: directional statements ('reservoirs transform lotic environments') carry multiple citations at once
+  controversy_pattern: counter-examples admitted inline as 'however' clauses rather than separate sections
+  reconciliation_pattern: opposing outcomes reconciled by species-trait or habitat-type subdivision
+  evidence_weighting_pattern: global assessments (76-fishway meta-analysis style figures) outweighed local single-case numbers
+paragraph_rhetoric:
+  common_rhetorical_moves: ["quantified exemplar", "concession-reversal", "mechanism chain", "scale escalation"]
+  typical_move_sequences: [["mechanism claim", "named-river percentage change", "trait-based generalisation"]]
+  topic_sentence_pattern: actor-effect statement naming the hydropower component and affected biota
+  synthesis_sentence_pattern: "Therefore, + transformed-state summary sentence"
+  contrast_sentence_pattern: "'However,' + counter-case showing benefit to lentic generalists"
+  limitation_sentence_pattern: "'Evidence of ecological impacts in these locations is relatively sparse' sparsity admission"
+  transition_pattern: section-final sentence projects next position downstream; figure panels anchor cross-references
+  paragraph_length_profile: q25=484, median=662, p75=878 chars
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 5}
+  citation_cluster_frequency: medium-high; clusters of 2-4 on impact claims
+  single_vs_cluster: singles for site-specific percentages; clusters for class-level mechanisms
+  seminal_recent_balance: recent5y share 0.306; mixes foundational dam-ecology with current monitoring studies
+  citation_location: [sentence-final, mid-sentence after named dams/rivers]
+  citation_support_type: [empirical before-after studies, global assessments/reports, mechanism papers]
+  method_citation_pattern: fishway efficiency values cited from a global assessment with counts
+  gap_citation_pattern: prior narrow-scope reviews cited then declared insufficient for network scale
+geography_reasoning:
+  whether_geography_is_central: yes — river-network position is the spine of the architecture
+  spatial_scale_usage: explicit reach-basin-continent ladder culminating in free-flowing-river status map
+  regional_differentiation_usage: tropical expansion of hydropower contrasted with temperate research bias
+  spatial_heterogeneity_usage: impact direction varies by position; heterogeneity organised not lamented
+  cross_scale_usage: single-dam effects aggregated to cumulative basin-scale outcomes (Fig 4)
+  place_context_usage: named rivers/dams serve as quantified evidence units
+  human_environment_usage: energy needs vs biodiversity trade-off frames urgency
+  flow_network_usage: central — longitudinal/lateral/vertical/temporal connectivity framework structures everything
+  spatial_dependence_usage: efficacy of protection depends on upstream status — dependence stated as management principle
+  conditions_triggering_geographic_explanation: ["when impact sign flips between positions or species", "when arguing management must match network structure", "when contrasting temperate evidence with tropical development"]
+figure_strategy:
+  total_figures: 4
+  figure_roles: [connectivity framework schematic, large-HP impact schematic, downstream impact schematic, cumulative maps plus sediment-flux time series]
+  conceptual_framework: Fig 1 four-connectivity diagram doubles as the review's organising vocabulary
+  taxonomy: yes (impact types per connectivity dimension in Fig 1 annotations)
+  mechanism: yes (arrow diagrams of altered fluxes)
+  timeline: partial (Yangtze sediment-flux time series panel)
+  map: yes (free-flowing river status, present vs future)
+  workflow: none
+  evidence_summary: Fig 4b quantifies sediment-flux change for 15 large rivers observed and projected
+  figure_text_relation: dense annotated schematics referenced early; captions end with take-home sentences
+gap_and_agenda:
+  how_gaps_are_derived: from demonstrated inefficacy limits of current mitigation across species
+  types_of_gaps: [design-efficacy gap, taxonomic coverage gap, cumulative-effects understanding gap]
+  evidence_required_before_gap_claim: pooled multi-site efficiency numbers showing no universal design
+  future_agenda_structure: improvement targets per impact pathway (flow regulation, fishways, sediment)
+  specificity_of_future_questions: design- and species-specific (non-salmonid passage efficiency)
+quality_features:
+  major_strengths: [spatial-position architecture mirroring the phenomenon itself, framework figure reused as index throughout, quantified concession handling, mitigation table closing the loop]
+  transferable_patterns: [organise review along the system's own spatial gradient, open with a conceptual-framework figure that names later sections, quantify counter-examples instead of hiding them, convert impact inventory into measure table]
+  unique_but_nontransferable_features: [Box 1 operation-mode taxonomy specific to hydropower engineering]
+  risks_of_imitation: [positional architecture only works where system has an inherent gradient; overloading one framework figure can obscure other axes]
+anti_patterns:
+  weak_patterns_to_avoid: [listing impacts without any positional or scalar logic, reporting only harm when data show mixed signs]
+source_provenance:
+  source_pages: ["pp. 755-772 (Vol 5, Nov 2024 running headers)", "p. 756 (opening/intro slice)", "~p. 759 (BODY_SLICE_1@17%)", "p. 762 (BODY_SLICE_2@33%)", "p. 765 (BODY_SLICE_3@50%)", "~p. 769 (BODY_SLICE_4@67%)", "closing/refs slice"]
+  source_sections: [Introduction, Upstream impacts, Downstream impacts, Mitigating the impacts, Fig 1 and Fig 4 captions, Table 1 caption]
+  confidence: medium

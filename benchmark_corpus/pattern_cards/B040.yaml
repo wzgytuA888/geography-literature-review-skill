@@ -1,0 +1,128 @@
+document_id: B040
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of harmful algal blooms in inland waters)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2024
+  doi: 10.1038/s43017-024-00578-2
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: Assess global patterns, drivers and future trends of harmful algal blooms and the monitoring limits constraining knowledge.
+  review_scope: inland waters (lakes/reservoirs) worldwide; satellite era (1982-2019) plus long-term records; drivers to projections
+  review_mode: regional-inventory narrative wrapped around a global remote-sensing synthesis
+  article_architecture: [Abstract, Introduction, Global trends, Asia, North America, Europe, Africa, South America, Drivers of HABs, Future trends in HABs, Limitations in spatiotemporal coverage, Summary and future]
+  organizing_principle: regional — global overview → continent-by-continent inventory → cross-cutting drivers → future → data limitations
+  number_of_major_sections: 9
+introduction_pattern:
+  opening_move: concern framing ("increasingly prevalent ... growing global environmental concern") with impact chain
+  problem_contextualization: mechanism preview (nutrients, warming-driven stratification) plus policy-mixed-success puzzle
+  fragmentation_statement: heterogeneity framing — variation in mitigation efficacy "highlights the need to consider the heterogeneity of factors"
+  gap_or_need_statement: pressing need to mitigate HABs stated early; later formalized as observational gaps
+  review_objective_statement: implicit — section sequence announced ("The following sections discuss trends in global HAB hotspots")
+  scope_definition: water-body type (lakes >0.1 km2), sensor era and bloom definition bounded via Table 1 criteria
+  contribution_statement: contribution is the harmonized global hotspot map plus region-specific driver attribution
+  roadmap_pattern: variant — one orientation sentence before Global trends; no enumerated intro plan
+section_architecture:
+  section_order: [Introduction, Global trends, Asia, North America, Europe, Drivers of HABs, Future trends in HABs, Limitations in spatiotemporal coverage, Summary and future]
+  dominant_logic: nested zoom (global→continent) then thematic convergence (drivers→future→limits)
+  chronological_logic: partial (multi-decadal trend narration inside each unit)
+  thematic_logic: partial (drivers section)
+  mechanism_logic: partial (stratification, nutrient limitation, internal loading)
+  scale_logic: partial (lake-case detail aggregated into continental patterns)
+  region_logic: central — continents are the primary sections
+  method_logic: partial (Table 1 trait matrix; monitoring-method critique)
+  transition_between_sections:
+    - each region closes with a need sentence ("highlight the need to combat nutrient pollution") that hands off
+    - discrepancy paragraph bridges North America to Europe via observation-method doubt
+argumentation:
+  dominant_argument_pattern: regional prevalence claim → driver attribution (population, agriculture, dams) → dated lake cases
+  claim_evidence_relation: claims quantified against satellite statistics (11.7% of lake area; 95 of 103 lakes increasing)
+  comparison_pattern: paired-lake contrast (Lake Erie vs Lake Balaton) isolating management-vs-climate explanations
+  contradiction_handling: satellite-vs-in-situ divergence confronted head-on ("This discrepancy highlights that observational approaches could also influence")
+  boundary_condition_handling: trophic state and lake depth condition nutrient-limitation outcomes
+  limitation_handling: whole section devoted to spatiotemporal coverage limits (surface-only view, revisit frequency)
+  gap_identification_pattern: observational-design gap (geographic imbalance, vertical distribution unknown, short-term dynamics uncharacterized)
+synthesis:
+  synthesis_unit: region; within regions, lakes as evidence units
+  study_by_study_ratio: medium — more case narration than cluster-synthesis peers
+  multi_source_synthesis_pattern:
+    - satellite-era global synthesis (frequency trends by decade/region)
+    - cross-continent driver synthesis converging on nutrient-climate-hydrology interplay
+    - paired-case comparative synthesis (two lakes, contrasting trajectories under similar load cuts)
+  consensus_pattern: directional agreement stated as majorities (63% of large lakes eutrophic)
+  controversy_pattern: observational disagreement used productively rather than suppressed
+  reconciliation_pattern: policy-failure puzzle resolved by internal-loading and stratification mechanisms
+  evidence_weighting_pattern: satellite records provide the frame; in situ studies supply mechanism depth
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - region-prevalence opener
+    - driver-attribution clause chain
+    - count-statistic evidence (n lakes affected)
+    - dated bloom event anchoring
+  typical_move_sequences:
+    - ["regional trend", "human driver", "case lake", "management note"]
+    - ["global statistic", "regional exception", "explanatory mechanism"]
+  topic_sentence_pattern: place-name or trend sentence opens paragraphs
+  synthesis_sentence_pattern: interplay-summary style ("complex interplay of nutrient enrichment, climate change and hydrodynamic factors")
+  contrast_sentence_pattern: policy success vs continued blooms contrasts; satellite vs in situ contrasts
+  limitation_sentence_pattern: coverage limits itemized with sensor names and failure modes
+  transition_pattern: closing need-sentences link regions; limitations section explicitly recaps gaps
+  paragraph_length_profile: median ~638 chars (q25 421, q75 960); longest tail paragraphs in batch
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 2, p75: 5}
+  citation_cluster_frequency: moderate — regional driver sentences carry clusters
+  single_vs_cluster: singles dominate for individual lakes/events; clusters for continental generalizations
+  seminal_recent_balance: recent5y share ~20%; classic eutrophication experiments retained
+  citation_location: [sentence-final cluster, mid-sentence]
+  citation_support_type: [remote-sensing analysis, lake monitoring study, whole-ecosystem experiment, projection]
+  method_citation_pattern: Table 1 synthesizes species traits with citation-free tabular authority; methods critiqued narratively
+  gap_citation_pattern: gaps grounded in named sensors' physical limits (Landsat 16-day revisit, cloud cover)
+geography_reasoning:
+  whether_geography_is_central: yes — continent-level organization is the review's spine
+  spatial_scale_usage: global stats → continental sections → single-lake cases; three-tier nesting throughout
+  regional_differentiation_usage: each continent receives distinct driver profile (industrialization in Asia; damming in South America)
+  spatial_heterogeneity_usage: hotspots mapped; intra-regional variability (temperate belt concentration) emphasized
+  cross_scale_usage: local watershed land use scaled to global bloom frequency trends
+  place_context_usage: Taihu, Chaohu, Baikal, Balaton, Erie carry mechanistic arguments
+  human_environment_usage: strong — wastewater, fertilizer, dam regulation as first-order drivers
+  flow_network_usage: reservoir/regulation flows altering flushing and stratification
+  spatial_dependence_usage: watershed-to-lake nutrient dependence; sediment-water interface coupling
+  conditions_triggering_geographic_explanation:
+    - when socioeconomic drivers differ across continents
+    - when climate zones control bloom seasonality and stratification
+    - when monitoring infrastructure density varies geographically (imbalance argument)
+figure_strategy:
+  total_figures: 5
+  figure_roles: [impact schematic, global map+trend composite, paired-lake time-series comparison, data-coverage limitation chart, formation-factor diagram]
+  conceptual_framework: Fig. 5 factors influencing HAB formation
+  taxonomy: Table 1 genus-level trait matrix (toxicity, nutrient limitation, preferred environments)
+  mechanism: Figs. 1 and 5 causal diagrams from nutrients to dead zones
+  timeline: Fig. 3 multi-decadal load-vs-biomase series for two lakes
+  map: Fig. 2 global occurrence/trend maps by decade
+  workflow: none
+  evidence_summary: Fig. 2 compiles satellite record into panels a-d
+  figure_text_relation: Fig. 3 designed for direct cross-panel comparison; text walks panel pairs
+gap_and_agenda:
+  how_gaps_are_derived: from sensor physics and field-practice limits, plus geographic study imbalance stated verbatim
+  types_of_gaps: [observational-coverage gap, vertical-distribution gap, short-term-dynamics gap, geographic-imbalance gap, data-sharing gap]
+  evidence_required_before_gap_claim: named sensor limitations and documented underrepresentation of regions
+  future_agenda_structure: integration stack — satellites + drones + in situ standardization, centralized repositories, interdisciplinary collaboration
+  specificity_of_future_questions: protocol-level (standardized monitoring, repositories) plus characterization targets
+quality_features:
+  major_strengths:
+    - regional architecture makes a scattered literature navigable and comparable
+    - observational-discrepancy honesty strengthens rather than weakens credibility
+    - dedicated limitations section converts weaknesses into a research agenda
+  transferable_patterns:
+    - global-zoom-region nested organization for spatially extensive topics
+    - paired-case figure design to isolate competing explanations
+    - limitations-as-section pattern feeding directly into agenda
+  unique_but_nontransferable_features: phytoplankton taxonomy and toxin specifics
+  risks_of_imitation: region-by-region structure can slide into catalogue prose if every unit lacks analytic payoff
+anti_patterns:
+  weak_patterns_to_avoid:
+    - continent-by-continent description without cross-cutting driver synthesis afterward
+source_provenance:
+  source_pages: ["pp. 631-644 (journal); opening p. 632; slices @17%, @33% p. 637, @50%, @67% p. 641, @83% p. 643"]
+  source_sections: [Introduction, Global trends, Asia, North America, Europe, Limitations in spatiotemporal coverage, Future trends in HABs, Table 1, figure captions]
+  confidence: medium

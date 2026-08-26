@@ -1,0 +1,138 @@
+document_id: B010
+bibliographic:
+  title: The residence time of water vapour in the atmosphere
+  authors: [UNKNOWN]           # partial list visible: Francina Dominguez, Ruud van der Ent, Harald Sodemann et al.; lead (Gimeno) implied by reference style
+  journal: Nature Reviews Earth & Environment (typeset "Reviews" layout)
+  year: 2021
+  doi: null                    # not present in manifest/index
+  review_type: methodological  # metric-comparison concept review
+overall_review_design:
+  review_objective: >-
+    Synthesize what water vapour residence time (WVRT) metrics mean, reconcile
+    discrepant estimates, and assess WVRT change under warming.
+  review_scope: >-
+    Metric definitions (TUT, AGE, BTT, FTT, lifetime distribution); global and regional
+    estimates; isotope constraints; anthropogenic change; research priorities.
+  review_mode: >-
+    Concept-clarification narrative — a taxonomy of competing metrics is built, then a
+    unifying construct (lifetime distribution) reconciles them.
+  article_architecture:
+    - Abstract/lead-in with explicit roadmap paragraph
+    - A metric of the atmospheric water cycle (definitions; Box 1)
+    - Lifetime distribution variability (surface-condition controls)
+    - Regional estimates of WVRT / global patterns
+    - Stable isotopes as constraints (AGE-isotope relation)
+    - WVRT and anthropogenic climate change
+    - Future research priorities and pathways
+    - Table 1 compiled rates of change; Box 1 metric glossary
+  organizing_principle: mixed — methodological core (define/reconcile), then regional pattern layer, then change/attribution layer, closing agenda
+  number_of_major_sections: 6-7   # exact boundaries partly obscured by small-caps extraction
+introduction_pattern:
+  opening_move: relevance framing via downstream uses (evaporation, ITCZ intensity, stratosphere input)
+  problem_contextualization: metric confusion shown to produce contrasting estimates for one quantity
+  fragmentation_statement: explicit — "Several metrics have emerged to quantify the various" aspects without unification
+  gap_or_need_statement: in-depth assessment motivated by WVRT's indicator role for hydrological change
+  review_objective_statement: explicit ("we synthesize current knowledge concerning WVRT and highlight it as an essential indicator")
+  scope_definition: metric set enumerated before analysis begins
+  contribution_statement: reconciliation of estimates via lifetime-distribution framing
+  roadmap_pattern: present — four-move sentence roadmap ("We begin by ... We then ... We subsequently ... end with")
+section_architecture:
+  section_order: [Metric definitions, Lifetime distribution controls, Regional/global estimates, Isotopic constraints, Anthropogenic change, Priorities]
+  dominant_logic: define -> reconcile -> map -> constrain -> project -> prioritize
+  chronological_logic: none
+  thematic_logic: central
+  mechanism_logic: central          # surface-atmosphere coupling controls LTD shape
+  scale_logic: central              # global vs regional estimates explicitly separated
+  region_logic: partial             # named regions compared within estimate sections
+  method_logic: central             # metric/method comparison is the spine
+  transition_between_sections:
+    - definitional groundwork licenses later comparisons
+    - constraint sections (isotopes) attach to open questions from prior sections
+argumentation:
+  dominant_argument_pattern: discrepancy diagnosis — show conflicting numbers, derive why they differ (mean vs median of skewed distribution)
+  claim_evidence_relation: each estimate tagged with method type (observational/modelled/hybrid)
+  comparison_pattern: metric-vs-metric; ocean-vs-land; region-vs-region within global maps
+  contradiction_handling: conflicts resolved by showing quantities answer different questions
+  boundary_condition_handling: idealized well-mixed reservoir stated as first-order approximation up front
+  limitation_handling: observational limits (mixing, below-cloud exchange) conceded near claims
+  gap_identification_pattern: conceptual gap — which statistic of the LTD matters for which purpose undetermined
+synthesis:
+  synthesis_unit: proposition       # statements about what a metric measures
+  study_by_study_ratio: low         # median citations/block zero in index; synthesis prose dominates
+  multi_source_synthesis_pattern:
+    - literature-value compilation table with per-study provenance codes
+    - convergence statement across evidence classes (~7% K-1 etc.)
+    - cross-method consistency checks (tracers vs GCMs vs observations)
+  consensus_pattern: "All evidence points towards ..." convergence declarations after compilation
+  controversy_pattern: excluded outlier disclosed with reason (data problems)
+  reconciliation_pattern: apparent conflict reframed as median-vs-mean of one skewed distribution
+  evidence_weighting_pattern: quality-screening explicit; one source dropped from table with justification
+paragraph_rhetoric:
+  common_rhetorical_moves: [definition, idealization, discrepancy reveal, mechanism explanation, application pointer]
+  typical_move_sequences:
+    - [definition, steady-state premise, heterogeneity caveat, targeted-metric need]
+    - [global value, regional departure, process attribution]
+  topic_sentence_pattern: bolded mini-heading style topic labels (e.g., "Defining lifetime distribution.")
+  synthesis_sentence_pattern: "Therefore,/Hence," derivation sentences from mass balance
+  contrast_sentence_pattern: AGE-vs-BTT-vs-FTT contrasts repeated pedagogically
+  limitation_sentence_pattern: uncertainty-tail concessions ("large uncertainties in both tails")
+  transition_pattern: roadmap echo at section heads; question-driven pivots
+  paragraph_length_profile: q25=388, median=526, p75=702 chars (index stats; short didactic paragraphs)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 2}    # superscripts partially lost in extraction; treat as lower bound
+  citation_cluster_frequency: low in surviving text; concept prose deliberately uncited between anchors
+  single_vs_cluster: singles dominate where visible
+  seminal_recent_balance: recent5y share only 0.062 — older foundational literature retained appropriately
+  citation_location: [sentence-final, inline "reFs6,37" style]
+  citation_support_type: [method origin, dataset, annotated key-paper notes in reference list]
+  method_citation_pattern: every metric traced to its introducing paper
+  gap_citation_pattern: gaps posed as open questions without citation padding
+geography_reasoning:
+  whether_geography_is_central: yes — regional-vs-global distinction structures the estimates half
+  spatial_scale_usage: global means disaggregated to latitude bands and basins
+  regional_differentiation_usage: land-vs-ocean and ITCZ-vs-subtropics contrasts explained via circulation
+  spatial_heterogeneity_usage: surface-condition typology (ocean/drylands/forest/cropland) maps onto LTD shapes
+  cross_scale_usage: local convection effects embedded in global distribution tails
+  place_context_usage: Sahel, Mediterranean, Andes, Greenland as diagnostic locales
+  human_environment_usage: light — land-use enters via evaporation partitioning
+  flow_network_usage: atmospheric transport pathways (Lagrangian) implicit throughout
+  spatial_dependence_usage: source-sink pairing (FTT/BTT reciprocity) formalized
+  conditions_triggering_geographic_explanation:
+    - when surface coupling (boundary-layer height) alters residence times
+    - when circulation regimes concentrate moisture pathways
+    - when change signals diverge regionally despite uniform forcing
+figure_strategy:
+  total_figures: 5 (+Table 1, +Box 1)
+  figure_roles: [schematic distribution anatomy, surface-condition schematic panels, multi-panel global maps, isotope-age two-dimensional diagram, sensitivity summary graphic]
+  conceptual_framework: Fig. 1 lifetime-distribution schematic defines all later reasoning
+  taxonomy: Box 1 metric taxonomy (five named metrics with formulas)
+  mechanism: Fig. 2 links boundary-layer regimes to distribution shape
+  timeline: none
+  map: Fig. 3 six-panel global maps (metrics plus water-cycle components)
+  workflow: none
+  evidence_summary: Fig. 5/Table 1 compile %K-1 sensitivities across studies with provenance letters
+  figure_text_relation: tables carry per-study values; figures carry concepts and patterns
+gap_and_agenda:
+  how_gaps_are_derived: derived from unresolved metric-choice question and observational tail uncertainties
+  types_of_gaps: [conceptual (which statistic matters when), observational (mixing/below-cloud contamination), predictive (regional change)]
+  evidence_required_before_gap_claim: demonstrated divergence between metric estimates for identical system
+  future_agenda_structure: short prioritized pathway list ending the paper
+  specificity_of_future_questions: moderate — directions clear, tests implicit
+quality_features:
+  major_strengths:
+    - builds a definition box early that pays off through the whole paper
+    - converts a confusing literature into one unifying construct
+    - transparent exclusion of an unusable estimate
+  transferable_patterns:
+    - open a contested-measurement review with a metric taxonomy box
+    - diagnose discrepancies as statistical artefacts before disputing data
+    - compile published rates in an annotated table with inclusion/exclusion reasons
+  unique_but_nontransferable_features: isotope-age diagram technique specific to tracer science
+  risks_of_imitation: heavy definitional front-loading delays findings; needs strong signposting
+anti_patterns:
+  weak_patterns_to_avoid:
+    - averaging estimates that operationalize different definitions without saying so
+source_provenance:
+  source_pages: ["digest OPENING (roadmap + metric section, NREE vol.2 pp.~557-568)", "BODY_SLICE_1@17% (Box 1 definitions)", "BODY_SLICE_2@33% (Fig.2, regional patterns)", "BODY_SLICE_3@50% (isotopes)", "BODY_SLICE_4@67% (Table 1, change)", "CLOSING slice (references w/ annotations)"]
+  source_sections: ["A metric of the atmospheric water cycle", "Regional estimates of WVRT", "WVRT and anthropogenic climate change", Table 1 caption, Figure captions]
+  confidence: medium     # structure and rhetoric well captured; citation statistics degraded by lost superscripts

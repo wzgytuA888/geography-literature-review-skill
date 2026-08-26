@@ -1,0 +1,134 @@
+document_id: B051
+bibliographic:
+  title: "Insights into terrestrial carbon [and water cycling from eddy covariance; truncated in extraction]"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2026
+  doi: 10.1038/s43017-025-00743-1
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: >-
+    Examine how eddy-covariance (EC) measurements and the global flux network advanced
+    terrestrial carbon and water cycle research, from ecosystem to global scale.
+  review_scope: EC/FLUXNET data across diel-to-decadal timescales; upscaling methods, uncertainties, satellite/model evaluation, network recommendations.
+  review_mode: narrative thematic synthesis of a measurement-network-enabled field, organized as a scale ladder.
+  article_architecture:
+    - Abstract
+    - Introduction
+    - Diel to annual carbon and water cycling
+    - Interannual flux variability
+    - Upscaling EC measurements
+    - Regional to global
+    - Summary and future
+    - Glossary
+    - References
+  organizing_principle: "mixed(scale-ordered themes: diel -> annual -> interannual -> upscaled regional/global; historical timeline embedded in Introduction and Fig. 1)"
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: capability-shift framing — new data volume, methods, computing and satellites since the late 2010s.
+  problem_contextualization: traces technique history decade-by-decade (1970s first use to 2010s applications), showing accumulated capability.
+  fragmentation_statement: partial reviews exist but no integrated overview — "there has been no overview or synthesis of the role of EC data".
+  gap_or_need_statement: "\"no study has thoroughly reviewed\" how EC data advanced carbon/water research across scales."
+  review_objective_statement: "\"In this Review, we examine how\" EC measurements and the global network contributed."
+  scope_definition: bounded by data type (EC/FLUXNET) and scale range (ecosystem to global); Supplementary Fig. 1 maps prior-review coverage.
+  contribution_statement: synthesis + evaluation role (satellite products, model development) + recommendations for networks and data sharing.
+  roadmap_pattern: present — sequential "We discuss... We also review... and recommend ways..." clauses.
+section_architecture:
+  section_order: [Abstract, Introduction, Diel-annual cycling, Interannual variability, Upscaling, Regional-global, Summary-future]
+  dominant_logic: scale ladder from measurement timescale to global product
+  chronological_logic: partial
+  thematic_logic: central
+  mechanism_logic: partial
+  scale_logic: central
+  region_logic: none
+  method_logic: partial
+  transition_between_sections:
+    - section-preview sentences ("This section dis - cusses what EC measurements have revealed...")
+    - data-product handoffs (site-level sections feed into upscaling section)
+argumentation:
+  dominant_argument_pattern: capability-enables-discovery - data and technique advances explain field insights.
+  claim_evidence_relation: claims rest on network-scale syntheses; individual studies serve as vivid instances.
+  comparison_pattern: cross-site and cross-biome quantitative rankings; method-vs-method upscaling comparisons.
+  contradiction_handling: overturns prior views with counter-evidence (old-growth forests continue sequestering carbon).
+  boundary_condition_handling: applicability bounded by footprint size, terrain homogeneity, predictor uncertainty.
+  limitation_handling: dedicated uncertainty figure plus predictor-quality caveats near methods.
+  gap_identification_pattern: absence-of-synthesis proof plus enumerated network and data-practice deficits.
+synthesis:
+  synthesis_unit: proposition
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - multi-citation clusters behind one quantified claim
+    - cross-site/cross-biome rankings assembled from many towers
+    - consensus-overturn highlights (single synthesis challenging old view)
+  consensus_pattern: ranked magnitudes stated with cluster citations, e.g. biome WUE ordering presented as settled.
+  controversy_pattern: divergent estimate sources juxtaposed with ranges rather than adjudicated.
+  reconciliation_pattern: attributes disagreement to predictor uncertainty and footprint mismatch (method conditions).
+  evidence_weighting_pattern: tower observations > upscaled products > model/satellite products, by provenance of evidence.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - capability -> insight ("measurements have uniquely revealed how...")
+    - quantified pattern + controlling factors
+    - regional contrast within one paragraph
+  typical_move_sequences:
+    - [topic claim w/ citation cluster, mechanism, quantified example, caveat]
+  topic_sentence_pattern: proposition-led; subject = the finding or data capability.
+  synthesis_sentence_pattern: "\"X generally exhibits Y..., with peak fluxes occurring near midday\" — pattern plus condition in one sentence."
+  contrast_sentence_pattern: "\"whereas in semi-arid and subhumid regions...\" — process-control contrast by environment."
+  limitation_sentence_pattern: uncertainty attributed to input-data error and footprint mismatch.
+  transition_pattern: forward-pointing preview sentences at section heads.
+  paragraph_length_profile: q25=424, median=595, p75=834 chars; medium-length proposition paragraphs.
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 2, p75: 5}
+  citation_cluster_frequency: high — 2-4 superscript refs per claim sentence is default support mode.
+  single_vs_cluster: clusters for empirical claims; single seminal refs for milestones/history.
+  seminal_recent_balance: recent5y share 0.238; history anchored on dated seminal works (1970s-2000s milestones).
+  citation_location: [sentence-final superscripts, mid-sentence for method names]
+  citation_support_type: [empirical finding, dataset/method source, prior-review pointer]
+  method_citation_pattern: named methods each carry own ref list (e.g. model types in upscaling).
+  gap_citation_pattern: gaps stated without citations; prior partial reviews cited to prove absence.
+geography_reasoning:
+  whether_geography_is_central: yes — scale and spatial upscaling are the review's spine.
+  spatial_scale_usage: explicit ladder site->regional->global; footprint-vs-pixel mismatch discussed as scale problem.
+  regional_differentiation_usage: trends differentiated by continent/biome (tropics highest ET increase; Asia vs other regions).
+  spatial_heterogeneity_usage: heterogeneity invoked when single-direction claims fail (humid vs arid ET response).
+  cross_scale_usage: central — site processes explain upscaled global patterns; temporal (diel-decadal) x spatial crossed.
+  place_context_usage: named sites (Harvard Forest, Tonzi Ranch) as worked illustrations in figures.
+  human_environment_usage: disturbance, management and greening treated as flux drivers.
+  flow_network_usage: FLUXNET as network-of-sites enabling synthesis; not flows-of-material.
+  spatial_dependence_usage: elevation gradients and climate gradients used to structure cross-site comparison.
+  conditions_triggering_geographic_explanation:
+    - when trend magnitudes differ across regions
+    - when upscaling from point to pixel requires justification
+    - when biome ranking needs environmental controls
+figure_strategy:
+  total_figures: 6
+  figure_roles: [network timeline, multi-panel site evidence montage, method workflow, global spatiotemporal patterns, uncertainty map, product benchmark]
+  conceptual_framework: Box 1 primer defines technique and datasets.
+  taxonomy: plant functional types used as comparison categories.
+  mechanism: Fig. 3 multi-step upscaling procedure diagram.
+  timeline: Fig. 1 evolution/milestones of the global EC network.
+  map: Fig. 4 global GPP/ET variations; Fig. 5 uncertainty.
+  workflow: Fig. 3 procedures for upscaling EC flux measurements.
+  evidence_summary: Fig. 6 evaluates satellite vs model GPP against EC benchmark.
+  figure_text_relation: panels cited inline as "(Fig. 2a)"; captions end with takeaway restating panel message.
+gap_and_agenda:
+  how_gaps_are_derived: absence-of-synthesis argument in Introduction; limitations sections converted to needs.
+  types_of_gaps: [coverage gap (network representativeness), data-practice gap (open sharing), method gap (uncertainty in predictors/pixel matching)]
+  evidence_required_before_gap_claim: cited prior partial reviews + enumerated limitation mechanisms.
+  future_agenda_structure: imperative recommendations grouped by networks, sharing, product refinement.
+  specificity_of_future_questions: actionable directives rather than open questions.
+quality_features:
+  major_strengths: [scale-ladder architecture mirroring the data's own logic, explicit absence-of-review gap proof, glossary for accessibility]
+  transferable_patterns:
+    - organize body sections as an explicit scale/time ladder
+    - open with capability shift then prove no synthesis exists
+    - close each section with preview sentences
+  unique_but_nontransferable_features: [decade-anchored technique history specific to a mature measurement network]
+  risks_of_imitation: scale ladder can flatten thematic connections if cross-scale links are not made explicit.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - citing milestone history without linking it to present capability claims
+source_provenance:
+  source_pages: ["60-79 header", "61 opening", "65 slice1", "71 slice3", "78 references"]
+  source_sections: [Introduction, Diel to annual carbon and water cycling, Upscaling EC measurements, Regional to global, Glossary, figure captions]
+  confidence: medium

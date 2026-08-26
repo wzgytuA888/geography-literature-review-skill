@@ -1,0 +1,128 @@
+document_id: B039
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of Indian Ocean Dipole dynamics, simulation and projected change)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2024
+  doi: 10.1038/s43017-024-00573-7
+  review_type: narrative
+overall_review_design:
+  review_objective: Consolidate IOD lifecycle dynamics, assess model simulation skill, and derive consensus projections conditioned on that skill.
+  review_scope: tropical Indian Ocean IOD; observations, CMIP5/CMIP6 simulations, projections, palaeoclimatic context
+  review_mode: evaluate-then-project narrative — model assessment gates all forward claims
+  article_architecture: [Abstract, Introduction, Processes of IOD lifecycle, IOD triggers and modulating factors, IOD teleconnection, IOD diversity, Observed changes in the IOD, Simulating IOD dynamics and characteristics, Projected change in the IOD, Factors influencing IOD uncertainty, Palaeoclimatic perspectives, Summary and future]
+  organizing_principle: mechanistic-to-evaluative chain — process → triggers → teleconnections → diversity → observation → simulation → projection → deep-time context
+  number_of_major_sections: 10
+introduction_pattern:
+  opening_move: phenomenon-definition opening (SST seesaw, seasonality) immediately followed by impact inventory
+  problem_contextualization: dramatic impact cascade (east Africa floods, Australian bushfires with quantified losses) establishes stakes
+  fragmentation_statement: disagreement framing — "climate models reveal no inter-model agreement in projected changes"
+  gap_or_need_statement: societal need stated ("a clear societal need to understand how the IOD might respond") against complexity
+  review_objective_statement: scope declared via data protocol (multi-product mean of more realistic SST products)
+  scope_definition: feedbacks, forcings, teleconnections, diversity and changes enumerated as coverage contract
+  contribution_statement: methodological contribution — model-selection criterion converts contradiction into inter-model consensus
+  roadmap_pattern: variant — abstract carries the arc; body proceeds by heading chain without an enumerated intro plan
+section_architecture:
+  section_order: [Introduction, Processes of IOD lifecycle, IOD triggers and modulating factors, IOD teleconnection, IOD diversity, Observed changes in the IOD, Simulating IOD dynamics and characteristics, Projected change in the IOD, Factors influencing IOD uncertainty, Palaeoclimatic perspectives, Summary and future]
+  dominant_logic: mechanism audit → evaluation → conditional projection → multi-proxy validation
+  chronological_logic: partial (palaeo section extends the record backwards)
+  thematic_logic: central (feedbacks/triggers/teleconnections)
+  mechanism_logic: central (Bjerknes, wind–evaporation–SST, thermocline feedbacks)
+  scale_logic: partial (basin dynamics to global teleconnections)
+  region_logic: partial (equatorial zones and pole regions of the dipole)
+  method_logic: partial (model evaluation criteria embedded in Simulating section)
+  transition_between_sections:
+    - evaluation section explicitly precedes projection ("selecting models ... produces an inter-model consensus")
+    - palaeo section framed as out-of-sample test of projected behavior
+argumentation:
+  dominant_argument_pattern: feedback-chain narration → observed instance → model capability verdict
+  claim_evidence_relation: dynamic claims cite process studies; projection claims report model counts (13 of 24; 75% of models) behind each result
+  comparison_pattern: pIOD-vs-nIOD asymmetry contrast throughout; observed-vs-simulated parallel structure
+  contradiction_handling: prior contradictory projections acknowledged then adjudicated via model-selection ("Prior assessments ... are somewhat contradictory. However, selecting models...")
+  boundary_condition_handling: nonlinearity thresholds (α parameter) condition event regime classification
+  limitation_handling: record-length limits ("observational records are too short to confirm") admitted at claim sites
+  gap_identification_pattern: simulation-deficiency gap traced to upstream causes (monsoon/convection biases)
+synthesis:
+  synthesis_unit: mechanism; models treated as a population to be filtered
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - feedback-chain synthesis unifying events into one lifecycle template
+    - model-count synthesis (fraction of CMIP ensembles reproducing each feature)
+    - proxy-model-observation triangulation (coral δ18O vs instrumental vs SSP runs in one figure)
+  consensus_pattern: consensus manufactured transparently — only models passing skill tests vote on futures
+  controversy_pattern: mean-state vs variability change disputes separated into distinct claims
+  reconciliation_pattern: ENSO-dependence debate reconciled by timing analysis (ENSO-forced IODs peak later)
+  evidence_weighting_pattern: skill-screened multimodel results > raw ensemble means > single studies
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - causal-chain narration with numbered feedback steps
+    - dated-event instantiation (1961, 1994, 1997, 2006, 2019)
+    - fraction-of-models reporting
+    - asymmetry pairing
+  typical_move_sequences:
+    - ["feedback step", "anomaly consequence", "citation cluster", "event anchor"]
+    - ["simulation verdict", "count statistic", "attributed cause", "projection implication"]
+  topic_sentence_pattern: process or evaluation-criterion sentence opens paragraphs
+  synthesis_sentence_pattern: chained-consequence style ("...in turn strengthens..." loops)
+  contrast_sentence_pattern: positive-vs-negative IOD mirrored sentence pairs
+  limitation_sentence_pattern: short-record hedges attached exactly where confirmation is impossible
+  transition_pattern: evaluation vocabulary bridges observed and projected sections
+  paragraph_length_profile: median ~692 chars (q25 447, q75 930); long mechanistic chains
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 4, p75: 8}
+  citation_cluster_frequency: high on dynamical claims
+  single_vs_cluster: clusters for feedback steps; singles for specific events/models
+  seminal_recent_balance: recent5y share ~22%; foundational theory papers retained
+  citation_location: [sentence-final cluster, mid-sentence]
+  citation_support_type: [process study, model intercomparison, palaeo-proxy reconstruction, reanalysis]
+  method_citation_pattern: indices (DMI, S-index/M-index, α) defined inline with citations at first use
+  gap_citation_pattern: gaps cited to intercomparison documentation and bias studies
+geography_reasoning:
+  whether_geography_is_central: yes — the dipole IS a spatial construct; east-west gradient logic governs everything
+  spatial_scale_usage: equatorial basin dynamics nested in global Walker circulation and teleconnections
+  regional_differentiation_usage: eastern-vs-western pole properties (thermocline depth, skewness) systematically compared
+  spatial_heterogeneity_usage: heterogeneity across events (diversity) elevated to first-class analytic category
+  cross_scale_usage: monsoon onset (regional) modulates interannual variability (basin) and teleconnections (global)
+  place_context_usage: Sumatra–Java coast, Bay of Bengal serve as pivot locations in mechanisms
+  human_environment_usage: floods, malaria, bushfires quantified as impact justification
+  flow_network_usage: Rossby/Kelvin wave pathways and Indonesian throughflow as oceanic flows
+  spatial_dependence_usage: west-minus-east SST gradient dependence is the core state variable
+  conditions_triggering_geographic_explanation:
+    - when feedback sign depends on climatological thermocline depth by region
+    - when teleconnection pathways route impacts to specific continents
+    - when seasonal phase locks mechanisms to geography (monsoon transitions)
+figure_strategy:
+  total_figures: 7
+  figure_roles: [observed-characteristic composite, simulated-skill scatter/threshold charts, projection panels, variability-regime charts, teleconnection map, past-present-future context figure, time-of-emergence chart]
+  conceptual_framework: Fig. 1 lifecycle schematic anchoring all later references
+  taxonomy: event-diversity typology (moderate/strong pIOD, early-pIOD)
+  mechanism: Figs. 1-3 encode feedback chains graphically
+  timeline: Fig. 6 aligns coral reconstructions, observations and model futures on one axis
+  map: Fig. 5 teleconnection pathways; Fig. 7 emergence geography
+  workflow: none
+  evidence_summary: Fig. 4 model-by-model bars with bootstrap error ranges
+  figure_text_relation: dense caption protocols (index definitions, member counts) mirror text statistics
+gap_and_agenda:
+  how_gaps_are_derived: from diagnosed simulation failures attributed to upstream biases (convection, monsoon representation)
+  types_of_gaps: [model-fidelity gap, observational-record-length gap, diversity-representation gap, uncertainty-attribution gap]
+  evidence_required_before_gap_claim: model counts failing skill criteria plus identified causal bias
+  future_agenda_structure: reduce bias → reproject → extend records (palaeo) pipeline implied by section order itself
+  specificity_of_future_questions: component-specific fixes rather than open questions; time-of-emergence framing adds decision relevance
+quality_features:
+  major_strengths:
+    - gate-then-project logic gives projections earned credibility
+    - model-vote counting makes consensus auditable
+    - palaeo triangulation extends validation beyond instrumental era
+  transferable_patterns:
+    - skill-gated projection architecture for any model-based field
+    - fraction-of-models reporting format (k of n models)
+    - past-present-future single-figure contextualization
+  unique_but_nontransferable_features: ocean wave-dynamics vocabulary (Rossby/Kelvin, thermocline)
+  risks_of_imitation: model selection can be accused of cherry-picking; selection criteria must be stated before results (as done here)
+anti_patterns:
+  weak_patterns_to_avoid:
+    - projecting from full model ensembles without any fidelity screening while claiming consensus
+source_provenance:
+  source_pages: ["pp. 588-604 (journal); opening p. 589; slices @17%, @33% p. 593, @50%, @67% p. 600, @83% p. 603"]
+  source_sections: [Introduction, Processes of IOD lifecycle, IOD triggers and modulating factors, IOD diversity, Simulating IOD dynamics and characteristics, Projected change in the IOD, Palaeoclimatic perspectives, figure captions]
+  confidence: high

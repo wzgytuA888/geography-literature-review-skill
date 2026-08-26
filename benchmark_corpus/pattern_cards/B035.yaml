@@ -1,0 +1,128 @@
+document_id: B035
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of life-cycle assessment for guiding sustainability transformations)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2023
+  doi: 10.1038/s43017-023-00449-2
+  review_type: methodological
+overall_review_design:
+  review_objective: Evaluate strengths and weaknesses of LCA as decision-support across four transformational strategies.
+  review_scope: LCA applications to decarbonization, circular economy, sustainable consumption and finance, versus planetary boundaries framing
+  review_mode: methodological appraisal — tool audit plus domain-by-domain application survey
+  article_architecture: [Abstract, Introduction, Life-cycle assessment in brief, Synergies between LCA and planetary boundaries, Decarbonization of energy systems, Sustainable circular economy, Sustainable consumption, Sustainable finance, LCA role for decision support, Summary and future]
+  organizing_principle: methodological — concept brief → framework comparison → four parallel application domains → cross-cutting role
+  number_of_major_sections: 8
+introduction_pattern:
+  opening_move: crisis framing ("triple planetary crisis") then tool positioning
+  problem_contextualization: transformational strategies named as visionary but unoperationalized — the operationalization deficit is the hook
+  fragmentation_statement: prior-review gap stated precisely ("Multiple reviews exist on LCA methodology ... did not investigate the role in guiding decisions")
+  gap_or_need_statement: indicators and actionable methods needed for science-based targets; LCA proposed as candidate
+  review_objective_statement: "In this Review, we explore the strengths and weaknesses of LCA" for evaluating mitigation strategies
+  scope_definition: strategy list enumerated (four domains) as explicit review perimeter
+  contribution_statement: comparative mapping of LCA impact pathways against planetary boundaries + coupling opportunities
+  roadmap_pattern: present — "We compare... We then discuss... Moreover, we identify weaknesses..." matches section order
+section_architecture:
+  section_order: [Introduction, Life-cycle assessment in brief, Synergies between LCA and planetary boundaries, Decarbonization of energy systems, Sustainable circular economy, Sustainable consumption, Sustainable finance, LCA role for decision support, Summary and future]
+  dominant_logic: tool primer → benchmark comparison → repeated apply-and-assess loop per domain
+  chronological_logic: none
+  thematic_logic: central (four parallel strategy sections with matching internal structure)
+  mechanism_logic: partial (cause–effect chain modeling explained)
+  scale_logic: partial (product-level vs economy-wide assessment shift tracked)
+  region_logic: partial (regionalization of impact assessment)
+  method_logic: central
+  transition_between_sections:
+    - section-scope announcement ("Here, we compare and contrast LCA and the planetary boundaries framework")
+    - glossary block inserted before synthesis sections to level terminology
+argumentation:
+  dominant_argument_pattern: capability claim → demonstrated application → residual limitation → coupling remedy
+  claim_evidence_relation: claims grounded in cited applied studies; trade-offs shown with quantified scenario charts
+  comparison_pattern: tool-vs-framework comparison (LCA vs PB) and option-vs-option comparison inside worked example
+  contradiction_handling: rebound effects presented as evidence against circular-economy optimism without dismissing it
+  boundary_condition_handling: spatial differentiation treated as condition altering identical emissions' impacts
+  limitation_handling: weaknesses collected into a dedicated role/decision-support discussion feeding the agenda
+  gap_identification_pattern: gap-in-prior-reviews move plus systematic-combination gap (tool couplings ad hoc, not standardized)
+synthesis:
+  synthesis_unit: theme (application domain); methods compared as objects rather than studies enumerated
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - framework-mapping synthesis (LCA pathways onto DPSIR/PB diagram)
+    - worked-example synthesis (face-mask case illustrating all four LCA phases)
+    - cross-domain trend extraction (scale of assessment shifting product→economy)
+  consensus_pattern: best-practice appeals to UNEP-recommended methods as normative anchor
+  controversy_pattern: benefit-offset findings (rebound) staged against strategy promises
+  reconciliation_pattern: comprehensiveness-accuracy-feasibility triangle used to reconcile competing tool choices
+  evidence_weighting_pattern: standardized/best-practice methods weighted over one-off studies
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define-tool-then-phase (Box 1)
+    - compare-and-contrast frameworks
+    - quantify-disparity (footprint ratios)
+    - conclude-section-with-trade-off
+  typical_move_sequences:
+    - ["domain promise", "LCA evidence", "shortfall", "coupling recommendation"]
+    - ["framework difference", "example", "implication for decision support"]
+  topic_sentence_pattern: actor- or domain-oriented sentence opens paragraphs
+  synthesis_sentence_pattern: "To conclude, LCA models multiple cause–effect chains simultaneously" style roll-ups
+  contrast_sentence_pattern: "In contrast to PB, LCA models..." explicit comparator pivots
+  limitation_sentence_pattern: harmonization difficulties enumerated (spatial/temporal mismatch between models)
+  transition_pattern: domain nouns carried into next section's opening; glossary anchors terms
+  paragraph_length_profile: median ~634 chars (q25 441, q75 836); highest zero-citation share (41%) reflecting conceptual exposition
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 1, p75: 3}
+  citation_cluster_frequency: low-medium — definitional and framework passages run nearly citation-free
+  single_vs_cluster: singles dominate; clusters appear only in literature-survey sentences
+  seminal_recent_balance: recent5y share ~35% — fastest-moving reference base in batch
+  citation_location: [sentence-final cluster, mid-sentence]
+  citation_support_type: [applied LCA study, method guideline, model-coupling study, policy document]
+  method_citation_pattern: dedicated Box 1 + Glossary carry method exposition with canonical citations
+  gap_citation_pattern: gap cited by listing existing reviews and their shared omission
+geography_reasoning:
+  whether_geography_is_central: partially — geography enters via regionalized impact assessment, not regional structure
+  spatial_scale_usage: product→sector→economy scale ladder is an explicit analytic axis
+  regional_differentiation_usage: site-dependence of impacts motivates regionalized characterization factors
+  spatial_heterogeneity_usage: heterogeneity framed as accuracy requirement (water stress, species assemblages, population density)
+  cross_scale_usage: coupling IAMs (macro) with process LCA (micro) as core frontier
+  place_context_usage: locations of emission shown to matter for validity, not for narrative color
+  human_environment_usage: consumption behavior and equity (top-1% vs bottom-50% footprints) brought in
+  flow_network_usage: supply chains as material flow networks
+  spatial_dependence_usage: impact = f(emission location, receiving environment) dependence made constitutive
+  conditions_triggering_geographic_explanation:
+    - when identical actions yield different impacts by location
+    - when data resolution (spatial identifiers) limits coupling of models
+    - when consumption vs production accounting shifts responsibility geographically
+figure_strategy:
+  total_figures: 5
+  figure_roles: [worked-example workflow, pathway-mapping diagram, scenario trade-off bar charts, strategy typology chart, tool-interlinkage network]
+  conceptual_framework: Fig. 1 four LCA phases instantiated in a single everyday product
+  taxonomy: Fig. 4 circularity-strategy ladder typology
+  mechanism: Fig. 2 cause–effect pathway mapping onto DPSIR/PB
+  timeline: none
+  map: none
+  workflow: Fig. 1 phase-by-phase mask example functions as mini-methods walkthrough
+  evidence_summary: Fig. 3 baseline-vs-renewables scenario bars across three impact columns
+  figure_text_relation: figures referenced at first use of each construct; captions state the takeaway sentence explicitly
+gap_and_agenda:
+  how_gaps_are_derived: from unoperationalized strategies, ad hoc tool combinations, and missing standardization
+  types_of_gaps: [operationalization gap, standardization gap, data-resolution gap, tool-integration gap]
+  evidence_required_before_gap_claim: demonstration that current practice varies arbitrarily (range of single studies choosing own combinations)
+  future_agenda_structure: needs list (high-resolution spatiotemporal data; prospective assessments; guidance for good practice)
+  specificity_of_future_questions: capability-specific (disaggregated activity data with explicit temporal/spatial identifiers)
+quality_features:
+  major_strengths:
+    - primer-first architecture makes a methods review accessible to non-specialists
+    - worked example grounds abstract methodology concretely
+    - every domain section ends in an actionable shortfall statement
+  transferable_patterns:
+    - tool-audit template: define → benchmark → apply in parallel domains → synthesize role
+    - worked-example-in-box pattern for methodological reviews
+    - trade-off triangle as reconciliation device
+  unique_but_nontransferable_features: LCA/DPSIR/PB acronym apparatus
+  risks_of_imitation: low citation density acceptable only when the object is methods, not findings
+anti_patterns:
+  weak_patterns_to_avoid:
+    - surveying applications per domain without extracting cross-domain trends or shortfalls
+source_provenance:
+  source_pages: ["pp. 471-486 (journal); opening pp. 472, 474; slices @17/33/50/67%"]
+  source_sections: [Introduction, Synergies between LCA and planetary boundaries, Life-cycle assessment in brief, Decarbonization of energy systems, Sustainable circular economy, Sustainable consumption, Key points, figure captions]
+  confidence: high

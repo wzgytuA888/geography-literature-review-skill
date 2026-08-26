@@ -1,0 +1,136 @@
+document_id: B002
+bibliographic:
+  title: Mortality impacts of the most extreme heat events (published title variant on ms: Earth's most extreme heat events and mortality impacts under climate warming)
+  authors: [Tom Matthews, Colin Raymond, Josh Foster, Jane Baldwin, Catherine Ivanovich, Qinqin Kong, Patrick Kinney, Radley Horton]
+  journal: Nature Reviews Earth & Environment (accepted-manuscript version)
+  year: 2025
+  doi: 10.1038/s415XX-XXX-XXXX-X placeholder in ms; index DOI 10.1038/s43017-024-00635-w
+  review_type: narrative
+overall_review_design:
+  review_objective: >-
+    Assess how the most extreme heat events kill, how risk evolves with warming,
+    and how mortality can be minimized.
+  review_scope: >-
+    Dry-bulb and humid heat extremes (Arctic excluded), their observed/projected trends,
+    empirical heat-mortality evidence, human physiological limits, adaptation priorities.
+  review_mode: >-
+    Narrative synthesis bridging climate science and physiology; hazard-to-impact-to-response arc.
+  article_architecture:
+    - Abstract
+    - Introduction
+    - [H1] Extreme heat (patterns, hotspots; changes in extreme heat)      # H2 subheads incl. "Changes in extreme heat"
+    - "[H1] The deadly impacts of extreme heat"                            # H2s: Estimating heat-related mortality; physiological limits
+    - "[H1] Minimizing the mortality of heat extremes"
+    - Closing outlook
+    - References / Tables / Boxes
+  organizing_principle: mixed — thematic by question (state -> impacts -> response) with a mechanism layer (dry vs humid heat)
+  number_of_major_sections: UNKNOWN   # full heading tree not extracted; H1/H2 markers partially visible
+introduction_pattern:
+  opening_move: global-change framing of escalating deadly heat (implied by title/abstract register)
+  problem_contextualization: deadliest events tabulated with death tolls to size the problem
+  fragmentation_statement: methodological inconsistency used as the coherence gap ("inconsistent methods in attributing mortality")
+  gap_or_need_statement: extrapolation worry drives need — empirical relations may not hold in warmer climates
+  review_objective_statement: present via section-purpose paragraph inside body
+  scope_definition: explicit exclusions stated (Arctic excluded from this Review)
+  contribution_statement: UNKNOWN
+  roadmap_pattern: present — intra-section signpost paragraph announces sequence ("insights ... are first discussed", "is then provided", "closes by")
+section_architecture:
+  section_order: [Introduction, Observed/projected extreme heat, Deadly impacts (empirical then physiological), Minimizing mortality, Outlook]
+  dominant_logic: hazard -> impact -> response funnel with empirical-before-mechanistic ordering inside impacts
+  chronological_logic: partial      # observed vs projected subsections
+  thematic_logic: central
+  mechanism_logic: partial          # dry vs humid heat; direct vs indirect pathways
+  scale_logic: partial              # global patterns to named-city case studies
+  region_logic: none                # regions are exemplars, not sections
+  method_logic: partial             # methods of mortality estimation critiqued inline
+  transition_between_sections:
+    - announced multi-move signpost paragraph opening each major section
+    - caution note appended at section start to pre-frame interpretation
+argumentation:
+  dominant_argument_pattern: convergent-lines argument — empirical mortality records, chamber trials, and physiological modelling triangulate thresholds
+  claim_evidence_relation: quantitative claims carry source + uncertainty; projections conditioned on stated assumptions
+  comparison_pattern: dry-heat vs humid-heat parallel treatment throughout
+  contradiction_handling: staged debate — "While some have assumed ..., others assert ..." followed by adjudicating evidence
+  boundary_condition_handling: thresholds qualified by age, activity, radiation, population
+  limitation_handling: dedicated caution sentences on attribution methods and Global South undercount
+  gap_identification_pattern: parameter/physics gaps (convective cap, energy partitioning) tied to named model classes that could resolve them
+synthesis:
+  synthesis_unit: proposition       # e.g., what conditions breach limits
+  study_by_study_ratio: low-medium
+  multi_source_synthesis_pattern:
+    - cross-method convergence (empirical, experimental, modelling)
+    - event-based quantification pooled into a reference table
+    - scenario-scaled risk statements (warming level -> expected frequency)
+  consensus_pattern: ranges reported where studies agree within bounds
+  controversy_pattern: threshold dispute presented as competing interpretations with named camps
+  reconciliation_pattern: modelling shown to reproduce experiments, extending credible range
+  evidence_weighting_pattern: newer chamber/modelling results allowed to revise canonical textbook limit
+paragraph_rhetoric:
+  common_rhetorical_moves: [definition, hotspot localization, trend quantification, pathway decomposition, caveat]
+  typical_move_sequences:
+    - [mechanism premise, geographic realization, example city/event, model caveat]
+    - [section roadmap, move 1, move 2, closing caution]
+  topic_sentence_pattern: claim about where or when a heat property peaks
+  synthesis_sentence_pattern: "Thus,/Accordingly," inference sentence after stacked evidence
+  contrast_sentence_pattern: dry-vs-humid mirrored contrasts
+  limitation_sentence_pattern: "caution should be applied interpreting ..." preamble
+  transition_pattern: enumerated signposting ("first discussed ... then provided ... closes by")
+  paragraph_length_profile: q25=610, median=842, p75=1090 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 6}
+  citation_cluster_frequency: moderate-high; clusters at empirical anchors, singles at conceptual moves
+  single_vs_cluster: mixed; key contested claims carry denser clusters
+  seminal_recent_balance: recent5y share 0.70 per index (very current field); seminal physiology still cited
+  citation_location: [sentence-final bracketed numbers, mid-sentence for concept sources]
+  citation_support_type: [empirical observation, experimental result, model source, database (EM-DAT)]
+  method_citation_pattern: attribution-method limitations cited at point of use, not in a methods section
+  gap_citation_pattern: gaps framed as open questions with pointer citations
+geography_reasoning:
+  whether_geography_is_central: yes as evidence layer — hotspots, latitudinal bands, and named places carry the argument
+  spatial_scale_usage: global maps to regional bands (~15-40 degrees) to station-scale records
+  regional_differentiation_usage: warming-rate differences (Western Europe, Amazon outpace global mean) explained physically
+  spatial_heterogeneity_usage: humid-heat maxima tied to moisture-source geography (subtropical coastal land)
+  cross_scale_usage: local station extremes connected to global-mean warming levels
+  place_context_usage: Jacobabad, Paris, Vancouver used as calibrated case points across sections
+  human_environment_usage: central — population density and Global South data scarcity shape conclusions
+  flow_network_usage: none
+  spatial_dependence_usage: irrigation/land-surface modification noted as spatially patterned modifier of humid heat
+  conditions_triggering_geographic_explanation:
+    - when moisture availability sets the physical ceiling
+    - when warming rates diverge from global mean
+    - when exposure/vulnerability differs by region (adaptation priority list)
+figure_strategy:
+  total_figures: 4 (+Table 1, Boxes 1-2, supplementary figures/text)
+  figure_roles: [observed+projected hazard maps/trends, event-clustering density diagram, threshold-crossing observations, projected exceedance by warming level]
+  conceptual_framework: Box 1 definitions + Box 2 physiology form the conceptual substrate
+  taxonomy: dry vs humid heat taxonomy structures figures and text alike
+  mechanism: Fig. 2 locates deadliest events in Ta-RH state space
+  timeline: Table 1 chronological inventory of deadliest events since 2000
+  map: Fig. 1a-d all-time maxima and warming-rate maps
+  workflow: none
+  evidence_summary: Fig. 4 converts physics into warming-level exceedance statements
+  figure_text_relation: panels referenced precisely in-text; captions define derived metrics
+gap_and_agenda:
+  how_gaps_are_derived: identified where evidence chains break — fine-scale physics parameterized, thresholds population-dependent, attribution inconsistent
+  types_of_gaps: [data (Global South mortality), model (convection-permitting needed), applied (cool-refugia planning)]
+  evidence_required_before_gap_claim: demonstrated sensitivity of conclusions to the uncertain element
+  future_agenda_structure: prioritized action items keyed to named regions, then research questions
+  specificity_of_future_questions: concrete (which model class, which regions, which intervention)
+quality_features:
+  major_strengths:
+    - explicit intra-section roadmaps guide a long interdisciplinary read
+    - contested canonical limit re-examined rather than repeated
+    - caveats placed before interpretation, not buried after
+  transferable_patterns:
+    - open major sections with an ordered signpost paragraph plus caution note
+    - stage controversies as X-assumes vs Y-assumes, then adjudicate
+    - convert physical thresholds into warming-level risk statements for policy legibility
+  unique_but_nontransferable_features: physiology-chamber evidence base specific to health topics
+  risks_of_imitation: heavy caveating can dilute message if not paired with clear takeaways
+anti_patterns:
+  weak_patterns_to_avoid:
+    - repeating a canonical threshold without checking its derivation domain
+source_provenance:
+  source_pages: ["digest OPENING (title page)", "BODY_SLICE_1@17% (hotspots, changes)", "BODY_SLICE_2@33% (section signpost, impacts intro)", "BODY_SLICE_3@50% (thresholds debate)", "BODY_SLICE_4@67% (projections, urgency)", "BODY_SLICE_5@83% (outlook)", "CLOSING (acks, Table 1)"]
+  source_sections: ["[H2] Changes in extreme heat", "[H1] The deadly impacts of extreme heat", "[H1] Minimizing the mortality of heat extremes", Table 1 caption, Figure legends]
+  confidence: medium     # accepted manuscript without final headings; text otherwise rich

@@ -1,0 +1,128 @@
+document_id: B036
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of global evapotranspiration change and its drivers)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2023
+  doi: 10.1038/s43017-023-00464-3
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: Synthesize present and future changes in evapotranspiration, their drivers, and feedbacks to climate.
+  review_scope: global land ET since early 1980s; components (transpiration, interception, soil evaporation); projections to 2100
+  review_mode: data-synthesis narrative built on multi-dataset ensemble analysis with supplementary methods
+  article_architecture: [Abstract, Introduction, Climatological characteristics of ET, Temporal ET changes, ET impacts on climate, Summary and future]
+  organizing_principle: mixed — climatology → temporal change → impacts; within sections, total-then-partition logic
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: definition-plus-cycle-positioning opening (ET links water, energy and carbon cycles)
+  problem_contextualization: trend announced with attribution candidates (CO2 fertilization, land management) as open question
+  fragmentation_statement: divergence framing — datasets/models disagree; the disagreement itself motivates synthesis
+  gap_or_need_statement: uncertainties identified at the end as payoff ("identifying key uncertainties ... offering perspectives")
+  review_objective_statement: "In this Review, we synthesize understanding of present and future changes in ET and their drivers"
+  scope_definition: period bound (since early 1980s) tied to satellite era; component list enumerated
+  contribution_statement: contribution is the quantified ensemble reconciliation plus driver attribution percentages
+  roadmap_pattern: present — "We begin by characterizing... We subsequently discuss... followed by... We end by identifying..."
+section_architecture:
+  section_order: [Introduction, Climatological characteristics of ET, Temporal ET changes, ET impacts on climate, Summary and future]
+  dominant_logic: state → change → consequence arc; each stage splits into total vs components
+  chronological_logic: partial (climatology vs trends vs future)
+  thematic_logic: central (components and drivers)
+  mechanism_logic: partial (stomatal control, vapour-pressure theory in Box)
+  scale_logic: partial (global means decomposed to continental/biome/latitudinal bands)
+  region_logic: partial (continental rankings, regional trend paragraphs)
+  method_logic: partial (dataset construction described in Supplementary Methods pointer)
+  transition_between_sections:
+    - "as now discussed" hand-off after dataset introduction
+    - observed-to-projected pivot ("In addition to observed changes since approximately 1980...")
+argumentation:
+  dominant_argument_pattern: ensemble-quantified claim → spatial or temporal pattern → first-order control explanation
+  claim_evidence_relation: nearly every magnitude carries mean ± SD across datasets; attribution claims carry percentage contributions with P values
+  comparison_pattern: dataset-vs-dataset and model-vs-offline comparisons used to expose uncertainty structure
+  contradiction_handling: ESM-vs-offline projection divergence named and attributed to CO2 water-use accounting
+  boundary_condition_handling: wet-vs-dry region contrast conditions the sign of CO2 fertilization effect on ET
+  limitation_handling: uncertainty section itemizes observational closure errors and missing component networks
+  gap_identification_pattern: measurement-infrastructure gap — no independent in situ networks for ET components
+synthesis:
+  synthesis_unit: proposition about a flux quantity; datasets are the synthesized objects
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - ensemble-mean synthesis across eight diagnostic datasets with spread reported
+    - factorial attribution synthesis (greening 39±18% of trend; factors jointly explain 81% of variance)
+    - latitudinal-gradient explanation unifying biome-level rates
+  consensus_pattern: convergence shown via agreement of independent estimates (Fig. 1f published-estimate compilation)
+  controversy_pattern: projection debate framed around a single pivotal modeling choice (CO2 effect inclusion)
+  reconciliation_pattern: divergent estimates reconciled by tracing them to component partitioning differences
+  evidence_weighting_pattern: multi-product ensembles > single products; FLUXNET/catchment checks used as validation tier
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - quantify-with-uncertainty (mean ± SD everywhere)
+    - rank-and-explain (continent/biome rankings followed by climate control)
+    - attribute-percentage move
+    - scenario-by-scenario projection listing
+  typical_move_sequences:
+    - ["ensemble estimate", "spatial pattern", "first-order control", "citation cluster"]
+    - ["trend claim", "driver decomposition", "residual uncertainty note"]
+  topic_sentence_pattern: variable-or-component sentence opens paragraph
+  synthesis_sentence_pattern: "factors together explain 81% of interannual variability" aggregation style
+  contrast_sentence_pattern: wet/dry and reforestation/deforestation mirror contrasts
+  limitation_sentence_pattern: closure problem stated then correction pathway offered
+  transition_pattern: temporal connectives (past→future) plus component nouns carried forward
+  paragraph_length_profile: median ~622 chars (q25 463, q75 910); long quantitative paragraphs
+citation_behavior:
+  citations_per_paragraph: {p25: 2, median: 4, p75: 8}
+  citation_cluster_frequency: high on pattern/control claims
+  single_vs_cluster: clusters for established relations; singles for specific products/sites
+  seminal_recent_balance: recent5y share ~20%; classic catchment/experiment literature retained for mechanisms
+  citation_location: [sentence-final cluster, mid-sentence product naming]
+  citation_support_type: [satellite dataset, model intercomparison, paired-catchment study, FACE experiment]
+  method_citation_pattern: dataset citations concentrated at first mention + supplementary table of products
+  gap_citation_pattern: gap evidenced by absence-of-network statements plus one ongoing-effort citation
+geography_reasoning:
+  whether_geography_is_central: yes — spatial pattern of ET and its climatic controls are core content
+  spatial_scale_usage: global→continental→biome→latitudinal band decomposition is systematic
+  regional_differentiation_usage: continental ET ranking used to establish heterogeneity before explaining it
+  spatial_heterogeneity_usage: LAI explains 63% of spatial variability — heterogeneity given a measured predictor
+  cross_scale_usage: local land-use signals contrasted against barely detectable global trends
+  place_context_usage: Loess Plateau, Amazon-style examples appear as process instances
+  human_environment_usage: irrigation scheduling and crop yield estimation cited as societal uses
+  flow_network_usage: none
+  spatial_dependence_usage: ET-precipitation recycling dependence invoked in impacts section
+  conditions_triggering_geographic_explanation:
+    - when water-versus-energy availability switches the controlling factor
+    - when aridity modifies vegetation sensitivity (higher in more arid regions)
+    - when land-use effects are locally strong but globally undetectable
+figure_strategy:
+  total_figures: 6
+  figure_roles: [multi-panel spatial maps with zonal insets, trend time series, seasonality linkage chart, projection ensemble series, driver-attribution maps, feedback schematic]
+  conceptual_framework: Fig. 6 +/- arrow diagram of ET impacts on temperature and precipitation
+  taxonomy: Box 1 component definitions (Ec, Ei, Es)
+  mechanism: Fig. 6 encodes sign-structured feedbacks
+  timeline: Figs. 2-4 time-series spine from 1982 to 2100
+  map: Fig. 1 five-panel component maps; Fig. 5 driver-attribution maps
+  workflow: none
+  evidence_summary: Fig. 1f compiles published Ec/ET estimates by method — literature-as-data panel
+  figure_text_relation: captions specify datasets and averaging; text cites panel letters precisely
+gap_and_agenda:
+  how_gaps_are_derived: from divergent estimates traced to their structural causes, then converted into observation needs
+  types_of_gaps: [validation gap, component-measurement gap, model-structure gap (CO2 accounting)]
+  evidence_required_before_gap_claim: demonstrated divergence between credible approaches plus diagnosed cause
+  future_agenda_structure: paired needs — better observations (long-term sites, sap-flow networks) plus model evaluation rigor
+  specificity_of_future_questions: infrastructure-specific (whole-tree transpiration dataset) rather than hypothesis-shaped
+quality_features:
+  major_strengths:
+    - every quantitative claim carries an uncertainty statement — model calibration discipline
+    - literature-compilation panel turns prior estimates into evidence
+    - single pivotal controversy isolated and explained rather than diffused
+  transferable_patterns:
+    - ensemble-mean ± spread as default reporting format
+    - rank-explain paragraph template (list regions, name first-order control)
+    - state→change→impact arc for flux-based topics
+  unique_but_nontransferable_features: ET component notation and Budyko-style reasoning
+  risks_of_imitation: ensemble language without actually pooling datasets produces false precision
+anti_patterns:
+  weak_patterns_to_avoid:
+    - quoting single-study magnitudes where independent estimates disagree, without spread
+source_provenance:
+  source_pages: ["pp. 626-641 (journal); opening p. 627; slice @17% p. 630; slice @67% p. 638"]
+  source_sections: [Introduction, Climatological characteristics of ET, Total ET, ET components, Future changes, Regional trends, Summary and future, figure captions]
+  confidence: high

@@ -1,0 +1,138 @@
+document_id: B003
+bibliographic:
+  title: Tipping points in river deltas
+  authors: [Roeland C. van de Vijsel, Marten Scheffer, Antonius J. F. Hoitink]
+  journal: Nature Reviews Earth & Environment
+  year: 2024
+  doi: 10.1038/s43017-024-00610-5
+  review_type: conceptual      # framework-driven narrative (dynamical-systems lens)
+overall_review_design:
+  review_objective: >-
+    Organize delta regime shifts as tipping points, quantify how climate and land-use
+    change raise tipping propensity, and assess early-warning and management options.
+  review_scope: >-
+    Three subsystems of deltas (channel morphodynamics, estuarine turbidity, coastal
+    wetland state); global evidence base of 47 deltas; resilience indicators; restoration.
+  review_mode: >-
+    Framework-first narrative: a theory vocabulary (regime shift, feedback, resilience
+    indicator) is defined, then applied uniformly across subsystems.
+  article_architecture:
+    - Abstract (with inline section list / TOC)
+    - Introduction
+    - Regime shifts (channel dynamics; turbidity; marsh state)
+    - Impacts of climate and land-use changes on resilience
+    - Resilience indicators
+    - Avoiding degradation and promoting back-tipping
+    - Summary and future perspectives
+    - Box 1 Glossary (resilience indicators)
+  organizing_principle: mixed — mechanistic core (feedbacks per subsystem) then driver layer, then indicator/management layer
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: definitional framing of deltas as systems prone to "rapid and irreversible regime shifts"
+  problem_contextualization: degradation stakes set via named deltas and flood-prone areas
+  fragmentation_statement: implicit — phenomena studied case-by-case; the framework itself claims unification
+  gap_or_need_statement: indicators insufficient alone; dynamical-systems application blocked by model/data shortfalls
+  review_objective_statement: explicit in abstract ("In this Review, we discuss the tipping mechanisms...")
+  scope_definition: three named subsystems delimit scope up front
+  contribution_statement: contribution framed as data-based propensity assessment across 47 deltas
+  roadmap_pattern: present — abstract carries an explicit section list
+section_architecture:
+  section_order: [Introduction, Regime shifts, Impacts of climate and land-use changes on resilience, Resilience indicators, Avoiding degradation/promoting back-tipping, Summary and future perspectives]
+  dominant_logic: mechanism catalogue -> stressor amplification -> detection -> intervention
+  chronological_logic: none
+  thematic_logic: central           # three subsystem threads recur across sections
+  mechanism_logic: central          # each shift explained via self-reinforcing feedback
+  scale_logic: partial              # bedform to delta to 47-delta synthesis
+  region_logic: partial             # named deltas instantiate mechanisms worldwide
+  method_logic: partial             # indicator methods assessed for feasibility
+  transition_between_sections:
+    - subsystem-parallel structure repeats the same move pattern per thread
+    - bridge from diagnosis to treatment at the indicators section
+argumentation:
+  dominant_argument_pattern: define state pair + triggering feedback, then evidence with named cases, then generalization condition
+  claim_evidence_relation: every claimed shift anchored to at least one named delta with quantified rates
+  comparison_pattern: forward-shift vs back-tipping mirror; contrasting driver combinations across deltas
+  contradiction_handling: limits of inference admitted ("difficult to precisely identify the point at which" tipping occurred)
+  boundary_condition_handling: long adaptation timescales treated as boundary on detectability
+  limitation_handling: measurement cost/difficulty stated next to each proposed indicator
+  gap_identification_pattern: capability gap — continuous measurements and improved models required before theory applies
+synthesis:
+  synthesis_unit: mechanism         # self-reinforcing feedback shared across deltas
+  study_by_study_ratio: low         # studies appear as instances of mechanisms
+  multi_source_synthesis_pattern:
+    - cross-delta quantitative comparison (sediment-load and SLR percentages)
+    - theory transfer from ecology (critical slowing down) to geomorphology
+    - restoration examples reinterpreted within windows-of-opportunity theory
+  consensus_pattern: mechanisms presented as established where multiple deltas exhibit them
+  controversy_pattern: UNKNOWN      # no explicit dispute passage captured
+  reconciliation_pattern: ambiguous single cases attributed to slow adjustment toward new equilibrium
+  evidence_weighting_pattern: process understanding weighted above single-event records
+paragraph_rhetoric:
+  common_rhetorical_moves: [named-mechanism topic sentence, feedback identification, exemplar cascade, management implication]
+  typical_move_sequences:
+    - ["Channel infilling." style definition opener -> observed cases -> feedback statement]
+    - [driver premise, delta-specific projection, consequence chain]
+  topic_sentence_pattern: one-to-three-word mechanism label opening the paragraph
+  synthesis_sentence_pattern: generalized "Such observations could explain ..." extension sentence
+  contrast_sentence_pattern: conversely-structured driver combinations (sediment influx vs starvation)
+  limitation_sentence_pattern: cost/feasibility caveat attached to monitoring proposals
+  transition_pattern: parallel subsection rhythm carries transitions without connective prose
+  paragraph_length_profile: q25=440, median=643, p75=926 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 4, p75: 7}
+  citation_cluster_frequency: high — clusters attach to multi-delta evidence cascades
+  single_vs_cluster: clusters for case lists; singles for theory sources
+  seminal_recent_balance: recent5y share 0.23; classics of resilience theory retained
+  citation_location: [sentence-final clusters, mid-sentence after named deltas]
+  citation_support_type: [case-study anchor, theory source, dataset source]
+  method_citation_pattern: indicator formulas/methods cited in Box and at first use
+  gap_citation_pattern: gaps stated bare in closing perspectives
+geography_reasoning:
+  whether_geography_is_central: yes — deltas are intrinsically place-based; geography supplies the evidence register
+  spatial_scale_usage: cross-section views to delta scale to global 47-delta ensemble
+  regional_differentiation_usage: deltas grouped by driver combination (influx+SLR vs starvation+SLR)
+  spatial_heterogeneity_usage: local effects (sand mining) contrasted against delta-scale loads
+  cross_scale_usage: metre-scale bedforms linked to system-level collapse risk via heterogeneity argument
+  place_context_usage: Rhine-Meuse, Mekong, Ganges-Brahmaputra, Yangtze etc. as canonical instantiations
+  human_environment_usage: central — engineering (dredging, reclamation) is a first-order driver
+  flow_network_usage: channel networks/bifurcations analysed explicitly
+  spatial_dependence_usage: tidal amplification and flood dominance framed as upstream-downstream coupling
+  conditions_triggering_geographic_explanation:
+    - when a mechanism manifests only under certain sediment/sea-level regimes
+    - when engineering history differs between deltas
+    - when restoration feasibility is site-specific
+figure_strategy:
+  total_figures: 6 (+Box 1 glossary)
+  figure_roles: [driver-overview schematic, per-subsystem regime-shift anatomy panels, expected-driver-effects matrix figure, 47-delta boundary-condition data figure, back-tipping example panels]
+  conceptual_framework: Fig. 1 maps climate/land-use drivers onto tipping propensity
+  taxonomy: original state -> tipping point -> alternative state visual grammar
+  mechanism: Figs. 2-3 dissect shifts row-by-row (triggering sequence per row)
+  timeline: none
+  map: Fig. 5 delta-wide boundary conditions with per-delta values
+  workflow: none
+  evidence_summary: Fig. 4 tabulates expected effects of each driver per subsystem
+  figure_text_relation: caption rows keyed to text subsections; panel grammar reused across figures
+gap_and_agenda:
+  how_gaps_are_derived: derived from theory-application shortfall — indicators detect but cannot localize thresholds
+  types_of_gaps: [data (continuous measurements), model (tipping-point mathematics), operational (early-warning uptake)]
+  evidence_required_before_gap_claim: demonstrated ambiguity in dating past tipping events
+  future_agenda_structure: layered — better models, denser monitoring, management by induced favourable shifts
+  specificity_of_future_questions: moderately specific; framework terms define what counts as progress
+quality_features:
+  major_strengths:
+    - single theoretical vocabulary unifies disparate delta phenomena
+    - named-mechanism paragraph openers make the text skimmable
+    - global 47-delta quantification grounds a conceptual review
+  transferable_patterns:
+    - define framework terms once (Box glossary), reuse everywhere
+    - parallel-structure sections: same move order per subsystem thread
+    - close diagnosis sections with intervention design informed by mechanism
+  unique_but_nontransferable_features: state-transition visual grammar fits threshold topics
+  risks_of_imitation: jargon-heavy framing can exclude readers new to dynamical-systems terms
+anti_patterns:
+  weak_patterns_to_avoid:
+    - cataloguing case studies without naming the shared feedback they demonstrate
+source_provenance:
+  source_pages: ["digest OPENING (abstract+TOC, p.1)", "BODY_SLICE_1@17% (channel infilling, hyperturbidity)", "BODY_SLICE_2@33% (drivers, SLR comparisons)", "BODY_SLICE_3@50% (indicators, Fig. captions)", "BODY_SLICE_4@67% (back-tipping, Box 1)", "CLOSING slice (references)"]
+  source_sections: [Abstract, Introduction, Regime shifts, Turbidity regime changes, Resilience indicators, Figure captions, Box 1]
+  confidence: high

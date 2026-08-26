@@ -1,0 +1,107 @@
+document_id: B047
+bibliographic:
+  title: Hydroclimate volatility on a warming Earth
+  authors: [Daniel L. Swain, Andreas F. Prein, John T. Abatzoglou, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2025
+  doi: 10.1038/s43017-024-00624-z
+  review_type: narrative
+overall_review_design:
+  review_objective: Bring together knowledge of hydroclimate volatility under anthropogenic climate change — definitions, trends, mechanisms, impacts, uncertainties
+  review_scope: global subseasonal-to-interannual wet-dry whiplash transitions across observations, projections and mechanisms
+  review_mode: expert narrative synthesis that also formalises a new quantitative metric
+  article_architecture: [Abstract, Introduction, Changes in hydroclimate volatility (Defining; Trends in historical; Trends in projected), Mechanisms underpinning volatility, Impacts (societal/ecological), Summary and future perspectives, Box 1, Box 2]
+  organizing_principle: definition -> evidence (observed then projected) -> mechanism -> impact, i.e., theory-before-evidence pipeline
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: phenomenon definition via water-balance framing (supply surplus vs deficit alternation)
+  problem_contextualization: compounding whiplash impacts argued more severe than isolated extremes, with California 2022-23 exemplar
+  fragmentation_statement: terminology fragmentation catalogued exhaustively — twelve-plus synonym phrases listed with citations
+  gap_or_need_statement: absence of single quantitative metric capturing both extremes; asymmetry of wet vs dry event scales
+  review_objective_statement: "In this Review, we bring together knowledge of hydroclimate volatility in the context of anthropogenic climate change"
+  scope_definition: definitional subsection plus newly introduced 'hydroclimate whiplash' metric (Supplementary Information)
+  contribution_statement: review contributes a formal metric and synthesis figure, not only summary
+  roadmap_pattern: present ("We first assess ... Next, we explore ... Finally, we discuss outstanding questions")
+section_architecture:
+  section_order: [Introduction, Changes in hydroclimate volatility (define/historical/projected), Mechanisms underpinning, Impacts, Summary and future perspectives]
+  dominant_logic: metrics-first then trend evidence then causal machinery then consequences
+  chronological_logic: partial (historical vs projected split)
+  thematic_logic: central
+  mechanism_logic: central (thermodynamic vs dynamic drivers; land-surface mediation)
+  scale_logic: central (gridbox -> region -> globe; wet-local vs dry-continental asymmetry argument)
+  region_logic: partial (named regional volatility hotspots enumerated)
+  method_logic: central (metric construction, dataset ensembles CESM2-LE/ERA5/NCD20C compared)
+  transition_between_sections: ["definition subsection explicitly precedes synthesis of trends", "mechanism sections distinguish hydroclimate from hydrological volatility"]
+argumentation:
+  dominant_argument_pattern: theoretical expectation -> observational test -> divergence diagnosis
+  claim_evidence_relation: trend claims carry ensemble/dataset attribution; mechanism claims carry physics citations
+  comparison_pattern: supply-side vs demand-side definitions; observed vs modelled trajectories; land vs ocean response
+  contradiction_handling: observed-vs-projected mismatch decomposed into numbered candidate explanations each mapped to research actions
+  boundary_condition_handling: whether hydroclimate volatility yields hydrological volatility conditioned on geography, geology, antecedent state
+  limitation_handling: metric limitations and definitional non-stationarity debate engaged directly with cited positions
+  gap_identification_pattern: measurement-network sparsity plus model-fidelity gaps derived from the divergence analysis
+synthesis:
+  synthesis_unit: proposition/mechanism
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern: ["multi-dataset convergence claims ('substantial and growing evidence')", "regional hotspot catalogue with per-region impact notes", "cascading-hazard chain synthesis figure"]
+  consensus_pattern: "strong consensus" language tied to multiple metrics and model ensembles agreeing
+  controversy_pattern: divergence between observation and models treated as first-class finding with three numbered hypotheses
+  reconciliation_pattern: terminology chaos resolved by introducing one formal metric rather than picking a winner among old terms
+  evidence_weighting_pattern: ensemble spread displayed as uncertainty bands; reanalyses cross-checked against large ensembles
+paragraph_rhetoric:
+  common_rhetorical_moves: ["asymmetry exposition", "definition formalisation", "ensemble-evidence stacking", "numbered hypothesis decomposition"]
+  typical_move_sequences: [["quantification challenge stated", "existing definition families surveyed", "new metric introduced", "first evidence applied"]]
+  topic_sentence_pattern: challenge-or-trend statement ("The quantification of hydroclimate volatility is challenged by ...")
+  synthesis_sentence_pattern: "'Consistent with theoretical expectations45, there is strong consensus' expectation-linking sentences"
+  contrast_sentence_pattern: wet-extreme vs dry-extreme spatiotemporal contrasts carried through whole argument
+  limitation_sentence_pattern: "'it is possible that' hedged alternatives inside numbered explanations"
+  transition_pattern: roadmap verbs (first/next/finally) echoed at section openings
+  paragraph_length_profile: q25=490, median=714, p75=1150 chars (longest paragraphs in batch)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 2, p75: 8}
+  citation_cluster_frequency: polarised — conceptual paragraphs uncited, evidential paragraphs heavily clustered
+  single_vs_cluster: singles for definitional lineage; very wide clusters for trend assertions
+  seminal_recent_balance: recent5y share 0.523 — highest in batch; fast-moving field citing last 3 years heavily
+  citation_location: [sentence-final wide clusters, mid-sentence after named datasets/metrics]
+  citation_support_type: [reanalysis/ensemble studies, attribution studies, impact case reports]
+  method_citation_pattern: new metric documented in Supplementary Information; datasets cited with versions
+  gap_citation_pattern: cites sparse networks and model-resolution literature to ground improvement calls
+geography_reasoning:
+  whether_geography_is_central: yes — global maps and regional hotspots structure evidence presentation
+  spatial_scale_usage: explicit contrast of process scales (minutes-neighbourhood rain vs years-continent drought) as analytical engine
+  regional_differentiation_usage: a dozen named hotspot regions with direction-of-change annotations on Fig 1
+  spatial_heterogeneity_usage: heterogeneity mapped rather than averaged; subtropical decreases alongside tropical increases reported
+  cross_scale_usage: gridbox metric aggregated to global frequency curves; local antecedent conditions modulating basin floods
+  place_context_usage: California case anchors motivation; Horn of Africa and others carry impact evidence
+  human_environment_usage: impacts section couples whiplash to agriculture, health, infrastructure
+  flow_network_usage: none
+  spatial_dependence_usage: antecedent soil moisture dependence formalised (flood extremeness whiplash concept)
+  conditions_triggering_geographic_explanation: ["when wet and dry extremes occupy different spatial scales complicating one metric", "when land surface state modulates atmospheric forcing outcomes", "when naming where projected amplification concentrates"]
+figure_strategy:
+  total_figures: 5
+  figure_roles: [global event-impact map, historical trend time series with ensemble spread, projected trend maps, VPD physics diagram, cascading-hazards flowchart]
+  conceptual_framework: Fig 5 cascade schematic synthesises consequence chains
+  taxonomy: none
+  mechanism: yes (Box 1 Clausius-Clapeyron 'expanding sponge'; Fig 4 humidity physics)
+  timeline: yes (1900-2100 time series panels)
+  map: yes (event map and trend maps)
+  workflow: none
+  evidence_summary: Fig 2 pairs time series with box-and-whisker trend distributions — uncertainty-forward design
+  figure_text_relation: physics boxes absorb derivations keeping main text narrative; captions document datasets and statistics fully
+gap_and_agenda:
+  how_gaps_are_derived: from observed-model divergence decomposition and network sparsity
+  types_of_gaps: [observational-network gap, model-resolution/process gap, hydrological-volatility understanding gap]
+  evidence_required_before_gap_claim: quantified exceedance of projection envelope by observations
+  future_agenda_structure: numbered explanation->research-direction mapping ('First ... Second ... Third') plus solutions-oriented close
+  specificity_of_future_questions: instrument- and model-level specific (convection-resolving runs, data assimilation improvements)
+quality_features:
+  major_strengths: [metric formalisation inside a review, exhaustive terminology census converted into contribution, uncertainty shown graphically not verbally only, physics boxed out of narrative flow]
+  transferable_patterns: [open with terminology census then offer unifying definition, decompose discrepancy into numbered hypotheses each carrying a research action, pair every trend claim with ensemble uncertainty display, use boxes for physics side-derivations]
+  unique_but_nontransferable_features: [authors introducing their own whiplash metric; Supplementary-metric packaging]
+  risks_of_imitation: [long paragraphs (p75 >1100 chars) demand strong topic sentences or they collapse; proposing a new metric requires genuine formal work behind it]
+anti_patterns:
+  weak_patterns_to_avoid: [averaging incompatible drought/flood metrics silently, presenting observed-projected mismatch without candidate explanations]
+source_provenance:
+  source_pages: ["pp. 35-50 (Vol 6, Jan 2025 running headers)", "p. 36 (opening/intro slice)", "~p. 39 (BODY_SLICE_1@17%)", "~p. 42 (BODY_SLICE_2@33%)", "~p. 44 (BODY_SLICE_3@50%)", "~p. 47 (BODY_SLICE_4@67%)", "closing/refs slice"]
+  source_sections: [Introduction, Defining hydroclimate volatility, historical/projected trend passages, mechanism passages, Fig 1-5 and Box 1-2 captions, reference sample]
+  confidence: medium

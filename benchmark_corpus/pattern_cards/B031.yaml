@@ -1,0 +1,128 @@
+document_id: B031
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of cryosphere-driven erosion and sediment yield)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2022
+  doi: 10.1038/s43017-022-00362-0
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: Present a global synthesis of how cryosphere degradation changes erosion and sediment yield, then project future trajectories.
+  review_scope: Cold-region (high-altitude/high-latitude) glacierized and permafrost basins; process-to-basin scale.
+  review_mode: expert narrative synthesis organized around a compiled location inventory (76 + 18 sites).
+  article_architecture: [Abstract, Introduction, Ongoing cryosphere degradation, Changing dynamics, Observed increases, Projections and peak sediment, Challenges and complexity, Summary and future]
+  organizing_principle: mechanistic (process cascade) with a regional evidence inventory inside it
+  number_of_major_sections: 7
+introduction_pattern:
+  opening_move: global-change framing with quantified stakes ("Atmospheric warming is driving rapid cryosphere degradation")
+  problem_contextualization: impacts cascaded across landscape evolution, ecosystems, infrastructure and ~2 billion people before stating the need
+  fragmentation_statement: field framed as incomplete rather than fragmented; monitoring sparsity used as the deficit signal
+  gap_or_need_statement: "poses an urgent need for detailed assessments of sediment mobilization"
+  review_objective_statement: "In this Review, we present a global view" of mass loss, permafrost degradation and landscape change
+  scope_definition: bounded to cold regions and to erosion/sediment-transport responses at basin scale
+  contribution_statement: conceptualization move — posits staged future regime shift ("We posit that the timing of peak sediment is jointly regulated")
+  roadmap_pattern: present — four sequenced sentences mirroring the body sections in order
+section_architecture:
+  section_order: [Introduction, Ongoing cryosphere degradation, Changing dynamics, Observed increases, Projections and peak sediment, Challenges and complexity, Summary and future]
+  dominant_logic: driver → state-change → observed response → projection → challenges (causal chain)
+  chronological_logic: partial (past-trend vs future-stage framing)
+  thematic_logic: central (glacial vs permafrost process tracks)
+  mechanism_logic: central (erosion/transport mechanisms carry the argument)
+  scale_logic: partial (basin-scale integration as endpoint)
+  region_logic: partial (regional inventory embedded, not the spine)
+  method_logic: none
+  transition_between_sections:
+    - section-opening orientation sentence announcing internal grouping ("This section describes these changes, grouped by...")
+    - forward link from observations to projection ("This section qualitatively speculates on the likely evolution...")
+argumentation:
+  dominant_argument_pattern: mechanism-first claim, then multi-citation observational support, then regional exemplar
+  claim_evidence_relation: quantitative claims anchored to cited estimates with uncertainty ranges (e.g., mass-loss rates ± error)
+  comparison_pattern: cross-regional rate rankings (fastest vs smallest loss regions) used as evidence texture
+  contradiction_handling: anomalies named alongside trend (local mass gains in Alaska/Karakoram) without derailing consensus claim
+  boundary_condition_handling: connectivity and sediment sinks treated as moderating conditions on signal delivery downstream
+  limitation_handling: limitations concentrated in Challenges section and converted into needs
+  gap_identification_pattern: coverage-deficit gap (monitoring sparsity quantified) plus capability gap (models lacking feedbacks)
+synthesis:
+  synthesis_unit: proposition (mechanism statements), supported by clusters of primary studies
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - inventory compilation mapped onto one figure (76 locations of increased flux)
+    - mechanism decomposition with numbered processes keyed to figure callouts
+    - staged conceptual model (three temporal regimes) unifying heterogeneous basins
+  consensus_pattern: trend claims stated with pooled rates and explicit uncertainty; exceptions acknowledged inline
+  controversy_pattern: understudied-complexity framing ("landscape changes are understudied and more complex to project")
+  reconciliation_pattern: competing controls reconciled by subsuming them into joint regulation by three factors
+  evidence_weighting_pattern: global syntheses and meta-estimates weighted above single catchment studies
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define-process-then-quantify
+    - regional ranking as evidence
+    - numbered mechanism walk-through tied to figure
+    - hedge-plus-projection
+  typical_move_sequences:
+    - ["process claim", "clustered citations", "regional example", "downstream implication"]
+    - ["trend statement with rate", "uncertainty range", "exception noted", "forward link"]
+  topic_sentence_pattern: declarative mechanism or trend sentence opens paragraph
+  synthesis_sentence_pattern: X "is influenced by" A, B and C, followed by citation cluster
+  contrast_sentence_pattern: "However," / "Despite..." pivots to damping or opposing process
+  limitation_sentence_pattern: scarcity quantified then converted to opportunity ("sediment loads are measured in <10% of rivers")
+  transition_pattern: sentence-level forward references to next section's task
+  paragraph_length_profile: median ~714 chars (q25 481, q75 878); long expository paragraphs for mechanisms
+citation_behavior:
+  citations_per_paragraph: {p25: 2, median: 5, p75: 8}
+  citation_cluster_frequency: high — multi-reference superscript clusters close most evidential sentences
+  single_vs_cluster: clusters dominate; singleton citations reserved for specific local cases
+  seminal_recent_balance: recent5y share ~22%; mixes foundational process papers with current syntheses
+  citation_location: [sentence-final cluster, mid-sentence attribution]
+  citation_support_type: [observational rate estimate, process/mechanism study, regional inventory]
+  method_citation_pattern: methods named briefly and cited at first mention; no dedicated methods section
+  gap_citation_pattern: gap backed by a single authoritative deficit statistic rather than a citation list
+geography_reasoning:
+  whether_geography_is_central: yes — cold-region delimitation defines the entire review object
+  spatial_scale_usage: nested plot→hillslope→basin→global; basin scale chosen as synthesis unit deliberately
+  regional_differentiation_usage: rates compared across named mountain/permafrost provinces to establish heterogeneity
+  spatial_heterogeneity_usage: heterogeneity itself is a finding (spatially varying magnitude of cryosphere change)
+  cross_scale_usage: hillslope disturbance signals traced to catchment outlets via connectivity language
+  place_context_usage: named regions (HMA, Andes, Russian Arctic) function as evidence anchors
+  human_environment_usage: infrastructure, communities and water–food–energy security invoked as stakes
+  flow_network_usage: drainage-network propagation of disturbance signals; disconnection by sinks
+  spatial_dependence_usage: hillslope-channel coupling/connectivity explicitly conditions sediment delivery
+  conditions_triggering_geographic_explanation:
+    - when a mechanism depends on thermal regime, elevation or latitude
+    - when rates must be compared between physiographic provinces
+    - when downstream signal transfer depends on landscape connectivity
+figure_strategy:
+  total_figures: 7
+  figure_roles: [state-of-environment maps, mechanism schematics, evidence-inventory map, staged conceptual future, source-to-sink scenario schematic]
+  conceptual_framework: Fig. 6 stages regime shift (thermal → joint → pluvial control)
+  taxonomy: glossary-style landscape definitions block (paraglacial, thermokarst, yedoma)
+  mechanism: Figs. 3-4 number processes on schematics referenced from text ("number 1 on Fig. 3")
+  timeline: Fig. 6 stage timeline anchored to peak meltwater and deglaciation
+  map: Figs. 1-2 regional state maps; Fig. 5 site-inventory map
+  workflow: none
+  evidence_summary: Fig. 5 compiles 76 sites of increased flux into one panel
+  figure_text_relation: text cites figure numerals inline; figures carry the synthesis that prose cannot enumerate
+gap_and_agenda:
+  how_gaps_are_derived: derived from quantified observation deficits and from inability of current models to include climatic feedbacks
+  types_of_gaps: [monitoring-coverage gap, data-record-length gap, model-capability gap, disciplinary-integration gap]
+  evidence_required_before_gap_claim: a deficit statistic (share of gauged rivers; rarity of decadal records)
+  future_agenda_structure: three imperative needs (integrate observations, physics-based models, interdisciplinary collaboration)
+  specificity_of_future_questions: mid-level capabilities named rather than testable hypotheses; retrieval-algorithm extension specified
+quality_features:
+  major_strengths:
+    - Key points distill quantitative headline claims before the body
+    - roadmap sentences map 1:1 onto section sequence
+    - conceptual staging converts scattered regional results into one predictive frame
+  transferable_patterns:
+    - inventory-figure pattern (map many studies onto one evidence panel)
+    - numbered-mechanism schematic co-designed with prose
+    - stage-based future framing bounded by named tipping points
+  unique_but_nontransferable_features: cryosphere-specific tipping-point vocabulary (peak meltwater/sediment)
+  risks_of_imitation: speculative final sections require mature mechanistic consensus; premature staging invites overreach
+anti_patterns:
+  weak_patterns_to_avoid:
+    - enumerating regional studies without a unifying mechanism or stage model
+source_provenance:
+  source_pages: ["pp. 832-851 (journal); opening p. 833; digest slices @17/33/50/67/83%"]
+  source_sections: [Introduction, Ongoing cryosphere degradation, Glacier mass loss and outburst floods, Permafrost thaw and thermokarst, Projections and peak sediment, Challenges and complexity, figure captions]
+  confidence: high

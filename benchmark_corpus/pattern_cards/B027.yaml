@@ -1,0 +1,141 @@
+document_id: B027
+bibliographic:
+  title: Plant phenology changes and drivers on the Qinghai–Tibetan Plateau
+  authors: [UNKNOWN]           # affiliation list (BNU, CAS TPESRE) captured; names not in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2022                   # page footer "October 2022 | volume 3"
+  doi: 10.1038/s43017-022-00317-5   # inferred from filename s43017-022-00317-5.pdf
+  review_type: thematic-mixed  # regional narrative with author re-analysis and cross-biome benchmarking
+overall_review_design:
+  review_objective: >-
+    Describe phenological change and its environmental drivers on the QTP, examine impacts,
+    and set a future research agenda for phenology-climate interactions.
+  review_scope: >-
+    QTP grassland/vegetation phenology; landscape (remote-sensing) and population (in situ)
+    levels; spatial gradients, temporal trends, temperature/precipitation drivers, ecosystem
+    and climate feedbacks, projections.
+  review_mode: >-
+    Synthesis-with-reanalysis: published trends recombined into updated pooled estimates;
+    experiments meta-summarized; region benchmarked against global biomes.
+  article_architecture:
+    - Introduction (climate framing, management need, roadmap)
+    - Spatial and temporal variations     # data sources preamble
+    - Spatial variations                  # gradients, climate space, elevation
+    - Remotely observed temporal changes  # SOS advance; EOS divergence; dataset quality audit
+    - Drivers of vegetation phenology     # temperature/precipitation sensitivities, manipulations
+    - Impacts                             # community structure, biogeochemical/climatic feedbacks
+    - Future research directions
+  organizing_principle: mixed — pattern (space-time) -> driver -> impact -> agenda chain, with metric-level run-ins (SOS/EOS)
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: global-change causal opening ("Anthropogenic warming has driven changes in plant" phenology) cascading to climate-system roles
+  problem_contextualization: resource management, permafrost links and circulation role named as consequences of understanding phenology
+  fragmentation_statement: implicit — divergent trends among metrics/regions framed as the synthesis problem
+  gap_or_need_statement: plateau-scale integration needed because prior work fragmented by dataset and metric
+  review_objective_statement: explicit four-verb roadmap ("we describe... provide an overview... are then examined... we set forth future research")
+  scope_definition: two observation levels defined; supplementary tables enumerate data sources
+  contribution_statement: updated pooled trend estimates computed within the review ("in the updated analyses here")
+  roadmap_pattern: present — sequenced verbs across one paragraph plus intra-section signposting
+section_architecture:
+  section_order: [Introduction, Spatial and temporal variations, Spatial variations, Remotely observed temporal changes, Drivers, Impacts, Future research]
+  dominant_logic: map the pattern, quantify trends, explain via drivers, propagate to impacts, prescribe research
+  chronological_logic: partial      # 1982-1999 vs 2000-2020 windows compared
+  thematic_logic: central           # phenological metrics (SOS, EOS) organize subsections
+  mechanism_logic: central          # sensitivity and manipulation evidence ordered by driver
+  scale_logic: central              # pixel -> landscape -> population -> biome ladder
+  region_logic: partial             # QTP sub-regions within sections; other biomes as benchmarks
+  method_logic: partial             # dedicated run-in audits remote-sensing dataset quality
+  transition_between_sections:
+    - pattern-to-driver bridge via sensitivity framing
+    - in-the-next-section style explicit internal signpost
+    - impact-to-agenda pivot through identified evidence gaps
+argumentation:
+  dominant_argument_pattern: gradient argument — express every pattern as slope against latitude, longitude, elevation or climate variable
+  claim_evidence_relation: slopes quoted with units, errors and significance ("−0.52 ± 0.12 days per year, P < 0.01")
+  comparison_pattern: cross-dataset replication checks; QTP-vs-Arctic-vs-mid-latitude sensitivity contrasts
+  contradiction_handling: >-
+    Dataset disagreements attributed to retrieval accuracy; robustness asserted where
+    gradients hold "despite differences in data sets and methods".
+  boundary_condition_handling: moisture-dependence of temperature sensitivity stated as conditional generalization
+  limitation_handling: short-window estimates flagged as under-powered before interpretation
+  gap_identification_pattern: absence-of-study gaps ("studies ... across several trophic levels are very rare") tied to why they matter
+synthesis:
+  synthesis_unit: metric            # phenological stage is the recurring synthesis unit
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - pooling published trends into updated regression estimates
+    - meta-summary of warming/precipitation experiments with sample sizes
+    - cross-biome sensitivity benchmarking figure
+  consensus_pattern: triangulation phrasing across satellite products and field records
+  controversy_pattern: mechanism disputes presented as conditional on water availability rather than resolved outright
+  reconciliation_pattern: partitioning variance by controlling covariates (accounting for precipitation when estimating temperature sensitivity)
+  evidence_weighting_pattern: significant-pixel maps weight evidence spatially; non-significance displayed honestly
+paragraph_rhetoric:
+  common_rhetorical_moves: [slope quotation, dataset replication, moving-window refinement, experiment pooling]
+  typical_move_sequences:
+    - [trend claim, pooled estimate with error, spatial exception note]
+    - [driver effect, conditioning factor, reversed-case example]
+  topic_sentence_pattern: metric-naming sentence ("SOS. The SOS substantially advanced...")
+  synthesis_sentence_pattern: consistency-across-studies clause
+  contrast_sentence_pattern: SOS-vs-EOS asymmetric behaviour contrasts
+  limitation_sentence_pattern: accuracy-and-window hedges attached to specific products
+  transition_pattern: explicit forward signposts between pattern and driver sections
+  paragraph_length_profile: q25=396, median=503, p75=796 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 1, p75: 5}   # index block values; widest prose spread in batch
+  citation_cluster_frequency: high at trend claims — five or more sources per pooled statement
+  single_vs_cluster: clusters for pooled claims; singles for methods and single-site studies
+  seminal_recent_balance: recent5y share 0.139; active literature heavily cited
+  citation_location: [sentence-final clusters, figure-method citations]
+  citation_support_type: [trend estimate, experiment result, dataset description, biome benchmark]
+  method_citation_pattern: retrieval algorithms and window designs cited inline and in captions
+  gap_citation_pattern: rarity statements cite the few existing examples then name the void
+geography_reasoning:
+  whether_geography_is_central: yes-defining — geographic gradients are both object and explanatory apparatus
+  spatial_scale_usage: 250-m pixels to whole-plateau means, with explicit moving-window design
+  regional_differentiation_usage: east-west onset progression and north-west autumn differences explained climatically
+  spatial_heterogeneity_usage: exception zones (earlier SOS at high altitude) mapped and causally annotated
+  cross_scale_usage: population-level observations reconciled with landscape-level indices
+  place_context_usage: site-specific experiments embedded in their climate-space position
+  human_environment_usage: grazing and management enter as phenology modifiers
+  flow_network_usage: none
+  spatial_dependence_usage: latitudinal gradients computed after accounting for elevation (collinearity handled explicitly)
+  conditions_triggering_geographic_explanation:
+    - when a climate variable's effect flips across moisture zones
+    - when elevation confounds temperature gradients (inversion cases)
+    - when benchmarking a region against global biome sensitivities
+figure_strategy:
+  total_figures: 7
+  figure_roles: [drivers-impacts schematic, gradient/climate-space composite, temporal trend panels, sensitivity maps, experiment-response meta-panel, carry-over effects diagram, cross-biome sensitivity box plots]
+  conceptual_framework: Fig. 1 couples causes and consequences in one schematic
+  taxonomy: phenological-metric typology structures all panels
+  mechanism: Fig. 4 sensitivity maps localize where each driver acts
+  timeline: Fig. 3 decadal trend series with segmented regressions
+  map: Figs. 2 and 4 map patterns and sensitivities with significance masks
+  workflow: none
+  evidence_summary: Fig. 5 converts many experiments into one treatment-response display with significance marks
+  figure_text_relation: long captions specify controls and statistical thresholds; text interprets exceptions
+gap_and_agenda:
+  how_gaps_are_derived: from synthesis dead-ends (non-linear thresholds, trophic coverage, autumn mechanisms)
+  types_of_gaps: [mechanistic (autumn phenology cues), coverage (trophic levels), predictive (threshold identification)]
+  evidence_required_before_gap_claim: demonstrated inconsistency across datasets or missing study classes
+  future_agenda_structure: research-direction list keyed to each unresolved mechanism
+  specificity_of_future_questions: threshold ranges proposed for testing; hypotheses partially falsifiable
+quality_features:
+  major_strengths:
+    - re-analysis turns scattered trends into citable unified estimates
+    - collinear gradients disentangled by design, not assertion
+    - negative/non-significant results displayed rather than dropped
+  transferable_patterns:
+    - recompute pooled estimates so your review yields new numbers, not just verdicts
+    - audit dataset quality in a dedicated subsection before comparing trends
+    - benchmark your region against peer regions to give local findings global meaning
+  unique_but_nontransferable_features: plateau setting offers rare elevation-climate co-variation
+  risks_of_imitation: slope-dense prose can overwhelm readers without metric definitions early
+anti_patterns:
+  weak_patterns_to_avoid:
+    - averaging trends across datasets without first auditing their retrieval quality
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2 incl. six-bullet Key points)", "BODY_SLICE_1@17% (Fig.2 caption, SOS trends)", "BODY_SLICE_2@33% (Fig.4 caption, drivers)", "BODY_SLICE_3@50% (precipitation manipulations)", "BODY_SLICE_4@67% (community impacts)", "FIGURE CAPTIONS slice"]
+  source_sections: [Introduction, Spatial and temporal variations, Remotely observed temporal changes, Drivers, Impacts, Figure captions]
+  confidence: high

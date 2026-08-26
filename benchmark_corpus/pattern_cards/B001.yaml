@@ -1,0 +1,141 @@
+document_id: B001
+bibliographic:
+  title: Record breaking extremes in a warming climate
+  authors: [UNKNOWN]           # author names not captured in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2025
+  doi: 10.1038/s43017-025-00681-y
+  review_type: thematic-mixed  # expert narrative organised around a statistical-theory lens
+overall_review_design:
+  review_objective: >-
+    Synthesize statistical theory of record-breaking and record-shattering events
+    with observed and projected record occurrence across climate variables.
+  review_scope: >-
+    Weather/climate extremes that break observational records: hot/cold temperature,
+    heavy precipitation, dryness, sea ice, ocean heat content; global land and ocean.
+  review_mode: >-
+    Narrative synthesis anchored to a formal null model (stationary record statistics)
+    against which observations and projections are compared.
+  article_architecture:
+    - Abstract
+    - Introduction
+    - Record statistics
+    - Record-shattering extremes
+    - Compound records
+    - Hot and cold records
+    - Hydrological records
+    - Record behaviour across the climate system   # heading truncated in index
+    - Anticipating record events (for adaptation)
+    - Summary and future (perspectives)
+  organizing_principle: mixed — theory-first (statistical mechanism), then thematic by variable class, then observed-to-projected temporal progression, closing on application
+  number_of_major_sections: 9
+introduction_pattern:
+  opening_move: recent-event catalogue framing ("hot extremes in the Pacific Northwest in June and July 2021")
+  problem_contextualization: quantified impacts (heat deaths, crop loss, wildfires) establish stakes before theory
+  fragmentation_statement: implicit tension, not a silo claim — stationarity predicts rarer records, "yet" many are broken
+  gap_or_need_statement: synthesis need argued from maturation of theory ("the statistics behind record events have expanded")
+  review_objective_statement: present in abstract (discussion-first "In this Review"-style abstract)
+  scope_definition: partial — record types and variables enumerated; geographic scope left implicit
+  contribution_statement: UNKNOWN
+  roadmap_pattern: variant — abstract previews logic; body proceeds theory-to-application without an explicit sentence roadmap
+section_architecture:
+  section_order: [Introduction, Record statistics, Record-shattering extremes, Compound records, Hot and cold records, Hydrological records, Record behaviour across climate system, Anticipating record events, Summary and future]
+  dominant_logic: derive expectation from theory, then verify per variable, then project, then apply
+  chronological_logic: partial      # observed period vs projected 21st-century scenarios
+  thematic_logic: central           # one section per variable/record class
+  mechanism_logic: central          # trend-to-variability statistics drive all sections
+  scale_logic: partial              # global aggregates down to grid-point/region within sections
+  region_logic: none                # regions appear as evidence, never as sections
+  method_logic: none
+  transition_between_sections:
+    - extension move ("Beyond record breaking, a record-shattering extreme event...")
+    - escalation from basic to complex statistics ("Assessment ... is not limited to these basic scenarios")
+    - pivot from understanding to decision-making at the adaptation section
+argumentation:
+  dominant_argument_pattern: null-model comparison — compute stationary expectation, measure observed departure, attribute departure to a mechanism
+  claim_evidence_relation: quantitative ratios (observed vs expected) tied to equations; citations cluster at empirical anchor points
+  comparison_pattern: scenario-vs-scenario (SSP fans) and land-vs-ocean mirrored contrasts
+  contradiction_handling: open acknowledgement of definitional choice ("somewhat arbitrary and application-specific")
+  boundary_condition_handling: mixture/heavy-tail distributions handled as extensions that preserve core validity
+  limitation_handling: caveats bound to named datasets and parameter assumptions, placed adjacent to the claim
+  gap_identification_pattern: capability-gap framing — tools and collaborations that adaptation requires do not yet exist
+synthesis:
+  synthesis_unit: proposition       # a statistical expectation, not a study or region
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - quantitative pooling of published record ratios across decades
+    - cross-variable analogy (same statistic applied to heat, rain, sea ice)
+    - consistency check against independent literatures
+  consensus_pattern: convergence phrasing ("These findings are consistent with other literatures")
+  controversy_pattern: disputes recast as threshold-convention choices rather than factual conflict
+  reconciliation_pattern: discrepancies between estimates explained by trend-to-variability ratio and timescale aggregation
+  evidence_weighting_pattern: multimodel means over single runs; theoretical expectation as universal yardstick
+paragraph_rhetoric:
+  common_rhetorical_moves: [event instantiation, quantified deviation from expectation, mechanism attribution, spatial generalization]
+  typical_move_sequences:
+    - [claim, equation/theory, observed ratio, regional contrast]
+    - [event list, impact tally, pivot question]
+  topic_sentence_pattern: proposition stating how records behave under stated conditions
+  synthesis_sentence_pattern: convergence clause ("consistent with the fact that...")
+  contrast_sentence_pattern: mirrored hot/cold sentence pairs
+  limitation_sentence_pattern: parenthetical dataset/assumption caveats
+  transition_pattern: additive connectors ("Indeed," "Moreover,"); section-final pivot to next variable class
+  paragraph_length_profile: q25=449, median=679, p75=976 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 6}
+  citation_cluster_frequency: high — 3-6 reference clusters attach to event and empirical claims
+  single_vs_cluster: clusters dominate; single citations reserved for landmark events or definitions
+  seminal_recent_balance: recent5y share 0.472; older classics carry the theory layer
+  citation_location: [sentence-final superscript clusters, occasional mid-sentence]
+  citation_support_type: [empirical anchor, method/equation source, prior-review pointer]
+  method_citation_pattern: each equation and dataset attributed immediately at first mention
+  gap_citation_pattern: closing capability gaps asserted without citation (author-judgement register)
+geography_reasoning:
+  whether_geography_is_central: supporting role — space enters only when detection conditions vary by location
+  spatial_scale_usage: grid-point to land/ocean aggregate to basin; explicit area-weighting described
+  regional_differentiation_usage: tropics vs high latitudes explained by variability (low sigma gives earlier detection)
+  spatial_heterogeneity_usage: percent-of-area metrics quantify heterogeneity (share of land setting records)
+  cross_scale_usage: aggregation-time dependence (ratios larger for monthly than daily)
+  place_context_usage: named events serve as motivating instances, not units of analysis
+  human_environment_usage: impacts motivate the review; a sparsely-populated counterexample guards against overreach
+  flow_network_usage: none
+  spatial_dependence_usage: temporal autocorrelation handled statistically, spatial dependence via gridded fields
+  conditions_triggering_geographic_explanation:
+    - when signal-to-noise ratio (nu/sigma) differs across climates
+    - when land and ocean media behave differently
+    - when impact relevance depends on where people live
+figure_strategy:
+  total_figures: 7
+  figure_roles: [motivating event map, statistical-properties illustration, observed-change maps and ratio series, multi-scenario projection fans, single-case evolution, record-marked anomaly timeline]
+  conceptual_framework: Fig. 2 illustrates the statistical characteristics of records
+  taxonomy: record-breaking vs record-shattering distinction maintained visually
+  mechanism: scenario families show how trend magnitude controls record frequency
+  timeline: Fig. 7 anomaly series with +/- marks flagging record months
+  map: Fig. 1 record margins; Fig. 3b,c spatial shares; Fig. 5c,d precipitation margins
+  workflow: none
+  evidence_summary: Figs. 4-5 fuse observations with multi-scenario projections in one panel set
+  figure_text_relation: self-contained multi-panel captions; panels lettered; thick-line/shading conventions declared
+gap_and_agenda:
+  how_gaps_are_derived: shortfall of current capability against adaptation need demonstrated in preceding sections
+  types_of_gaps: [methodological (storyline/model tools), collaborative (cross-discipline), predictive (anticipating record margins)]
+  evidence_required_before_gap_claim: documented departure-from-null results establish that better anticipation is possible
+  future_agenda_structure: imperative-verb list in closing (develop tools, build storylines, collaborate)
+  specificity_of_future_questions: actions named concretely; few falsifiable hypotheses posed
+quality_features:
+  major_strengths:
+    - a shared null model makes heterogeneous phenomena commensurable
+    - arbitrariness of definitions disclosed rather than hidden
+    - observation and projection fused in single figure sets
+  transferable_patterns:
+    - derive null expectation -> measure departure -> attribute departure -> close with application
+    - use mirrored contrasts (hot/cold, land/ocean) to sharpen interpretation
+    - mark records directly on time-series graphics
+  unique_but_nontransferable_features: equation-forward pedagogy fits statistical subject matter
+  risks_of_imitation: theory-first ordering may lose readers without the mathematical background
+anti_patterns:
+  weak_patterns_to_avoid:
+    - listing record events without connecting them to the underlying statistic they illustrate
+source_provenance:
+  source_pages: ["digest OPENING (pp.1-2 incl. Fig.1 area)", "BODY_SLICE_1@17% (equations, mixture case)", "BODY_SLICE_2@33% (observed ratios, land/ocean)", "BODY_SLICE_3@50% (Figs.4-5 captions)", "BODY_SLICE_4@67% (sea ice, adaptation)", "CLOSING slice (references start)"]
+  source_sections: [Introduction, Record statistics, Record-shattering extremes, Hot and cold records, Anticipating record events, Summary and future, Figure captions]
+  confidence: high

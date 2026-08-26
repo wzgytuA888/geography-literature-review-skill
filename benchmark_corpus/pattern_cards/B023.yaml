@@ -1,0 +1,140 @@
+document_id: B023
+bibliographic:
+  title: Geomorphic change in the Ganges–Brahmaputra–Meghna delta
+  authors: [UNKNOWN]           # affiliations (Oxford, Vanderbilt) captured; names not in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2021                   # page footer "November 2021 | volume 2"
+  doi: 10.1038/s43017-021-00213-4   # inferred from filename s43017-021-00213-4.pdf
+  review_type: systematic      # framework-driven synthesis of an enumerated evidence base (427 studies)
+overall_review_design:
+  review_objective: >-
+    Apply the Drivers-Pressures-States-Impacts-Responses (DPSIR) framework to organize
+    geomorphic knowledge of one delta and expose its research gaps.
+  review_scope: >-
+    Single delta system (GBM), Holocene to present, natural and anthropogenic drivers,
+    geomorphic states, impacts, adaptation responses, tied to a national delta plan.
+  review_mode: >-
+    Regional deep-synthesis with semi-systematic evidence base ("synthesize 427 peer-reviewed studies")
+    and explicit analytical framework.
+  article_architecture:
+    - Introduction (stakes, DPSIR adoption, policy anchor)
+    - Natural drivers          # tectonics, Holocene evolution, avulsions, tides
+    - Anthropogenic pressures  # diversions, polders, embankments
+    - Changing geomorphic states   # run-in states: sediment budget, channel dynamics, subsidence, delta front
+    - Impacts of geomorphic change
+    - Responses / adaptation measures vs BDP2100 goals
+    - Existing knowledge gaps and future directions
+  organizing_principle: mixed — framework-deductive (DPSIR) executed as chronological-then-thematic within a single region
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: global-class framing — deltas among "the world's most critical human" systems — then cost burden
+  problem_contextualization: sustainability requires systems-scale understanding; policy plan names the priority explicitly
+  fragmentation_statement: knowledge scattered across disciplines; framework adopted precisely to interlink social and environmental factors
+  gap_or_need_statement: systems-scale understanding declared prerequisite for delta sustainability
+  review_objective_statement: explicit framework statement ("the Drivers-Pressures-States-Impacts-Responses framework is applied")
+  scope_definition: single-system boundary plus supplementary data-and-methods pointer
+  contribution_statement: results feed conceptual frameworks, modelling and field-study design for coupled human-water systems
+  roadmap_pattern: variant — objective paragraph enumerates framework parts rather than section-by-section tour
+section_architecture:
+  section_order: [Introduction, Natural drivers, Anthropogenic pressures, Changing geomorphic states, Impacts, Responses, Gaps and future directions]
+  dominant_logic: cause -> pressure -> state -> impact -> response, mirroring the named framework exactly
+  chronological_logic: partial      # Holocene narrative inside drivers
+  thematic_logic: central           # states subdivided thematically by run-in headings
+  mechanism_logic: central          # sediment budgets and avulsion mechanics carry explanation
+  scale_logic: central              # explicit spatial-scale x temporal-scale matrix figure
+  region_logic: central             # sub-regions of one delta differentiated (western tidal vs active estuary)
+  method_logic: partial             # budget calculations and reconstruction methods discussed inline
+  transition_between_sections:
+    - driver-to-pressure bridge at "Changing geomorphic states" preamble listing what responds
+    - run-in state headings sequence the response chain
+    - closing pivot from description to management goals
+argumentation:
+  dominant_argument_pattern: framework-slot filling — every study positioned into exactly one DPSIR slot, then slots connected
+  claim_evidence_relation: rates and areas quantified per sub-region; each figure grounded in the compiled study set
+  comparison_pattern: sub-regional contrasts (prograding Meghna estuary vs sediment-starved west)
+  contradiction_handling: >-
+    Competing explanations enumerated then converged — "Regardless of the exact trigger",
+    robust autogenic mechanism retained.
+  boundary_condition_handling: rate ranges bounded with normalization (loss stated as percent per year)
+  limitation_handling: observational-network limits acknowledged before change estimates are interpreted
+  gap_identification_pattern: evidence-based gaps read off an uneven study-distribution map plus a dedicated gaps figure
+synthesis:
+  synthesis_unit: region-process pair   # a delta sub-region crossed with a geomorphic process
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - systematic compilation of 427 studies visualized as a distribution map
+    - quantitative pooling of published rates (accretion, erosion, subsidence)
+    - cross-checking reconstructions against instrumental records
+  consensus_pattern: well-documented formulations attached to multi-study findings
+  controversy_pattern: alternatives listed side by side with citations before adjudication
+  reconciliation_pattern: conflicting rates attributed jointly to natural variability and methodology differences
+  evidence_weighting_pattern: convergence across independent reconstructions outweighs any single estimate
+paragraph_rhetoric:
+  common_rhetorical_moves: [process narration, quantified rate citation, sub-region contrast, policy tie-in]
+  typical_move_sequences:
+    - [driver event, geomorphic consequence, cited rates, management relevance]
+    - [competing hypotheses list, convergence clause]
+  topic_sentence_pattern: state-naming sentence ("Delta front mobility.", "Fluvial sediment budget.")
+  synthesis_sentence_pattern: integration clause linking processes across sub-regions
+  contrast_sentence_pattern: east-vs-west delta asymmetry sentences
+  limitation_sentence_pattern: methodological-difference hedges after quoted ranges
+  transition_pattern: run-in headings advance the DPSIR chain without meta-discourse
+  paragraph_length_profile: q25=404, median=465, p75=648 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 2}   # index block values; prose carries dense clusters
+  citation_cluster_frequency: high in drivers/states sections — historical claims multiply cited
+  single_vs_cluster: clusters standard; singles for landmark datasets and plans
+  seminal_recent_balance: recent5y share 0.062; Holocene classics alongside current monitoring
+  citation_location: [sentence-final clusters, figure-source credits]
+  citation_support_type: [empirical rate, reconstruction, policy document, monitoring dataset]
+  method_citation_pattern: budget and reconstruction methods attributed inline
+  gap_citation_pattern: gaps derived from mapped evidence absence, not from missing citations
+geography_reasoning:
+  whether_geography_is_central: yes-defining — a single place is the unit of synthesis and its internal geography is the analysis
+  spatial_scale_usage: nested locality -> sub-region -> whole delta -> basin scales made explicit in a matrix figure
+  regional_differentiation_usage: tide-dominated west vs fluvial east vs prograding estuary drive different explanations
+  spatial_heterogeneity_usage: erosion/accretion mosaics quantified per coastal segment
+  cross_scale_usage: millennial avulsion cycles linked to decadal polder effects in one frame
+  place_context_usage: named channels, basins and plans function as analytic anchors
+  human_environment_usage: full DPSIR coupling — engineering works become geomorphic agents
+  flow_network_usage: river-distributary-tidal network structure organizes sediment routing
+  spatial_dependence_usage: distance-from-sediment-source gradients explain along-shore change
+  conditions_triggering_geographic_explanation:
+    - when sub-regions sit at different positions relative to sediment supply
+    - when tidal versus fluvial dominance switches along the coast
+    - when management interventions are spatially bounded (polders, cross-dams)
+figure_strategy:
+  total_figures: 7
+  figure_roles: [location map, systematic study-distribution map, evolution timeline, sediment-budget map, subsidence map, impacts map, systemic-gaps diagram, plus scale x time matrix panel]
+  conceptual_framework: DPSIR structure itself is the framework; Fig. 7 renders remaining gaps graphically
+  taxonomy: geomorphic states classified via run-in headings
+  mechanism: timeline figure sequences tectonic-eustatic-anthropogenic causes
+  timeline: Fig. 3 Holocene-to-present evolution bands
+  map: Figs. 1, 4, 5, 6 all map-based evidence on one base geography
+  workflow: none
+  evidence_summary: Fig. 2 turns the evidence base itself into a figure — coverage becomes an argument
+  figure_text_relation: captions specify data sources; text interprets mapped gradients
+gap_and_agenda:
+  how_gaps_are_derived: two-stage — uneven study distribution demonstrated statistically, then distilled into a gaps figure
+  types_of_gaps: [evidence-coverage (sub-regions, processes), predictive (future sediment flux under dams), integration (geomorphology into human-water models)]
+  evidence_required_before_gap_claim: quantified count of studies per state/process shown first
+  future_agenda_structure: agenda keyed to national plan goals and tabled adaptation measures
+  specificity_of_future_questions: direction-level priorities; specific model/field needs named
+quality_features:
+  major_strengths:
+    - framework-first organization makes a heterogeneous literature commensurable
+    - the evidence base is counted, mapped and audited, not merely cited
+    - policy documents integrated as data, not decoration
+  transferable_patterns:
+    - adopt a named framework and let section headings mirror it exactly
+    - visualize your own evidence-base distribution to legitimize gap claims
+    - enumerate rival explanations, then converge on the mechanism they share
+  unique_but_nontransferable_features: single-delta depth depends on extraordinary local literature density
+  risks_of_imitation: framework rigidity can force ill-fitting studies into slots
+anti_patterns:
+  weak_patterns_to_avoid:
+    - narrating place history without extracting the transferable process insight
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2 incl. Key points)", "BODY_SLICE_1@17% (polders, states preamble)", "BODY_SLICE_2@33% (delta front mobility)", "BODY_SLICE_3@50% (responses, TRM)", "BODY_SLICE_4@67% (scale-time figure, future fluxes)", "BODY_SLICE_5@83% (annotated references)", "FIGURE CAPTIONS slice"]
+  source_sections: [Introduction, Natural drivers, Anthropogenic pressures, Changing geomorphic states, Figure/Table captions]
+  confidence: high

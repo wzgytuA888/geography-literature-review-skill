@@ -1,0 +1,143 @@
+document_id: B019
+bibliographic:
+  title: "UNKNOWN (metadata title null; review of climate-change impacts on wind energy)"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2020
+  doi: UNKNOWN
+  review_type: narrative   # sector-facing assessment linking climate science to an industry
+overall_review_design:
+  review_objective: >-
+    Assess how climate change and variability affect wind energy resources,
+    operating conditions and projections, and state research needs.
+  review_scope: wind resource across atmospheric scales; interannual variability/teleconnections; turbine operating conditions; future projections
+  review_mode: needs-driven sectoral synthesis with scale-matrix organization
+  article_architecture:   # partly reconstructed; intro text poorly extracted
+    - Industry status and installed-capacity projections
+    - Statement of needs (explicit heading)
+    - Wind resource fundamentals by scales of motion
+    - Climate-mode influences on resources (teleconnections)
+    - Operating conditions (icing, erosion, waves, loading)
+    - Climate projections of resource
+    - Summary/research needs
+    - Tables 1-3 (scale matrix; IAV precis; projection precis); Figs 1-4
+  organizing_principle: "mixed(scale matrix (micro->macro) x thematic impacts x regional subdomains)"
+  number_of_major_sections: UNKNOWN (approximately 5-6)
+introduction_pattern:
+  opening_move: industry-trajectory framing (installed capacity growth, avoided-emissions arithmetic)
+  problem_contextualization: mitigation stakes computed (up to 0.3 degC avoided warming by 2100 under aggressive expansion)
+  fragmentation_statement: paucity-of-research statements per impact area ("a relative paucity of research into how ...")
+  gap_or_need_statement: dedicated "Statement of needs" section makes requirements explicit early
+  review_objective_statement: UNKNOWN (intro not preserved verbatim)
+  scope_definition: scales of motion table delimits which atmospheric phenomena matter and why
+  contribution_statement: couples GWEC deployment scenarios to climate sensitivity of the resource
+  roadmap_pattern: present as needs-list architecture rather than narrative roadmap
+section_architecture:
+  section_order: [Status/scenarios, Statement of needs, Resource fundamentals, Variability/modes, Operating conditions, Projections, Needs summary]
+  dominant_logic: requirement-driven; each later section answers a stated need
+  chronological_logic: none
+  thematic_logic: central
+  mechanism_logic: partial
+  scale_logic: central
+  region_logic: central
+  method_logic: partial (model-comparison protocol)
+  transition_between_sections:
+    - 'needs enumerated up front are answered section by section'
+    - '"There is, therefore, a need to refine ..." closers converting findings into requirements'
+argumentation:
+  dominant_argument_pattern: regional-difference demonstration then uncertainty source analysis then need statement
+  claim_evidence_relation: model-intercomparison results cited with resolution/formulation caveats
+  comparison_pattern: five high-penetration subdomains compared repeatedly across figures; two models (WRF vs MPAS) cross-checked
+  contradiction_handling: >-
+    Contested trend claims rebutted methodologically; low-frequency variability "misinterpreted as trends" explains global stilling claims.
+  boundary_condition_handling: applicability bounds by turbine class and environmental regime
+  limitation_handling: parameterization drag uncertainty treated as first-order error source
+  gap_identification_pattern: gaps phrased as capability shortfalls tied to industry evolution (hub heights, offshore expansion)
+synthesis:
+  synthesis_unit: proposition (impact pathway) stratified by region and atmospheric scale
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - evidence-summary tables (precis of studies by region with directional verdicts)
+    - scale matrix unifying phenomena across micro/meso/macro
+    - scenario-conditioned mitigation arithmetic synthesizing energy and climate pathways
+  consensus_pattern: agreement on sign of change reported only where multi-model consistency exists
+  controversy_pattern: stilling debate resolved by critiquing record length, linear fitting, autocorrelation neglect
+  reconciliation_pattern: mode-by-region interaction table reconciles apparently inconsistent teleconnection responses
+  evidence_weighting_pattern: >-
+    Weighted by model fidelity and vertical representation; simple power-law extrapolations flagged as increasingly inappropriate.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - regional-panel narration ("comparatively low in ..., moderate in ..., high in ...")
+    - imperative need sentences with named agents
+    - quantitative exception clauses ("not directly opposite")
+  typical_move_sequences:
+    - [regional pattern statement, mode attribution, non-linearity caveat, data/model caveat]
+  topic_sentence_pattern: variable-or-region-named declaratives
+  synthesis_sentence_pattern: '"There is, thus, substantial climate mitigation benefit ..." consequence summaries'
+  contrast_sentence_pattern: '"In North America, by contrast ..." region flips'
+  limitation_sentence_pattern: uncertainty-source paragraphs ending in refinement needs
+  transition_pattern: need-answer chaining between sections
+  paragraph_length_profile: medium (~448-char median)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 2}   # digest blocks include reference text
+  citation_cluster_frequency: moderate
+  single_vs_cluster: singles for standards (IEC norms); clusters for projection literatures
+  seminal_recent_balance: current industry reports beside peer-reviewed projections
+  citation_location: [sentence-final clusters, standards citations inline]
+  citation_support_type: [projection result, observed variability, engineering standard]
+  method_citation_pattern: model configurations documented with full provenance (WRF/MPAS/MPI-ESM-LR chain)
+  gap_citation_pattern: paucity statements supported by scoped search-style phrasing
+geography_reasoning:
+  whether_geography_is_central: yes
+  spatial_scale_usage: explicit micro-beta to macro-alpha atmospheric-scale hierarchy (Table 1)
+  regional_differentiation_usage: five subdomains tracked through resource, variability and projections
+  spatial_heterogeneity_usage: projected resource declines in north/northwest vs gains elsewhere within one domain
+  cross_scale_usage: synoptic events to multidecadal modes linked to same load variables
+  place_context_usage: countries named as resource archetypes (Denmark, NE Brazil, S.E. India)
+  human_environment_usage: mitigation benefit and infrastructure exposure connect climate to society
+  flow_network_usage: grid/integration considerations noted for intermittency
+  spatial_dependence_usage: teleconnection footprints map onto resource regions deterministically
+  conditions_triggering_geographic_explanation:
+    - "when climate-mode responses differ by region and phase"
+    - "when terrain/orographic drag makes resource estimates resolution-dependent"
+figure_strategy:
+  total_figures: 4
+  figure_roles:
+    - Fig1 global resource maps plus installed capacity plus regional time-series panel
+    - Fig2 deployment-scenario and avoided-warming quantification
+    - Fig3 contemporary-vs-projected maps from two models side by side
+    - Fig4 coupled-model wave-height simulation for offshore loading
+  conceptual_framework: partial (scale table serves this role)
+  taxonomy: Table 1 scale taxonomy
+  mechanism: partial
+  timeline: regional time series within Fig 1
+  map: yes (Figs 1, 3)
+  workflow: no
+  evidence_summary: yes (Tables 2-3 study precis matrices)
+  figure_text_relation: captions interpret findings ("This figure illustrates that ..."), acting as mini-conclusions
+gap_and_agenda:
+  how_gaps_are_derived: derived jointly from science shortfalls and technology trajectory (taller turbines, offshore, larger arrays)
+  types_of_gaps: [observational archive gaps, model-physics gaps (drag, boundary layer), coupled-modelling gaps]
+  evidence_required_before_gap_claim: demonstrated model divergence or extrapolation invalidity
+  future_agenda_structure: imperatives naming agent, action and product ("research initiatives need to archive output at WT-relevant heights")
+  specificity_of_future_questions: highly operational (heights, resolutions, products specified)
+quality_features:
+  major_strengths:
+    - explicit "Statement of needs" organizing device
+    - scale matrix making multiscale relevance checkable
+    - dual-model verification culture
+  transferable_patterns:
+    - needs-driven architecture for applied reviews
+    - regional-subdomain panels reused across multiple figures
+    - caption-as-finding interpretive captions
+  unique_but_nontransferable_features:
+    - engineering-standard citations (IEC) unusual outside sector reviews
+  risks_of_imitation:
+    - scenario arithmetic invites double-counting errors if displacement assumptions are unstated
+anti_patterns:
+  weak_patterns_to_avoid:
+    - fitting linear trends to short autocorrelated series and reporting them as secular change
+source_provenance:
+  source_pages: ["OPENING slice contained figure-axis text (intro poorly extracted)", SLICE_1@17%, SLICE_2@33%, SLICE_3@50% (journal p.630 vicinity), SLICE_4@67%, FIGURE_CAPTIONS, HEADINGS_DETECTED list]
+  source_sections: ["Statement of needs", Table 1/Table 2 titles, projection discussions, research-needs passages]
+  confidence: medium   # introduction not preserved; architecture partly inferred from headings, tables and captions

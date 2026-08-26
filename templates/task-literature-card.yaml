@@ -1,0 +1,58 @@
+# Task Literature Card schema (Runtime Evidence Corpus)
+
+> One file per included paper: runs/<id>/evidence/literature-cards/P###.yaml.
+> Physically & logically separate from Review Pattern Cards (benchmark_corpus/).
+
+```yaml
+paper_id: P021
+title:
+authors: []
+year:
+journal:
+doi:
+zotero_key:
+citation_key:
+
+research_question:
+research_scope:
+
+geographic_scope:
+spatial_scale:
+temporal_scope:
+
+core_concepts: []
+theoretical_framework:
+
+data_sources:
+methods:
+spatial_methods:
+
+major_claims: []
+major_findings: []
+
+limitations: []            # as stated by authors
+
+evidence_units:
+  - evidence_id: E088
+    claim:
+    result:
+    context:
+    method:
+    geography:
+    scale:
+    source_page: p.5 §2.1   # REQUIRED for every unit
+    confidence: high|medium|low
+
+relationship_to_review_topic:
+
+supporting_themes: []
+contradicting_themes: []
+
+source_provenance:
+  acquisition: AVAILABLE_LOCAL|AVAILABLE_ZOTERO|DOWNLOADED_LEGAL|OPEN_ACCESS_FOUND
+  local_path:
+  extraction_notes:
+```
+
+Rules: paraphrase (≤15-word quotes marked); numbers exact; UNKNOWN allowed;
+every evidence_unit must trace to a page/section.

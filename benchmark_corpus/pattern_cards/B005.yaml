@@ -1,0 +1,136 @@
+document_id: B005
+bibliographic:
+  title: The anthropogenic salt cycle
+  authors: [UNKNOWN]           # not captured in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2023
+  doi: 10.1038/s43017-023-00485-y
+  review_type: conceptual      # cycle-framework narrative
+overall_review_design:
+  review_objective: >-
+    Establish a baseline natural salt cycle, then characterize the anthropogenic salt
+    cycle and its cascading impacts across Earth spheres.
+  review_scope: >-
+    Major ions; geologic/terrestrial/aquatic/atmospheric processes; production and use;
+    salinization of soil, water, air; management outlook.
+  review_mode: >-
+    Framework-first narrative: reservoir-flux cycle logic extended from natural to
+    human-dominated operation.
+  article_architecture:
+    - Abstract
+    - Introduction
+    - Salts on Earth (definitions; geologic and terrestrial processes; processes in water)
+    - Anthropogenic disturbances (production/use; sphere-by-sphere flux alterations)
+    - Cascading impacts
+    - Summary and future
+    - Table 1 natural-cycle processes/fluxes; Table 2 anthropogenic processes/fluxes
+  organizing_principle: mixed — mechanistic cycle framework with sphere-by-sphere thematic ordering
+  number_of_major_sections: 5-6   # exact count partly obscured by two-column extraction
+introduction_pattern:
+  opening_move: essentiality definition ("Salt ... is essential for regulating a variety of biological, geological and chemical processes")
+  problem_contextualization: quantified production/consumption figures (Mt-scale) establish perturbation size
+  fragmentation_statement: explicit silo claim — "soil salinization is often considered independently of freshwater salinization"
+  gap_or_need_statement: baseline needed first — "a baseline set of natural salt-related processes must be established"
+  review_objective_statement: present via abstract framing of the anthropogenic salt cycle concept
+  scope_definition: term "salt" defined operationally in opening section
+  contribution_statement: coinage/framing move — names the anthropogenic salt cycle as its synthesis object
+  roadmap_pattern: UNKNOWN      # no explicit sentence roadmap captured
+section_architecture:
+  section_order: [Introduction, Salts on Earth (natural baseline), Processes in water, Anthropogenic cycle by sphere, Cascading impacts, Summary and future]
+  dominant_logic: baseline -> perturbation -> consequence chain mapped onto a shared cycle diagram
+  chronological_logic: partial      # twentieth-century rise of anthropogenic fluxes
+  thematic_logic: central           # sphere-organized (litho/pedo/hydro/atmo/technosphere)
+  mechanism_logic: central          # every impact traced to a transport/process pathway
+  scale_logic: partial              # global budgets with regional examples
+  region_logic: none                # regions exemplify, never structure
+  method_logic: partial             # budget estimation illustrated for the USA
+  transition_between_sections:
+    - baseline-to-perturbation hinge sentence introducing the anthropogenic cycle
+    - impact cascade follows naturally once flux vocabulary is set
+argumentation:
+  dominant_argument_pattern: budget argument — quantify inputs, pools, outputs per reservoir, then infer imbalance
+  claim_evidence_relation: numeric fluxes with ranges; uncertainty admitted where values unknown
+  comparison_pattern: natural vs anthropogenic cycle mirrored tables and figure panels
+  contradiction_handling: reconciles independent literature strands by placing them in one flux table
+  boundary_condition_handling: order-of-magnitude reasoning declared when precision unavailable
+  limitation_handling: "While acknowledging uncertainties, these values conservatively suggest ..." style hedges
+  gap_identification_pattern: quantification gap — named missing terms in global budgets
+synthesis:
+  synthesis_unit: mechanism         # source-pathway-receptor flux chains
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - cross-sphere integration via a single cycle table
+    - national case budget (USA) scaled to argue global significance
+    - syndrome framing pooling co-occurring impacts (FSS)
+  consensus_pattern: process existence treated as settled; magnitudes carry ranges
+  controversy_pattern: UNKNOWN
+  reconciliation_pattern: separate literatures joined by showing shared flowpaths
+  evidence_weighting_pattern: measured fluxes > modelled estimates > unknowns explicitly labelled
+paragraph_rhetoric:
+  common_rhetorical_moves: [process definition, pathway narration, quantified example, cross-sphere link]
+  typical_move_sequences:
+    - [source, transport mechanism, receptor effect, cited magnitude]
+  topic_sentence_pattern: sphere or process name opens paragraph
+  synthesis_sentence_pattern: propagation clause ("Excess salt propagates along the anthropogenic salt cycle")
+  contrast_sentence_pattern: natural-vs-anthropogenic parallel sentences
+  limitation_sentence_pattern: uncertainty acknowledgements preceding budget conclusions
+  transition_pattern: sphere-to-sphere progression mirrors cycle arrows
+  paragraph_length_profile: q25=446, median=628, p75=868 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 3, p75: 6}
+  citation_cluster_frequency: high on magnitude claims; definitional prose often uncited
+  single_vs_cluster: clusters at flux numbers; singles at classic concepts
+  seminal_recent_balance: recent5y share 0.171 — older foundational geochemistry retained
+  citation_location: [sentence-final clusters, mid-sentence after specific values]
+  citation_support_type: [measurement source, dataset, government report, prior synthesis]
+  method_citation_pattern: estimation approaches cited where budgets constructed
+  gap_citation_pattern: gaps flagged as "Unknown globally" inside evidence tables
+geography_reasoning:
+  whether_geography_is_central: supporting — geography enters via where fluxes concentrate
+  spatial_scale_usage: global cycle -> national budget -> basin/station examples
+  regional_differentiation_usage: arid-region dust mobilization (Aral Sea) vs humid-region runoff contrasts
+  spatial_heterogeneity_usage: deposition maps show orders-of-magnitude spatial ranges
+  cross_scale_usage: local road-salt application aggregated to national riverine export share
+  place_context_usage: USA serves as worked quantitative example; other regions qualitative
+  human_environment_usage: central — technosphere introduced as first-class cycle compartment
+  flow_network_usage: riverine transport chains used literally
+  spatial_dependence_usage: lateral vs vertical salt transport rates distinguished
+  conditions_triggering_geographic_explanation:
+    - when climate (aridity) controls a flux
+    - when land use determines source strength
+    - when infrastructure mediates transport pathways
+figure_strategy:
+  total_figures: 4 (+Tables 1-2)
+  figure_roles: [dual-cycle schematic (natural panel a vs anthropogenic panel b), production/consumption trend charts, global heterogeneity maps, riverine concentration trends]
+  conceptual_framework: Fig. 1 side-by-side cycles is the paper's spine
+  taxonomy: sphere-to-sphere flux taxonomy encoded in table rows
+  mechanism: arrows with labelled processes in cycle diagrams
+  timeline: Fig. 2 multi-decade production curves
+  map: Fig. 3 salinity-impact distribution maps
+  workflow: none
+  evidence_summary: Tables 1-2 inventory processes, directions, magnitudes, certainty
+  figure_text_relation: tables carry what text would otherwise enumerate; honest "Unknown" cells
+gap_and_agenda:
+  how_gaps_are_derived: missing budget terms identified by attempting a full accounting
+  types_of_gaps: [data (global flux unknowns), integrative (cross-silo assessment), predictive]
+  evidence_required_before_gap_claim: completed national budget demonstrating feasibility
+  future_agenda_structure: call for embedding salt in biogeochemical budgets and management
+  specificity_of_future_questions: moderate — targets named, metrics implied
+quality_features:
+  major_strengths:
+    - naming a new cycle concept organizes dispersed literatures
+    - mirrored baseline/perturbation design makes disturbance legible
+    - evidence tables label unknowns instead of omitting them
+  transferable_patterns:
+    - establish baseline system before documenting perturbation
+    - open with an explicit fragmentation/silo statement to justify scope
+    - use paired tables/panels (natural vs altered) as the core device
+  unique_but_nontransferable_features: cycle-diagram grammar suits biogeochemical topics
+  risks_of_imitation: framework coinage can feel imposed if the silo claim is weakly evidenced
+anti_patterns:
+  weak_patterns_to_avoid:
+    - reviewing impacts without the baseline against which they are anomalies
+source_provenance:
+  source_pages: ["digest OPENING (intro+Salts on Earth)", "BODY_SLICE_1@17% (US budget, Fig.1 art)", "BODY_SLICE_2@33% (Table 1 flux rows)", "BODY_SLICE_3@50% (urban karst, atmosphere)", "BODY_SLICE_4@67% (Table 2 anthropogenic fluxes)", "CLOSING slice (references)"]
+  source_sections: [Introduction, Salts on Earth, Geologic and terrestrial processes, Processes in water, Cascading impacts, Figure/Table captions]
+  confidence: high

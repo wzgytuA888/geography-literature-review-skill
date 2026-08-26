@@ -1,0 +1,134 @@
+document_id: B059
+bibliographic:
+  title: "\"[Groundwater microbiomes: diversity, biogeography, functions; title fragment from index headings]\""
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: UNKNOWN
+  doi: 10.1038/s43017-026-00813-y
+  review_type: thematic
+overall_review_design:
+  review_objective: >-
+    Summarize diversity/composition of groundwater microbiomes, their biogeography and assembly mechanisms,
+    and their functions in biogeochemical cycling and water health, emphasizing microbial solutions.
+  review_scope: prokaryotes, microeukaryotes, viruses; planktonic focus; spatiotemporal biogeographic patterns; assembly processes; functions and One Health.
+  review_mode: organism-group -> space -> function narrative synthesis with methods box.
+  article_architecture:
+    - Abstract
+    - Key points
+    - Introduction
+    - Remarkable diversity and intricate interactions (Prokaryotes/microeukaryotes; symbionts; viruses)
+    - Microbial biogeography
+    - Community assembly under environmental stress
+    - Microbial effects on key [functions/water health]
+    - Summary and future
+    - Box 1
+  organizing_principle: thematic chain — who lives there -> how distributed/assembled -> what they do
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: resource-stakes quantification (drinking water >50% of population; irrigation 42%) plus subsurface biomass share (up to 30%).
+  problem_contextualization: distinctive conditions (darkness, oligotrophy, restricted dispersal) explain why groundwater microbiomes differ from surface.
+  fragmentation_statement: not used; field framed as newly enabled by omics technology.
+  gap_or_need_statement: sediment-associated data scarcity declared as scope limit; understanding needed for management.
+  review_objective_statement: "\"In this Review, we focus predominantly on planktonic microbial communities..., owing to limited data\"."
+  scope_definition: scope restriction tied explicitly to evidence availability — honest data-driven delimitation.
+  contribution_statement: synthesis + applied emphasis ("microbial-based solutions for achieving sustainable groundwater health").
+  roadmap_pattern: present, four-step ("We first describe... We further summarize... In addition... Finally...").
+section_architecture:
+  section_order: [Abstract+Key points, Introduction, Diversity-interactions, Biogeography, Assembly-mechanisms, Functions-health, Summary-future]
+  dominant_logic: compositional -> spatial -> functional progression
+  chronological_logic: partial
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: partial
+  region_logic: partial
+  method_logic: partial
+  transition_between_sections:
+    - "\"The following sections synthesize...\" forward announcements"
+    - methods box (morphology-to-omics history) underwrites the diversity section
+argumentation:
+  dominant_argument_pattern: compositional inventory to function - catalogue organismal groups, then assign ecological roles.
+  claim_evidence_relation: interaction claims require convergent independent methods (imaging, genomics, spacer evidence).
+  comparison_pattern: surface-versus-groundwater ecosystem contrasts; confined-versus-unconfined aquifer assembly.
+  contradiction_handling: unresolved items flagged as undetermined rather than forced into agreement.
+  boundary_condition_handling: generalizations conditioned on aquifer confinement and hydrogeochemical setting.
+  limitation_handling: data-absence hedges tied directly to agenda items.
+  gap_identification_pattern: non-knowledge verbs mark gaps; scope-excluded domains flagged for future work.
+synthesis:
+  synthesis_unit: taxonomic group or ecological process
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - global-metagenome aggregations cited for composition shares
+    - evidence triangulation across CRISPR, FISH and metagenomic signals for one symbiosis claim
+    - comparative surface-vs-groundwater contrasts as synthesis device
+  consensus_pattern: abundance/composition rankings stated with cluster citations.
+  controversy_pattern: UNKNOWN (limited visible contestation; unresolved items flagged as undetermined).
+  reconciliation_pattern: resolves conflicting assembly signals by distinguishing confined vs unconfined aquifers.
+  evidence_weighting_pattern: multi-method convergence weighted above single-assay results.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - rename-and-update taxonomy notes (formerly X)
+    - evidence-combination argumentation (genomic + microscopic + CRISPR)
+    - surface-vs-subsurface comparison sentences
+  typical_move_sequences:
+    - [group characterization w/ abundances, interaction evidence, functional implication]
+  topic_sentence_pattern: group-led ("Bacteria are the most abundant and diverse cellular microorganisms in groundwater").
+  synthesis_sentence_pattern: multi-evidence accumulation ("Fluorescence in situ hybridization experiments have confirmed..., and genomic evidence suggests...").
+  contrast_sentence_pattern: "In contrast to many surface microbiomes that depend on abundant organic inputs,..."
+  limitation_sentence_pattern: data-absence hedges ("have not been determined", "remain poorly understood").
+  transition_pattern: forward announcements; historical anchor opening a section.
+  paragraph_length_profile: q25=547, median=814, p75=1090 chars — longest paragraphs in batch.
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 5, p75: 8}
+  citation_cluster_frequency: highest in batch — descriptive-diversity claims demand dense clusters (up to double-digit ref strings).
+  single_vs_cluster: clusters dominate; singles for landmark discoveries (van Leeuwenhoek anchor).
+  seminal_recent_balance: recent5y share 0.393; historical anchor single-cited.
+  citation_location: [dense sentence-final strings]
+  citation_support_type: [survey/metagenome study, single-site case, method paper]
+  method_citation_pattern: Box 1 narrates method evolution with citations per technology generation.
+  gap_citation_pattern: gaps marked by explicit non-knowledge verbs rather than citation absence.
+geography_reasoning:
+  whether_geography_is_central: yes — biogeography is a headline section.
+  spatial_scale_usage: latitudinal gradients, shallow-vs-deep, confined-vs-unconfined aquifer scales.
+  regional_differentiation_usage: karst, fractured shale, alluvial settings differentiated by hydrogeology.
+  spatial_heterogeneity_usage: hydrogeochemical heterogeneity invoked to explain community divergence.
+  cross_scale_usage: pore-scale interactions connected to aquifer-scale connectivity and global cycling.
+  place_context_usage: sites named as contamination/remediation cases.
+  human_environment_usage: strong — irrigation, septic systems, industrial inputs as microbiome shapers; One Health frame.
+  flow_network_usage: hydrological exchange (recharge, hyporheic, submarine) modeled as dispersal network linking subsurface and surface.
+  spatial_dependence_usage: dispersal limitation and distance-decay discussed as structuring forces.
+  conditions_triggering_geographic_explanation:
+    - when dispersal pathways control community similarity
+    - when subsurface architecture isolates habitats
+    - when contamination sources are land-use specific
+figure_strategy:
+  total_figures: 6
+  figure_roles: [ecosystem-role concept schematic, diversity/interaction panels, biogeography maps/gradients, stress-assembly schematic, biogeochemical pathway diagram, health-risk panel]
+  conceptual_framework: Fig. 1 essential roles of groundwater microbiomes.
+  taxonomy: phylogenetic grouping structure throughout.
+  mechanism: Fig. 5 microbial-mediated cycling pathways.
+  timeline: Box 1 methodological eras from microscopy to multi-omics.
+  map: Fig. 3 biogeographic patterns.
+  workflow: none
+  evidence_summary: Fig. 6 compiles pathogen/resistome risks.
+  figure_text_relation: adapted-panel attributions given; panels numbered into text arguments.
+gap_and_agenda:
+  how_gaps_are_derived: non-knowledge statements converted into agenda; data-limited domains excluded from scope then flagged.
+  types_of_gaps: [data gap (sediment communities), mechanism gap (virus-host dynamics), application gap (bioremediation engineering)]
+  evidence_required_before_gap_claim: demonstrated multi-method effort that still leaves the question open.
+  future_agenda_structure: solutions-oriented close tied to One Health and engineered interventions.
+  specificity_of_future_questions: medium — directions over protocols.
+quality_features:
+  major_strengths: [honest scope-from-data-limitation, tri-method evidence triangulation, longest-roadmap clarity]
+  transferable_patterns:
+    - tie every scope exclusion to an explicit data-shortage reason
+    - require convergent evidence types before asserting an interaction
+    - use surface-environment contrasts to define a hidden realm's distinctness
+  unique_but_nontransferable_features: [taxonomy-rename apparatus and omics vocabulary]
+  risks_of_imitation: very long paragraphs risk burying topic sentences.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - listing taxonomic inventories without an ecological-process payoff
+source_provenance:
+  source_pages: [UNKNOWN]
+  source_sections: [Introduction, Key points, Remarkable diversity and intricate interactions, Microbial biogeography, functions sections, Box 1, figure captions]
+  confidence: medium

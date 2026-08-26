@@ -1,0 +1,145 @@
+document_id: B016
+bibliographic:
+  title: "UNKNOWN (metadata title null; running head 'Vegetation fires in the Anthropocene')"
+  authors: ["UNKNOWN (G.R. van der Werf and M. Flannigan visible as co-authors 4-5)"]
+  journal: Nature Reviews Earth & Environment
+  year: 2020
+  doi: UNKNOWN
+  review_type: narrative
+overall_review_design:
+  review_objective: >-
+    Describe how human-environment interaction shapes fire activity through a
+    pyrogeography lens; synthesize trends, projections, effects, adaptation.
+  review_scope: global to biome/regional fire regimes, Earth-system effects, future projections, adaptation and research priorities
+  review_mode: state-trends-futures-responses synthesis
+  article_architecture:
+    - Introduction (unheaded, disaster salience + roadmap)
+    - Contemporary fire regimes (Global trends / Regional trends run-in subsections)
+    - Future fire regimes
+    - Earth-system effects of changing fire regimes
+    - Adaptation and management
+    - Research priorities/outlook
+    - Table 1 (future-change study summary); Key points box
+  organizing_principle: "mixed(scale ladder global->regional/biome within thematic blocks)"
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: disaster-salience framing with named recent events (Chile 2017, Portugal 2018, California 2018, Australia 2019-2020)
+  problem_contextualization: monetized losses (AUD $100 billion Black Summer) establish stakes
+  fragmentation_statement: >-
+    Trend interpretation contested because records are short; "it is unclear if these disasters are evidence of increasing global fire activity".
+  gap_or_need_statement: policy need ("to inform adaptation and mitigation policies") plus data-completeness deficit
+  review_objective_statement: '"In this Review, we describe how human-environmental interaction shapes fire activity".'
+  scope_definition: explicit analytic lens declared (pyrogeography); dual climate-plus-land-modification drivers
+  contribution_statement: roadmap promises trends, projections, effects, adaptation, research priorities
+  roadmap_pattern: present
+section_architecture:
+  section_order: [Intro, Contemporary regimes (global then regional), Future regimes, Effects, Adaptation, Priorities]
+  dominant_logic: scale-ladder description then consequence then response
+  chronological_logic: partial (deep-time fire history context)
+  thematic_logic: central
+  mechanism_logic: partial
+  scale_logic: central
+  region_logic: central
+  method_logic: none
+  transition_between_sections:
+    - '"Regional analyses are essential ..." pivot from global to regional evidence'
+    - '"These contrasting trends highlight why ..." synthesis pivots'
+argumentation:
+  dominant_argument_pattern: gradient/framework claim -> regional instantiation -> metric critique where simple trends mislead
+  claim_evidence_relation: unimodal productivity-fire relationship used as integrative frame for regional contrasts
+  comparison_pattern: biome-by-biome return-interval comparison (savannah vs rainforest vs boreal)
+  contradiction_handling: >-
+    Apparent contradictions resolved by scale/metric critique; sole focus on area burned shown inadequate for risk trends.
+  boundary_condition_handling: fuel-limitation condition on climatically fire-prone arid regions
+  limitation_handling: record limitations itemized (short national records, proxy scaling failures, satellite era too brief)
+  gap_identification_pattern: gaps derived from data infrastructure deficits plus undocumented extreme phenomena
+synthesis:
+  synthesis_unit: theme (fire-regime component) and geographic domain
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - evidence-summary table of selected studies by domain with direction verdicts (Table 1)
+    - consensus statement device; "Overall, there is general agreement amongst the studies"
+    - emissions-partition quantification synthesizing many source estimates
+  consensus_pattern: agreement asserted after tabulating heterogeneous studies
+  controversy_pattern: trend disputes traced to record length and metric choice rather than duelling citations
+  reconciliation_pattern: contrasting regional trajectories reconciled by differing human-fire management histories
+  evidence_weighting_pattern: >-
+    Studies weighted by record quality/density; well-studied regions flagged as such ("owing to their comparatively high density of researchers").
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - run-in mini-headings opening paragraph families ("Global trends in fire activity.")
+    - quantified regime parameters per biome in one sentence
+    - glossary-style definitions embedded at first use
+  typical_move_sequences:
+    - [framework sentence with citation cluster, regional contrast pair, exception clause, implication]
+  topic_sentence_pattern: subsection-label echo sentences
+  synthesis_sentence_pattern: '"These contrasting trends highlight why ..." lesson-extraction sentences'
+  contrast_sentence_pattern: '"In contrast, in rainforest environments ..." biome flips'
+  limitation_sentence_pattern: '"These proxies, unfortunately, do not directly scale to ..." candid data caveats'
+  transition_pattern: scale-step transitions (global -> regional -> future)
+  paragraph_length_profile: medium (~498-char median)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 2}   # digest blocks include figure/reference text
+  citation_cluster_frequency: high
+  single_vs_cluster: clusters for regime claims; singles for specific disaster economics
+  seminal_recent_balance: palaeo classics beside satellite-era datasets
+  citation_location: [sentence-final clusters]
+  citation_support_type: [regime parameter, projection result, event statistic]
+  method_citation_pattern: monitoring datasets and indices cited at operational descriptions
+  gap_citation_pattern: data-deficit gaps supported by commentary citations flagging the shortfall
+geography_reasoning:
+  whether_geography_is_central: yes (explicit pyrogeographic lens)
+  spatial_scale_usage: global burned-area totals down to single fire events and km-scale exposure zones
+  regional_differentiation_usage: biome-level differentiation is the primary explanatory axis
+  spatial_heterogeneity_usage: mid-to-high latitude increases vs subtropical declines projected as spatially heterogeneous
+  cross_scale_usage: interannual wet-period fuel pulses linked to centennial regime states
+  place_context_usage: named fires/regions carry quantified cases (Canada, Chile, Amazon)
+  human_environment_usage: Indigenous burning, suppression, land-use change as first-order regime controls
+  flow_network_usage: none
+  spatial_dependence_usage: fire-productivity-climate triad defines where fire occurs
+  conditions_triggering_geographic_explanation:
+    - "when a single global metric hides divergent regional trajectories"
+    - "when fuel availability overrides climatic fire-proneness"
+figure_strategy:
+  total_figures: 6
+  figure_roles:
+    - Fig1 Earth-system landscape schematic of interacting factors
+    - Fig2 global pattern maps (burned fraction, vegetation)
+    - Fig3 trend maps across metrics and regions
+    - Fig4 climate-fire-vegetation feedback diagram
+    - Fig5 regime-conversion state shift illustration
+    - Fig6 adaptation strategies panel across settlement/environment gradients
+  conceptual_framework: yes (Fig 1)
+  taxonomy: implicit biome typology
+  mechanism: yes (feedback diagram)
+  timeline: no
+  map: yes (Figs 2-3)
+  workflow: no
+  evidence_summary: Table 1 study matrix
+  figure_text_relation: figures carry the spatial evidence while text carries mechanisms
+gap_and_agenda:
+  how_gaps_are_derived: documentation deficits (extreme behaviour anecdotal) and coarse satellite metrics
+  types_of_gaps: [data infrastructure, severity metrics beyond area burned, comparative management effectiveness]
+  evidence_required_before_gap_claim: named current-data insufficiencies tied to budget-relevant consequences
+  future_agenda_structure: prioritized needs list ending in next-generation observing capability
+  specificity_of_future_questions: specific instruments/products named (Global Fire Atlas, finer-grain mapping)
+quality_features:
+  major_strengths:
+    - Key-points box
+    - evidence-summary table spanning domains with directional verdicts
+    - honest treatment of what records cannot support
+  transferable_patterns:
+    - global-then-regional scale ladder with justification for regional necessity
+    - metric-critique synthesis guarding against single-indicator conclusions
+    - adaptation figure organized along an environment/settlement gradient
+  unique_but_nontransferable_features:
+    - deep evolutionary/fire-history framing
+  risks_of_imitation:
+    - gradient frameworks need regional evidence density that most fields lack
+anti_patterns:
+  weak_patterns_to_avoid:
+    - inferring global trend claims from short or unrepresentative national records
+source_provenance:
+  source_pages: [1-2 (OPENING), SLICE_1@17% (journal p.502), SLICE_2@33%, SLICE_3@50%, SLICE_4@67% (journal p.511), FIGURE_CAPTIONS]
+  source_sections: [Introduction, Contemporary fire regimes, Global/Regional trends, Future fire regimes, Adaptation, research priorities, Table 1, Key points]
+  confidence: high

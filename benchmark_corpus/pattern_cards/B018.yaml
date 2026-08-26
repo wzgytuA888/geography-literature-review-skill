@@ -1,0 +1,142 @@
+document_id: B018
+bibliographic:
+  title: "UNKNOWN (metadata title null; review of autogenic dynamics in erosional landscapes)"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2020
+  doi: UNKNOWN
+  review_type: conceptual   # concept-driven (internal vs external dynamics) with mechanistic synthesis
+overall_review_design:
+  review_objective: >-
+    Review mechanisms of internal (autogenic) feedbacks in erosional landscapes and
+    their implications for interpreting topography and the geologic record.
+  review_scope: bedrock river networks; terraces, knickpoints, drainage-basin reorganization; preservation potential
+  review_mode: interpretive-problem framing with per-phenomenon template sections
+  article_architecture:
+    - Introduction (unheaded, external-vs-internal ambiguity)
+    - River terrace generation (external baseline then Autogenic terrace formation)
+    - Knickpoint generation (incl. Distinguishing autogenic vs externally formed)
+    - Drainage-basin reorganization / stream capture
+    - Preservation in the depositional record
+    - Summary and future perspectives
+    - Box 1 (chi analysis method primer); Key points box
+  organizing_principle: mechanistic, phenomenon-by-phenomenon under one dichotomy (autogenic vs forced)
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: interpretive-puzzle framing (does this landform record forcing or internal dynamics?)
+  problem_contextualization: decades of external-forcing studies set the default interpretation
+  fragmentation_statement: >-
+    Field bias quantified; "the majority of studies do not explicitly consider autogenic dynamics".
+  gap_or_need_statement: mechanisms and scales of autogenic behaviour uncharacterized in erosional landscapes
+  review_objective_statement: '"In this Review, we discuss recent progress ... understanding the mechanisms that contribute to internal feedbacks".'
+  scope_definition: explicit narrowing to river-network processes; hillslope coupling acknowledged then set aside
+  contribution_statement: per-topic template promised; "For each topic, we review the mechanisms ... and the spatial and temporal scales"
+  roadmap_pattern: present, ending in advocacy preview ("Finally, we advocate for the development of new numerical and physical models")
+section_architecture:
+  section_order: [Intro, Terraces, Knickpoints, Basin reorganization, Preservation, Summary/futures]
+  dominant_logic: repeated internal template (taxonomy -> forced baseline -> autogenic mechanisms -> diagnostics -> scale/preservation)
+  chronological_logic: none
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: central
+  region_logic: partial
+  method_logic: partial (Box 1 primer)
+  transition_between_sections:
+    - '"Aside from river terraces, there are several other landforms ..." hand-off openers'
+argumentation:
+  dominant_argument_pattern: diagnostic-criteria argument; spatial signatures distinguish process origins
+  claim_evidence_relation: mechanism claim -> numerical-experiment result -> field exemplar panel
+  comparison_pattern: paired contrast between externally forced and autogenic signatures at fixed morphology
+  contradiction_handling: conventional attributions revisited; "Emerging work, however, shows that autogenic terraces can form via multiple mechanisms"
+  boundary_condition_handling: dimensionless thresholds (erosion-rate ratios) state when behaviour occurs
+  limitation_handling: detectability limits derived systematically from signal magnitude-duration trade-offs
+  gap_identification_pattern: gap = inability to attribute form to cause; agenda = controlled experiments yielding testable hypotheses
+synthesis:
+  synthesis_unit: mechanism within phenomenon
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - taxonomy-first organization (strath vs fill; paired vs unpaired) before processes
+    - numerical + field + experimental evidence triangulated per mechanism
+    - magnitude-duration-detectability reasoning unifying preservation discussion
+  consensus_pattern: long-standing conceptual models credited, then updated by emerging work
+  controversy_pattern: interpretive ambiguity itself is the subject; competing attributions given diagnostic tests
+  reconciliation_pattern: spatial-correlation criteria reconcile conflicting terrace/knickpoint origin stories
+  evidence_weighting_pattern: numerical experiments weighted as hypothesis generators; field cases as existence proofs
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - run-in mini-headings ("Autogenic terrace formation.")
+    - definition boxes for technical states (geometric equilibrium)
+    - worked field example embedded beside schematic panels
+  typical_move_sequences:
+    - [definition/taxonomy, standard interpretation, counter-evidence, revised diagnostic]
+  topic_sentence_pattern: process-named declaratives matching headings
+  synthesis_sentence_pattern: '"Distinguishing X from Y remains a major challenge" framing restatements'
+  contrast_sentence_pattern: '"By contrast," forced-vs-autogenic signature flips'
+  limitation_sentence_pattern: conditional detectability statements ("might not leave traceable stratigraphic signatures")
+  transition_pattern: landform-to-landform enumeration transitions
+  paragraph_length_profile: medium-long (~519-char median)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 1}   # digest blocks include figure/reference text
+  citation_cluster_frequency: moderate-high in prose
+  single_vs_cluster: clusters for established claims; singles for landmark field studies
+  seminal_recent_balance: classic conceptual models beside 2010s numerical advances
+  citation_location: [sentence-final clusters]
+  citation_support_type: [mechanism support, field instance, model result]
+  method_citation_pattern: analytic methods isolated in Box 1 primer with own citations
+  gap_citation_pattern: gaps framed as absent systematic characterization, lightly cited
+geography_reasoning:
+  whether_geography_is_central: yes
+  spatial_scale_usage: metre-scale offsets to Myr-timescale knickpoints; explicit space-time pairing throughout
+  regional_differentiation_usage: catchment-vs-tributary spatial patterns used diagnostically rather than regionally narrated
+  spatial_heterogeneity_usage: along-stream and between-catchment variability is evidentiary signal, not noise
+  cross_scale_usage: process scales mapped to preservation likelihood in archives
+  place_context_usage: named field anchors (Smith River Falls, Oregon) attached to schematic panels
+  human_environment_usage: minimal (dam failure noted as perturbation source)
+  flow_network_usage: river network topology and divide migration are core objects
+  spatial_dependence_usage: upstream-downstream propagation of signals (knickpoint retreat) is explanatory spine
+  conditions_triggering_geographic_explanation:
+    - "when attributing a landform requires its spatial distribution across neighbouring catchments"
+    - "when signal preservation depends on where sediment exits the network"
+figure_strategy:
+  total_figures: 6
+  figure_roles:
+    - Fig1 conceptual frame (internal feedbacks vs external forcing)
+    - Fig2 mechanism schematics with time-stepped panels plus field photo example
+    - Fig3 landslide-driven knickpoint schematic plus real case
+    - Fig4 numerical-model evolution series
+    - Fig5 stream-capture cascade case study
+    - Fig6 field example of basin reorganization
+  conceptual_framework: yes (Fig 1)
+  taxonomy: yes (terrace typology inside Fig 2/text)
+  mechanism: yes (Figs 2-3)
+  timeline: no
+  map: partial (plan-view panels)
+  workflow: no
+  evidence_summary: no
+  figure_text_relation: schematics carry hypothetical time sequences; photos anchor them in reality
+gap_and_agenda:
+  how_gaps_are_derived: attribution ambiguity plus missing controlled tests
+  types_of_gaps: [methodological (diagnostic criteria), integrative (model-field linkage), archival (preservation rules)]
+  evidence_required_before_gap_claim: demonstrated misattribution risk quantified via model experiments
+  future_agenda_structure: advocacy for numerical/physical experiments designed to yield field-testable hypotheses
+  specificity_of_future_questions: specific experimental programme proposed rather than question list
+quality_features:
+  major_strengths:
+    - single dichotomy organizes every section coherently
+    - repeated per-topic template aids navigation
+    - margin glossary and method box support accessibility
+  transferable_patterns:
+    - diagnostic-signature reasoning for attribution disputes
+    - template-section architecture for multi-phenomenon reviews
+    - schematic-plus-photo figure pairing
+  unique_but_nontransferable_features:
+    - chi analysis toolkit exposition specific to geomorphology
+  risks_of_imitation:
+    - dichotomy framing can flatten mixed-causation cases if applied rigidly
+anti_patterns:
+  weak_patterns_to_avoid:
+    - defaulting to external-forcing explanations without testing autogenic alternatives
+source_provenance:
+  source_pages: [1-2 (OPENING), SLICE_1@17% (journal pp.663-664), SLICE_2@33%, SLICE_3@50%, SLICE_4@67% (journal p.671), FIGURE_CAPTIONS]
+  source_sections: [Introduction, River terrace generation, Knickpoint generation, Distinguishing subsection, Preservation discussion, Summary and future perspectives, Box 1, Key points]
+  confidence: high

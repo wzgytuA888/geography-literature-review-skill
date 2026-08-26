@@ -1,0 +1,107 @@
+document_id: B044
+bibliographic:
+  title: Concepts and evolution of urban hydrology
+  authors: [Tim D. Fletcher, Matthew J. Burns, Kathryn L. Russell, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2024
+  doi: 10.1038/s43017-024-00599-x
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: Show how urban stormwater concerns, expectations, technologies and governance must transform under climate change
+  review_scope: urban stormwater management worldwide — hydrology fundamentals through governance and business models
+  review_mode: thematic narrative with an evolution/transition arc across social and technical dimensions
+  article_architecture: [Abstract, Introduction, Urban hydrology, Evolving concerns, Changing expectations, Changing technologies, Governance and business models, Summary and future perspectives]
+  organizing_principle: mixed — thematic dimensions (concerns, expectations, technologies, governance) each carrying implicit chronological change
+  number_of_major_sections: 7
+introduction_pattern:
+  opening_move: dual-pressure framing (urbanisation plus climate change exacerbating flood risk)
+  problem_contextualization: traditional single-purpose drainage transfers risk downstream and degrades streams
+  fragmentation_statement: management siloed by objective (flood-only) rather than literature fragmentation per se
+  gap_or_need_statement: "Transforming stormwater systems is thus urgently needed" — transformation need as gap
+  review_objective_statement: delivered via 'Finally, we consider ...' forward pointer closing the introduction
+  scope_definition: definitional primer section ('it is first important to provide context on what urban hydrology is')
+  contribution_statement: integrated socio-technical-governance synthesis beyond single-objective engineering reviews
+  roadmap_pattern: present but compact (forward-pointing final sentences rather than numbered itinerary)
+section_architecture:
+  section_order: [Introduction, Urban hydrology, Evolving concerns, Changing expectations, Changing technologies, Governance and business models, Summary and future perspectives]
+  dominant_logic: pressure -> expectation -> response sequence mirroring a policy-change narrative
+  chronological_logic: partial (since around 2000; since the 1990s markers inside themes)
+  thematic_logic: central
+  mechanism_logic: partial (run-off generation and treatment mechanisms)
+  scale_logic: partial (parcel-city-catchment chain)
+  region_logic: none
+  method_logic: partial (sensor/forecast technology assessment)
+  transition_between_sections: ["each 'changing' section opens by naming its dimension", "governance section positioned as enabler of technical options"]
+argumentation:
+  dominant_argument_pattern: established problem -> shifting demand -> emerging capability -> implementation condition
+  claim_evidence_relation: mechanism claims supported by coefficient comparisons; practice claims by city examples
+  comparison_pattern: pre-urban vs urban water balance; separate vs combined sewers; traditional vs nature-based solutions
+  contradiction_handling: trade-offs admitted (treatment capacity exceeded; maladaptive outcomes possible)
+  boundary_condition_handling: performance of solutions conditioned on social-ecological-technological context
+  limitation_handling: cost and retrofit difficulty stated as hard constraints on proposals
+  gap_identification_pattern: implementation-knowledge gap — effectiveness evidence lags deployment
+synthesis:
+  synthesis_unit: theme
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern: ["benefit stacking across ecosystem-service types", "technology-readiness synthesis across sensor families", "policy-instrument inventory tied to outcomes"]
+  consensus_pattern: direction-of-travel framing ('reflecting a broader trend towards nature-based solutions') implies field convergence
+  controversy_pattern: expectations conflicts staged as changing perceptions rather than author disputes
+  reconciliation_pattern: old-vs-new approaches reconciled by positioning both points on one evolution trajectory
+  evidence_weighting_pattern: physical constants (run-off coefficients) anchor argument; social claims lean on programme evaluations
+paragraph_rhetoric:
+  common_rhetorical_moves: ["definition-before-evaluation", "quantified contrast", "example-city instantiation", "conditionality flagging"]
+  typical_move_sequences: [["context necessity sentence", "definition", "mechanism with numbers", "management implication"]]
+  topic_sentence_pattern: dimension-naming openers ("Climate change", "Emerging pollutants" as pivots into mechanism)
+  synthesis_sentence_pattern: "'As such,' benefit-consolidation sentences linking measures to services"
+  contrast_sentence_pattern: numeric juxtaposition (">90% run-off coefficient" vs "in the order of 10%")
+  limitation_sentence_pattern: "'upgrading existing sewer networks ... is difficult and expensive' constraint statement"
+  transition_pattern: gerund/noun headers signal parallel treatment; sections hand off via shared vocabulary of 'transformation'
+  paragraph_length_profile: q25=476, median=619, p75=900 chars
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 2, p75: 4}
+  citation_cluster_frequency: moderate; clusters on impact and pollutant claims
+  single_vs_cluster: singles for named-city cases; clusters for process claims
+  seminal_recent_balance: recent5y share 0.357; blends classic urban-hydrology references with smart-city current work
+  citation_location: [sentence-final, mid-sentence after place examples]
+  citation_support_type: [monitoring studies, engineering assessments, policy/governance literature]
+  method_citation_pattern: sensor and forecasting techniques cited with performance specifics
+  gap_citation_pattern: cites treatment-performance studies to specify what future experiments must test
+geography_reasoning:
+  whether_geography_is_central: partially — the city as modified landscape carries spatial reasoning
+  spatial_scale_usage: parcel-drainage-catchment-receiving-water cascade explicit in Fig 1 logic
+  regional_differentiation_usage: light; cities used as instances rather than compared regions
+  spatial_heterogeneity_usage: 'urban karst' heterogeneity presented as the key structural complication
+  cross_scale_usage: local imperviousness thresholds scaled to stream-health outcomes
+  place_context_usage: Thames overflow counts, Delaware baseflow declines — places quantify stakes
+  human_environment_usage: fully coupled; governance section makes institutions part of the hydrology
+  flow_network_usage: pipe-network and drainage-network reasoning throughout
+  spatial_dependence_usage: downstream transfer of flood and pollution risk as organising dependency
+  conditions_triggering_geographic_explanation: ["when explaining why impacts propagate beyond the parcel", "when justifying dense monitoring networks for heterogeneous buried infrastructure"]
+figure_strategy:
+  total_figures: 6
+  figure_roles: [pre-urban vs urban water-balance schematic, climate-driven flood-risk projection chart, ecosystem-services catalogue diagram, resource-reuse volume figure, control-measure catalogue, smart rainwater-grid concept]
+  conceptual_framework: Fig 1 altered-water-cycle schematic establishes the problem space
+  taxonomy: yes (Fig 3 and Fig 5 catalogue solution and service types)
+  mechanism: yes (flow-path alterations)
+  timeline: none
+  map: none
+  workflow: partial (Fig 6 real-time-control loop reads as operational workflow)
+  evidence_summary: Fig 2 quantifies rainfall-intensity increase per degree of warming across cities
+  figure_text_relation: figures alternate between problem schematic and solution catalogue, tracking section order
+gap_and_agenda:
+  how_gaps_are_derived: from deployment outpacing validation — named missing experiment classes
+  types_of_gaps: [treatment-effectiveness gap, sensor metrology-useability gap, institutional-adoption gap]
+  evidence_required_before_gap_claim: specific untested measure-pollutant combinations identified
+  future_agenda_structure: paired developer-user research responsibilities rather than single-discipline calls
+  specificity_of_future_questions: moderately specific (which measures remove which micropollutants; crossover metrology-prototyping needs)
+quality_features:
+  major_strengths: [socio-technical breadth held together by one transformation arc, definition-first discipline, constraint honesty about costs and retrofits]
+  transferable_patterns: [primer subsection before evaluation, pressure-expectation-response section arc, catalogue figures matching option inventories, paired-stakeholder agenda phrasing]
+  unique_but_nontransferable_features: [stormwater-specific service catalogues; combined-sewer policy detail]
+  risks_of_imitation: ['evolving/changing' header scheme can feel repetitive without genuinely distinct content per dimension]
+anti_patterns:
+  weak_patterns_to_avoid: [advocating technologies without stating adoption constraints, mixing concern themes so each section restates the same urgency]
+source_provenance:
+  source_pages: ["pp. 789-801 (Vol 5, Nov 2024 running headers)", "pp. 789-790 (opening/intro slice)", "~p. 792 (BODY_SLICE_1@17%)", "pp. 793-794 (BODY_SLICE_2@33%)", "~p. 795 (BODY_SLICE_3@50%)", "~p. 797 (BODY_SLICE_4@67%)", "closing/refs slice"]
+  source_sections: [Introduction, Urban hydrology, Evolving concerns, Changing expectations/technologies passages, Fig 1-6 captions, reference sample]
+  confidence: medium

@@ -1,0 +1,107 @@
+document_id: B046
+bibliographic:
+  title: Heat stress and the labour force
+  authors: [Shouro Dasgupta, Elizabeth J. Z. Robinson, Soheil Shayegh, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2024
+  doi: 10.1038/s43017-024-00606-1
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: Outline how heat stress affects labour supply, productivity and capacity, downstream economies, worker health, and adaptation options
+  review_scope: empirical and projected heat-labour relationships across sectors, regions, sexes and warming levels
+  review_mode: expert narrative synthesis applying a parallel template to each labour outcome variable
+  article_architecture: [Abstract, Introduction, Labour supply, Labour productivity, Labour capacity, Macroeconomic impacts, Implications for occupational health and safety, Adaptation opportunities, Summary and future perspectives, Table 1]
+  organizing_principle: outcome-variable thematic chain (supply -> productivity -> capacity -> macro -> health -> adaptation)
+  number_of_major_sections: 8
+introduction_pattern:
+  opening_move: physiological definition of heat stress first, then warming projections as stakes
+  problem_contextualization: documented GDP losses and worker deaths quantify current harm
+  fragmentation_statement: metric inconsistency — labour capacity "used inconsistently ... and/or interchangeably" with productivity
+  gap_or_need_statement: "very little information on the effectiveness of such measures" (adaptation efficacy unknown); need beyond short-term shocks
+  review_objective_statement: "In this Review, we outline how heat stress affects the labour force"
+  scope_definition: implicit — defined by the three outcome variables named in roadmap
+  contribution_statement: cross-disciplinary integration (economics + occupational health) with spatially explicit comparison
+  roadmap_pattern: present and fully serialised ("We begin by examining ... We subsequently focus on ... Finally, we explore")
+section_architecture:
+  section_order: [Introduction, Labour supply, Labour productivity, Labour capacity, Macroeconomic impacts, Occupational health and safety, Adaptation opportunities, Summary and future perspectives]
+  dominant_logic: parallel template per outcome — relationship -> observed -> projected
+  chronological_logic: partial (observed vs projected splits inside each section)
+  thematic_logic: central
+  mechanism_logic: central (physiological dose-response mechanisms)
+  scale_logic: partial (individual-firm-economy ladder in macro section)
+  region_logic: partial (continent-level threshold comparisons recur)
+  method_logic: partial (empirical vs standards approaches contrasted for capacity)
+  transition_between_sections: ["each outcome section opens by defining its variable", "adaptation section answers accumulated harms"]
+argumentation:
+  dominant_argument_pattern: nonlinearity claim -> threshold numbers by region/sector -> projected amplification
+  claim_evidence_relation: effect sizes always bound to place, sector, period and source
+  comparison_pattern: high-exposure vs low-exposure sectors; continent-by-continent thresholds; male vs female workers
+  contradiction_handling: methodological heterogeneity named as obstacle to comparison rather than ignored
+  boundary_condition_handling: projection caveats enumerated (fixed sector distribution, no adaptation control)
+  limitation_handling: "'Any projections, however, are limited in that they assume' explicit caveat runs"
+  gap_identification_pattern: measurement-consistency gap plus adaptation-effectiveness gap
+synthesis:
+  synthesis_unit: proposition (dose-response relationship)
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern: ["threshold table/figure pooling studies by continent", "sign-summary figure aggregating observed vs projected directions", "maladaptation inventory across candidate measures"]
+  consensus_pattern: 'nonlinear relationship' asserted once then instantiated repeatedly across settings
+  controversy_pattern: divergent estimates attributed to differing methodologies with both values reported
+  reconciliation_pattern: terminology inconsistencies diagnosed and defined before use continues
+  evidence_weighting_pattern: peer-reviewed econometric estimates preferred; model projections labelled with scenario dependence
+paragraph_rhetoric:
+  common_rhetorical_moves: ["definition", "quantified regional instantiation", "caveat run", "sex/sector disaggregation"]
+  typical_move_sequences: [["define variable", "nonlinear relationship with citations", "regional threshold numbers", "projection caveat"]]
+  topic_sentence_pattern: variable-definition or relationship-shape opener ("The relationship between heat stress and labour supply is nonlinear")
+  synthesis_sentence_pattern: "'Thus, warmer countries tend to exhibit higher thresholds, possibly owing to worker adaptation' inference sentences"
+  contrast_sentence_pattern: "high-exposure vs low-exposure numeric contrasts within one sentence pair"
+  limitation_sentence_pattern: "'However,' + assumption-based limitation clause at paragraph end"
+  transition_pattern: identical subsection headers repeat per outcome creating rhythm; readers always know position
+  paragraph_length_profile: q25=439, median=570, p75=852 chars
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 4, p75: 8}
+  citation_cluster_frequency: highest in batch — dense clusters on every quantified claim
+  single_vs_cluster: single citations pinned to individual statistics; clusters for shared conclusions
+  seminal_recent_balance: recent5y share 0.416; classic physiology (Wyndham 1969) beside current econometrics
+  citation_location: [sentence-final clusters, immediately after each statistic]
+  citation_support_type: [econometric studies, physiological experiments, ILO/WHO reports]
+  method_citation_pattern: standards bodies (NIOSH, ISO) cited as method anchors alongside empirical approaches
+  gap_citation_pattern: cites intervention literature while declaring effectiveness evidence absent
+geography_reasoning:
+  whether_geography_is_central: yes — geographic heterogeneity is a headline finding, mapped in Fig 3
+  spatial_scale_usage: global maps down to single-workplace case studies coexist with stated resolution limits
+  regional_differentiation_usage: continent-specific temperature thresholds tabulated; hotspots named (sub-Saharan Africa, South Asia, Gulf)
+  spatial_heterogeneity_usage: heterogeneity by location, sector, income and sex systematically disaggregated
+  cross_scale_usage: workplace physiology scaled to firm output to national GDP to global projections
+  place_context_usage: Qatar, Guangzhou, Spain examples each carry a number and an inference about mechanism
+  human_environment_usage: core coupling — climate hazard translated through bodies and institutions into economy
+  flow_network_usage: none
+  spatial_dependence_usage: exposure-response functions flagged as regionally biased when applied globally
+  conditions_triggering_geographic_explanation: ["when thresholds differ between places implying adaptation", "when attributing impact concentration to exposure-sector geography", "when warning that global response functions bias local estimates"]
+figure_strategy:
+  total_figures: 6
+  figure_roles: [health-pathway schematic, dose-response curves plus fatality map panel, historical-projected impact maps by warming level, sign-summary of observed/projected effects, future-impact projections, adaptation-opportunity matrix]
+  conceptual_framework: Fig 1 hazard-to-outcome pathway diagram frames all later sections
+  taxonomy: yes (health-impact classification inside Fig 1)
+  mechanism: yes (dose-response curves)
+  timeline: partial (warming-level scenarios as ordered futures)
+  map: yes (spatially heterogeneous impact maps)
+  workflow: none
+  evidence_summary: Table 1 condenses percentage-point changes by warming level and region — quantitative spine
+  figure_text_relation: multi-panel figures referenced by letter at claim sites; captions end with take-home sentence ("effects ... are spatially heterogeneous")
+gap_and_agenda:
+  how_gaps_are_derived: from absent effectiveness evaluations and contested adaptation definitions
+  types_of_gaps: [intervention-evidence gap, measurement-standardisation gap, long-term-health understanding gap]
+  evidence_required_before_gap_claim: survey of proposed measures showing none evaluated at scale
+  future_agenda_structure: research-priority list embedded in summary; maladaptation screening as standing caution
+  specificity_of_future_questions: specific enough to operationalise (effectiveness of thresholds, breaks, decision-support tools)
+quality_features:
+  major_strengths: [parallel-template architecture enabling cross-outcome comparison, statistic-place-source discipline, honest projection caveats, sex-disaggregated reading]
+  transferable_patterns: [repeat one internal template across sibling sections, define variables before comparing inconsistent literatures, pool heterogeneous studies into comparable threshold tables, close agenda with maladaptation caveat]
+  unique_but_nontransferable_features: [physiological standards apparatus (ISO/NIOSH) specific to occupational health]
+  risks_of_imitation: [template repetition becomes mechanical if sections lack genuinely distinct mechanisms; heavy clustering needs real per-statistic sources]
+anti_patterns:
+  weak_patterns_to_avoid: [averaging across incomparable metric definitions, projecting without stating behavioural assumptions]
+source_provenance:
+  source_pages: ["pp. 859-872 (Vol 5, Dec 2024 running headers)", "pp. 859-860 (opening/intro slice)", "~p. 862 (BODY_SLICE_1@17%)", "~p. 864 (BODY_SLICE_2@33%)", "p. 867 (BODY_SLICE_3@50%)", "~p. 869 (BODY_SLICE_4@67%)", "closing/refs slice"]
+  source_sections: [Introduction, Labour supply, Labour capacity, Occupational health passages, Summary and future perspectives fragment, Fig 1-6 and Table 1 captions, reference sample]
+  confidence: medium

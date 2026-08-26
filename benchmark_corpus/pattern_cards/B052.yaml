@@ -1,0 +1,132 @@
+document_id: B052
+bibliographic:
+  title: "Past and future change in global [river flow; truncated in extraction]"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2026
+  doi: 10.1038/s43017-025-00745-z
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: >-
+    Synthesize past and projected changes in global river flow and clarify the
+    anthropogenic drivers behind observed regional trends.
+  review_scope: river flow processes, drivers (climate, CO2, land use, water management), observed trends, projections at warming levels.
+  review_mode: narrative assessment-style synthesis; primer section then evidence sections then outlook.
+  article_architecture:
+    - Abstract
+    - Introduction
+    - River processes and human interactions
+    - Past changes in global river flow
+    - Future changes in global river flow
+    - Summary and future
+    - References
+  organizing_principle: mixed(mechanistic primer + chronological past->future evidence spine)
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: planetary quantification of stakes — rivers move ~46,000 km3/yr, ~40% of terrestrial precipitation.
+  problem_contextualization: human alteration of water cycle via emissions plus withdrawals/dams/engineering, each quantified.
+  fragmentation_statement: "\"studied from differing disciplinary perspectives, resulting in a fragmented body of literature\"."
+  gap_or_need_statement: relation between observed changes and anthropogenic drivers "is less clear"; driver attribution at global scale incomplete.
+  review_objective_statement: implicit — assess past and future changes and identify drivers (roadmap not visible in digest slice).
+  scope_definition: both climatic and direct-human drivers included; local vs regional vs global explicitly defined early.
+  contribution_statement: driver-organized synthesis reconciling disciplinary strands.
+  roadmap_pattern: UNKNOWN (intro slice truncated before explicit roadmap sentence).
+section_architecture:
+  section_order: [Abstract, Introduction, Processes-and-drivers primer, Past changes, Future changes, Summary-future]
+  dominant_logic: mechanism first, then time-ordered evidence, then synthesis of driver separation
+  chronological_logic: central
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: partial
+  region_logic: partial
+  method_logic: partial
+  transition_between_sections:
+    - driver-classification paragraph bridges primer to evidence sections
+    - dedicated bridge section "Climate change versus other human influences" converts findings into gaps
+argumentation:
+  dominant_argument_pattern: driver-decomposition - attribute observed change to classified driver classes.
+  claim_evidence_relation: trend claims carried by multi-study clusters; causal claims demand detection-and-attribution evidence.
+  comparison_pattern: region-vs-region trend triangulation; model-versus-observation projection checks.
+  contradiction_handling: exceptions named and explained (reservoir-dominated reaches); inconsistency labeled unconsolidated understanding.
+  boundary_condition_handling: effect strength conditioned on water-retention ratio, snow fraction, distance below dams.
+  limitation_handling: data-sparse regions flagged explicitly (map category of fewer than 50 stations).
+  gap_identification_pattern: sparse combined-driver studies converted into a dedicated knowledge-gap subsection.
+synthesis:
+  synthesis_unit: proposition about a trend and its driver class
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - triangulation panels combining new reanalysis with prior studies' directions
+    - formal detection-and-attribution results layered onto observed trends
+    - multi-region consistency checks ("Similar conclusions have been reached in the USA..., Canada..., Europe...")
+  consensus_pattern: "\"consistent across global and hemispheric studies\" flags agreement; agreement used to raise confidence."
+  controversy_pattern: deviations named explicitly ("a deviation... occurs in northeastern North America"); inconsistencies labeled as unconsolidated understanding.
+  reconciliation_pattern: explains conflicting findings by overlapping drivers and differing disciplinary lenses.
+  evidence_weighting_pattern: formal D&A studies weighted above correlative trend studies.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define term pragmatically then quantify
+    - trend + attribution qualifier ("only consistent with simulations that account for human influence")
+    - regional exception appended after general claim
+  typical_move_sequences:
+    - [process definition, driver linkage, observed trend w/ cluster, attribution status, regional caveat]
+  topic_sentence_pattern: finding-first ("Shifts to earlier river flow timing are observed for several regions...").
+  synthesis_sentence_pattern: generalization followed by enumerated regional confirmations.
+  contrast_sentence_pattern: "\"In contrast, water management can affect river flow both locally ... as well as regionally\"."
+  limitation_sentence_pattern: "\"the relationship between observed changes ... is less clear\" — hedged causal language."
+  transition_pattern: driver typology sentences that set up next section's questions.
+  paragraph_length_profile: q25=499, median=680, p75=909 chars; citation-dense paragraphs (highest p75=8 refs).
+citation_behavior:
+  citations_per_paragraph: {p25: 2, median: 5, p75: 8}
+  citation_cluster_frequency: very high; assessments cite 4-8 sources for one trend statement.
+  single_vs_cluster: clusters dominate; singles reserved for definitions and model equations.
+  seminal_recent_balance: recent5y share 0.436 — active field; classic framing refs retained.
+  citation_location: [sentence-final clusters, mid-sentence for metric names]
+  citation_support_type: [observed trend, model projection, detection-attribution result, dataset source]
+  method_citation_pattern: metrics and datasets cited at point of use (Box 1 consolidates data sources).
+  gap_citation_pattern: gap introduced by citing few combined-effect studies then noting inconsistency among them.
+geography_reasoning:
+  whether_geography_is_central: yes — distinct regional responses are the core empirical puzzle.
+  spatial_scale_usage: local water balance vs river-network routing vs globe kept separate throughout.
+  regional_differentiation_usage: IPCC reference regions used as reporting units; wetting/drying dichotomy structured globally.
+  spatial_heterogeneity_usage: heterogeneity is the finding; maps show where trends agree or deviate.
+  cross_scale_usage: links global forcing to basin-scale response via process chain.
+  place_context_usage: regions named only as evidence units, not case narratives.
+  human_environment_usage: central — humans as climate forcings AND direct modifiers (withdrawals, dams).
+  flow_network_usage: lateral routing along river networks treated as first-class process.
+  spatial_dependence_usage: upstream-downstream dependence (reservoir effects decay downstream) explained.
+  conditions_triggering_geographic_explanation:
+    - when trends diverge between regions under same forcing
+    - when attribution confidence varies with data density
+    - when direct human interventions dominate climate signal locally
+figure_strategy:
+  total_figures: 6
+  figure_roles: [process-driver schematic, change typology, past-trend map with triangulation panel, timing-trend map, two projection maps at warming levels]
+  conceptual_framework: Fig. 1 processes/drivers schematic separating local balance vs network routing.
+  taxonomy: Fig. 2 "A typology of changes" — different processes yielding similar flow changes.
+  mechanism: embedded in Fig. 1/Fig. 2 schematics.
+  timeline: none
+  map: Figs. 3-6 are map-based evidence (observed and projected).
+  workflow: none
+  evidence_summary: Fig. 3c aggregates direction-of-change from prior studies alongside new reanalysis.
+  figure_text_relation: captions carry method notes; text cites panels inline.
+gap_and_agenda:
+  how_gaps_are_derived: dedicated synthesis subsection converts inconsistent findings into named knowledge gaps.
+  types_of_gaps: [interaction gap (combined climate+land+water drivers), attribution gap, regional coverage gap]
+  evidence_required_before_gap_claim: enumeration of the sparse combined-effect studies plus demonstrated inconsistency.
+  future_agenda_structure: gap list tied to increasing human imprint; anticipatory framing.
+  specificity_of_future_questions: medium — directions named without operational protocols.
+quality_features:
+  major_strengths: [primer-before-evidence architecture, typology figure disambiguating equifinality, triangulation of old and new evidence]
+  transferable_patterns:
+    - teach mechanisms before reviewing trends
+    - build a typology figure when multiple causes produce similar outcomes
+    - convert controversy into an explicit gap subsection
+  unique_but_nontransferable_features: [IPCC reference-region machinery specific to climate assessment]
+  risks_of_imitation: dense driver taxonomy can overwhelm if not anchored by one schematic early.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - listing regional trends without stating attribution status per region
+source_provenance:
+  source_pages: ["7-23 header", "8 opening", "~12 slice1", "16 slice3", "22 references"]
+  source_sections: [Introduction, River processes and human interactions, Past changes in global river flow, Summary and future, figure captions]
+  confidence: high

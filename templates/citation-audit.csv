@@ -1,0 +1,2 @@
+claim_id,claim,citation_key,title,authors,year,doi,zotero_key,found_in_zotero,metadata_verified,fulltext_checked,claim_supported,source_location,final_status
+C001,example claim,author2024key,Example Title,Author A; Author B,2024,10.xxxx/xxxxx,ZOTKEY001,true,true,true,true,p.7 §3.2,VERIFIED

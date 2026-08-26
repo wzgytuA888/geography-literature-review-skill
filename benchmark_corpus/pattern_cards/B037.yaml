@@ -1,0 +1,128 @@
+document_id: B037
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of global river water quality under climate change and extremes)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2023
+  doi: 10.1038/s43017-023-00472-3
+  review_type: systematic
+overall_review_design:
+  review_objective: Assess river water quality responses, mechanisms and interactions under hydroclimatic extremes and multidecadal climate change.
+  review_scope: 11 water quality constituents; event-scale (droughts, heatwaves, rainstorms, floods) plus multidecadal trends; regional-to-global
+  review_mode: semi-systematic compilation (965 case studies from 389 publications, 2000-2022) narratively synthesized
+  article_architecture: [Abstract, Introduction, Water quality responses to weather extremes, Climate change impacts, Summary and future perspectives]
+  organizing_principle: mixed — driver-type/timescale sections; within them, constituent-by-constituent treatment
+  number_of_major_sections: 4
+introduction_pattern:
+  opening_move: management-stakes framing (extremes challenge drinking water, irrigation, ecosystems)
+  problem_contextualization: complexity built via interaction inventory (constituent interactions, legacy and upstream-downstream propagation)
+  fragmentation_statement: volume-asymmetry gap ("a stark contrast compared with the volume of research into ... water quantity")
+  gap_or_need_statement: prior reviews exist but "limited systematic assessments ... at regional-to-global scales"
+  review_objective_statement: "In this Review, we synthesize advances on the main responses, mechanisms and interactions"
+  scope_definition: constituent list, event typology, corpus definition (what counts as a case study) all stated
+  contribution_statement: contribution is the compiled global response distribution with deterioration percentages
+  roadmap_pattern: present — objective sentence followed by corpus declaration then findings preview in one paragraph
+section_architecture:
+  section_order: [Introduction, Water quality responses to weather extremes, Climate change impacts, Summary and future perspectives]
+  dominant_logic: two-tier driver architecture (event-scale vs multidecadal) over a shared constituent framework
+  chronological_logic: partial (events vs long-term change)
+  thematic_logic: central (constituents as recurring units)
+  mechanism_logic: central (dilution vs mobilization mechanisms)
+  scale_logic: partial (local cases aggregated to global shares)
+  region_logic: partial (named rivers as exemplars; developing-region vulnerability noted)
+  method_logic: partial — Box 1 documents search protocol, database, timeframe, corpus rules
+  transition_between_sections:
+    - "In this section, we briefly synthesize..." orientation opener
+    - supplementary-pointer pattern delegating detail ("Additional supporting details ... in Supplementary Notes 2–12")
+argumentation:
+  dominant_argument_pattern: direction-of-response claim → mechanism (dilution/mobilization) → case exemplars → share statistic
+  claim_evidence_relation: each constituent-response claim backed by percentage of compiled cases (68%, 51%, 56%)
+  comparison_pattern: drought-vs-flood opposite-sign contrast for the same constituent
+  contradiction_handling: mixed responses retained as explicit third category rather than forced into trend
+  boundary_condition_handling: groundwater-quality context named as condition flipping drought outcomes
+  limitation_handling: sequence effects (drought→flood) acknowledged as modifier of magnitude and drivers
+  gap_identification_pattern: coverage gaps by region and constituent plus projection-uncertainty gap
+synthesis:
+  synthesis_unit: constituent × driver cell of a response matrix
+  study_by_study_ratio: low (cases counted, not narrated)
+  multi_source_synthesis_pattern:
+    - compilation statistics (965 cases → directional shares per driver)
+    - mechanism dichotomy synthesis (mobilization/flushing vs dilution)
+    - sequence-effect synthesis (event ordering changes outcomes)
+  consensus_pattern: consensus expressed as majority shares with minority improvements acknowledged
+  controversy_pattern: satellite-vs-in-situ style discrepancies admitted where compilation shows mixed signals
+  reconciliation_pattern: opposite responses reconciled by separating concentration-vs-load and phase (dissolved vs particulate)
+  evidence_weighting_pattern: each case weighted equally in tallies; narrative privileges well-documented rivers
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define-event-type then list responses
+    - percent-of-cases claim
+    - named-river example chains
+    - opposite-direction pairing within paragraph
+  typical_move_sequences:
+    - ["response claim", "mechanism", "citation cluster", "case exemplar"]
+    - ["general direction", "exception mechanism", "conditional qualifier"]
+  topic_sentence_pattern: constituent or event sentence opens paragraph
+  synthesis_sentence_pattern: "Overall mixed or no marked responses ... are reported" aggregation style
+  contrast_sentence_pattern: "By contrast," low-flow vs high-flow pivots
+  limitation_sentence_pattern: prediction difficulty attributed to interacting drivers being hard to separate
+  transition_pattern: section-opener announcements; supplementary delegation keeps main text lean
+  paragraph_length_profile: median ~581 chars (q25 414, q75 847); compact evidence paragraphs
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 1, p75: 4}
+  citation_cluster_frequency: moderate — exemplar sentences carry clusters; summary sentences rely on internal tallies
+  single_vs_cluster: singles name specific rivers/studies; clusters for mechanism families
+  seminal_recent_balance: recent5y share ~35%
+  citation_location: [sentence-final cluster, mid-sentence]
+  citation_support_type: [single-river case study, monitoring assessment, model projection, review]
+  method_citation_pattern: full protocol isolated in Box 1 with supplementary notes; tools surveyed in Box 2
+  gap_citation_pattern: gaps derived from tally sparsity and IPCC-assessment contrast
+geography_reasoning:
+  whether_geography_is_central: yes — geographic factors figure as co-drivers alongside hydroclimate
+  spatial_scale_usage: station/basin cases explicitly nested into continental-to-global tallies
+  regional_differentiation_usage: climate belts for drought frequency; developed-vs-developing infrastructure contrast
+  spatial_heterogeneity_usage: heterogeneous responses across constituents justify matrix presentation
+  cross_scale_usage: upstream land use propagates downstream; legacy storage couples past to present
+  place_context_usage: Meuse, Yangtze, Mississippi serve as canonical exemplars with dates
+  human_environment_usage: wastewater treatment capacity and urbanization enter as human amplifiers
+  flow_network_usage: river network continuity (upstream→downstream) is an explicit analytic dimension
+  spatial_dependence_usage: propagation-in-space of pollution pulses along basins treated systematically
+  conditions_triggering_geographic_explanation:
+    - when dilution vs mobilization depends on catchment storage and land cover
+    - when monitoring scarcity itself varies geographically (remote sensing advocacy)
+    - when treatment infrastructure differs between regions
+figure_strategy:
+  total_figures: 4
+  figure_roles: [driver-context schematic, response-matrix panel set, event-case composite chart, multidecadal frequency bars]
+  conceptual_framework: Fig. 1 links hydroclimatic drivers, geographic factors and human activities
+  taxonomy: Table 1 constituent × event-type response classification
+  mechanism: Fig. 2 panels pair responses with driving mechanisms
+  timeline: none
+  map: none prominent (case locations listed textually)
+  workflow: Box 2 tool survey (remote sensing, IoT, citizen science) functions as methods workflow
+  evidence_summary: Fig. 4 reported-frequency bars (increase/decrease/mixed) summarize the whole compilation
+  figure_text_relation: three-category legend (increase/decrease/no-substantial-change) reused verbatim in prose
+gap_and_agenda:
+  how_gaps_are_derived: from tally asymmetries (which constituents/regions lack studies) and from projection-model uncertainty
+  types_of_gaps: [regional-coverage gap, constituent-coverage gap, projection-capability gap, integrated-management gap]
+  evidence_required_before_gap_claim: compiled corpus counts showing sparse cells
+  future_agenda_structure: imperative stack — understand feedbacks, characterize fate/thresholds, develop technologies and frameworks; SDG framing closes
+  specificity_of_future_questions: initiative-level (World Water Quality Alliance, ISIMIP) plus capability targets
+quality_features:
+  major_strengths:
+    - corpus transparency (database, terms, years, n) makes claims auditable
+    - mixed-response category prevents false dichotomies
+    - Key points carry percentages immediately usable by policy readers
+  transferable_patterns:
+    - compile-and-tally methodology elevated into the review's spine
+    - constituent×driver matrix as both analysis and table design
+    - mechanism dichotomy (two opposing processes) to explain sign variation
+  unique_but_nontransferable_features: water-quality constituent chemistry specifics
+  risks_of_imitation: equal weighting of heterogeneous case studies can mask quality differences; state this choice
+anti_patterns:
+  weak_patterns_to_avoid:
+    - reporting only significant/deteriorating cases while silent on null or improving ones
+source_provenance:
+  source_pages: ["pp. 687-702 (journal); opening p. 688; slices @17% p. 690; @67% p. 700; @83% p. 701"]
+  source_sections: [Introduction, Water quality responses to weather extremes, Hydrological droughts and heatwaves, Climate change impacts, Summary and future perspectives, Box 1, Box 2, Table 1, figure captions]
+  confidence: high

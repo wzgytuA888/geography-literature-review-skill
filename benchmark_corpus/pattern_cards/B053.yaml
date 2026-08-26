@@ -1,0 +1,132 @@
+document_id: B053
+bibliographic:
+  title: "Interactions of tropical cyclones [with the energy and water cycle; truncated in extraction]"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2026
+  doi: 10.1038/s43017-026-00770-6
+  review_type: thematic
+overall_review_design:
+  review_objective: >-
+    Assess how tropical cyclones transport energy and water across timescales,
+    from immediate storm effects to long-term climate imprint, and how climate change modifies this.
+  review_scope: TC energetics, air-sea exchange, ocean response, remote atmosphere/ocean effects, future changes.
+  review_mode: mechanistic narrative synthesis organized by response timescale.
+  article_architecture:
+    - Abstract
+    - Introduction
+    - Immediate effects
+    - Short-term effects
+    - Long-term effects
+    - Climate change
+    - Summary and future
+    - References
+  organizing_principle: temporal-response ladder anchored to explicit windows (0-1 days; ~1 month; >1 month)
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: phenomenon definition and classification (wind-speed categories, size, frequency) plus socioeconomic stakes with named storms.
+  problem_contextualization: quantifies TC role in global budgets (rainfall share, enthalpy flux) before narrowing.
+  fragmentation_statement: UNKNOWN (no fragmentation sentence visible in digest).
+  gap_or_need_statement: observed/future trends of many TC-related transports "have not been assessed".
+  review_objective_statement: delivered via framework sentence — "immediate (0–1 days), short-term ... long-term (more than 1 month) effects" — plus closing roadmap.
+  scope_definition: timescale windows define section boundaries; Fig. 1 displays the framework.
+  contribution_statement: unified cross-timescale accounting of TC energy/water transport.
+  roadmap_pattern: present, compact ("We also outline how climate change might affect... Finally, we discuss perspectives").
+section_architecture:
+  section_order: [Abstract, Introduction, Immediate, Short-term, Long-term, Climate change, Summary-future]
+  dominant_logic: event-timescale ladder; each rung = one physical domain pair (atmosphere-ocean)
+  chronological_logic: central
+  thematic_logic: partial
+  mechanism_logic: central
+  scale_logic: central
+  region_logic: none
+  method_logic: none
+  transition_between_sections:
+    - "\"This section assesses...\" preview sentences with figure pointer"
+    - recovery processes carry narrative from short-term into long-term sections
+argumentation:
+  dominant_argument_pattern: budget accounting - quantify each term of energy and water transport per timescale band.
+  claim_evidence_relation: numeric ranges tagged with observational platform or model provenance for every value.
+  comparison_pattern: observation-versus-model estimate columns; single-case versus climatology contrasts.
+  contradiction_handling: projection inconsistencies bounded by mechanism (size controlled by relative SST).
+  boundary_condition_handling: responses conditioned on storm speed, background stratification, thermocline depth.
+  limitation_handling: unassessed trends admitted directly; uncertainty ranges never collapsed silently.
+  gap_identification_pattern: unassessed intersections listed (changing storm characteristics interacting with ocean response).
+synthesis:
+  synthesis_unit: mechanism quantified per timescale band
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - estimate ranges assembled from observational vs modelling sources in Table 1
+    - process chains linking one effect to the next (cold wake -> flux reduction -> heat uptake)
+    - percentage-based generalizations from case clusters
+  consensus_pattern: convergent orders-of-magnitude stated directly.
+  controversy_pattern: divergent estimates presented as ranges with method attribution ("0.58 PW... larger estimates ranging from 0.99 PW to 1.2 PW"); model-projection inconsistency flagged then bounded by mechanism.
+  reconciliation_pattern: resolves spread by identifying controlling variables (relative SST for size; background conditions for wave propagation).
+  evidence_weighting_pattern: observations cited first, models second; Table 1 columns separate data sources.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define-and-scale a quantity (units given inline for every number)
+    - process narration in causal sequence
+    - exception/contrast after general rule
+  typical_move_sequences:
+    - [mechanism claim, quantitative range w/ method tags, spatial example, residual uncertainty]
+  topic_sentence_pattern: entity-led ("TC-induced near-inertial waves affect energy redistribution...").
+  synthesis_sentence_pattern: magnitude + dependency ("ranges from X to Y, depending on ... conditions").
+  contrast_sentence_pattern: "\"By contrast, ocean subsurface temperature anomalies ... can exist for years to decades\"."
+  limitation_sentence_pattern: uncertainty attributed to method differences and unassessed trends.
+  transition_pattern: timescale hand-off phrases; previews at each section head.
+  paragraph_length_profile: q25=490, median=683, p75=895 chars.
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 4, p75: 7}
+  citation_cluster_frequency: moderate-high; clusters attach to numeric estimates.
+  single_vs_cluster: single refs for specific events/cases; clusters for budget terms.
+  seminal_recent_balance: recent5y share 0.221; theory anchors are older, evidence newer.
+  citation_location: [sentence-final clusters, ref-in-parentheses inside Table 1 cells]
+  citation_support_type: [quantitative estimate, observational platform source, model study]
+  method_citation_pattern: every instrument/platform/dataset named with its reference (GPM, TRMM, Argo, CERES).
+  gap_citation_pattern: gaps stated as "not been assessed" without supporting citations.
+geography_reasoning:
+  whether_geography_is_central: yes — basin-specific behavior and latitude-dependent physics organize explanations.
+  spatial_scale_usage: storm-scale to global-transport scale linked via accumulation arguments.
+  regional_differentiation_usage: named basins (western North Pacific, Gulf of Mexico, South China Sea) host mechanism-specific examples.
+  spatial_heterogeneity_usage: invoked when background state controls response (deep thermocline favors deep propagation).
+  cross_scale_usage: core design — perturbation accumulates from event to climate timescales.
+  place_context_usage: named currents and seas as mechanism illustrations.
+  human_environment_usage: socioeconomic impacts confined to Introduction as motivation.
+  flow_network_usage: meridional heat transport and current systems (Kuroshio) as conveyors.
+  spatial_dependence_usage: Coriolis/latitude bands quantified to explain wave behavior.
+  conditions_triggering_geographic_explanation:
+    - when a mechanism depends on background ocean state or latitude
+    - when accumulated event impacts become a regional/climate signal
+figure_strategy:
+  total_figures: 6
+  figure_roles: [master framework schematic, cross-section budget schematic, phase-specific multi-panel montages, long-term maps with model comparison]
+  conceptual_framework: Fig. 1 maps all effects onto timescale axis.
+  taxonomy: intensity classification in Introduction text.
+  mechanism: Fig. 2 air-sea cross-section with labeled circulation branches.
+  timeline: implicit timescale axis in Figs. 1/5 rather than dated timeline.
+  map: Fig. 6 global OHU distribution and zonal averages.
+  workflow: none
+  evidence_summary: Table 1 consolidates energy/water changes by timescale, observation vs model columns.
+  figure_text_relation: dense panel-by-panel captions ending with interpretive takeaway sentence.
+gap_and_agenda:
+  how_gaps_are_derived: projection uncertainty blocks impact assessment; unassessed trend items enumerated.
+  types_of_gaps: [unassessed-trend gap, method-spread gap, coupling gap (changing TC characteristics x ocean response)]
+  evidence_required_before_gap_claim: demonstration that existing estimate ranges do not overlap cleanly.
+  future_agenda_structure: perspectives paragraph keyed to timescale sections.
+  specificity_of_future_questions: medium — directions stated, protocols not specified.
+quality_features:
+  major_strengths: [timescale architecture that converts a complex interacting system into readable bands, estimate-consolidation table]
+  transferable_patterns:
+    - partition a phenomenon by response timescale with explicit window definitions
+    - build an obs-vs-model summary table for contested quantities
+    - give units inline for every quantitative claim
+  unique_but_nontransferable_features: [storm-event vocabulary and classification scheme specific to TC science]
+  risks_of_imitation: timescale bands can fragment tightly coupled feedbacks if links are not restated.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - quoting divergent estimates without naming the method behind each end of the range
+source_provenance:
+  source_pages: ["216-234 header", "217 opening", "~226 slice1", "~234 slice2", "230 slice4", "233 references"]
+  source_sections: [Introduction, Immediate effects, Short-term effects, Long-term effects, Climate change, Table 1, figure captions]
+  confidence: high

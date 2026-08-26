@@ -1,0 +1,136 @@
+document_id: B022
+bibliographic:
+  title: Towards sustainable extraction of technology materials through integrated approaches
+  authors: [UNKNOWN]           # affiliations (Exeter, Lyell Centre) captured; names not in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2021                   # page footer "October 2021 | volume 2"
+  doi: 10.1038/s43017-021-00211-6   # inferred from filename s43017-021-00211-6.pdf
+  review_type: methodological  # methods overview fused with material-by-material thematic survey
+overall_review_design:
+  review_objective: >-
+    Overview methods that quantify environmental impacts of technology-material production,
+    then show how integrated geometallurgy-LCA can be applied across the supply chain.
+  review_scope: >-
+    Seven selected materials (REEs, Li, Co, Ni, Mn, V, graphite); deposit geology through
+    processing to manufacturing; social/governance issues excluded.
+  review_mode: >-
+    Methodological tutorial-review: teaches a quantitative framework while surveying the
+    resource base it must be applied to.
+  article_architecture:
+    - Introduction (demand stakes, objective, exclusions)
+    - Technology and resources      # production stages; purity and chemistry
+    - Deposit-type surveys per material (REEs, Lithium, Cobalt, Nickel, Manganese, Graphite)
+    - Life cycle assessment scopes and variations
+    - Towards sustainable extraction / integrated LCA-geometallurgy approach
+  organizing_principle: mixed — production-chain stages crossed with material taxonomy and capped by a methods integration
+  number_of_major_sections: 4
+introduction_pattern:
+  opening_move: quantified demand multipliers (lithium 18-20x by 2050) plus battery carbon-share statistic
+  problem_contextualization: small vs large markets contrast shows which materials are stressed and why
+  fragmentation_statement: implicit — data gaps scattered across materials rather than a declared silo
+  gap_or_need_statement: need argued from unrepresentative datasets ("certain data used within LCA ... likely underestimate")
+  review_objective_statement: explicit ("In this Review, we give an overview... We discuss... before showing how...")
+  scope_definition: explicit inclusion list plus named exclusion ("social and governance issues ... beyond the scope")
+  contribution_statement: the integrated geometallurgy-LCA workflow presented as the deliverable
+  roadmap_pattern: present — two-sentence sequenced objective paragraph
+section_architecture:
+  section_order: [Introduction, Technology and resources, Per-material deposit surveys, Life cycle assessment, Towards sustainable extraction]
+  dominant_logic: requirements dictate processing; deposit type dictates route; route dictates impacts; LCA measures them
+  chronological_logic: none
+  thematic_logic: central           # one material/deposit family per block
+  mechanism_logic: partial          # geological formation mechanisms explain deposit properties
+  scale_logic: partial              # deposit to global supply chain
+  region_logic: partial             # named deposits localize claims but never structure sections
+  method_logic: central             # LCA scope choices and functional units carry the argument
+  transition_between_sections:
+    - requirement-to-resource bridge (purity specs motivate deposit review)
+    - resource-to-method pivot at the LCA section
+    - closing integration of both threads into one workflow figure
+argumentation:
+  dominant_argument_pattern: requirement-chain reasoning — application specs -> purity needs -> processing steps -> impact profile
+  claim_evidence_relation: numeric thresholds (purity 99.95%, kg CO2e per kg) anchor each qualitative credential
+  comparison_pattern: cross-material parallels (brine vs pegmatite lithium; primary vs by-product REE) run as recurring contrasts
+  contradiction_handling: dataset conflicts handled by critiquing representativeness (Ecoinvent "not representative" for high-purity manganese)
+  boundary_condition_handling: substitution risk bounded via caveat that the material list will evolve
+  limitation_handling: missing-data admissions placed exactly where an estimate is attempted
+  gap_identification_pattern: per-material data-gap audit — "no industry-wide estimate" formulations
+synthesis:
+  synthesis_unit: material         # each commodity is the synthesis packet
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - tabular cross-material comparison of properties and impacts
+    - pooling LCA estimates from industry, academic and database sources
+    - geology-to-process mapping repeated per material
+  consensus_pattern: converging footprint ranges quoted across independent LCAs
+  controversy_pattern: divergent estimates traced to scope/functional-unit differences
+  reconciliation_pattern: harmonization by restating footprints under common cradle-to-gate scopes
+  evidence_weighting_pattern: primary-data studies preferred over generic database entries
+paragraph_rhetoric:
+  common_rhetorical_moves: [specification statement, process sequence narration, deposit exemplification, impact quantification]
+  typical_move_sequences:
+    - [requirement, threshold value, processing consequence]
+    - [deposit type, named localities, extraction route, environmental note]
+  topic_sentence_pattern: definitional topic sentence introducing the material or stage
+  synthesis_sentence_pattern: comparative clause aligning materials on one property axis
+  contrast_sentence_pattern: brines-vs-rocks style dichotomies organize paragraphs
+  limitation_sentence_pattern: data-quality hedges attached to specific numbers
+  transition_pattern: section-level signposting ("This section provides an overview...")
+  paragraph_length_profile: q25=394, median=464, p75=671 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 2}   # index block values include caption noise
+  citation_cluster_frequency: moderate — clusters at specification and LCA-estimate claims
+  single_vs_cluster: singles for standards/definitions; clusters for market and impact figures
+  seminal_recent_balance: recent5y share 0.071; standards and handbooks cited alongside current LCAs
+  citation_location: [sentence-final clusters, table-source citations]
+  citation_support_type: [specification source, LCA estimate, standard/protocol, market report]
+  method_citation_pattern: every LCA standard and functional unit attributed at first mention
+  gap_citation_pattern: absence claims ("LCIA data for graphite are limited") stated without citation
+geography_reasoning:
+  whether_geography_is_central: causal-geological — location matters because deposit type fixes the process route and footprint
+  spatial_scale_usage: orebody to mine to refinery to global market chain
+  regional_differentiation_usage: named deposits across continents illustrate each genetic type
+  spatial_heterogeneity_usage: deposit diversity itself is the heterogeneity argument
+  cross_scale_usage: site-level processing choices scaled up to national carbon accounting relevance
+  place_context_usage: canonical localities (salars, Maoniuping, Mountain Pass, Tanco) serve as type examples
+  human_environment_usage: supply chains, co-products and markets embed extraction in economy
+  flow_network_usage: production-phase flow diagram maps inputs/outputs across stages
+  spatial_dependence_usage: depth-ordered deposit genesis rendered as a vertical cross-section
+  conditions_triggering_geographic_explanation:
+    - when deposit genesis controls achievable purity and energy cost
+    - when by-product availability depends on other mining regions
+    - when jurisdiction-specific data quality differs
+figure_strategy:
+  total_figures: 5
+  figure_roles: [application schematic in end-use technologies, production-stage flow diagram, geological deposit cross-section, LCA scope typology, integrated assessment workflow]
+  conceptual_framework: Fig. 5 integrates deposit model, mine plan, simulation and LCA outputs
+  taxonomy: Fig. 3 classifies deposit types by genesis along a depth gradient
+  mechanism: geological formation panels explain why each deposit hosts which element
+  timeline: none
+  map: Fig. 3 stylized cross-section stands in for world deposit geography
+  workflow: Fig. 5 end-to-end geometallurgy-LCA pipeline with data streams labelled
+  evidence_summary: Table 1 compiles critical materials against applications; figures carry concepts, text carries numbers
+  figure_text_relation: captions define diagram elements; body text supplies quantitative anchors
+gap_and_agenda:
+  how_gaps_are_derived: walked material-by-material, logging where public data cannot support an LCA
+  types_of_gaps: [data availability, dataset representativeness, method integration]
+  evidence_required_before_gap_claim: attempted estimate shown failing for lack of suitable data
+  future_agenda_structure: capability agenda — extend integrated approach and close dataset holes
+  specificity_of_future_questions: tools and datasets named; research questions implicit
+quality_features:
+  major_strengths:
+    - explicit exclusion statements discipline the scope
+    - geology treated as first-order driver of environmental outcome
+    - one workflow figure fuses resource and method threads
+  transferable_patterns:
+    - open with demand multipliers to establish urgency without polemic
+    - state inclusion list AND exclusion rationale in the introduction
+    - audit data availability per category before synthesizing numbers
+  unique_but_nontransferable_features: deposit-genesis pedagogy requires economic-geology expertise
+  risks_of_imitation: per-material enumeration can read as catalogue if the connecting requirement-chain is dropped
+anti_patterns:
+  weak_patterns_to_avoid:
+    - listing deposits or commodities without tying each to the decision the review enables
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2 incl. Key points)", "BODY_SLICE_1@17% (REE deposits)", "BODY_SLICE_2@33% (Fig.3 caption, graphite)", "BODY_SLICE_3@50% (LCA scopes, manganese)", "BODY_SLICE_4@67% (Fig.5 workflow, co-products)", "BODY_SLICE_5@83% (annotated references)", "FIGURE CAPTIONS slice"]
+  source_sections: [Introduction, Technology and resources, Production stages, Purity and chemistry, Figure/Table captions]
+  confidence: high

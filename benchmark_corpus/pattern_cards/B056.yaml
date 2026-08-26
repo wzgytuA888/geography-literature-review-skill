@@ -1,0 +1,133 @@
+document_id: B056
+bibliographic:
+  title: "Deoxygenation in inland freshwater systems [drivers and environmental impacts; title fragment from index]"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2026
+  doi: 10.1038/s43017-026-00795-x
+  review_type: thematic
+overall_review_design:
+  review_objective: >-
+    Outline global trends, drivers, ecological and socioeconomic impacts of inland-water deoxygenation,
+    plus management options, knowledge gaps and future directions.
+  review_scope: lakes and rivers; spatial/seasonal/decadal trends; climate and human drivers; ecosystem and societal impacts; mitigation.
+  review_mode: pressure-state-impact-response narrative synthesis.
+  article_architecture:
+    - Abstract
+    - Introduction
+    - Deoxygenation trends (Global spatial variation / Seasonal and short-term variability / Long-term temporal trends)
+    - Drivers and mechanisms (Climate-induced changes; human activities)
+    - Impact on ecosystem
+    - Socioeconomic impacts
+    - Management and mitigation
+    - Summary and future
+  organizing_principle: trend -> driver -> impact -> management chain; time-and-space subsections inside the trend section
+  number_of_major_sections: 7
+introduction_pattern:
+  opening_move: functional-importance definition (DO sustains respiration, biogeochemistry) then comparative alarm — "1.5–2 times faster in inland freshwaters than in oceans".
+  problem_contextualization: physical/chemical/biological process triad introduced before evidence; heterogeneity announced as complexity source.
+  fragmentation_statement: not used; urgency via rate comparison instead.
+  gap_or_need_statement: roadmap closes with "we identify knowledge gaps and future research directions".
+  review_objective_statement: "\"Review, we outline global trends, drivers, impacts and potential\" [management]."
+  scope_definition: lentic vs lotic environments delimited; system heterogeneity declared as organizing complication.
+  contribution_statement: synthesis spanning ecology to policy with mitigation emphasis.
+  roadmap_pattern: present ("We also explore... Finally, we identify...").
+section_architecture:
+  section_order: [Abstract, Introduction, Trends, Drivers-mechanisms, Ecosystem impacts, Socioeconomic impacts, Management-mitigation, Summary-future]
+  dominant_logic: state-of-environment report arc from observation to response
+  chronological_logic: partial
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: partial
+  region_logic: partial
+  method_logic: none
+  transition_between_sections:
+    - "\"This section outlines spatial heterogeneity...\" previews"
+    - driver section explicitly framed as explaining patterns shown in trend section
+argumentation:
+  dominant_argument_pattern: pattern-then-mechanism - establish the quantified trend first, then apportion causes.
+  claim_evidence_relation: rates reported with uncertainties and sample sizes; mechanisms receive percentage-share attributions.
+  comparison_pattern: continent, hemisphere and lake-size contrasts; lentic-versus-lotic parallels.
+  contradiction_handling: divergent trajectories reconciled via baseline-dependence and morphometry.
+  boundary_condition_handling: mitigation effectiveness conditioned on lake size, depth and cost.
+  limitation_handling: projection uncertainty itemized (model variability, extrapolation limits, data scarcity).
+  gap_identification_pattern: closing-section gap enumeration promised verbatim in the Introduction roadmap.
+synthesis:
+  synthesis_unit: quantified pattern or mechanism share
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - regional statistics compiled into ranked comparisons (continent means with uncertainties)
+    - mechanism attribution shares ("accounts for an average of ~55% of observed surface-water deoxygenation")
+    - feedback-loop chains linking land use, hypoxia and GHG emissions
+  consensus_pattern: direction-of-trend stated globally with % of systems affected.
+  controversy_pattern: uncertainty paragraphs itemize sources (model variability, extrapolation limits).
+  reconciliation_pattern: resolves tropical anomalies via baseline-dependence of solubility sensitivity.
+  evidence_weighting_pattern: large-sample syntheses weighted above single-lake studies; case events used as illustration.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - statistic-dense topic sentences (value +/- sd by continent)
+    - mechanism decomposition (supply vs consumption)
+    - economic consequence vignettes (named lakes/events)
+  typical_move_sequences:
+    - [global value, regional gradient, controlling mechanism, exception]
+  topic_sentence_pattern: magnitude-first ("Annual DO concentrations in global lake surface waters averaged...").
+  synthesis_sentence_pattern: gradient statements pairing latitudinal and altitudinal axes in one sentence.
+  contrast_sentence_pattern: hemisphere contrasts (NH vs SH seasonal amplitude).
+  limitation_sentence_pattern: enumerated uncertainty inventories at projection stage.
+  transition_pattern: preview sentences; figure-anchored handoffs.
+  paragraph_length_profile: q25=418, median=618, p75=797 chars; shortest median in batch — high information density.
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 6}
+  citation_cluster_frequency: moderate-high.
+  single_vs_cluster: clusters behind regional statistics; singles for named events.
+  seminal_recent_balance: recent5y share 0.463.
+  citation_location: [sentence-final clusters]
+  citation_support_type: [synthesis dataset result, process study, event report]
+  method_citation_pattern: minimal; methods deferred to data-source citations.
+  gap_citation_pattern: gaps listed without citations at agenda stage.
+geography_reasoning:
+  whether_geography_is_central: yes — spatial gradients are primary evidence form.
+  spatial_scale_usage: depth profiles, lake size, region, hemisphere, globe layered systematically.
+  regional_differentiation_usage: continent-level rankings (Asia largest decline, South America smallest); cold-vs-tropical baselines.
+  spatial_heterogeneity_usage: morphometry (area, depth, trophic state) invoked to explain divergent DO trajectories.
+  cross_scale_usage: seasonal-to-decadal x local-to-global crossed in trend section design.
+  place_context_usage: named lakes (Erie, Taihu, English Lake District) anchor socioeconomic vignettes.
+  human_environment_usage: land use, reservoirs and warming as coupled drivers; equity dimension in impacts.
+  flow_network_usage: river networks and hydrological connectivity as transport paths.
+  spatial_dependence_usage: stratification physics ties depth structure to oxygen depletion.
+  conditions_triggering_geographic_explanation:
+    - when baseline climate alters sensitivity identically-acting drivers
+    - when morphology modulates a universal mechanism
+    - when impacts translate into place-bound economic losses
+figure_strategy:
+  total_figures: 6
+  figure_roles: [concept schematic, multi-panel trend montage, spatial variation maps, driver schematic, numbered-process ecological responses panel, mitigation measures panel]
+  conceptual_framework: Fig. 1 roles/dynamics of DO with replenishment-vs-consumption balance.
+  taxonomy: process numbering (1-8) inside Fig. 5 organizes ecological shifts.
+  mechanism: Fig. 4 climate and anthropogenic drivers diagram.
+  timeline: Fig. 2 seasonal cycles + decadal fits.
+  map: Fig. 3 spatial variations in trends.
+  workflow: none
+  evidence_summary: Figs. 2-3 carry quantitative evidence; Fig. 6 summarizes interventions.
+  figure_text_relation: captions end with interpretive takeaway; panels cited inline.
+gap_and_agenda:
+  how_gaps_are_derived: explicit closing commitment ("identify knowledge gaps") fulfilled in Summary.
+  types_of_gaps: [monitoring coverage gap, projection-method gap, governance/capacity gap]
+  evidence_required_before_gap_claim: demonstrated projection uncertainty inventory.
+  future_agenda_structure: early-warning, resilience-building and equity-oriented actions.
+  specificity_of_future_questions: medium — capacities and coordination named over protocols.
+quality_features:
+  major_strengths: [quantitative density with consistent +/- reporting, trend-driver-impact-response completeness, mechanism-share attribution]
+  transferable_patterns:
+    - open body with the measured pattern before any mechanism
+    - attribute mechanisms as percentage shares where possible
+    - pair ecological with socioeconomic impact sections before management
+  unique_but_nontransferable_features: [limnological morphometry vocabulary]
+  risks_of_imitation: statistic-led prose can exhaust without figures doing descriptive work.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - reporting regional rates without a controlling-mechanism hypothesis
+source_provenance:
+  source_pages: ["427-446 header", "428 opening", "~437 slice1", "~444 slice2", "~452 slice3"]
+  source_sections: [Introduction, Deoxygenation trends, Drivers and mechanisms, Management and mitigation, figure captions]
+  confidence: high

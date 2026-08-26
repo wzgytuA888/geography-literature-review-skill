@@ -1,0 +1,141 @@
+document_id: B026
+bibliographic:
+  title: >-
+    Dryland ecosystem changes in China (reconstructed from digest headings
+    'Dryland ecosystem change' and 'Drivers and impacts of changes'; exact title not in manifest)
+  authors: [UNKNOWN]           # affiliations (Beijing Normal University) captured; names not in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2021                   # page footer "December 2021 | volume 2"
+  doi: 10.1038/s43017-021-00226-z   # inferred from filename s43017-021-00226-z.pdf
+  review_type: narrative       # regional synthesis carrying its own re-analysis, routed to supplements
+overall_review_design:
+  review_objective: >-
+    Synthesize dryland ecosystem changes in China and their drivers, evaluate the national
+    conservation/restoration programmes, and derive strategies under continued climate change.
+  review_scope: >-
+    China's drylands (aridity-index defined); erosion/desertification processes, vegetation
+    and soil change, 13 national programmes, water-security trade-offs, future restoration.
+  review_mode: >-
+    Assessment-style regional review: state-driver-intervention-future chain with author
+    re-analyses parked in Supplementary figures/tables/appendix.
+  article_architecture:
+    - Introduction (losses, programmes context, objective)
+    - Dryland ecosystem change      # run-ins: Drivers of dryland changes; Dryland changes
+    - Conservation and restoration  # 13 programmes, outcomes per service
+    - Trade-offs / unintended consequences   # soil desiccation, biodiversity effects
+    - Future of restoration
+    - Outlook (modelling, data, unresolved questions)
+  organizing_principle: mixed — problem-drivers -> interventions -> evaluation -> forward strategy; aridity zoning used as internal explanatory frame
+  number_of_major_sections: 4
+introduction_pattern:
+  opening_move: economic-loss quantification plus policy inventory framing (13 initiatives since late 1970s)
+  problem_contextualization: population at risk and desertification losses establish stakes before process detail
+  fragmentation_statement: implicit — controversy over drivers stated rather than silo claim
+  gap_or_need_statement: strategy development under anthropogenic climate change declared the goal of synthesis
+  review_objective_statement: explicit passive-voice statement ("In this Review, dryland ecosystem changes in China and their drivers are synthesized")
+  scope_definition: national boundary plus aridity-index definition of the object
+  contribution_statement: programme-effect synthesis positioned as input to coping strategies
+  roadmap_pattern: absent — objective given but no section-by-section tour
+section_architecture:
+  section_order: [Introduction, Dryland ecosystem change (drivers, changes), Conservation and restoration, Future of restoration, Outlook]
+  dominant_logic: diagnose change and drivers, audit interventions, expose trade-offs, project options
+  chronological_logic: partial      # 1980-2015 windows and programme phases structure evidence
+  thematic_logic: central           # driver themes via run-in headings
+  mechanism_logic: partial          # feedback diagram links desertification processes
+  scale_logic: central              # aridity subtypes (hyper-arid to dry-subhumid) as analytic strata
+  region_logic: partial             # north-east vs Qinghai-Tibet contrasts within sections
+  method_logic: partial             # SEM, NDVI products and residual-trend methods named inline
+  transition_between_sections:
+    - diagnosis-to-intervention bridge at "Conservation and restoration"
+    - success-to-trade-off reversal ("However, ecological restoration projects introduced new threats")
+    - closing pivot to modelling and data needs
+argumentation:
+  dominant_argument_pattern: balanced-ledger argument — programme benefits tallied against induced costs (greening vs soil drying)
+  claim_evidence_relation: percentage-change claims tied to named datasets, periods and significance levels
+  comparison_pattern: aridity-subtype comparisons; programme-vs-programme outcome contrasts; China-vs-global benchmarking
+  contradiction_handling: >-
+    Conflicting projections resolved by exposing definitional dependence — boundary dispute
+    "depends on the variables considered within the various models".
+  boundary_condition_handling: attribution limits conceded where programme contributions cannot be separated at scale
+  limitation_handling: inability to isolate individual programme effects admitted adjacent to aggregate claims
+  gap_identification_pattern: unresolved-question phrasing — "it is still not known whether..." falsifiable forms
+synthesis:
+  synthesis_unit: theme             # driver or service theme, stratified by aridity zone
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - structural equation modelling results integrated with satellite trend analyses
+    - cross-scale benchmarking against regional/continental/global dryland databases
+    - pooling programme evaluations across services (water yield, soil, carbon, habitat)
+  consensus_pattern: replication phrasing ("Similar results have been reported using ... global scales")
+  controversy_pattern: divergent projections presented side by side, then attributed to metric choice
+  reconciliation_pattern: scale- and variable-dependence invoked to reconcile opposing findings
+  evidence_weighting_pattern: quantitative effect-size comparisons outweigh qualitative programme narratives
+paragraph_rhetoric:
+  common_rhetorical_moves: [zonal statistic, programme tally, reversal ("However"), threshold statement]
+  typical_move_sequences:
+    - [change claim, dataset+period, zonal breakdown]
+    - [success ledger, reversal clause, induced-cost revelation]
+  topic_sentence_pattern: process-naming run-in sentence ("Drivers of dryland changes.")
+  synthesis_sentence_pattern: comparative-importance clause (effect coefficients ranked in-sentence)
+  contrast_sentence_pattern: improvement-vs-degradation area contrasts
+  limitation_sentence_pattern: interpret-with-caution hedges on short windows
+  transition_pattern: section preambles announce what will be summarized
+  paragraph_length_profile: q25=400, median=547, p75=801 chars (index stats — longest paragraphs in batch)
+citation_behavior:
+  citations_per_paragraph: {p25: 2, median: 2, p75: 4}   # index block values; highest floor in this batch
+  citation_cluster_frequency: moderate-high; even descriptive sentences carry pairs
+  single_vs_cluster: clusters standard; singles for programme documents and flagship datasets
+  seminal_recent_balance: recent5y share 0.105; policy-era literature dominates
+  citation_location: [sentence-final clusters, supplementary pointers]
+  citation_support_type: [monitoring statistic, programme evaluation, remote-sensing product, experiment result]
+  method_citation_pattern: datasets and model types attributed at first mention; details deferred to supplements
+  gap_citation_pattern: unknowns posed as open questions without citations
+geography_reasoning:
+  whether_geography_is_central: yes-structural — aridity zoning is the independent variable of nearly every claim
+  spatial_scale_usage: national synthesis disaggregated by aridity subtype and mountain ranges
+  regional_differentiation_usage: hyper-arid/arid/semi-arid/dry-subhumid strata receive different explanations
+  spatial_heterogeneity_usage: greening vs browning mosaics mapped and normalized by human-vs-climate residuals
+  cross_scale_usage: plot experiments scaled to programme-level and dryland-wide conclusions cautiously
+  place_context_usage: Loess Plateau and named deserts anchor process claims
+  human_environment_usage: central — policies themselves are the perturbation being evaluated
+  flow_network_usage: river sediment-load changes linked to upstream land treatments
+  spatial_dependence_usage: transitional climate zones identified as sensitivity hotspots
+  conditions_triggering_geographic_explanation:
+    - when aridity subtype controls response sign or magnitude
+    - when degradation proximity to roads/settlements implies human causation
+    - when water limits decouple vegetation gains from sustainability
+figure_strategy:
+  total_figures: 6
+  figure_roles: [distribution/characteristics map, SEM-plus-NDVI composite, feedback-loop schematic, programme inventory table/map pair, ecosystem-shift and services panels, spatial climate-hydrology change maps]
+  conceptual_framework: Fig. 3 feedback loop organizes desertification processes conceptually
+  taxonomy: aridity classes and erosion types form the classification layer
+  mechanism: Fig. 3 causal arrows connect climate, human activity and land response
+  timeline: none dedicated; programme table carries chronology
+  map: Figs. 1, 4, 6 map distributions, programme footprints and trends
+  workflow: none
+  evidence_summary: Table 1 compiles the 13 programmes (coverage, investment) as the intervention evidence base
+  figure_text_relation: text carries statistics; figures carry spatial pattern; glossary boxes define key terms inline
+gap_and_agenda:
+  how_gaps_are_derived: from failed reconciliations during synthesis (CO2-vs-aridity question; unseparable programme effects)
+  types_of_gaps: [data (soil inorganic carbon), mechanistic (coupled hydro-biogeochemical models), integrative (socio-economic coupling)]
+  evidence_required_before_gap_claim: demonstrated inability to attribute or reconcile within existing data
+  future_agenda_structure: capability agenda — databases, coupled models, socio-ecological integration
+  specificity_of_future_questions: explicitly posed falsifiable questions (CO2 buffering vs aridity)
+quality_features:
+  major_strengths:
+    - evaluates interventions, not just nature — rare review object
+    - trade-offs surfaced against the review's own greening success narrative
+    - quantitative discipline maintained through supplementary routing
+  transferable_patterns:
+    - audit both benefits and harms of the human responses your field studies
+    - resolve conflicting projections by exposing the metric each relies on
+    - convert leftover disagreements into explicitly falsifiable questions
+  unique_but_nontransferable_features: national-programme completeness exists only in China's case
+  risks_of_imitation: heavy supplement routing can starve the main text of self-contained evidence
+anti_patterns:
+  weak_patterns_to_avoid:
+    - crediting large programmes without quantifying their induced water/biodiversity costs
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2 incl. Key points)", "BODY_SLICE_1@17% (programmes, Fig.1 caption)", "BODY_SLICE_2@33% (Loess Plateau, soil drying)", "BODY_SLICE_3@50% (desiccation thresholds, dust)", "BODY_SLICE_4@67% (habitat quality, future)", "BODY_SLICE_5@83% (outlook questions)", "FIGURE/TABLE CAPTIONS slice"]
+  source_sections: [Introduction, Dryland ecosystem change, Conservation and restoration, Future of restoration, Figure/Table captions]
+  confidence: high   # title string itself only medium-confidence (reconstructed)

@@ -1,0 +1,138 @@
+document_id: B009
+bibliographic:
+  title: Causes, impacts and patterns of disastrous river floods
+  authors: [Bruno Merz, Guenter Bloeschl, Sergiy Vorogushyn, Francesco Dottori, Jeroen C.J.H. Aerts, Paul Bates, Miriam Bertola, Matthias Kemter, Heidi Kreibich, Upmanu Lall, Elena Macdonald]   # from opening slice (spelling as extracted)
+  journal: Nature Reviews Earth & Environment (author/manuscript layout with running footers)
+  year: 2021
+  doi: 10.1038/s43017-021-00195-3
+  review_type: thematic-mixed  # process-cause + impact + trend narrative with risk-framework lens
+overall_review_design:
+  review_objective: >-
+    Review what causes disastrous (not ordinary) river floods, their impacts and
+    controls, observed trends, future changes, and risk-management implications.
+  review_scope: >-
+    Atmospheric/climate mechanisms; catchment and network processes; socio-economic
+    impacts; hazard-exposure-vulnerability controls; observed and future trends;
+    decision-making under deep uncertainty.
+  review_mode: >-
+    Narrative synthesis structured by a causal risk chain (hazard -> exposure ->
+    vulnerability -> impact) applied to the extreme tail of floods.
+  article_architecture:
+    - Abstract / TOC summary ("Key points")
+    - Causes of extreme river floods (Atmosphere and climate mechanisms; Catchment and river network processes)
+    - Impacts of disastrous river floods (Socio-economic impacts; Controls of disastrous flood impacts)
+    - Observed trends (Observed changes in flood hazard; Observed changes in flood impacts)
+    - Future changes in hazard and impacts
+    - Future perspectives
+    - Data availability; Box 1 Flood typology
+  organizing_principle: mixed — causal-chain logic (cause -> impact -> control) then temporal trend layer, closing on governance
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: UNKNOWN      # intro body not captured beyond title page in digest slices
+  problem_contextualization: impact magnitudes quantified early ("directly affect ... 125 million people annually")
+  fragmentation_statement: UNKNOWN
+  gap_or_need_statement: UNKNOWN
+  review_objective_statement: UNKNOWN
+  scope_definition: focus on "disastrous" events distinguishes scope from all-flood reviews
+  contribution_statement: UNKNOWN
+  roadmap_pattern: present-as-TOC — "Key points" summary block substitutes for prose roadmap
+section_architecture:
+  section_order: [Causes (atmosphere; catchment/network), Impacts (socio-economic; controls), Observed trends (hazard; impacts), Future changes, Future perspectives]
+  dominant_logic: cause -> consequence -> control -> trend -> future, following the risk chain
+  chronological_logic: partial      # observed-trend section plus future-change section
+  thematic_logic: central
+  mechanism_logic: central          # nonlinearity and flood-type differentiation emphasized
+  scale_logic: partial              # event to catchment to globe
+  region_logic: partial             # continental trend comparisons (Asia, Europe, Africa, Americas)
+  method_logic: none                # methods appear only via trend-study caveats
+  transition_between_sections:
+    - risk-chain handoffs (hazard feeds impact sections)
+    - mismatch finding bridges observed-trends into interpretation paragraphs
+argumentation:
+  dominant_argument_pattern: decomposition argument — split impact change into hazard vs exposure vs vulnerability contributions
+  claim_evidence_relation: trend numbers normalized per decade/year with source studies named
+  comparison_pattern: region-vs-region trend contrasts; small-vs-extreme flood behavioural contrast
+  contradiction_handling: hazard-impact mismatch treated as signal, not noise — explained via exposure growth
+  boundary_condition_handling: land-use effects shown to vanish for extreme floods (nonlinearity boundary)
+  limitation_handling: explicit caveat that annual-maximum trends "might not always be representative of extreme floods"
+  gap_identification_pattern: operational gap — deep uncertainty demands transdisciplinary translation
+synthesis:
+  synthesis_unit: proposition       # statements about causes or drivers of impact change
+  study_by_study_ratio: low         # median 1 citation/block; prose carries synthesis weight
+  multi_source_synthesis_pattern:
+    - normalization arithmetic pooling mortality/affected-people series
+    - cross-indicator comparison (flow trends vs affected-people trends)
+    - typology box unifying flood types before mechanism discussion
+  consensus_pattern: ranges given where estimates disagree (mortality estimates vary)
+  controversy_pattern: attribution debates acknowledged via dedicated methodology reference
+  reconciliation_pattern: divergent regional trends reconciled by exposure/vulnerability terms
+  evidence_weighting_pattern: large-database statistics weighted over single events; qualitative classification declared as such
+paragraph_rhetoric:
+  common_rhetorical_moves: [quantified global burden, regional breakdown, normalization, mechanism contrast, governance implication]
+  typical_move_sequences:
+    - [global figure, regional share, driver explanation]
+    - [trend statement, counter-trending indicator, attribution via exposure]
+  topic_sentence_pattern: topic sentence states a magnitude or a control relationship
+  synthesis_sentence_pattern: "Hence,/This mismatch suggests ..." inference sentences
+  contrast_sentence_pattern: hazard-up-but-impacts-down regional pairings
+  limitation_sentence_pattern: representativeness caveats attached to trend maps
+  transition_pattern: numbered-section footers keep navigation; prose pivots via inference clauses
+  paragraph_length_profile: q25=451, median=624, p75=854 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 1, p75: 2}    # lower than publisher-typeset peers
+  citation_cluster_frequency: low-moderate; synthesis paragraphs often uncited
+  single_vs_cluster: singles dominate; clusters at database claims
+  seminal_recent_balance: recent5y share null in index; UNKNOWN distribution
+  citation_location: [sentence-final numbered]
+  citation_support_type: [database (DFO, FLOPROS), treaty/policy document, trend study]
+  method_citation_pattern: normalization/attribution methodology cited when arithmetic introduced
+  gap_citation_pattern: closing agenda framed through named strategy schools rather than citations
+geography_reasoning:
+  whether_geography_is_central: yes — global distribution maps and regional trend contrasts carry core findings
+  spatial_scale_usage: event to catchment to continent to globe; explicit map regions
+  regional_differentiation_usage: Asia's dominance explained by floodplain extent and settlement patterns
+  spatial_heterogeneity_usage: fragmented trend patterns presented honestly ("fragmented patterns of flood change")
+  cross_scale_usage: local dam-break fatalities connected to national fatality anomalies
+  place_context_usage: continents/countries as units; few individual places named
+  human_environment_usage: central — exposure and vulnerability are co-equal explanatory variables
+  flow_network_usage: river network processes covered within causes
+  spatial_dependence_usage: indirect impacts far from inundated areas (supply chains) included
+  conditions_triggering_geographic_explanation:
+    - when impact trends decouple from hazard trends
+    - when protection standards differ between regions
+    - when settlement patterns concentrate exposure
+figure_strategy:
+  total_figures: 3 (+Box 1)     # figures appended after references in ms layout
+  figure_roles: [causal framework schematic, global event distribution map + protection-standard boxplots, dual-panel observed trend maps]
+  conceptual_framework: Figure 1 colour-codes hazard/exposure/vulnerability in one diagram
+  taxonomy: Box 1 flood typology
+  mechanism: framework arrows link atmospheric, catchment, network processes
+  timeline: none
+  map: Figures 2-3 global/regional distributions and classified trends
+  workflow: none
+  evidence_summary: Figure 3 aggregates many trend studies into a qualitative regional classification
+  figure_text_relation: captions disclose classification criteria and data thresholds
+gap_and_agenda:
+  how_gaps_are_derived: derived from uncertainty about extremes beyond experience — scenario failure risk
+  types_of_gaps: [methodological (attribution rigour), operational (translating DMDU concepts), data (indirect/intangible impacts)]
+  evidence_required_before_gap_claim: demonstrated divergence between hazard and impact trends needing fuller models
+  future_agenda_structure: menu of decision-making-under-deep-uncertainty strategies then one transdisciplinary call
+  specificity_of_future_questions: strategy-level rather than hypothesis-level
+quality_features:
+  major_strengths:
+    - risk-chain decomposition converts trend mismatches into findings
+    - honest presentation of heterogeneous, fragmented evidence
+    - Key-points TOC aids scanning
+  transferable_patterns:
+    - decompose outcome trends into hazard/exposure/vulnerability components
+    - treat hazard-impact mismatch as an explanatory opportunity
+    - close by mapping named decision frameworks onto the reviewed problem
+  unique_but_nontransferable_features: disaster-risk terminology suite specific to hazards field
+  risks_of_imitation: qualitative regional classifications require transparent criteria to avoid overclaiming
+anti_patterns:
+  weak_patterns_to_avoid:
+    - extrapolating small-flood trend studies to catastrophic-event conclusions unchecked
+source_provenance:
+  source_pages: ["digest OPENING (title/authors)", "BODY_SLICE_1@17% (causes end, impacts start)", "BODY_SLICE_2@33% (regional trends)", "BODY_SLICE_3@50% (future perspectives)", "BODY_SLICE_4@67% + BODY_SLICE_5@83% (references)", "CLOSING (figure captions)"]
+  source_sections: [Impacts of disastrous river floods, Socio-economic impacts, Observed changes in flood impacts, Future perspectives, Figure captions 1-3, Box 1]
+  confidence: medium     # manuscript layout, some headings inferred; visible text rich but intro not captured

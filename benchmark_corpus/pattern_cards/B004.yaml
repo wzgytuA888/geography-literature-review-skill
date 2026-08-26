@@ -1,0 +1,134 @@
+document_id: B004
+bibliographic:
+  title: Non-perennial segments in river networks
+  authors: [UNKNOWN]           # only partial author-affiliation fragments extracted (Tockner et al.-style list)
+  journal: UNKNOWN             # accepted-manuscript layout; venue not captured
+  year: 2023
+  doi: null
+  review_type: narrative
+overall_review_design:
+  review_objective: >-
+    Establish non-perennial river segments as integral network elements and review
+    their ecology, future change, monitoring, and management.
+  review_scope: >-
+    Flowing/non-flowing/dry phases; segment-to-network scales; biodiversity, ecosystem
+    processes, hydrology, remote sensing of flow permanence, restoration and law.
+  review_mode: >-
+    Narrative synthesis organized by spatial scale (segment -> network) then by theme
+    (change -> monitoring -> management).
+  article_architecture:
+    - Abstract
+    - "[H1] Introduction"
+    - "[H1] Ecology of non-perennial rivers"          # H2s at segment scale / network scale
+    - "[H1/H2] Future changes (hydrological; biological responses)"
+    - "[H1/H2] Mapping/monitoring and tools"
+    - "[H2] Restoration and conservation of NPRs"
+    - Management/protection closing sections           # exact tail headings not captured
+    # NOTE: full heading tree lost in extraction; order partly inferred from slice sequence
+  organizing_principle: mixed — scale-organized ecology core with thematic tail (futures, tools, governance)
+  number_of_major_sections: UNKNOWN
+introduction_pattern:
+  opening_move: global-importance statistics framing ("Rivers cover less than 2% of the Earth's surface")
+  problem_contextualization: threat levels quantified (one in three riverine species threatened)
+  fragmentation_statement: bias claim as coherence gap — "research and management have historically focused on perennial segments"
+  gap_or_need_statement: protection and legislative coverage lacking for non-perennial waters
+  review_objective_statement: explicit ("In this Review, we outline how non-perennial segments are integral")
+  scope_definition: phase-cycle definition given in abstract opening
+  contribution_statement: UNKNOWN
+  roadmap_pattern: present in abstract; body variant UNKNOWN
+section_architecture:
+  section_order: [Introduction, Segment-scale ecology, Network-scale ecology, Future changes, Monitoring/tools, Restoration and conservation]
+  dominant_logic: scale-nested argument — local responses aggregate to network behaviour, then futures and action
+  chronological_logic: partial      # observed vs expected-future subsections
+  thematic_logic: central
+  mechanism_logic: partial          # drying duration/severity controls stated per biota
+  scale_logic: central              # segment vs network is the primary axis
+  region_logic: none                # regions appear only as study examples
+  method_logic: partial             # remote sensing/biomonitoring tool assessment
+  transition_between_sections:
+    - explicit section-purpose sentence ("This section discusses how drying influences ... and how these effects propagate")
+argumentation:
+  dominant_argument_pattern: mechanism-plus-quantified-example — each ecological claim paired with a measured case
+  claim_evidence_relation: numeric effect sizes cited inline (taxa lost per drying-day; survival percentages)
+  comparison_pattern: perennial-vs-non-perennial contrast; flowing-phase vs dry-phase community shifts
+  contradiction_handling: UNKNOWN   # not captured in available slices
+  boundary_condition_handling: responses conditioned on dry-phase duration and refuge distance
+  limitation_handling: data scarcity (gauges, groundwater wells) flagged where mapping claims rest
+  gap_identification_pattern: infrastructure/data gap plus tool-transferability gap
+synthesis:
+  synthesis_unit: theme             # drying as organizer across biotic groups
+  study_by_study_ratio: medium      # more named single studies than publisher-typeset peers
+  multi_source_synthesis_pattern:
+    - cross-taxon synthesis under a shared drying-duration gradient
+    - beta-diversity argument pooling site studies into regional contribution
+  consensus_pattern: directional agreement that drying reduces aquatic richness
+  controversy_pattern: UNKNOWN
+  reconciliation_pattern: apparent contradictions resolved by distinguishing segment-scale vs network-scale contributions
+  evidence_weighting_pattern: quantified field experiments weighted over descriptive accounts
+paragraph_rhetoric:
+  common_rhetorical_moves: [definition with glossary tag, quantified example, colonized-species counterpoint, forward reference to figure]
+  typical_move_sequences:
+    - [general claim, "For example," + measured case, second example, generalization]
+  topic_sentence_pattern: claim about which biota respond how to drying
+  synthesis_sentence_pattern: contribution reframing ("their contribution ... can exceed those of perennial segments")
+  contrast_sentence_pattern: aquatic-loss vs terrestrial-colonization pairing
+  limitation_sentence_pattern: data-scarcity clauses attached to mapping claims
+  transition_pattern: signposted section openers announcing propagation logic
+  paragraph_length_profile: UNKNOWN # block stats unavailable (only 2 blocks detected)
+citation_behavior:
+  citations_per_paragraph: {p25: UNKNOWN, median: UNKNOWN, p75: UNKNOWN}
+  citation_cluster_frequency: moderate in visible slices (pairs/triples after claims)
+  single_vs_cluster: singles dominate visible exemplar sentences
+  seminal_recent_balance: UNKNOWN   # recent5y share 0.3 per index; distribution unknown
+  citation_location: [sentence-final numbered]
+  citation_support_type: [field-study anchor, dataset/tool source]
+  method_citation_pattern: tool limitations cited at point of critique
+  gap_citation_pattern: gaps tied to named datasets/tools that fall short
+geography_reasoning:
+  whether_geography_is_central: yes — spatial arrangement/connectivity of reaches is the organizing variable
+  spatial_scale_usage: reach -> catchment -> global abundance statements
+  regional_differentiation_usage: drying trajectories differ by latitude/elevation (some NPRs become perennial)
+  spatial_heterogeneity_usage: refuge distribution controls recolonization composition
+  cross_scale_usage: segment events propagate to network integrity explicitly
+  place_context_usage: Albarine, Oaky Creek, Russian River as calibrated examples
+  human_environment_usage: abstraction/dams drive intermittence; management outcomes central
+  flow_network_usage: central — network connectivity is the review's spine
+  spatial_dependence_usage: downstream effects and gauge placement bias discussed
+  conditions_triggering_geographic_explanation:
+    - when recolonization depends on distance to perennial refuges
+    - when climate change acts latitudinally/elevationally
+    - when monitoring coverage is spatially biased
+figure_strategy:
+  total_figures: UNKNOWN            # figure captions not recovered
+  figure_roles: []                  # Figure 1c and Figure 5c referenced in text only
+  conceptual_framework: UNKNOWN
+  taxonomy: UNKNOWN
+  mechanism: UNKNOWN
+  timeline: UNKNOWN
+  map: UNKNOWN
+  workflow: UNKNOWN
+  evidence_summary: UNKNOWN
+  figure_text_relation: figures referenced inline at claim sites (visible slices)
+gap_and_agenda:
+  how_gaps_are_derived: derived from management failure cases — tools built for perennial rivers misperform
+  types_of_gaps: [data (stream gauges, groundwater levels), method (biomonitoring indices), governance (legal protection)]
+  evidence_required_before_gap_claim: documented poor performance of existing indices in NPRs
+  future_agenda_structure: technology-first agenda (SAR platforms, model-data fusion) then governance
+  specificity_of_future_questions: concrete sensor/platform names proposed
+quality_features:
+  major_strengths:
+    - every ecological assertion carries a measured effect size
+    - scale ladder (segment->network) keeps aggregation logic transparent
+  transferable_patterns:
+    - quantify one vivid example immediately after each general claim
+    - state section purpose in a single sentence before content
+    - pair an ecological loss with its compensating colonization process
+  unique_but_nontransferable_features: legal/policy audit specific to water law contexts
+  risks_of_imitation: UNKNOWN       # cannot assess full rhetoric from degraded extraction
+anti_patterns:
+  weak_patterns_to_avoid:
+    - treating understudied system elements as negligible rather than naming the bias
+source_provenance:
+  source_pages: ["digest OPENING (abstract+intro, ms pp.1-2)", "BODY_SLICE_1@17% (segment-scale ecology)", "BODY_SLICE_2@33% (future biological responses)", "BODY_SLICE_3@50% (monitoring, restoration)", "CLOSING slice (references)"]
+  source_sections: ["[H1] Introduction", "[H2] Non-perennial segment scale", "[H2] Biological responses to future changes", "[H2] Restoration and conservation of NPRs"]
+  confidence: low        # digest carries explicit poor-extraction warning; heading tree incomplete

@@ -1,0 +1,4 @@
+claim_id,theme,paper_id,evidence_id,claim_text,evidence_summary,methodology,geography,spatial_scale,temporal_scope,support_or_contradict,confidence,source_location,doi,zotero_key
+C001,drought,P001,E012,a,b,c,d,e,f,support,high,p.7 §3.2,10.1/x,Z1
+C002,drought,P002,E012,dup-id-case,b,c,d,e,f,support,medium,,10.1/y,Z2
+C003,flood,P003,E013,no-source-location,b,c,d,e,f,contradict,bogus_level, ,10.1/z,

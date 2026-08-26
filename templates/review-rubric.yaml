@@ -1,0 +1,23 @@
+# Review rubric template — runtime quality gate scores (0–2 each unless noted)
+rubric_version: 1.0
+criteria:
+  scientific_focus: {score: , notes: ""}
+  conceptual_clarity: {score: , notes: ""}
+  completeness_vs_scope: {score: , notes: ""}
+  theoretical_depth: {score: , notes: ""}
+  causal_logic: {score: , notes: ""}
+  geography_reasoning_conditional_use: {score: , notes: "log which GR rules fired"}
+  overclaim_control: {score: , notes: ""}
+  synthesis_over_enumeration: {score: , notes: "% clustered paragraphs"}
+  controversy_diagnosis: {score: , notes: "ladder applied before 'inconsistent'"}
+  citation_claim_support: {score: , notes: "audit summary ref"}
+  gap_evidence_basis: {score: , notes: "each gap traces to deficit"}
+  agenda_specificity: {score: , notes: ""}
+  figure_grounding_and_integration: {score: , notes: ""}
+  near_copy_screen: {score: , notes: "PASS required"}
+hard_gates:
+  hallucinated_references: 0        # must equal 0
+  benchmark_leakage_claims: 0       # must equal 0
+  unsupported_quant_figures: 0      # must equal 0
+  unsupported_gap_statements: 0     # must equal 0
+verdict: ACCEPT|MINOR_REVISION|MAJOR_REVISION

@@ -1,0 +1,2 @@
+claim_id,theme,paper_id,evidence_id,claim_text,evidence_summary,methodology,geography,spatial_scale,temporal_scope,support_or_contradict,confidence,source_location,doi,zotero_key
+C001,drought-attribution,P003,E012,"example claim paraphrase",one-line result summary,method/data design,study region,grid/basin/global,1990-2020,support,high,p.7 §3.2,10.xxxx/xxxxx,ZOTKEY001

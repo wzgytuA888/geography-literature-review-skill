@@ -1,0 +1,137 @@
+document_id: B013
+bibliographic:
+  title: "Climate change, tropical fisheries and prospects for sustainability"
+  authors: [UNKNOWN]
+  journal: UNKNOWN (accepted-manuscript formatting; likely Nature Reviews journal per corpus)
+  year: 2020
+  doi: UNKNOWN
+  review_type: narrative
+overall_review_design:
+  review_objective: >-
+    Synthesize climate-change effects on tropical marine fisheries, socio-economic
+    consequences, and adaptation options.
+  review_scope: tropical ocean basins; physical-biogeochemical drivers through fish stocks, ecosystem services, SDG outcomes, adaptation
+  review_mode: driver-to-consequence pipeline with policy endpoint
+  article_architecture:   # reconstructed from [H1]/[H2] markers visible in digest
+    - Introduction (unheaded) with Key Points list
+    - Physical/biogeochemical ocean changes
+    - Changes in marine fish stocks ([H2])
+    - Ecosystem services and SDG impacts
+    - "[H1] Adaptation and mitigation measures (three-category taxonomy)"
+    - Regional boxes (Box 1 Pacific Islands; Box 2 Brazil)
+    - Outlook (geoethics/sustainability)
+  organizing_principle: "mixed(causal chain: driver -> stock -> service -> society -> response)"
+  number_of_major_sections: 5   # approximate; headings not machine-detected
+introduction_pattern:
+  opening_move: policy-goal framing (UN Sustainable Development Goals)
+  problem_contextualization: quantified headline stakes (catch potential decline up to 40% by 2050s under RCP8.5)
+  fragmentation_statement: UNKNOWN (not preserved in digest)
+  gap_or_need_statement: >-
+    Need tied to dependent populations; "there is a clear need to account for the effects ... and identify practical adaptations".
+  review_objective_statement: '"In this Review, we synthesize the effects of climate change on tropical marine fisheries".'
+  scope_definition: tropical EEZs plus extra-tropical nations reached through trade ('tele-coupling')
+  contribution_statement: couples biophysical projection to SDG accounting and adaptation taxonomy
+  roadmap_pattern: present but partially preserved
+section_architecture:
+  section_order: [Intro, Ocean changes, Fish-stock changes, Services/SDG impacts, Adaptation, Regional boxes, Outlook]
+  dominant_logic: causal cascade from physics to society to response
+  chronological_logic: none
+  thematic_logic: central
+  mechanism_logic: partial
+  scale_logic: partial
+  region_logic: partial
+  method_logic: none
+  transition_between_sections:
+    - '"Collectively, the various stressors ..." summarizing bridge between mechanism and impact sections'
+argumentation:
+  dominant_argument_pattern: projected-change claim with quantified range then differential regional consequence
+  claim_evidence_relation: multi-study numeric ranges carried by citation clusters (e.g. shifts attributed to refs 85-92)
+  comparison_pattern: winners-vs-losers regional contrast (eastern Pacific gains vs PICT losses under same forcing)
+  contradiction_handling: UNKNOWN
+  boundary_condition_handling: adaptive-capacity differences bound impact severity across countries
+  limitation_handling: UNKNOWN
+  gap_identification_pattern: governance/knowledge gaps raised where coordination bodies lack climate-ready mandates
+synthesis:
+  synthesis_unit: theme (stressor) and region
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - pooled quantified ranges across model studies
+    - stressor-interaction aggregation ("Collectively, ...")
+    - telecoupling synthesis linking ecological shifts to trade economics
+  consensus_pattern: projections reported as convergent model ensembles with scenario conditioning
+  controversy_pattern: UNKNOWN
+  reconciliation_pattern: same driver yields opposite outcomes by geography, reconciled by fleet mobility and EEZ location
+  evidence_weighting_pattern: scenario labels (RCP2.6 vs RCP8.5) act as explicit evidence conditionals
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - quantified range plus citation cluster
+    - '"For example," worked instance'
+    - SDG-by-SDG consequence mapping
+  typical_move_sequences:
+    - [driver sentence, biological response with range, regional differentiation, livelihood translation]
+  topic_sentence_pattern: stressor-named declaratives
+  synthesis_sentence_pattern: '"Collectively," aggregations across stressors'
+  contrast_sentence_pattern: '"However, ... the same shifts are likely to boost ..." reversal moves'
+  limitation_sentence_pattern: UNKNOWN
+  transition_pattern: causal connectives (as a result, thereby)
+  paragraph_length_profile: long merged blocks in this extraction (median ~1242 chars)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 5, p75: 203}   # unreliable: extraction merged most body into few blocks
+  citation_cluster_frequency: high
+  single_vs_cluster: clusters dominate
+  seminal_recent_balance: UNKNOWN
+  citation_location: [sentence-final clusters]
+  citation_support_type: [projection magnitude, distribution-shift evidence, economic data]
+  method_citation_pattern: dataset/data-layer citations appended (e.g. coral-reef distribution layers)
+  gap_citation_pattern: UNKNOWN
+geography_reasoning:
+  whether_geography_is_central: yes
+  spatial_scale_usage: latitude belt (tropics) to EEZ to basin zonally averaged projections
+  regional_differentiation_usage: basin-by-basin (Pacific/Atlantic/Indian) and country-group differentiation
+  spatial_heterogeneity_usage: species richness loss where tolerance limits exceeded; east-west tuna redistribution
+  cross_scale_usage: local catches linked to global markets via trade flows
+  place_context_usage: named regions (Pacific Islands, Brazil, Kiribati) carry quantified cases in boxes
+  human_environment_usage: strong; SDGs, licence-fee revenue, food security, governance commissions named
+  flow_network_usage: yes; export-flow maps and distant-water fishing as telecoupled flows
+  spatial_dependence_usage: catch outcomes depend on EEZ position relative to shifting stock boundaries
+  conditions_triggering_geographic_explanation:
+    - "when identical forcing produces opposite outcomes across jurisdictions"
+    - "when market linkages transmit localized ecological change to distant economies"
+figure_strategy:
+  total_figures: at least 4   # numbering incomplete in extraction
+  figure_roles:
+    - zonal projection panels of catch/production potential by basin
+    - economic telecoupling flow maps (exports vs landed values)
+  conceptual_framework: UNKNOWN
+  taxonomy: adaptation measures grouped into three named categories in text
+  mechanism: UNKNOWN
+  timeline: no
+  map: yes (flow/value maps)
+  workflow: no
+  evidence_summary: partial
+  figure_text_relation: captions state implications explicitly (caption-as-finding)
+gap_and_agenda:
+  how_gaps_are_derived: UNKNOWN
+  types_of_gaps: [governance coordination (cross-jurisdiction harvest strategies), adaptation knowledge]
+  evidence_required_before_gap_claim: UNKNOWN
+  future_agenda_structure: three-category adaptation taxonomy followed by ethics-oriented outlook
+  specificity_of_future_questions: moderately specific (named management bodies and instruments)
+quality_features:
+  major_strengths:
+    - regional case boxes carrying quantified detail without breaking main-line argument
+    - explicit coupling of projections to policy goals
+  transferable_patterns:
+    - region-in-a-box pattern for deep case material
+    - winners-vs-losers geographic contrast structure
+    - caption states the implication, not just the content
+  unique_but_nontransferable_features:
+    - geoethics closing unusual for the genre
+  risks_of_imitation:
+    - heavy scenario dependence requires constant RCP labelling to stay honest
+anti_patterns:
+  weak_patterns_to_avoid:
+    - reporting pooled percentage ranges without naming the scenario they assume
+source_provenance:
+  source_pages: ['digest WARNING: poor text extraction quality', 'OPENING p1-2', 'SLICE_1@17%', 'SLICE_2@33% (journal pp.9,22)', 'CLOSING (Box 1-2 text, Fig 3-4 captions)']
+  source_sections: ['visible [H1]/[H2] markers', 'Key Points', 'Boxes 1-2', 'figure captions']
+  confidence: low

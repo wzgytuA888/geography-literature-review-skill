@@ -1,0 +1,141 @@
+document_id: B028
+bibliographic:
+  title: Megadroughts in the Common Era
+  authors: [UNKNOWN]           # long international affiliation list captured; names not in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2022                   # page footer "November 2022 | volume 3"
+  doi: 10.1038/s43017-022-00329-1   # inferred from filename s43017-022-00329-1.pdf
+  review_type: narrative       # global thematic synthesis with formal definition contribution
+overall_review_design:
+  review_objective: >-
+    Synthesize megadrought dynamics over the past two millennia and into the future from a
+    global perspective, proposing a formal definition and assessing anthropogenic amplification.
+  review_scope: >-
+    Common Era megadroughts on all continents (excl. Antarctica); proxy databases,
+    detection/attribution of current events, ocean-atmosphere forcing, projections, water management.
+  review_mode: >-
+    Definition-first expert synthesis that surveys region-by-region, then attributes and projects;
+    explicitly positions itself against earlier reviews' biases.
+  article_architecture:
+    - Introduction (prior-review critique, four-part contribution statement)
+    - Defining megadroughts            # datasets; proposed criteria (Box 1)
+    - Common Era megadroughts          # region-by-region: North America -> Mexico/Central America -> South America -> Africa -> Asia -> Australia
+    - Mechanisms / ocean-atmosphere forcing
+    - Anthropogenic contributions to current megadroughts (counterfactual attribution)
+    - Projected megadrought risk
+    - Water-management implications and uncertainties
+  organizing_principle: mixed — definition -> regional survey (evidence-density ordered) -> mechanism -> attribution -> projection -> application
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: definitional-puzzle framing — when does persistent drought become an aridification shift in the mean state
+  problem_contextualization: societal stakes introduced via historical collapse cases and modern strain
+  fragmentation_statement: gap argued by reviewing prior reviews — geographic bias plus staleness ("overwhelmingly focused on North America")
+  gap_or_need_statement: global perspective enabled by newly available drought atlases and recent advances
+  review_objective_statement: explicit multi-clause contribution list ("We suggest a formal definition ... and demonstrate ... We summarize ... and discuss ... Finally, we discuss")
+  scope_definition: temporal boundary (Common Era) plus continental coverage stated
+  contribution_statement: formal definition + demonstration + mechanism summary + risk discussion enumerated up front
+  roadmap_pattern: present — contribution sentences double as roadmap without per-section narration
+section_architecture:
+  section_order: [Introduction, Defining megadroughts, Common Era megadroughts (by region), Forcing mechanisms, Anthropogenic climate change contributions, Future risk, Management implications]
+  dominant_logic: fix terms, inventory evidence region by region, explain causes, separate anthropogenic signal, project, apply to planning
+  chronological_logic: central      # Common Era ordering within each region; event dating throughout
+  thematic_logic: partial           # regions as themes inside one survey section
+  mechanism_logic: central          # ocean-state forcing organizes explanation
+  scale_logic: partial              # local case boxes nested in continental narratives
+  region_logic: central             # continent-scale sections are the paper's spine
+  method_logic: partial             # proxy dataset strengths/limits audited at outset
+  transition_between_sections:
+    - definition-to-survey bridge ("Using our definition, megadroughts can be found...")
+    - survey-to-mechanism pivot after evidence exhausted
+    - past-to-future pivot through attribution of current events
+argumentation:
+  dominant_argument_pattern: comparative-baseline argument — an event qualifies as megadrought only against a long reference distribution
+  claim_evidence_relation: dated events with severity/duration/extent metrics; anomaly magnitudes in standardized units
+  comparison_pattern: event-vs-baseline comparisons across regions; current events benchmarked against palaeo worst cases
+  contradiction_handling: >-
+    Proxy conflicts presented as resolution differences; definitional flexibility acknowledged
+    while requiring explicit metric comparison for any claim.
+  boundary_condition_handling: evidence-poor regions flagged so absence of records is not read as absence of droughts
+  limitation_handling: reconstruction limits stated per atlas before regional claims
+  gap_identification_pattern: coverage-gap identification — southern hemisphere resolution deficit named as first-order problem
+synthesis:
+  synthesis_unit: region-event      # dated regional episodes form the packets
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - cross-atlas compilation into single regional timelines
+    - multi-proxy convergence for key events (case box)
+    - model-proxy fusion in counterfactual attribution
+  consensus_pattern: multi-archive agreement phrasing for canonical events
+  controversy_pattern: causal debates (e.g., Maya collapse) summarized as evolving multi-factor understanding
+  reconciliation_pattern: apparent conflicts resolved by timescale-of-record and proxy-type distinctions
+  evidence_weighting_pattern: annually resolved tree-ring atlases weighted above lower-resolution archives
+paragraph_rhetoric:
+  common_rhetorical_moves: [dated episode narration, baseline comparison, counterfactual reasoning, archival availability caveat]
+  typical_move_sequences:
+    - [region opener, archive note, event sequence with dates]
+    - [current-drought description, counterfactual without forcing, attribution conclusion]
+  topic_sentence_pattern: region-naming sentence ("North America.", "South America.")
+  synthesis_sentence_pattern: exceptionalism clause ranking an event against its reference distribution
+  contrast_sentence_pattern: natural-vs-anthropogenically-amplified contrasts
+  limitation_sentence_pattern: archive-resolution hedges preceding regional claims
+  transition_pattern: continent-to-continent sequencing carries momentum without meta-discourse
+  paragraph_length_profile: q25=385, median=446, p75=627 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 2}   # index block values; prose clusters denser
+  citation_cluster_frequency: moderate-high; historical episodes carry multi-source clusters
+  single_vs_cluster: singles for foundational reconstructions; clusters for event inventories
+  seminal_recent_balance: recent5y share 0.233 — highest in batch, reflecting fast-moving attribution work
+  citation_location: [sentence-final clusters, box citations, figure-source credits]
+  citation_support_type: [reconstruction, attribution study, dataset/atlas, historical document]
+  method_citation_pattern: atlases and indices defined and cited at first mention; Box 1 formalizes terminology
+  gap_citation_pattern: data-coverage gaps asserted from known atlas extents
+geography_reasoning:
+  whether_geography_is_central: yes-defining — continental organization with explicit attention to why coverage is unequal
+  spatial_scale_usage: site archives -> regional drought atlases -> continental patterns -> global teleconnections
+  regional_differentiation_usage: each continent's forcing context (Pacific influence, monsoon dynamics) differentiated
+  spatial_heterogeneity_usage: spatial-extent panels quantify how widely simultaneous droughts spread
+  cross_scale_usage: decadal regional events linked to multi-decadal ocean states and global colonial-era impacts
+  place_context_usage: Box 2 Angkor case shows one city's fate as mechanistic vignette
+  human_environment_usage: societal collapse and modern water planning woven through as consequences
+  flow_network_usage: river-flow reconstructions anchor hydrologic severity
+  spatial_dependence_usage: teleconnection patterns explain synchronized droughts across regions
+  conditions_triggering_geographic_explanation:
+    - when archive availability differs between hemispheres/continents
+    - when ocean forcing imprints region-specific drought signatures
+    - when management baselines ('drought of record') are jurisdiction-specific
+figure_strategy:
+  total_figures: 4
+  figure_roles: [CE drought characteristic maps, multi-region event timeline matrix, counterfactual attribution panels, projected-risk density distributions]
+  conceptual_framework: Box 1 formalizes definitions; Fig. 2 timeline is the organizing overview
+  taxonomy: severity-duration-extent criteria constitute the classification scheme
+  mechanism: Fig. 3 separates natural and anthropogenic contributions spatially
+  timeline: Fig. 2 stacked regional bar/timeline panels date every inventoried event
+  map: Figs. 1 and 3 map anomalies and counterfactual patterns
+  workflow: none
+  evidence_summary: Box 2 fuses time series, spatial extent and comparison statistics for one exemplar event
+  figure_text_relation: captions define indices and filters; text narrates ranked exceptions
+gap_and_agenda:
+  how_gaps_are_derived: derived from coverage asymmetries and imperfect knowledge blocking confident projection
+  types_of_gaps: [data coverage (southern hemisphere), mechanistic (land-atmosphere feedbacks), predictive (risk quantification), applied (planning baselines)]
+  evidence_required_before_gap_claim: demonstrated atlas extents and attribution residuals
+  future_agenda_structure: application-forward agenda — palaeo-informed droughts-of-record, stress tests, recovery-window research
+  specificity_of_future_questions: concrete procedural proposals (use palaeoclimate records to redefine planning droughts)
+quality_features:
+  major_strengths:
+    - critique of prior reviews converts literature history into gap justification
+    - formal definition with comparability requirement disciplines later usage
+    - counterfactual attribution makes anthropogenic role vivid and checkable
+  transferable_patterns:
+    - open by auditing previous reviews' biases to justify a new synthesis
+    - propose operational definitions early, then enforce them across all sections
+    - use deep-dive case boxes to make aggregate claims tangible
+    - flag where evidence scarcity, not phenomenon absence, explains gaps
+  unique_but_nontransferable_features: two-millennium archive depth is palaeo-science-specific
+  risks_of_imitation: region-listing can become catalogue without the forcing thread binding sections
+anti_patterns:
+  weak_patterns_to_avoid:
+    - letting regional coverage reflect archive abundance while claiming global completeness
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2 incl. Key points)", "BODY_SLICE_1@17% (definition, North America)", "BODY_SLICE_2@33% (Angkor box, Asia/Australia)", "BODY_SLICE_3@50% (attribution, Chile-Argentina)", "BODY_SLICE_4@67% (management)", "FIGURE/TABLE CAPTIONS slice", "Box captions"]
+  source_sections: [Introduction, Defining megadroughts, Common Era megadroughts, Figure/Table captions, Boxes]
+  confidence: high

@@ -1,0 +1,133 @@
+document_id: B058
+bibliographic:
+  title: "Past, present and future Greenland Ice [Sheet surface melt; truncated in extraction]"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2026
+  doi: 10.1038/s43017-026-00800-3
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: >-
+    Review controls on Greenland Ice Sheet surface melt, its past/present variability and future projections,
+    and how melt couples to ice sheet mass balance; identify research priorities.
+  review_scope: melt physics, atmospheric/oceanic controls, palaeo (1500 CE), satellite era (1958-2024), projections to 2200, firn/runoff coupling.
+  review_mode: era-partitioned mechanistic synthesis (controls -> past -> present -> future -> coupling).
+  article_architecture:
+    - Abstract
+    - Introduction
+    - Controls on GrIS melt
+    - Palaeoclimate evidence sections (pre-industrial onward)
+    - Observational/model reconstruction sections (1958-2024)
+    - Projections of future [melt]
+    - Coupling melt to ice sheet [mass balance]
+    - Summary and future
+    - Box 1
+  organizing_principle: mixed(mechanistic controls first, then explicit time windows, then system coupling)
+  number_of_major_sections: 6-7
+introduction_pattern:
+  opening_move: sea-level stakes with error bars (4,900 +/- 261 Gt; 13.4 +/- 0.7 mm; 7.42 m potential).
+  problem_contextualization: SMB-vs-dynamics decomposition; why surface melt dominates now and will continue to.
+  fragmentation_statement: "\"deep uncertainty, reflecting limited agreement on key processes\" — divergence as motivation."
+  gap_or_need_statement: projection spread tied to poorly constrained process interactions.
+  review_objective_statement: delivered via the most elaborate roadmap in batch — "We begin by outlining..., before evaluating..., then assessing... and analysing... Finally, we examine...".
+  scope_definition: time windows declared numerically (since 1500 CE; 1958-2024; to 2200) inside the roadmap.
+  contribution_statement: cross-era synthesis plus coupling analysis and priorities.
+  roadmap_pattern: present, multi-clause with explicit temporal anchors.
+section_architecture:
+  section_order: [Abstract, Introduction, Controls (energy balance, warming/circulation), Palaeo era, Instrumental era, Projections, Melt-mass-balance coupling, Summary-future]
+  dominant_logic: mechanism primer then chronological eras then forward coupling
+  chronological_logic: central
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: partial
+  region_logic: partial
+  method_logic: partial
+  transition_between_sections:
+    - roadmap sentence pre-declares every section boundary
+    - "\"are now discussed\" style previews at section heads"
+argumentation:
+  dominant_argument_pattern: mechanism-to-projection chain - physics explains variability, variability calibrates trust in projections.
+  claim_evidence_relation: sensitivities quantified (roughly one third more melt per degree); era claims anchored to named records.
+  comparison_pattern: era-versus-era budget comparisons; model-versus-model spread against an observational benchmark.
+  contradiction_handling: inter-model divergence attributed process-by-process (blocking representation, firn retention).
+  boundary_condition_handling: melt-runoff partitioning conditioned on elevation zone and firn state.
+  limitation_handling: every named uncertainty paired with a proposed remedy or intercomparison project.
+  gap_identification_pattern: model-deficiency decomposition converted into targeted community vehicles.
+synthesis:
+  synthesis_unit: process or era-bounded finding
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - multi-site ice-core records composited into one timeline figure
+    - model intercomparison results summarized against observational benchmarks
+    - correlation statistics used to rank drivers of variance
+  consensus_pattern: robust relationships quantified ("melt typically increases by approximately one third for each additional 1 °C").
+  controversy_pattern: "\"Climate models diverge in their representation\" — divergence itemized by missing process (blocking, firn retention)."
+  reconciliation_pattern: prescribes targeted intercomparison projects (GrSMBMIP, RetMIP) as convergence mechanisms.
+  evidence_weighting_pattern: observations anchor; reanalyses bridge; models for projections only.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - equation-first physics exposition with symbol-by-symbol gloss
+    - regime-shift narration across eras
+    - uncertainty source partitioning
+  typical_move_sequences:
+    - [physical law/definition, observational support, era trend, residual uncertainty]
+  topic_sentence_pattern: control-led ("Absorbed shortwave radiation, controlled by surface albedo,...").
+  synthesis_sentence_pattern: quantitative sensitivity statements binding driver to response.
+  contrast_sentence_pattern: before/after regime contrasts (pre-1990s vs 2011-2020 budgets).
+  limitation_sentence_pattern: named-model-gap sentences pointing to specific intercomparisons.
+  transition_pattern: temporal hand-offs; preview clauses.
+  paragraph_length_profile: q25=451, median=565, p75=778 chars — tightest paragraphs in batch.
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 5}
+  citation_cluster_frequency: moderate.
+  single_vs_cluster: singles for site-specific ice-core findings; clusters for budget components.
+  seminal_recent_balance: recent5y share 0.351; foundational physics older.
+  citation_location: [sentence-final clusters, inline after equations]
+  citation_support_type: [observational record, model study, reanalysis, dataset]
+  method_citation_pattern: monitoring networks and models cited as infrastructure at first mention.
+  gap_citation_pattern: gaps attached to named model deficiencies and intercomparison needs.
+geography_reasoning:
+  whether_geography_is_central: yes — a single place studied through its spatially varying processes.
+  spatial_scale_usage: elevation bands, marginal vs interior zones, ice-sheet-wide extents all load-bearing.
+  regional_differentiation_usage: site-level palaeo records (Site J, DYE3, Nuussuaq) differentiated within one ice sheet; regional warming asymmetries.
+  spatial_heterogeneity_usage: melt confinement below ~2,000 m elevation and its weakening tracked as key change.
+  cross_scale_usage: synoptic circulation (blocking) to surface energy balance coupling.
+  place_context_usage: named sites/stations as evidence points on maps and timelines.
+  human_environment_usage: minimal — physical glaciology focus; SLR impacts as stakes only.
+  flow_network_usage: meltwater routing and ocean delivery treated as coupling pathway.
+  spatial_dependence_usage: albedo-elevation-melt feedback chains are explicitly spatial.
+  conditions_triggering_geographic_explanation:
+    - when elevation/surface type modulates a uniform forcing
+    - when circulation patterns produce regionally distinct melt episodes
+figure_strategy:
+  total_figures: 6
+  figure_roles: [controls schematic, circulation/NAO influence panels, multi-site proxy timeline, era time series, indicator dashboard, warming-level response curves]
+  conceptual_framework: Fig. 1 atmospheric-oceanic-glaciological controls schematic; Box 1 mass balance definitions.
+  taxonomy: process lists in schematics (lakes, slabs, blocking...).
+  mechanism: energy balance equation + feedback diagrams.
+  timeline: Fig. 3 ice-core proxies and melt indicators across sites since 1500 CE.
+  map: melt extent/geography embedded in schematic panels.
+  workflow: none
+  evidence_summary: Fig. 4 SMB/rain-fraction time series 1958-2024; Fig. 5 indicators.
+  figure_text_relation: captions end with regime interpretation ("transition from marginal to ice-sheet-wide melt conditions").
+gap_and_agenda:
+  how_gaps_are_derived: model-observation divergence decomposed into named process gaps.
+  types_of_gaps: [process-representation gap (blocking, firn), resolution gap, coupling gap (melt-dynamics)]
+  evidence_required_before_gap_claim: demonstrated inter-model spread plus identified mechanism responsible.
+  future_agenda_structure: priorities paragraph keyed to coupling section; intercomparisons as vehicles.
+  specificity_of_future_questions: high — named projects and variables to constrain.
+quality_features:
+  major_strengths: [era windows declared numerically, equation-forward rigor, uncertainty decomposition into actionable items]
+  transferable_patterns:
+    - declare numeric time windows for each evidence era in the roadmap
+    - open with stakes carrying uncertainty estimates, not bare magnitudes
+    - convert each named uncertainty into a proposed community vehicle (intercomparison)
+  unique_but_nontransferable_features: [single-ice-sheet depth; glaciological instrumentation context]
+  risks_of_imitation: era partitioning risks repetition when processes span windows.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - reporting model spread without diagnosing which process causes it
+source_provenance:
+  source_pages: ["511-527 header", "512 opening", "~520 slice1", "~527 slice2", "~534 slice3", "~541 slice4"]
+  source_sections: [Introduction, Controls on GrIS melt, palaeo/reconstruction sections, Projections of future, Coupling melt to ice sheet mass balance, figure captions]
+  confidence: high

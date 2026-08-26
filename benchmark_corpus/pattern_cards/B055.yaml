@@ -1,0 +1,134 @@
+document_id: B055
+bibliographic:
+  title: "Drivers and environmental [impacts of Arctic shipping; truncated in extraction]"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2026
+  doi: 10.1038/s43017-026-00790-2
+  review_type: thematic
+overall_review_design:
+  review_objective: >-
+    Synthesize trends, drivers and cross-sphere environmental impacts of Arctic shipping,
+    and recommend regulation and research for sustainable development.
+  review_scope: shipping trends; economic/governance/climate/technology drivers; atmosphere-cryosphere-hydrosphere-biosphere impacts; prospects.
+  review_mode: driver-state-impact-response (DPSIR-like) narrative synthesis with evidence-mapping apparatus.
+  article_architecture:
+    - Abstract
+    - Introduction
+    - Trends in Arctic shipping
+    - Drivers of shipping trends
+    - Environmental impacts of Arctic shipping
+    - Prospects for Arctic shipping
+    - Summary and future
+    - Boxes 1-2
+  organizing_principle: driver -> development -> impact -> response chain (explicit Box 1 framework)
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: global trade context (80% by sea) then polar amplification enabling routes.
+  problem_contextualization: quantified route savings and traffic/emission growth statistics.
+  fragmentation_statement: not used; motivation via fragility + protection need.
+  gap_or_need_statement: "\"quantitative assessments of shipping sector's impacts in the Arctic are limited\"."
+  review_objective_statement: delivered through framework announcement of drivers then impacts sections.
+  scope_definition: terminology paragraph — "'drivers' specifically refers to the driving forces..., whereas 'impact' is used more generally".
+  contribution_statement: multi-sphere impact synthesis plus regulatory recommendations (Box 2).
+  roadmap_pattern: present via section-preview sentences rather than one roadmap block.
+section_architecture:
+  section_order: [Abstract, Introduction, Trends, Drivers (economic/governance/climate/technology), Environmental impacts (four spheres), Prospects, Summary-future]
+  dominant_logic: causal-chain architecture from forcing to response
+  chronological_logic: none
+  thematic_logic: central
+  mechanism_logic: partial
+  scale_logic: partial
+  region_logic: partial
+  method_logic: partial
+  transition_between_sections:
+    - "\"This section outlines...\" previews per section and sphere"
+    - driver summary figure bridges trends to impacts
+argumentation:
+  dominant_argument_pattern: driver ranking, then impact audit, then regulatory-response argument.
+  claim_evidence_relation: statistics carry institutional sources; impact claims graded by coverage and confidence.
+  comparison_pattern: route-versus-route economics; sphere-by-sphere impact severity comparison.
+  contradiction_handling: UNKNOWN - thin-evidence domains flagged rather than debated.
+  boundary_condition_handling: accessibility contingent on ice state; impacts amplified by polar meteorology.
+  limitation_handling: modelling dominance and weak observational constraint stated per impact sphere.
+  gap_identification_pattern: audit-derived - absent geographic literature coverage declares the gap.
+synthesis:
+  synthesis_unit: driver or sphere of impact
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - evidence-mapping figure scoring literature coverage x severity x confidence per impact category
+    - supplementary tables carrying per-study detail out of main text
+    - quantified case illustrations clustered per driver
+  consensus_pattern: drivers ranked ("Economic incentives are the primary driver..., followed by governance").
+  controversy_pattern: evidence deficits named where literature is thin or model-dominated.
+  reconciliation_pattern: UNKNOWN (limited visible contestation).
+  evidence_weighting_pattern: explicit confidence grading of available evidence — unusual and transferable.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - statistic-led paragraph openers (percent savings, ship counts)
+    - define-terms-before-use paragraph
+    - enumerated policy deficiencies
+  typical_move_sequences:
+    - [driver claim, quantified illustration, governance/regulatory hook]
+    - [impact mechanism, coverage/confidence assessment, mitigation pointer]
+  topic_sentence_pattern: ranking or mechanism statement.
+  synthesis_sentence_pattern: multi-factor compounding ("driven by an increasingly complex interplay of diverse factors...").
+  contrast_sentence_pattern: route-vs-route comparisons (NSR vs Suez; NWP vs Panama).
+  limitation_sentence_pattern: "\"dominated by modelling studies and remains weakly constrained by observations\"."
+  transition_pattern: preview sentences; framework-box callbacks.
+  paragraph_length_profile: q25=465, median=641, p75=902 chars.
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 3, p75: 6}
+  citation_cluster_frequency: moderate; zero-citation blocks highest tier (26.5%) due to descriptive/statistical passages.
+  single_vs_cluster: single refs for specific projects/policies; clusters for impact mechanisms.
+  seminal_recent_balance: recent5y share 0.595 — fastest-moving topic in batch.
+  citation_location: [sentence-final, report/institution citations inline]
+  citation_support_type: [policy document, statistical source, impact study]
+  method_citation_pattern: light; emission inventories cited as data sources.
+  gap_citation_pattern: gaps asserted from absence of quantitative assessments, then operationalized into agenda items.
+geography_reasoning:
+  whether_geography_is_central: yes — routes, seas and resource basins structure the entire review.
+  spatial_scale_usage: global trade -> regional routes -> local ports nested explicitly.
+  regional_differentiation_usage: route-by-route differentiation (NSR navigable vs NWP difficult vs Transpolar last); Eurasian vs North American resource distribution driving geopolitics.
+  spatial_heterogeneity_usage: Arctic-specific conditions (inversions, shallow boundary layer) explain amplified local impacts.
+  cross_scale_usage: global commodity flows concentrated onto narrow corridors.
+  place_context_usage: named seas/ports as anchors for traffic statistics.
+  human_environment_usage: constitutive — shipping as human system imprinting a fragile environment.
+  flow_network_usage: shipping lanes as flow networks; trade flows mapped globally.
+  spatial_dependence_usage: ice extent controls accessibility; distance savings depend on origin-destination pairs.
+  conditions_triggering_geographic_explanation:
+    - when accessibility is physically contingent (ice, bathymetry)
+    - when impacts concentrate near sources under special climates
+    - when resources are unevenly distributed across the region
+figure_strategy:
+  total_figures: 4
+  figure_roles: [global trade flow map, climate-traffic trend dashboard, driver summary schematic, multi-sphere impact schematic with evidence-grading panels]
+  conceptual_framework: Fig. 3 driver forces summary; Box 1 driver-development-impact framework.
+  taxonomy: vessel-type breakdowns (fishing, cargo, tankers...) as categories.
+  mechanism: Fig. 4a cross-sphere impact schematic.
+  timeline: Fig. 2 time series of ice area and ship counts.
+  map: Figs. 1-2 maps of routes and trends; Fig. 4b-i geographic literature coverage.
+  workflow: none
+  evidence_summary: Fig. 4b-i grades each impact by literature coverage, severity and confidence — an evidence-audit figure.
+  figure_text_relation: caption enumerates panel sources; supplementary tables carry underlying detail.
+gap_and_agenda:
+  how_gaps_are_derived: per-sphere audit of evidence coverage converted into research and regulation gaps.
+  types_of_gaps: [observational constraint gap, regulatory coverage gap (greywater, HFO exemptions, acoustics), monitoring/enforcement gap]
+  evidence_required_before_gap_claim: explicit mapping of where literature exists geographically and how confident it is.
+  future_agenda_structure: numbered recommendations box (Box 2) + imperative paragraphs ("efforts should focus on expanding regulations...").
+  specificity_of_future_questions: high — concrete regulatory amendments and measurement campaigns listed.
+quality_features:
+  major_strengths: [evidence-coverage/confidence mapping figure, terminology discipline, actionable recommendations box]
+  transferable_patterns:
+    - define key terms in a dedicated paragraph before deploying them
+    - grade evidence confidence per sub-topic and display it geographically
+    - isolate normative recommendations in a box separate from analysis
+  unique_but_nontransferable_features: [Polar Code / IMO regulatory machinery as content]
+  risks_of_imitation: heavy statistics can read as inventory without the driver framework to bind them.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - asserting an impact gap without showing where existing evidence actually covers
+source_provenance:
+  source_pages: ["343-358 header", "344 opening", "~350 slice1", "~357 slice2", "352 slice4", "~361 references"]
+  source_sections: [Introduction, Trends in Arctic shipping, Drivers of shipping trends, Environmental impacts, Prospects, Box 1, Box 2, figure captions]
+  confidence: high

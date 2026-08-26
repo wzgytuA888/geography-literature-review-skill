@@ -1,0 +1,140 @@
+document_id: B030
+bibliographic:
+  title: >-
+    Carbon and nitrogen cycling on the Qinghai–Tibetan Plateau (reconstructed from digest
+    headings 'Stocks and fluxes', 'Carbon and nitrogen cycling'; exact title not in manifest)
+  authors: [UNKNOWN]           # affiliation list captured; names not in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2022                   # page footer "October 2022 | volume 3"
+  doi: 10.1038/s43017-022-00344-2   # inferred from filename s43017-022-00344-2.pdf
+  review_type: thematic-mixed  # regional quantitative budget synthesis producing new aggregate estimates
+overall_review_design:
+  review_objective: >-
+    Inventory carbon and nitrogen stocks/fluxes across QTP ecosystems, explain changes through
+    global-change and human drivers, and recommend research priorities for management.
+  review_scope: >-
+    Whole plateau C and N cycles; ecosystem-by-ecosystem stocks and GHG fluxes; warming,
+    precipitation, cryosphere thaw, grazing, restoration, construction; mitigation options.
+  review_mode: >-
+    Budget-building synthesis: the review computes new plateau-wide balances from literature
+    values, with methods and uncertainty disclosed in tables, supplements and footnotes.
+  article_architecture:
+    - Introduction (change pressures, protection efforts, aim)
+    - Stocks and fluxes        # Plateau scale; then per-ecosystem: Grasslands -> Shrublands -> Forests -> Wetlands -> Waters
+    - Changes and drivers      # Global change (warming; precipitation; cryosphere thaw); Anthropogenic activities (grazing; restoration; construction)
+    - Adaptation and mitigation
+    - Research priorities (numbered)
+  organizing_principle: mixed — stock->flux inventory, then driver->response chain, closing with numbered agenda; ecosystem zonation as frame
+  number_of_major_sections: 4
+introduction_pattern:
+  opening_move: dual-pressure framing — climate change alongside intensifying human activity on the plateau
+  problem_contextualization: protection/restoration effort context and societal needs set the decision stakes
+  fragmentation_statement: implicit — sparse in-situ data for key pools framed as the barrier to holistic understanding
+  gap_or_need_statement: holistic biogeochemical understanding limited by lack of aquatic, phosphorus and subsoil data
+  review_objective_statement: explicit aim plus promise of enumerated recommendations ("we recommend the following research priorities")
+  scope_definition: element scope (C, N) and ecosystem coverage declared via Table 1
+  contribution_statement: first integrated QTP budgets (NECB ~43.9 Tg C per year; CH4 source ~0.96 Tg) derived within the review
+  roadmap_pattern: variant — objective stated without section tour; numbered priorities close instead
+section_architecture:
+  section_order: [Introduction, Stocks and fluxes (plateau scale then per ecosystem), Changes and drivers, Adaptation and mitigation, Research priorities]
+  dominant_logic: inventory stocks, quantify fluxes per ecosystem, attribute changes to drivers, evaluate responses, enumerate priorities
+  chronological_logic: partial      # late-twentieth vs twenty-first-century sink trajectories
+  thematic_logic: central           # one ecosystem per subsection in strict parallel structure
+  mechanism_logic: central          # moisture/nitrogen mediation explains flux patterns
+  scale_logic: partial              # site measurements upscaled cautiously to plateau totals
+  region_logic: partial             # NW-SE gradients and ecosystem zonation within sections
+  method_logic: partial             # flux integration protocol and confidence footnote documented
+  transition_between_sections:
+    - inventory-to-driver bridge ("Changes and drivers" preamble names the debate)
+    - driver-to-response pivot at adaptation section
+    - closing pivot to prioritized agenda
+argumentation:
+  dominant_argument_pattern: balance argument — sinks vs sources tallied per gas and pool until a sign can be declared
+  claim_evidence_relation: every budget term carries value, range or error, study count, and derivation pointer
+  comparison_pattern: ecosystem-vs-ecosystem flux contrasts; meadow-vs-steppe mirrored throughout
+  contradiction_handling: >-
+    Driver-importance debate attributed to attribution-method and definitional differences
+    rather than adjudicated prematurely.
+  boundary_condition_handling: conditional generalizations (mesic ecosystems insensitive to precipitation variance) bounded explicitly
+  limitation_handling: table footnote concedes estimates "should not be considered precise values"
+  gap_identification_pattern: missing-pool gaps named element-by-element (aquatic fluxes, P cycling, subsoil)
+synthesis:
+  synthesis_unit: theme             # ecosystem crossed with element/flux
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - flux table pooling means, SDs and study counts per ecosystem
+    - author-computed whole-plateau budgets reconciling heterogeneous literature values
+    - driver-effect chains assembled from experiments and observations jointly
+  consensus_pattern: multi-study mean ± SD presentation normalizes scattered flux reports
+  controversy_pattern: debate staged as open question with its causes diagnosed
+  reconciliation_pattern: divergent wetland CH4 estimates averaged under similar-extent assumptions with disclosure
+  evidence_weighting_pattern: quartile-filtered integration of flux studies; low-confidence terms flagged inline
+paragraph_rhetoric:
+  common_rhetorical_moves: [stock declaration, flux contrast, mechanism attribution, mitigation pairing]
+  typical_move_sequences:
+    - [ecosystem opener, stock split, flux pattern, probable cause]
+    - [driver effect, example study, offsetting counter-effect]
+  topic_sentence_pattern: ecosystem-naming sentence with coverage share ("Grasslands ... cover more than half of the QTP")
+  synthesis_sentence_pattern: balance clause deriving source/sink status from pooled terms
+  contrast_sentence_pattern: meadow-vs-steppe and wet-vs-dry paired contrasts
+  limitation_sentence_pattern: precision disclaimers attached to computed budgets
+  transition_pattern: parallel subsection structure lets readers predict content flow
+  paragraph_length_profile: q25=389, median=466, p75=650 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 4}   # index block values
+  citation_cluster_frequency: moderate-high at flux and driver claims
+  single_vs_cluster: singles for single-site monitoring series; clusters for pooled fluxes
+  seminal_recent_balance: recent5y share 0.169; annotated key references appear in list
+  citation_location: [sentence-final clusters, table-source notes]
+  citation_support_type: [flux measurement, stock estimate, experiment result, survey/inventory]
+  method_citation_pattern: Supplementary Methods carry budget derivations; Table 1 footnote documents statistics
+  gap_citation_pattern: missing-inventory gaps asserted against known survey coverage
+geography_reasoning:
+  whether_geography_is_central: yes-structural — ecosystem zonation across the plateau is the explanatory scaffold
+  spatial_scale_usage: site flux towers -> ecosystem totals -> plateau-wide balances
+  regional_differentiation_usage: SE forests -> meadows -> NE steppes zonation determines flux regimes
+  spatial_heterogeneity_usage: NEP maps show negative margins vs positive interior with gradient explanation
+  cross_scale_usage: five-year site monitoring scaled to plateau statements only with explicit caution
+  place_context_usage: railways, rivers and named regions anchor anthropogenic pressure claims
+  human_environment_usage: grazing intensity, construction mileage growth and policy measures treated as biogeochemical forces
+  flow_network_usage: riverine/lacustrine outgassing integrated into elemental budgets
+  spatial_dependence_usage: latitude-dependent warming rate used to explain spatial change patterns
+  conditions_triggering_geographic_explanation:
+    - when water availability flips an ecosystem's greenhouse-gas role
+    - when ecosystem type changes along climatic gradients
+    - when infrastructure expansion localizes human pressure spatially
+figure_strategy:
+  total_figures: 5
+  figure_roles: [physical-and-anthropogenic change map panels, stocks-by-ecosystem charts, fluxes-by-ecosystem panels, drivers schematic, adaptation/mitigation matrix]
+  conceptual_framework: Fig. 4 organizes driver channels into one causal diagram
+  taxonomy: ecosystem typology structures Table 1 and all panels
+  mechanism: Fig. 3 links productivity, respiration and gas exchange per ecosystem
+  timeline: none dedicated; time-series insets carry chronology
+  map: Fig. 1 maps warming, precipitation and human influence together
+  workflow: none
+  evidence_summary: Table 1 is the evidence core — flux means, SDs, n per ecosystem with confidence footnote
+  figure_text_relation: captions define units and sampling bases; text performs the balancing argument
+gap_and_agenda:
+  how_gaps_are_derived: named per missing pool/process after the budget exercise exposes them
+  types_of_gaps: [data (aquatic, P, subsoil), mechanistic (microbe-mediated responses), integrative (societal-need incorporation)]
+  evidence_required_before_gap_claim: budget computation reveals which terms rest on thin data
+  future_agenda_structure: explicitly numbered priority list tied to ongoing surveys and expeditions
+  specificity_of_future_questions: concrete deliverables (whole-plateau C/N/P inventory with microbial sampling)
+quality_features:
+  major_strengths:
+    - the review itself produces new quantitative products, not just verdicts
+    - uncertainty confessed at the exact point of aggregation
+    - parallel ecosystem subsections make comparison effortless
+  transferable_patterns:
+    - build an explicit budget table with n and dispersion so synthesis claims are auditable
+    - organize per-category sections in strict parallel order for comparability
+    - end with numbered, survey-anchored priorities instead of vague calls
+  unique_but_nontransferable_features: plateau-scale expedition infrastructure enables the proposed inventory
+  risks_of_imitation: computed budgets demand genuine recompilation rigour; mimicking the form without it misleads
+anti_patterns:
+  weak_patterns_to_avoid:
+    - declaring source/sink status without disclosing how heterogeneous fluxes were integrated
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2 incl. six-bullet Key points)", "BODY_SLICE_1@17% (warming, albedo feedback)", "BODY_SLICE_2@33% (Table 1 footnote)", "BODY_SLICE_3@50% (grazing/restoration/construction)", "BODY_SLICE_4@67% (research priorities)", "BODY_SLICE_5@83% (annotated references)", "FIGURE/TABLE CAPTIONS slice"]
+  source_sections: [Introduction, Stocks and fluxes, Changes and drivers, Research priorities, Figure/Table captions]
+  confidence: high   # title string medium-confidence (reconstructed); content high

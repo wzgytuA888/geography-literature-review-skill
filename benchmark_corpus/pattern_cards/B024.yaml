@@ -1,0 +1,140 @@
+document_id: B024
+bibliographic:
+  title: A low-to-no snow future and its impacts on water resources in the western United States
+  authors: [UNKNOWN]           # affiliation list (Berkeley Lab, WRCC) captured; names not in digest; title cross-confirmed by B028 reference 174
+  journal: Nature Reviews Earth & Environment
+  year: 2021                   # page footer "...2021 | volume 2"
+  doi: 10.1038/s43017-021-00219-y   # inferred from filename s43017-021-00219-y.pdf
+  review_type: narrative       # call-to-action synthesis with a formal definition contribution
+overall_review_design:
+  review_objective: >-
+    Provide a call to action on an imminent low-to-no snow future, synthesizing observations,
+    projections, hydrologic impacts and adaptation options for one region.
+  review_scope: >-
+    Western US mountain snowpack; observational networks, projected loss timing, cascading
+    hydrologic impacts, water management and adaptation; other hydrometeorological variables deliberately subordinated.
+  review_mode: >-
+    Advocacy-adjacent expert review: forewarn, define, then organize evidence toward
+    decision relevance.
+  article_architecture:
+    - Introduction (water-tower stakes, call to action, roadmap, scope justification)
+    - A declining mountain snowpack     # observational networks; estimates of change
+    - Drivers of observed change        # warming, atmospheric rivers, light-absorbing particles
+    - A low-to-no snow future           # confidence, definitions, projection challenges, literature synthesis
+    - Propagating impacts to the hydrologic cycle   # run-in: ET, groundwater, runoff/streamflow
+    - Agreements and policy / adaptation strategies
+    - Recommendations for future research
+  organizing_principle: mixed — temporal (observed -> projected -> impacted -> managed) with scale-ladder framing inside sections
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: canonical-metaphor framing ("water towers of the world") immediately monetized with a cost range
+  problem_contextualization: multibillion-dollar valuation plus emergency-storage and stationarity arguments escalate stakes
+  fragmentation_statement: silo claim explicit — recommendations target "historically siloed physical and disciplinary boundaries"
+  gap_or_need_statement: need phrased as understanding time horizons, spatial extents and magnitudes at decision-relevant scales
+  review_objective_statement: explicit advocacy register ("In this Review, we provide a call to action and forewarn")
+  scope_definition: justified emphasis — snowpack prioritized over precipitation with reasons stated
+  contribution_statement: new low-to-no snow definition offered as usable product
+  roadmap_pattern: present — four-step sequenced paragraph ("We begin... followed by... We follow with... We end with")
+section_architecture:
+  section_order: [Introduction, A declining mountain snowpack, Drivers of change, A low-to-no snow future, Propagating impacts to the hydrologic cycle, Adaptation and policy, Recommendations]
+  dominant_logic: document decline, explain drivers, define the future state, trace cascading impacts, end in governance
+  chronological_logic: central          # single-year -> multi-year -> persistent regimes as organizing stages
+  thematic_logic: partial               # impact variables themed via run-ins
+  mechanism_logic: central              # cascade logic from snowpack to streamflow to management
+  scale_logic: central                  # continental to storm-scale ladder figure anchors the paper
+  region_logic: partial                 # WUS sub-regions compared within sections
+  method_logic: partial                 # model/IPM limitations audited before projections accepted
+  transition_between_sections:
+    - observation-to-projection bridge via definitional groundwork
+    - physical-to-social pivot at the impacts section
+    - closing pivot from diagnosis to recommendation
+argumentation:
+  dominant_argument_pattern: staged-regime argument — distinguish extreme/episodic/persistent snow loss states and date their arrival
+  claim_evidence_relation: quantified rates (warming per decade, albedo-driven 31-51 day advances) tied to each mechanism
+  comparison_pattern: sub-region contrasts (Pacific Northwest skipping episodic regime) and natural-vs-managed system mirroring
+  contradiction_handling: >-
+    Confidence stratified — high confidence in decline, explicit "little consensus" on timing;
+    disagreement attributed to differing metrics, methods and regional analyses.
+  boundary_condition_handling: mediating factors listed wherever a simple causal chain would overstate (ET buffers, subsurface storage)
+  limitation_handling: observational-network and model-representation caveats precede projection acceptance
+  gap_identification_pattern: capability-plus-integration gap — tools absent AND disciplines disconnected
+synthesis:
+  synthesis_unit: regime            # snow-state stage rather than individual study
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - literature synthesis table of WUS snow projections harmonized by metric
+    - cross-dataset observational triangulation
+    - coupling physical projections with legal/institutional constraints
+  consensus_pattern: IPCC-style confidence qualifiers ("high-to-very high confidence") separate settled from unsettled claims
+  controversy_pattern: timing disputes traced to definition and metric heterogeneity — then resolved by proposing one
+  reconciliation_pattern: a new percentile-based definition reconciles divergent projection horizons
+  evidence_weighting_pattern: process understanding weighted alongside statistical trends; nonlinear behaviour flagged
+paragraph_rhetoric:
+  common_rhetorical_moves: [monetized stakes, regime staging, cascade tracing, institutional mapping]
+  typical_move_sequences:
+    - [decline claim, cited magnitude, downstream consequence]
+    - [consensus statement, residual-uncertainty contrast]
+  topic_sentence_pattern: variable-naming run-in sentence ("Evapotranspiration.", "Groundwater.")
+  synthesis_sentence_pattern: cascade connector ("which then directly impacts water availability")
+  contrast_sentence_pattern: extreme-vs-persistent regime contrasts
+  limitation_sentence_pattern: complication lists after headline effects
+  transition_pattern: forward-pointing section preambles ("Prior to assessing future projections...")
+  paragraph_length_profile: q25=394, median=449, p75=748 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 1}   # index block values; caption-heavy blocks depress counts
+  citation_cluster_frequency: moderate — clusters at observational claims; policy claims lean on few documents
+  single_vs_cluster: singles for landmark policies and flagship estimates
+  seminal_recent_balance: recent5y share 0.104; fast-moving literature acknowledged
+  citation_location: [sentence-final superscripts, key-points box uncited]
+  citation_support_type: [observational estimate, projection, policy/legal instrument, dataset source]
+  method_citation_pattern: datasets and indices attributed at first mention; Box 1 audits model uncertainty
+  gap_citation_pattern: co-production and tooling gaps asserted as author judgement
+geography_reasoning:
+  whether_geography_is_central: yes-structural — elevation, basin infrastructure and management jurisdiction organize the argument
+  spatial_scale_usage: storm -> watershed -> mountain range -> continental ladder made into a figure
+  regional_differentiation_usage: range-level differences (Sierra vs Cascades vs Rockies) modulate every generalization
+  spatial_heterogeneity_usage: nonlinear upslope snowline shifts and patchy SWE maps foreground heterogeneity
+  cross_scale_usage: mountain processes connected to downstream reservoirs and interbasin transfers
+  place_context_usage: Lake Mead and named basins ground abstractions in infrastructure
+  human_environment_usage: deepest in batch — water rights, compacts and reservoir ops treated as coupled system components
+  flow_network_usage: conveyance infrastructure mapped against supply sources
+  spatial_dependence_usage: rain-on-snow elevation bands and dust-source-to-snowpack linkages
+  conditions_triggering_geographic_explanation:
+    - when warming rates or snow sensitivity differ by range/elevation
+    - when infrastructure was sized under stationary climate assumptions
+    - when demand locations mismatch supply locations across basins
+figure_strategy:
+  total_figures: 7
+  figure_roles: [spatiotemporal variability maps, multiscale process ladder, projection-range envelopes, threshold-definition figure, changed-environment schematic, above/below-ground cascade diagram, natural-managed supply-demand map pair]
+  conceptual_framework: Fig. 2 scale ladder is the conceptual spine of the paper
+  taxonomy: low-snow vs effectively-no-snow percentile classes defined visually
+  mechanism: Fig. 6 cascades snowpack change through stores and fluxes
+  timeline: Fig. 4 temporal emergence panels date regime transitions
+  map: Figs. 1 and 7 map physical supply and human demand on comparable bases
+  workflow: none
+  evidence_summary: Box 1 isolates process uncertainty across Earth-system scales
+  figure_text_relation: captions declare thresholds and data sources; text performs interpretation
+gap_and_agenda:
+  how_gaps_are_derived: derived from adaptation needs that current tools and siloed disciplines cannot meet
+  types_of_gaps: [definitional (metrics), predictive (emergence timing), integration (disciplinary silos), knowledge co-production]
+  evidence_required_before_gap_claim: demonstrated divergence among existing projection approaches
+  future_agenda_structure: imperative recommendation list ending in scientist-manager co-production
+  specificity_of_future_questions: actions concrete (storage expansion, forecast use); hypotheses rare
+quality_features:
+  major_strengths:
+    - converts a review into a policy intervention without abandoning evidence discipline
+    - proposes an operational definition that subsequent work can adopt
+    - couples physical cascade to institutional capacity in one frame
+  transferable_patterns:
+    - justify scope by comparative explanatory power (why this variable, not others)
+    - stratify claims by confidence level before discussing disagreements
+    - end physical reviews with institutional/decision-layer consequences
+  unique_but_nontransferable_features: US-specific water law and infrastructure detail
+  risks_of_imitation: advocacy tone can outrun evidence if the confidence stratification is dropped
+anti_patterns:
+  weak_patterns_to_avoid:
+    - projecting urgency without separating high-confidence from contested components
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2 incl. six-bullet Key points)", "BODY_SLICE_1@17% (drivers)", "BODY_SLICE_2@33% (regime transitions, ET)", "BODY_SLICE_3@50% (management, Fig.7 caption)", "BODY_SLICE_4@67% (definition, adaptation)", "FIGURE CAPTIONS slice"]
+  source_sections: [Introduction, A declining mountain snowpack, A low-to-no snow future, Propagating impacts, Figure/Table captions, Box 1]
+  confidence: high

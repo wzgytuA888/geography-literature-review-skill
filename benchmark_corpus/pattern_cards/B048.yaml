@@ -1,0 +1,107 @@
+document_id: B048
+bibliographic:
+  title: Metal mining is a global driver of environmental change
+  authors: [Stefan Giljum, Victor Maus, Laura Sonter, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2025
+  doi: 10.1038/s43017-025-00683-w
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: Quantify global crude metal ore extraction trends and associated environmental changes to identify leverage points for policy and business
+  review_scope: extraction of 47 metals 1970-2022; land, water and biodiversity impacts; trade embodiment; six intervention areas
+  review_mode: quantitative trend review from industrial databases with normative leverage-point framing
+  article_architecture: [Abstract, Introduction, Global metal extraction (trends; hotspots), Environmental changes driven by mining, Trade and consumption, Leverage points for change, Summary and future perspectives]
+  organizing_principle: pressure -> impact -> attribution (trade) -> intervention chain
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: low-carbon-transition demand growth framing (twofold-to-40x demand projections)
+  problem_contextualization: mining footprints extend beyond site borders via infrastructure and supply chains
+  fragmentation_statement: prior reviews topic-specific — "Existing reviews on the impacts of mining focus on specific topics"
+  gap_or_need_statement: "A review of global extraction trends ... is needed to support the development of policies"
+  review_objective_statement: serialised roadmap ("First, we outline ... We then discuss ... We further identify six key areas ... Lastly")
+  scope_definition: material scope defined by database coverage (crude ore, 47 metals, 1970-2022)
+  contribution_statement: "Our Review adds the missing global-scale perspective" — explicit niche differentiation against named prior reviews
+  roadmap_pattern: present, numbered four-step itinerary
+section_architecture:
+  section_order: [Introduction, Global metal extraction, Environmental changes, Trade and consumption, Leverage points for change, Summary and future perspectives]
+  dominant_logic: DPSIR-like progression — driver, state change, attribution through trade, societal response
+  chronological_logic: partial (1970-2022 trend spine)
+  thematic_logic: central (environmental dimension sub-themes)
+  mechanism_logic: partial (extraction-process mechanisms in Fig 1)
+  scale_logic: central (mine site -> region -> continent -> global supply chain)
+  region_logic: partial (continent and income-class stratification recur)
+  method_logic: partial (database and indicator definitions cited per figure)
+  transition_between_sections: ["environmental section follows quantified extraction as consequence turn", "leverage-points section converts diagnosis into actor-mapped interventions"]
+argumentation:
+  dominant_argument_pattern: concentration statistic -> governance implication -> intervention lever
+  claim_evidence_relation: every trend claim sourced to Global Material Flows Database or named dataset with years
+  comparison_pattern: continent vs income-class framings of the same trends; observed vs proposed-dam style future contrasts in trade figures
+  contradiction_handling: climate-benefit vs environmental-cost tension held openly rather than resolved away
+  boundary_condition_handling: water-impact claims conditioned on baseline scarcity of host region
+  limitation_handling: data gaps stated as findings ("Impacts go unmeasured for over half of global mining areas")
+  gap_identification_pattern: data-availability gap plus unmeasured-impact gap grounded in satellite-vs-record comparison
+synthesis:
+  synthesis_unit: theme/flow
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern: ["cross-database convergence (material flows + satellite + LCA indicators)", "top-producer concentration statistics pooled across metals", "supply-chain Sankey synthesis linking extraction continents to consuming continents"]
+  consensus_pattern: consistent-pattern statements ('A consistent pattern of global metal trade has emerged') summarising multi-source evidence
+  controversy_pattern: trade-off framing (energy transition needs vs biodiversity loss) substitutes for author-level disputes
+  reconciliation_pattern: scale conflicts reconciled by showing local consumption share vs export dominance separately
+  evidence_weighting_pattern: official databases and UN sources weighted above single studies; company-reported values flagged as ranges
+paragraph_rhetoric:
+  common_rhetorical_moves: ["growth-factor statement", "concentration statistic", "income-class stratification", "actor implication"]
+  typical_move_sequences: [["global trend number", "hotspot countries with shares", "governance implication"]]
+  topic_sentence_pattern: trend-statement openers ("Global nickel extraction grew fourfold from 1985 to 2022")
+  synthesis_sentence_pattern: "'This distribution pattern has important implications for gov-' bridge sentences into policy relevance"
+  contrast_sentence_pattern: exporter-bloc vs importer-bloc continental contrasts
+  limitation_sentence_pattern: "'owing to data collection gaps' causal attribution of evidence limits"
+  transition_pattern: summary section mirrors introduction structure point-for-point before pivoting to research directions
+  paragraph_length_profile: q25=503, median=731, p75=1044 chars
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 5}
+  citation_cluster_frequency: moderate; clusters on impact claims, singles on database statistics
+  single_vs_cluster: dataset-derived numbers carry few citations because provenance is institutional; literature claims cluster
+  seminal_recent_balance: recent5y share 0.519; very current field, policy documents alongside
+  citation_location: [sentence-final after statistics, mid-sentence after country names]
+  citation_support_type: [material-flow accounts, remote-sensing studies, LCA analyses, policy/inventory documents]
+  method_citation_pattern: established methods invoked ('following established methods of' + citation) at first use
+  gap_citation_pattern: satellite-based mine mapping cited against reporting records to quantify the unmeasured share
+geography_reasoning:
+  whether_geography_is_central: yes — hotspots, concentration and trade corridors are the analytical core
+  spatial_scale_usage: nested mine-region-continent-globe ladder with income overlays
+  regional_differentiation_usage: continents compared systematically; net-exporter South America/Africa/Oceania vs net-importer Europe/Asia/North America structure
+  spatial_heterogeneity_usage: hotspot concentration ('top-five producers >80%') treated as the governance-relevant pattern
+  cross_scale_usage: site infrastructure scaled to global embodied-trade flows via Sankey logic
+  place_context_usage: named countries carry shares (Indonesia ~50% nickel); Lithium Triangle as deposit-geography example
+  human_environment_usage: coupled throughout; environmental justice actors appear in leverage section
+  flow_network_usage: supply-chain flows central (RMEs, raw material trade balance)
+  spatial_dependence_usage: impacts depend on host-region water scarcity and land cover — conditional geography
+  conditions_triggering_geographic_explanation: ["when concentration creates governance leverage", "when local scarcity amplifies generic sectoral water use", "when trade decouples extraction from consumption locations"]
+figure_strategy:
+  total_figures: 7
+  figure_roles: [mine-site process schematic, extraction trends by continent/income, top-producer concentration charts, energy-transition-material trends, environmental-change map, issue-pattern map, trade Sankey suite]
+  conceptual_framework: Fig 1 process schematic defines the physical system under review
+  taxonomy: none
+  mechanism: yes (Fig 1 extraction stages)
+  timeline: yes (multi-decade time series across Figs 2, 4, 7)
+  map: yes (Figs 5-6 environmental change maps with country abbreviations keyed)
+  workflow: partial (process schematic reads as operational workflow)
+  evidence_summary: Fig 2 caption carries headline finding (fourfold increase; 80% in high/upper-middle income) — caption-as-finding
+  figure_text_relation: each quantitative section lands on one carrying figure; captions include data source and classification rules
+gap_and_agenda:
+  how_gaps_are_derived: from quantified measurement voids and named monitoring shortfalls
+  types_of_gaps: [data-availability gap, unmeasured-impact gap, Earth-observation application gap]
+  evidence_required_before_gap_claim: satellite-identified mining extent compared with recorded impact coverage
+  future_agenda_structure: six leverage points along the supply chain, each assigned actor groups; closing research direction (Earth observation mapping)
+  specificity_of_future_questions: instrument-specific (EO-based global mine mapping) plus actor-specific interventions
+quality_features:
+  major_strengths: [explicit positioning against prior narrow reviews, database-grounded number discipline, income-class lens adding development geography, diagnosis-to-leverage-point conversion]
+  transferable_patterns: [differentiate-your-review sentence citing what existing reviews cover, quantify concentration then derive governance stakes, stratify trends by development class, end diagnosis sections with actor-mapped intervention lists]
+  unique_but_nontransferable_features: [authors' own Global Material Flows Database underpins analysis]
+  risks_of_imitation: [normative leverage-point framing needs the same evidence depth or becomes advocacy; database dependence limits replication]
+anti_patterns:
+  weak_patterns_to_avoid: [claiming novelty without naming the reviews being extended, presenting extraction growth without distributional context]
+source_provenance:
+  source_pages: ["pp. 441-455 (Vol 6, Jul 2025 running headers)", "pp. 441-442 (opening/intro slice)", "p. 444 (BODY_SLICE_1@17%)", "~p. 447 (BODY_SLICE_2@33%)", "p. 450 (BODY_SLICE_3@50%)", "~p. 452 (BODY_SLICE_4@67% incl Summary)", "pp. 453-454 (refs)"]
+  source_sections: [Introduction, Global metal extraction, Environmental changes passages, Trade and consumption, Summary and future perspectives, Fig 1-7 captions, reference sample]
+  confidence: medium

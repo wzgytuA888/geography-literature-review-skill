@@ -1,0 +1,24 @@
+# Secrets & credentials
+.env
+*.local.yaml
+config/google-scholar.local.yaml
+
+# Copyrighted material & caches (NEVER commit)
+.cache/
+benchmark_corpus/raw_pdfs/
+task_corpora/*/pdfs/
+runs/**/pdfs/
+runs/**/user_pdfs/
+*.pdf
+
+# Runtime artifacts (local by default)
+runs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS/editor
+Thumbs.db
+.DS_Store

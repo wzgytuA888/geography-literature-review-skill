@@ -1,0 +1,107 @@
+document_id: B045
+bibliographic:
+  title: Trends and environmental impacts of virtual water trade
+  authors: [Mesfin M. Mekonnen, Mahlet M. Kebede, Betelhem W. Demeke, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2024
+  doi: 10.1038/s43017-024-00605-2
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: Quantify virtual water trade (VWT) trends across commodity sectors, explain drivers, and appraise policy relevance and criticism
+  review_scope: global and subnational VWT embodied in agricultural, energy, manufactured and land-acquisition flows, 1986-2022
+  review_mode: quantitative trend synthesis with methodological appraisal and critical policy discussion
+  article_architecture: [Abstract, Introduction, Virtual water trade trends (agricultural products; energy; other goods; transnational land acquisitions), Subnational VWT, Drivers of VWT, Policy relevance and criticism, Hydrological unequal exchange, Summary and future perspectives, Box 1]
+  organizing_principle: mixed — commodity-sector thematic ordering nested in a trends->drivers->criticism arc
+  number_of_major_sections: 7
+introduction_pattern:
+  opening_move: water-scarcity stakes quantified (4 billion people affected) then scale-shift argument
+  problem_contextualization: local management tradition versus globally ramified resource problems
+  fragmentation_statement: estimate divergence — "vary widely depending on the method used" (bottom-up vs MRIO)
+  gap_or_need_statement: analyses must consider renewability, opportunity cost and unsustainability of traded water
+  review_objective_statement: "In the following subsections, we highlight how water is transferred across borders"
+  scope_definition: definitional glossary plus Box 1 contrasting the two accounting approaches
+  contribution_statement: updated fast-track estimates to 2022 plus integrated critical synthesis
+  roadmap_pattern: present (subsection-by-subsection preview with rationale sentence)
+section_architecture:
+  section_order: [Introduction, VWT agricultural products, VWT energy, VWT other goods, VWT via land acquisitions, Subnational VWT, Drivers of VWT, Policy relevance and criticism, Hydrological unequal exchange, Summary and future perspectives]
+  dominant_logic: sector catalogue escalating from goods to mechanisms to critique
+  chronological_logic: partial (1986 vs 2022 comparisons anchor trend claims)
+  thematic_logic: central
+  mechanism_logic: partial (driver analysis)
+  scale_logic: central (country -> subnational -> interprovincial ladders)
+  region_logic: partial (exporter/importer macro-regions recur)
+  method_logic: central (Box 1 bottom-up vs MRIO; Fig 2 methods comparison)
+  transition_between_sections: ["each sector subsection closes by motivating the next avenue", "criticism section follows driver section as evaluation turn"]
+argumentation:
+  dominant_argument_pattern: magnitude claim -> time-series or map evidence -> distributional implication
+  claim_evidence_relation: every volume claim carries a number, period and accounting method
+  comparison_pattern: 1986 vs 2022 snapshots; bottom-up vs MRIO estimates; water-efficient vs inefficient exporters
+  contradiction_handling: explicit two-study contradiction staged ("Research on how trade openness ... is contradictory")
+  boundary_condition_handling: water-savings concept's applicability limits enumerated as numbered limitations
+  limitation_handling: "'it suffers from at least two limitations. First, ...' structured limitation analysis"
+  gap_identification_pattern: methodological-consistency gap plus sustainability-accounting gap
+synthesis:
+  synthesis_unit: proposition/flow
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern: ["network-pattern synthesis across commodities", "driver taxonomy figure merging natural and social factors", "telecoupling framework unifying sending-spillover-receiving systems"]
+  consensus_pattern: stable patterns asserted across datasets ('remained consistent net exporters') with sources named
+  controversy_pattern: criticism section gives organised voice to opposing positions rather than resolving them
+  reconciliation_pattern: divergent estimates reconciled by attributing variation to method and water-type choices
+  evidence_weighting_pattern: peer-reviewed quantitative estimates outrank grey literature; updates flagged when authors recompute values
+paragraph_rhetoric:
+  common_rhetorical_moves: ["dated magnitude statement", "method attribution", "macro-region contrast", "concept definition inline"]
+  typical_move_sequences: [["trend number", "leading countries", "environmental consequence elsewhere"]]
+  topic_sentence_pattern: flow-magnitude openers ("Between 1986 and 2016, the volume of VWT associated with agricultural products rapidly increased")
+  synthesis_sentence_pattern: "'Such findings link X to Y at scales meaningful to policy-makers' bridging sentences"
+  contrast_sentence_pattern: "'By contrast,' Asian import growth vs African weak integration"
+  limitation_sentence_pattern: numbered limitation paragraphs dissecting a concept's assumptions
+  transition_pattern: forward-pointing subsection previews inside running text; glossary anchors terms
+  paragraph_length_profile: q25=468, median=643, p75=794 chars
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 3, p75: 6}
+  citation_cluster_frequency: high on data-bearing claims; zero-citation blocks for framework exposition (30% share)
+  single_vs_cluster: single source citations attached to each specific statistic — provenance discipline
+  seminal_recent_balance: recent5y share 0.223; Allan/Hoekstra canon cited for concepts, recent papers for numbers
+  citation_location: [immediately after each numeric claim, sentence-final clusters]
+  citation_support_type: [quantitative trade-flow studies, MRIO databases, conceptual telecoupling papers]
+  method_citation_pattern: dedicated box comparing accounting methods with per-method citations
+  gap_citation_pattern: cites inconsistent-estimate literature to motivate standardisation
+geography_reasoning:
+  whether_geography_is_central: yes — trade geography is the object; maps are primary evidence
+  spatial_scale_usage: country-to-subnational scaling shown to change conclusions (interprovincial China, US states)
+  regional_differentiation_usage: persistent exporter bloc (Americas, Australia) vs importer bloc (Asia, Europe, MENA) structure
+  spatial_heterogeneity_usage: heterogeneity between commodity networks stressed — one network per product class
+  cross_scale_usage: telecoupling framework explicitly links consumption sites to production sites across continents
+  place_context_usage: places function as nodes whose roles changed over time (China's rise as importer)
+  human_environment_usage: fully coupled — economic trade displaces hydrological impacts
+  flow_network_usage: central — Sankey diagrams and network language ('connections', 'dominant fluxes')
+  spatial_dependence_usage: import dependence redistributes scarcity; unequal exchange formalised as hydrological dependence
+  conditions_triggering_geographic_explanation: ["when explaining displacement of environmental consequences", "when justifying subnational resolution", "when attributing network shifts to specific national demand changes"]
+figure_strategy:
+  total_figures: 7
+  figure_roles: [green-blue water flow Sankey, methods-comparison diagram, 1986-vs-2022 trade maps, product-contribution breakdown, driver taxonomy, telecoupled-systems framework, unsustainable-VWT panel]
+  conceptual_framework: Fig 6 telecoupling framework organises cause-effect reading
+  taxonomy: yes (Fig 5 driver classification)
+  mechanism: partial (driver pathways)
+  timeline: partial (two-date snapshot comparison instead of continuous timeline)
+  map: yes (arrow-flow world maps)
+  workflow: none
+  evidence_summary: Fig 1 situates traded fraction within global evapotranspiration budget — denominator context
+  figure_text_relation: captions state data sources and thresholds ('only flows above 15 km3 yr-1 are shown'); caption take-home sentences present
+gap_and_agenda:
+  how_gaps_are_derived: from attribute gaps in current analyses (renewability, opportunity cost, sustainability splits)
+  types_of_gaps: [method-standardisation gap, sustainability-attribution gap, subnational coverage gap]
+  evidence_required_before_gap_claim: side-by-side demonstration that estimates diverge by method
+  future_agenda_structure: requirements list for next-generation VWT analyses rather than question list
+  specificity_of_future_questions: moderately specific (which factors analyses 'must consider')
+quality_features:
+  major_strengths: [statistic-level source discipline, explicit method dualism handled openly, criticism given its own section, glossary hygiene]
+  transferable_patterns: [attribute-every-number-to-source-and-period convention, dedicated methods-comparison box, two-date map comparison for trend claims, separate criticism section before agenda]
+  unique_but_nontransferable_features: [commodity-sector split specific to trade accounting; fast-track dataset update by authors]
+  risks_of_imitation: [number-dense prose can overwhelm without the anchoring framework figures; criticism section requires fair representation of opposing work]
+anti_patterns:
+  weak_patterns_to_avoid: [quoting volumes without period and method, merging incompatible accounting estimates into one average]
+source_provenance:
+  source_pages: ["pp. 890-905 (Vol 5, Dec 2024 running headers)", "pp. 890-891 (opening/intro slice)", "p. 893 (BODY_SLICE_1@17%)", "p. 896 (BODY_SLICE_2@33%)", "~p. 899 (BODY_SLICE_3@50%)", "p. 901 (BODY_SLICE_4@67%)", "closing/refs slice"]
+  source_sections: [Introduction, VWT related to agricultural products/energy, policy-relevance passages, glossary fragment, Fig 1-7 and Box 1 captions, reference sample]
+  confidence: medium

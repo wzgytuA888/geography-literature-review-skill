@@ -1,0 +1,128 @@
+document_id: B033
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of heatwave prediction and projection)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2023
+  doi: 10.1038/s43017-022-00371-z
+  review_type: narrative
+overall_review_design:
+  review_objective: Assess drivers and feedbacks that enable heatwave prediction across timescales, and projections of future change.
+  review_scope: land heatwaves (excluding marine); prediction skill from weather to decadal timescales plus projections
+  review_mode: expert mechanistic narrative organized by predictability timescale
+  article_architecture: [Abstract, Introduction, Drivers and feedbacks for heatwave prediction (Atmospheric processes; Surface drivers and feedbacks), Heatwave prediction, Heatwave projections, Summary and discussion]
+  organizing_principle: mixed — mechanism first, then lead-time (days→seasons→decades→centuries) as the master axis
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: definition-first opening (heatwave defined) immediately followed by impact enumeration
+  problem_contextualization: observed trends and attribution established as urgency base ("increasingly attributed to human influence")
+  fragmentation_statement: not fragmentation but capability framing — unprecedented changes will exceed current preparedness
+  gap_or_need_statement: "vital to further understand, predict and project heatwaves" with remaining challenges named
+  review_objective_statement: implicit in section titles (prediction → projection) rather than one declarative sentence
+  scope_definition: scope set via Box 1 definitional criteria (threshold, persistence) and exclusion of marine events
+  contribution_statement: contribution framed as consolidated predictability assessment across timescales
+  roadmap_pattern: variant — abstract lists the arc; body relies on heading sequence instead of an explicit "In this Review" chain
+section_architecture:
+  section_order: [Introduction, Atmospheric processes, Surface drivers and feedbacks, Heatwave prediction, Heatwave projections, Summary and discussion]
+  dominant_logic: process understanding → predictive capability → projected change
+  chronological_logic: none
+  thematic_logic: partial (driver categories)
+  mechanism_logic: central (ridges/blocks, advection, subsidence, land–atmosphere feedbacks)
+  scale_logic: partial (lead time functions like a scale axis)
+  region_logic: central — latitudinal belts (extratropics/subtropics/monsoon) organize mechanism relevance
+  method_logic: partial (Box 1 defines measurement constructs)
+  transition_between_sections:
+    - driver taxonomy sentence hands off from atmospheric to surface drivers
+    - predictability ladder (Fig. 3) links prediction to projection sections
+argumentation:
+  dominant_argument_pattern: regional-mechanism claim → named event exemplars → predictability consequence
+  claim_evidence_relation: process claims cite clustered studies; forecast-skill claims cite operational systems
+  comparison_pattern: belt-by-belt contrast (extratropical blocking vs subtropical pre-monsoon heat)
+  contradiction_handling: non-stationarity caveat attached to promising predictors ("cannot often be successfully used for long-range prediction")
+  boundary_condition_handling: definition applicability conditioned on latitude (tropics vs extratropics in Box 1)
+  limitation_handling: model-representation limits (resolution, blocking persistence) assessed candidly in Summary
+  gap_identification_pattern: representation gap — a specific model component (stationary waves) whose bias propagates to errors
+synthesis:
+  synthesis_unit: mechanism; regions serve as the sampling frame for mechanisms
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - belt-organized mechanism synthesis (extratropics/subtropics/tropics)
+    - timescale-ladder synthesis unifying forecast systems
+    - definitional-box synthesis harmonizing heterogeneous heatwave metrics
+  consensus_pattern: attribution statements lean on assessment bodies ("virtually certain" per IPCC AR6)
+  controversy_pattern: contested mechanisms flagged as "suggested to exhibit" (resonant amplification)
+  reconciliation_pattern: day-vs-night and region contrasts reconciled by separating driving-process mixes
+  evidence_weighting_pattern: operational forecast skill and attribution studies weighted above case studies
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define-then-operationalize (Box metrics)
+    - region-as-example chains
+    - dated-event anchoring (2003, 2010, 2021, 2022)
+    - skill statement with baseline comparison
+  typical_move_sequences:
+    - ["mechanism claim", "citation cluster", "regional instances", "predictability implication"]
+    - ["trend/attribution claim", "assessment citation", "urgency clause"]
+  topic_sentence_pattern: paragraph opens with driver or region under discussion
+  synthesis_sentence_pattern: processes separated into advection/subsidence/diabatic classes then combined
+  contrast_sentence_pattern: "In contrast," pivots between belts or day/night regimes
+  limitation_sentence_pattern: model progress qualified ("improvements ... do not always lead to increased" skill)
+  transition_pattern: explicit hand-off sentences naming what is "now discussed"
+  paragraph_length_profile: median ~630 chars (q25 489, q75 824)
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 4, p75: 7}
+  citation_cluster_frequency: high on process claims (regional example sentences carry 3+ refs)
+  single_vs_cluster: clusters for mechanism families; singles for individual events and systems
+  seminal_recent_balance: recent5y share ~18% — heavier reliance on older foundational literature than peers
+  citation_location: [sentence-final cluster, narrative-author rare]
+  citation_support_type: [process study, case-event analysis, forecast-system evaluation, assessment report]
+  method_citation_pattern: definitions and indices concentrated in Boxes with their own citation apparatus
+  gap_citation_pattern: gaps anchored to model-intercomparison results (CMIP5→CMIP6 progression)
+geography_reasoning:
+  whether_geography_is_central: yes — climatic belts are the primary explanatory variable
+  spatial_scale_usage: subcontinental drivers vs hemispheric wave trains explicitly separated
+  regional_differentiation_usage: each belt gets its own mechanism mix; named countries instantiate belts
+  spatial_heterogeneity_usage: heterogeneity in drivers justifies region-specific prediction skill differences
+  cross_scale_usage: remote SST forcing linked to local surface fluxes via teleconnection chains
+  place_context_usage: Europe, North America, SE Australia, eastern China recur as canonical cases
+  human_environment_usage: health, infrastructure, energy demand motivate definitions (humid heat for health)
+  flow_network_usage: moist ascending airstreams / wave trains as directional flows
+  spatial_dependence_usage: upstream latent heating and storm-track position condition downstream heat
+  conditions_triggering_geographic_explanation:
+    - whenever mechanism relevance shifts by latitude or monsoon phase
+    - when land–surface coupling strength differs regionally (soil moisture memory)
+    - when definitions lose validity outside their home climate (tropics)
+figure_strategy:
+  total_figures: 5
+  figure_roles: [distribution-shift chart, annotated process schematic, predictability-timescale ladder, case-study composite, warming-level projection map]
+  conceptual_framework: Fig. 2 schematic separates drivers from feedbacks with +/- arrows
+  taxonomy: Box 1 metric taxonomy (frequency/intensity/spatial extent/duration)
+  mechanism: Fig. 2 labeled arrows for blocking, advection, soil-moisture desiccation loop
+  timeline: Fig. 3 organizes predictors from days to centuries
+  map: Fig. 4 June 2021 case geography; Fig. 5 warming-level occurrence maps
+  workflow: none
+  evidence_summary: Fig. 1 observational distribution change across stations
+  figure_text_relation: schematics carry starred caveats (*modeling-dependent) echoed in prose
+gap_and_agenda:
+  how_gaps_are_derived: derived from diagnosed model biases traced to error consequences (blocking persistence)
+  types_of_gaps: [model-representation gap, predictability-limit gap, definition-transferability gap]
+  evidence_required_before_gap_claim: intercomparison evidence (CMIP phases) or failed re-forecast demonstrations
+  future_agenda_structure: imperative list keyed to preparedness failure risk, then component-level fixes
+  specificity_of_future_questions: concrete targets (better stationary-wave representation; higher resolution limits acknowledged)
+quality_features:
+  major_strengths:
+    - single master axis (lead time) makes an otherwise diffuse field navigable
+    - Boxes absorb definitional contention so main text stays analytic
+    - every mechanism claim instantiated with at least one named event
+  transferable_patterns:
+    - timescale-ladder organization for prediction-oriented topics
+    - belt-based regional differentiation tied to mechanism validity
+    - box-isolated definitions/metrics pattern
+  unique_but_nontransferable_features: meteorological blocking/ridge vocabulary
+  risks_of_imitation: belt logic only transfers where climate zones genuinely gate mechanisms
+anti_patterns:
+  weak_patterns_to_avoid:
+    - mixing definitional debate into analytic sections (isolated here into Boxes)
+source_provenance:
+  source_pages: ["pp. 36-50 (journal); opening p. 37; slices @17/33/50%; closing refs pp. 48-49"]
+  source_sections: [Introduction, Atmospheric processes, Surface drivers and feedbacks, Heatwave prediction, Heatwave projections, Summary and discussion, Box 1, Box 2, figure captions]
+  confidence: high

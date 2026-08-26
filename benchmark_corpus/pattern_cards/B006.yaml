@@ -1,0 +1,139 @@
+document_id: B006
+bibliographic:
+  title: Evidence and attribution of the enhanced land carbon sink
+  authors: [UNKNOWN]           # not captured in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2023
+  doi: 10.1038/s43017-023-00456-3
+  review_type: methodological  # evidence-audit narrative organized around attribution logic
+overall_review_design:
+  review_objective: >-
+    Establish that the land carbon sink has enhanced, attribute the enhancement to
+    driving processes, project its future, and draw management implications.
+  review_scope: >-
+    Global and continental land carbon sink; observational, isotopic, inventory,
+    eddy-covariance, satellite and model evidence; CO2 fertilization, nutrients,
+    light, temperature, water; projections; natural climate solutions.
+  review_mode: >-
+    Triangulation narrative — multiple independent evidence lines are cross-validated
+    before any attribution claim is allowed to stand.
+  article_architecture:
+    - Abstract
+    - Introduction
+    - Trends in the land carbon sink (multi-method evidence)
+    - Key processes driving the land carbon sink (driver-by-driver)
+    - Land carbon sink projections
+    - Implications for natural climate solutions
+    - Summary and future
+    - Table 1 multi-method evidence matrix
+  organizing_principle: mixed — evidential hierarchy first (is there a trend?), mechanistic drivers second, projection third, application fourth
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: budget framing with counterfactual ("atmospheric CO2 concentration would have reached >500 ppm by 2020")
+  problem_contextualization: airborne-fraction stability framed as the puzzle making sink strength policy-relevant
+  fragmentation_statement: implicit — methods fragmented across communities; the review assembles them
+  gap_or_need_statement: need argued from stakes (Paris pledges depend on sink behaviour)
+  review_objective_statement: carried by title itself ("Evidence and attribution of...")
+  scope_definition: driver list enumerated in introduction paragraph
+  contribution_statement: synthesis of "multiple lines of evidence from emerging technologies"
+  roadmap_pattern: UNKNOWN     # section sequence implies roadmap; explicit signpost not captured
+section_architecture:
+  section_order: [Introduction, Trends in the land carbon sink, Key processes driving the land carbon sink, Land carbon sink projections, Implications for natural climate solutions, Summary and future]
+  dominant_logic: detect -> attribute -> project -> act, each stage gated by evidence quality
+  chronological_logic: partial      # historical trends vs CMIP6/SSP projections
+  thematic_logic: central           # one subsection per candidate driver
+  mechanism_logic: central          # attribution is explicitly mechanistic
+  scale_logic: partial              # globe to continent to biome contrasts
+  region_logic: partial             # regional flux responses compared within driver sections
+  method_logic: central             # method comparison is a first-class content axis
+  transition_between_sections:
+    - evidence-to-mechanism hinge ("Multiple lines of evidence ... suggest")
+    - mechanism-to-projection bridge via model ensembles
+argumentation:
+  dominant_argument_pattern: convergent independent-evidence argument; disagreement between methods becomes a finding
+  claim_evidence_relation: headline claims carry likelihood qualifiers ("very likely the leading mechanism") plus uncertainty ranges
+  comparison_pattern: method-vs-method (inversion vs DGVM vs residual budget); region-vs-region within drivers
+  contradiction_handling: divergences named and diagnosed (tree-ring divergence problem; drought-metric disagreement traced to definitions)
+  boundary_condition_handling: nutrient limitation treated as boundary on CO2-fertilization claims
+  limitation_handling: per-method caveats consolidated into an evidence table column
+  gap_identification_pattern: constraint gaps — which missing measurement would most reduce spread
+synthesis:
+  synthesis_unit: proposition       # e.g., the sink doubled; driver X contributes Y
+  study_by_study_ratio: low         # densest citation clustering of batch; studies never narrated serially
+  multi_source_synthesis_pattern:
+    - cross-method triangulation table with certainties
+    - ensemble statistics (186 studies; >2000 eddy-covariance sites)
+    - counterfactual construction (theoretical CO2 without land sink)
+  consensus_pattern: quantified agreement statements across independent pipelines
+  controversy_pattern: open disagreements attributed to metric definitions or under-sampled regions
+  reconciliation_pattern: definitional diagnosis ("alternative ways of quantifying drought severity")
+  evidence_weighting_pattern: independent-method convergence weighted above single-method precision
+paragraph_rhetoric:
+  common_rhetorical_moves: [method description, estimate with range, cross-check against second method, caveat]
+  typical_move_sequences:
+    - [observational fact, corroborating method, residual discrepancy note]
+    - [driver heading, effect direction, magnitude, regional qualifier]
+  topic_sentence_pattern: what a method can and cannot establish
+  synthesis_sentence_pattern: consistency clauses linking estimates ("is consistent with this value")
+  contrast_sentence_pattern: however-pivots where methods disagree
+  limitation_sentence_pattern: complication clauses attached to proxy interpretations
+  transition_pattern: driver-section parallelism; explicit forward links to implications
+  paragraph_length_profile: q25=443, median=628, p75=822 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 2, median: 4, p75: 7}   # highest density in batch
+  citation_cluster_frequency: very high; near-zero-citation blocks only 10% of paragraphs
+  single_vs_cluster: clusters dominate even for single claims (multi-study support standard)
+  seminal_recent_balance: recent5y share 0.233; foundational budget papers persist
+  citation_location: [sentence-final clusters, mid-sentence for specific numbers]
+  citation_support_type: [dataset/budget source, model intercomparison, meta-analysis, site network]
+  method_citation_pattern: every method introduced with origin citation and known limitations
+  gap_citation_pattern: gaps point to named under-constrained processes
+geography_reasoning:
+  whether_geography_is_central: supporting-strong — regional breakdowns serve attribution confidence
+  spatial_scale_usage: global budgets disaggregated to continents and biomes
+  regional_differentiation_usage: tropical vs boreal contributions; dry-region sensitivity trends quantified
+  spatial_heterogeneity_usage: greening maps show ~15% of surface gaining LAI
+  cross_scale_usage: plot-level measurements scaled via models to globe with stated assumptions
+  place_context_usage: few named places; regions/biomes preferred over cities
+  human_environment_usage: policy coupling at close (NbCS pledges), not in core analysis
+  flow_network_usage: none
+  spatial_dependence_usage: interhemispheric gradients used as constraints
+  conditions_triggering_geographic_explanation:
+    - when driver strength varies by biome or nutrient regime
+    - when data coverage differs regionally
+    - when projecting regionally divergent water availability
+figure_strategy:
+  total_figures: 7 (+Table 1)
+  figure_roles: [budget time series with counterfactual, greening maps, process schematic, continental flux bars, spatial response maps, scenario projection fan, mitigation-potential summary]
+  conceptual_framework: Fig. 3a schematic representation of sink changes
+  taxonomy: Table 1 taxonomy of evidence types with certainty grades
+  mechanism: driver-response panels separate CO2 vs climate effects
+  timeline: Fig. 1 historic enhancement 1850-present
+  map: Figs. 2,5 spatial patterns of vegetation and flux change
+  workflow: none
+  evidence_summary: Fig. 7 distils mitigation potential from preceding analysis
+  figure_text_relation: captions declare model ensembles, shading conventions, scenario colours
+gap_and_agenda:
+  how_gaps_are_derived: from residual spreads between independent estimates after reconciliation attempts
+  types_of_gaps: [data (P-limited tropics under-sampled), model (P cycle absent in DGVMs), process (stomatal response)]
+  evidence_required_before_gap_claim: demonstrated spread attributable to the missing constraint
+  future_agenda_structure: observation+model closing moves toward decision relevance
+  specificity_of_future_questions: targets specific cycles (phosphorus) and technologies (emerging remote sensing)
+quality_features:
+  major_strengths:
+    - evidence matrix makes multi-method audit checkable line by line
+    - likelihood language calibrated to IPCC-style usage
+    - disagreements converted into diagnostic information
+  transferable_patterns:
+    - build a Method x Scale x Certainty table as the review's backbone
+    - gate each attribution claim on at least two independent evidence lines
+    - trace contradictions to definitions before debating substance
+  unique_but_nontransferable_features: budget-accounting arithmetic specific to carbon-cycle data
+  risks_of_imitation: triangulation demands genuinely independent methods; pseudo-triangulation misleads
+anti_patterns:
+  weak_patterns_to_avoid:
+    - asserting attribution from a single evidence stream however precise
+source_provenance:
+  source_pages: ["digest OPENING (intro+trends, NREE pp.518-534 area)", "BODY_SLICE_1@17% (tree rings, eddy covariance)", "BODY_SLICE_2@33% (nutrients, light)", "BODY_SLICE_3@50% (projections, NbCS, Fig.6 caption)", "BODY_SLICE_4@67% + CLOSING (references)", "FIGURE/TABLE CAPTIONS"]
+  source_sections: [Introduction, Trends in the land carbon sink, Key processes driving the land carbon sink, Land carbon sink projections, Implications for natural climate solutions, Table 1, Figure captions]
+  confidence: high

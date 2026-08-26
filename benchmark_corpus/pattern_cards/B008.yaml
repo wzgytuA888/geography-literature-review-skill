@@ -1,0 +1,117 @@
+document_id: B008
+bibliographic:
+  title: Soil hydrology in the Earth system
+  authors: [UNKNOWN]           # not recoverable from degraded extraction
+  journal: Nature Reviews Earth & Environment (accepted version via Reading repository)
+  year: 2022
+  doi: 10.1038/s43017-022-00324-6
+  review_type: UNKNOWN         # register suggests narrative synthesis; cannot verify structure
+overall_review_design:
+  review_objective: >-
+    UNKNOWN — visible fragments concern soil hydraulic functions, parameterization,
+    observation networks, and Earth-system coupling; objective statement not captured.
+  review_scope: >-
+    Partially inferable — soil hydraulic properties, pedotransfer functions, root-water
+    uptake, monitoring networks (CZO/NEON/TERENO/ISMN), citizen science, remote sensing,
+    machine learning; full scope UNKNOWN.
+  review_mode: UNKNOWN
+  article_architecture:
+    - UNKNOWN                    # no headings detected; only reference-list fragments
+  organizing_principle: UNKNOWN
+  number_of_major_sections: UNKNOWN
+introduction_pattern:
+  opening_move: UNKNOWN
+  problem_contextualization: UNKNOWN
+  fragmentation_statement: UNKNOWN
+  gap_or_need_statement: UNKNOWN
+  review_objective_statement: UNKNOWN
+  scope_definition: UNKNOWN
+  contribution_statement: UNKNOWN
+  roadmap_pattern: UNKNOWN
+section_architecture:
+  section_order: []              # not recovered
+  dominant_logic: UNKNOWN
+  chronological_logic: UNKNOWN
+  thematic_logic: UNKNOWN
+  mechanism_logic: partial       # visible prose explains process controls on infiltration/runoff
+  scale_logic: partial           # larger-scale approaches vs local measurements contrasted in slices
+  region_logic: UNKNOWN
+  method_logic: central          # surviving slices are method-centric (PTFs, monitoring, sensing)
+  transition_between_sections: []
+argumentation:
+  dominant_argument_pattern: limitation-then-revision pattern visible — each method's failure modes listed, then remedies proposed
+  claim_evidence_relation: claims cite measurement/model studies densely (superscripts largely lost)
+  comparison_pattern: vegetated-vs-bare-soil hydraulic contrasts in one slice
+  contradiction_handling: UNKNOWN
+  boundary_condition_handling: context-dependence flagged ("mechanisms and conditions ... are context-dependent")
+  limitation_handling: prominent — standardization and structural-representation limits detailed
+  gap_identification_pattern: method-standardization gap; data-scarcity gaps (root distributions)
+synthesis:
+  synthesis_unit: UNKNOWN
+  study_by_study_ratio: UNKNOWN
+  multi_source_synthesis_pattern:
+    - network/inventory enumeration (named observatories) as infrastructure synthesis
+  consensus_pattern: UNKNOWN
+  controversy_pattern: UNKNOWN
+  reconciliation_pattern: UNKNOWN
+  evidence_weighting_pattern: UNKNOWN
+paragraph_rhetoric:
+  common_rhetorical_moves: [method-limitation listing, remedy proposal, context-dependence caveat]
+  typical_move_sequences: [[]]
+  topic_sentence_pattern: UNKNOWN
+  synthesis_sentence_pattern: UNKNOWN
+  contrast_sentence_pattern: "In contrast," contrasts between surface conditions observed once
+  limitation_sentence_pattern: frequent — nearly every surviving paragraph grades a method
+  transition_pattern: numbered-subsection style implied ("5.2 Monitoring networks")
+  paragraph_length_profile: unreliable (blocks up to 48k chars due to extraction merging)
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 20, p75: 102}   # artifact of merged blocks; unusable
+  citation_cluster_frequency: UNKNOWN
+  single_vs_cluster: UNKNOWN
+  seminal_recent_balance: recent5y share 0.233 per index; otherwise UNKNOWN
+  citation_location: []          # numbering lost in extraction
+  citation_support_type: []
+  method_citation_pattern: methods cited at first mention where readable
+  gap_citation_pattern: UNKNOWN
+geography_reasoning:
+  whether_geography_is_central: partial — arid/semi-arid catchment patterning and global station networks appear
+  spatial_scale_usage: pore/catchment to global networks (visible slices)
+  regional_differentiation_usage: dryland vs humid ecohydrology contrast present
+  spatial_heterogeneity_usage: soil structure variability emphasized as prediction barrier
+  cross_scale_usage: local hydraulics to Earth-system model coupling implied by title/slices
+  place_context_usage: observatory names rather than natural places
+  human_environment_usage: land management and citizen-science participation noted
+  flow_network_usage: none visible
+  spatial_dependence_usage: run-on and preferential-flow spatial dependence discussed
+  conditions_triggering_geographic_explanation:
+    - when climate regime (arid/semi-arid) changes surface-hydraulic behaviour
+figure_strategy:
+  total_figures: UNKNOWN        # none detected; likely lost with body text
+  figure_roles: []
+  conceptual_framework: UNKNOWN
+  taxonomy: UNKNOWN
+  mechanism: UNKNOWN
+  timeline: UNKNOWN
+  map: UNKNOWN
+  workflow: UNKNOWN
+  evidence_summary: UNKNOWN
+  figure_text_relation: UNKNOWN
+gap_and_agenda:
+  how_gaps_are_derived: method-failure analysis implies agenda (standardize protocols; fuse sensors/models)
+  types_of_gaps: [data (root distributions), method (measurement standardization), integration (Earth-system coupling)]
+  evidence_required_before_gap_claim: documented PTF failure cases
+  future_agenda_structure: UNKNOWN
+  specificity_of_future_questions: UNKNOWN
+quality_features:
+  major_strengths:
+    - surviving prose shows disciplined method-critique rhythm
+  transferable_patterns:
+    - pair every method with its failure modes before proposing successors   # candidate, single doc
+  unique_but_nontransferable_features: pedotransfer-function specifics
+  risks_of_imitation: UNKNOWN
+anti_patterns:
+  weak_patterns_to_avoid: []     # insufficient evidence to name any
+source_provenance:
+  source_pages: ["digest BODY_SLICE_1@17% (hydraulic functions/PTF)", "BODY_SLICE_2@33% (drylands ecohydrology)", "BODY_SLICE_3@50% (networks, citizen science)", "CLOSING slice (references)"]
+  source_sections: ["UNKNOWN — headings not detected"]
+  confidence: low        # digest carries explicit poor-extraction warning; card flagged for consolidator review per extraction rule 4

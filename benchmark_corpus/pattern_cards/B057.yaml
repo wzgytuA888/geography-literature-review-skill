@@ -1,0 +1,134 @@
+document_id: B057
+bibliographic:
+  title: "[Climate change impact attribution:] Approaches, challenges and applications (subtitle fragment from index)"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2026
+  doi: 10.1038/s43017-026-00798-8
+  review_type: methodological
+overall_review_design:
+  review_objective: >-
+    Define impact attribution, systematize its methodological steps, compare approaches via case studies,
+    and assess societal applications, obstacles and good practice.
+  review_scope: methods across the causal chain from emissions to impacts; counterfactual construction; uncertainty; applications (awareness, risk management, litigation).
+  review_mode: methodological pipeline review — definition, workflow steps, worked cases, applications, guidance.
+  article_architecture:
+    - Abstract
+    - Key points
+    - Introduction
+    - Definition/milestone sections
+    - Stepwise approach sections (framing, causal pathways, models, counterfactuals, results)
+    - Overcoming obstacles
+    - Applications
+    - Summary and future
+    - Boxes 1-2; Table 1
+  organizing_principle: methodological workflow order mirroring an analysis pipeline
+  number_of_major_sections: 6-7
+introduction_pattern:
+  opening_move: definitional anchoring — "Attribution, defined by consensus across the three working groups" of IPCC AR6.
+  problem_contextualization: distinguishes climate attribution from harder impact attribution via confounder argument.
+  fragmentation_statement: approaches differ because they "reflect method and data constraints as much as different research interests".
+  gap_or_need_statement: nuances of research questions must be stated unambiguously; operational attribution service absent.
+  review_objective_statement: "\"For the purposes of this Review, we define impact attribution specifically as...\" — author-operationalized definition."
+  scope_definition: formal inclusion rule for what counts as impact attribution.
+  contribution_statement: stepwise framework + case-study demonstrations + application map.
+  roadmap_pattern: present through Key points enumerating the pipeline stages.
+section_architecture:
+  section_order: [Abstract+Key points, Introduction/definition, method steps..., Overcoming obstacles, Applications, Summary-future]
+  dominant_logic: pipeline logic — each section = one analysis stage
+  chronological_logic: partial
+  thematic_logic: central
+  mechanism_logic: partial
+  scale_logic: partial
+  region_logic: none
+  method_logic: central
+  transition_between_sections:
+    - stage-to-stage handoffs ("The hypothesis should address both climate drivers and non-climate drivers")
+    - case studies recur across sections binding the pipeline together
+argumentation:
+  dominant_argument_pattern: decision guidance - define the option space at each pipeline step, then prescribe good practice.
+  claim_evidence_relation: methodological claims demonstrated through running cases rather than citation mass.
+  comparison_pattern: approach-versus-approach via identical cases; framing sensitivity shown through outcome differences.
+  contradiction_handling: divergent storm-damage results reconciled by matching framing choice to user question.
+  boundary_condition_handling: validity bounds tied to spatial scale, data support and non-climate confounders.
+  limitation_handling: low-confidence conditions stated with communication safeguards attached.
+  gap_identification_pattern: operational shortfalls (standards, services) framed as community tasks, not missing papers.
+synthesis:
+  synthesis_unit: methodological decision point
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - three numbered running cases (Case 1-3) compared across all method steps
+    - Box 2 worked example (Hurricane Harvey) contrasting framings and their consequences
+    - milestone history figure assembling field lineage
+  consensus_pattern: IPCC-consensus definition used as anchor for everything downstream.
+  controversy_pattern: framing-sensitivity demonstrated rather than debated ("choices of framing and impact modelling can strongly influence conclusions").
+  reconciliation_pattern: prescribes matching framing choice to the question most users pose.
+  evidence_weighting_pattern: normative criteria (user relevance, unambiguity) used to weigh approaches.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define then delimit
+    - conditional guidance ("might consider... For example...")
+    - imperative norms ("scientists must ensure that resulting nuances ... are unambiguously stated")
+  typical_move_sequences:
+    - [step definition, option space, case illustration, pitfall warning]
+  topic_sentence_pattern: task-led ("Causal pathway choices...", "Applications...").
+  synthesis_sentence_pattern: option enumeration with examples in apposition.
+  contrast_sentence_pattern: factual vs counterfactual scenario contrasts throughout.
+  limitation_sentence_pattern: confidence limits tied to spatial scale and data support ("low confidence levels for impacts on small spatial scales").
+  transition_pattern: pipeline-stage sequencing; case-study callbacks.
+  paragraph_length_profile: q25=467, median=672, p75=910 chars; longest p75 in batch.
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 2, p75: 5}
+  citation_cluster_frequency: lowest in batch alongside B060 median 2; zero-citation share highest (28.6%) — concept prose dominates.
+  single_vs_cluster: single refs for definitions/cases; clusters only at field-history points.
+  seminal_recent_balance: recent5y share 0.578 plus explicit "Seminal studies:" labels in figures.
+  citation_location: [sentence-final, case-label citations inline]
+  citation_support_type: [definitional source, exemplar study, assessment report]
+  method_citation_pattern: every named method/protocol carries its reference at first use.
+  gap_citation_pattern: gaps framed as absent standards/services, not missing studies.
+geography_reasoning:
+  whether_geography_is_central: partially — geography appears where evidence and vulnerability are distributed.
+  spatial_scale_usage: warns attribution confidence degrades at small spatial scales; regional aggregation advised.
+  regional_differentiation_usage: cross-region comparison caution — misinterpretation risks for vulnerable regions.
+  spatial_heterogeneity_usage: exposure/vulnerability treated as place-specific counterfactual ingredients.
+  cross_scale_usage: event-to-climate-scale linkage is the method's core.
+  place_context_usage: places appear as case settings (islands, London, Lake Kivu) illustrating data inequity.
+  human_environment_usage: constitutive — human systems are the attribution target.
+  flow_network_usage: cross-boundary events requiring multi-agency workflows.
+  spatial_dependence_usage: observation coverage maps show where attribution is even possible.
+  conditions_triggering_geographic_explanation:
+    - when data availability varies by region
+    - when exposure/vulnerability are location-specific inputs
+    - when impacts cross jurisdictions
+figure_strategy:
+  total_figures: 5
+  figure_roles: [causal-chain framework mapping fields to chain segments, observation coverage maps, counterfactual-method comparison panels, case scope panels, case workflow panels]
+  conceptual_framework: Fig. 1 emissions-to-impacts chain with scientific fields mapped onto segments.
+  taxonomy: Table 1 taxonomy of societal applications.
+  mechanism: causal-chain structure itself.
+  timeline: Fig. 1b milestone lineage of the field.
+  map: Fig. 2 shares of populations covered by proxy observations.
+  workflow: Figs. 4-5 side-by-side method-step diagrams for three cases.
+  evidence_summary: Boxes consolidate observations and one storm's cost evidence.
+  figure_text_relation: figures carry the comparative burden; text interprets choices.
+gap_and_agenda:
+  how_gaps_are_derived: from operational shortcomings (no standards, no service) and equity failures.
+  types_of_gaps: [standardization gap, data-availability gap, transdisciplinary-collaboration gap]
+  evidence_required_before_gap_claim: documented practice diversity and failed coordination attempts.
+  future_agenda_structure: collaboration, reporting standards, robust regional metrics, communication safeguards.
+  specificity_of_future_questions: high — concrete institutional mechanisms proposed.
+quality_features:
+  major_strengths: [pipeline-as-architecture, running-case pedagogy, normative clarity, seminal-vs-recent labeling]
+  transferable_patterns:
+    - open by anchoring a consensus definition, then give your operational variant
+    - run parallel mini-cases through every method step instead of isolated examples
+    - state imperatives for practice, not just research directions
+  unique_but_nontransferable_features: [IPCC institutional context and legal-application content]
+  risks_of_imitation: low citation density acceptable only when defining a methodology, not synthesizing evidence.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - presenting method options without showing how choice changes conclusions
+source_provenance:
+  source_pages: ["469-488 header", "470 opening", "~476 slice1", "~482 slice2", "~494 slice3", "~500 slice4"]
+  source_sections: [Introduction, Key points, method-step sections, Overcoming obstacles, Applications, Box 2, Table 1, figure captions]
+  confidence: medium

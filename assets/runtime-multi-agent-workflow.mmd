@@ -1,0 +1,37 @@
+flowchart TB
+    UT["User Review Topic / Question"] --> ORCH["Agent 0: Research Orchestrator<br/>state.json · checkpoints · stopping rules"]
+
+    ORCH --> SS["Agent 2: Search Strategist<br/>search-plan.yaml"]
+    SS --> SCOUTS
+    subgraph SCOUTS["Agents 3A–3E: Parallel Literature Scouts (Scholar API only)"]
+        SA["A seminal"] --- SB["B recent"]
+        SB --- SC["C methods"]
+        SC --- SD["D regional/spatial"]
+        SD --- SE["E snowball/controversy"]
+    end
+    SCOUTS --> LOG["search-log.csv · search-plan.yaml"]
+    LOG --> LIB["Agent 1: Task Literature Librarian<br/>registry · dedup · fulltext status"]
+    LIB --> GATE{"MissingFullTextGate"}
+    GATE -- "triggered" --> PAUSE["PAUSED_WAITING_FOR_USER_FULLTEXT<br/>TXT/XLSX → user → resume_helper"]
+    GATE -- clear --> EXT["Agent 4: Evidence Extractor<br/>literature cards + evidence units"]
+
+    EXT --> POOL[("Evidence Matrix")]
+    POOL --> SYN["Agent 5: Synthesis Agent<br/>propositions · consensus · controversy"]
+    SYN --> AM["Argument Map"]
+    AM --> OUTA["Agent 6: Outline Agent"]
+    OUTA --> WRI["Agent 7: Writing Agent<br/>evidence-grounded · placeholders"]
+    WRI --> CITA["Agent 8: Citation Agent<br/>Zotero-first resolution + audit"]
+    CITA --> FIGA["Agent 9: Figure Agent<br/>plan + real drafts (DRAFT-marked)"]
+    FIGA --> REV["Agent 10: Independent Reviewer<br/>findings only, round 1"]
+    REV --> REVA["Agent 12: Revision Agent"]
+    REVA --> AUD["Agent 11: Evidence & Citation Auditor"]
+    AUD --> QA["Final QA + Benchmark Quality Matching"]
+    QA --> FIN["Final Manuscript"]
+
+    METHOD["Distilled Method Skill<br/>(benchmark_corpus HOW files)"] -.->|"priors only"| OUTA
+    METHOD -.-> WRI
+    METHOD -.-> FIGA
+
+    style PAUSE fill:#ffe0e0
+    style FIN fill:#e8f0e8
+    style SCOUTS fill:#e8eef8

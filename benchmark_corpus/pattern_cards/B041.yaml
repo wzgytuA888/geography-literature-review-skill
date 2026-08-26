@@ -1,0 +1,107 @@
+document_id: B041
+bibliographic:
+  title: The occurrence, mechanisms and hazards of large landslides along tablelands
+  authors: [Tomas Pánek, Kristian Svennevig, Michal Brezný, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2024
+  doi: 10.1038/s43017-024-00587-1
+  review_type: narrative
+overall_review_design:
+  review_objective: Evaluate landslide types, ages, activity and controlling factors along continental tablelands, emphasising climate-change links
+  review_scope: Subaerial coalescent landslide fringes on layered-caprock tablelands on Earth; submarine and extraterrestrial occurrences excluded
+  review_mode: expert narrative synthesis organised around mechanism classes and controlling factors
+  article_architecture: [Abstract, Key points, Introduction, Distribution and characteristics of failed tablelands, Mechanisms of tableland failure, Factors influencing tableland instability, Landslide triggers, Tableland failure over time, Summary and future perspectives, Box 1]
+  organizing_principle: mechanistic (failure type) nested in thematic progression distribution->mechanism->factors->triggers->long-term evolution
+  number_of_major_sections: 7
+introduction_pattern:
+  opening_move: hazard-class framing with velocity/volume ranges, then pivot away from the assumed high-mountain locus
+  problem_contextualization: previous assumptions treated fringe landslides as ancient and stabilised; monitoring now contradicts this
+  fragmentation_statement: attention bias argued empirically — mapping biased towards arid, imagery-friendly regions
+  gap_or_need_statement: "no attempt so far to review large coalescent landslide areas affecting tablelands"
+  review_objective_statement: "Our objective is to evaluate landslide types, ages, activity and geological and topographical factors"
+  scope_definition: numeric inclusion/exclusion criteria (fringe >=10 km; slide >=1 km2; loess and marine terraces excluded)
+  contribution_statement: first synthesis plus climate/cryosphere emphasis rather than new data collection
+  roadmap_pattern: present (objective sentence followed by scope, exclusions, objective restatement)
+section_architecture:
+  section_order: [Introduction, Distribution and characteristics, Mechanisms of failure, Factors influencing instability, Triggers, Failure over time, Summary and future perspectives]
+  dominant_logic: mechanism-first taxonomy, then controls, then temporal evolution
+  chronological_logic: partial (long-term evolution section; Holocene/LGM dating of cases)
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: partial (site -> fringe -> global cluster ladder)
+  region_logic: partial (named regional clusters recur as exemplars throughout)
+  method_logic: none
+  transition_between_sections: ["factor section opens by naming what makes localities prone", "evolution section framed as final degradation stage"]
+argumentation:
+  dominant_argument_pattern: general mechanism claim immediately instantiated with multiple named regional cases
+  claim_evidence_relation: claim -> clustered citations -> one quantified exemplar locality
+  comparison_pattern: tableland fringes contrasted with fold-and-thrust belts and high-mountain settings
+  contradiction_handling: challenged assumption structure — 'assumed stabilised' vs monitoring evidence of movement
+  boundary_condition_handling: explicit exclusion list moves out-of-scope phenomena in one Introduction passage
+  limitation_handling: detection bias acknowledged (forested areas undermapped) rather than hidden
+  gap_identification_pattern: absence-of-inventory gap plus observation-bias gap derived from cited inventories
+synthesis:
+  synthesis_unit: mechanism/proposition
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern: ["cluster-cited generalisation then single best-studied exemplar", "inventory compilation across regions into one distribution statement", "process-chain synthesis (slide -> dam -> flood)"]
+  consensus_pattern: shared mechanism asserted once with many simultaneous citations (refs 6,8,12,17,32-34,70,71)
+  controversy_pattern: old assumptions vs new satellite evidence staged as correction narrative
+  reconciliation_pattern: variable outcomes reconciled by subdividing mechanisms (rotational vs spread vs avalanche)
+  evidence_weighting_pattern: quantified metrics (volumes, dates, velocities) given as anchor evidence; qualitative cases supportive
+paragraph_rhetoric:
+  common_rhetorical_moves: ["generalise-with-citations", "exemplar instantiation", "contrast adjacent setting", "hazard-chain extrapolation"]
+  typical_move_sequences: [["topic claim + citation cluster", "regional example with numbers", "implication for hazard"]]
+  topic_sentence_pattern: process-general statement naming agent and effect ("weak rocks ... make tablelands highly susceptible")
+  synthesis_sentence_pattern: "'We summarize that although X is critical, Y often has a role' concession-then-recalibration"
+  contrast_sentence_pattern: "'By contrast,' + narrower alternative setting"
+  limitation_sentence_pattern: bias/boundary caveat appended after positive claim ("observations ... are biased towards arid regions")
+  transition_pattern: forward-pointing noun phrase ending section ("see the figure, part b"); next section re-anchors factor question
+  paragraph_length_profile: q25=531, median=704, p75=953 chars
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 6}
+  citation_cluster_frequency: high for mechanism/distribution claims; low for pure conceptual framing
+  single_vs_cluster: clusters dominate evidential sentences; singles appear for definitions and methods
+  seminal_recent_balance: recent5y share only 0.172; leans on older geomorphology canon plus dated case literature
+  citation_location: [sentence-final superscript clusters, mid-sentence after named regions]
+  citation_support_type: [empirical case studies, inventories/datasets, mechanism papers]
+  method_citation_pattern: dating and monitoring techniques cited inline where used as evidence basis
+  gap_citation_pattern: existing global inventories cited to show what they omit
+geography_reasoning:
+  whether_geography_is_central: yes — distribution mapping is a first-order contribution
+  spatial_scale_usage: nested site-fringe-region-continent ladder made explicit via map figure
+  regional_differentiation_usage: five-plus named fringe clusters function as evidence units
+  spatial_heterogeneity_usage: heterogeneity itself is the finding (which settings produce giant fringes)
+  cross_scale_usage: local weak-bed geology scaled up to explain km-scale fringe extent
+  place_context_usage: places carry evidential load (Patagonia, Colorado Plateau, Ustyurt) as named cases
+  human_environment_usage: hazard exposure and wetland settlement consequences close the loop on relevance
+  flow_network_usage: none
+  spatial_dependence_usage: lateral distribution of weak units dictates fringe extent — geological control framing
+  conditions_triggering_geographic_explanation: ["when explaining why extent differs between settings", "when correcting sampling bias in observations", "when linking climate zones to activity states"]
+figure_strategy:
+  total_figures: 5
+  figure_roles: [taxonomy of tableland types, global distribution map with regional insets, mechanism diagrams, metric-vs-factor scatter relationships, landscape-evolution stage sequence]
+  conceptual_framework: Fig 1 type classification underpins whole-review vocabulary
+  taxonomy: yes (Fig 1 three tableland types)
+  mechanism: yes (Fig 3 failure modes)
+  timeline: partial (Fig 5 evolutionary stages)
+  map: yes (Fig 2 global + regional examples)
+  workflow: none
+  evidence_summary: Fig 4 plots landslide metrics against escarpment height — quantitative synthesis panel
+  figure_text_relation: text cites figure parts ('Fig. 3g') at the exact claim location; captions self-describing
+gap_and_agenda:
+  how_gaps_are_derived: from cited global inventories' coverage limits and from disproven stabilisation assumptions
+  types_of_gaps: [inventory absence, monitoring bias, dating sparsity, assumption invalidation]
+  evidence_required_before_gap_claim: cite existing inventories and show their exclusion of the target class
+  future_agenda_structure: imperative verb + instrument + target ("build a broader global inventory ... through increased ... monitoring")
+  specificity_of_future_questions: technique-specific (InSAR monitoring, radiometric dating of rims)
+quality_features:
+  major_strengths: [numeric scope criteria up front, Key-points box aligning reader and authors, mechanism taxonomy reused consistently, evolution-stage closure]
+  transferable_patterns: [absence-of-review gap phrasing backed by cited inventories, numeric inclusion/exclusion scope definition, mechanism-first ordering for hazard topics, correction-of-assumption narrative arc]
+  unique_but_nontransferable_features: [Mars/submarine exclusion aside, Arctic permafrost case box tied to one region]
+  risks_of_imitation: [numeric criteria require a mappable object class; copying the correction narrative without new monitoring evidence rings hollow]
+anti_patterns:
+  weak_patterns_to_avoid: [asserting field neglect without citing the inventories that demonstrate the omission, describing mechanisms without any named locality anchor]
+source_provenance:
+  source_pages: ["pp. 686-700 (Vol 5, Oct 2024 running headers)", "p. 687 (opening/intro slice)", "pp. 689-690 (BODY_SLICE_1@17%)", "p. 693 (BODY_SLICE_2@33%)", "~p. 696 (BODY_SLICE_3@50%)", "~p. 698 (BODY_SLICE_4@67%)", "p. 699 (closing/refs)"]
+  source_sections: [Introduction, Distribution and characteristics of failed tablelands, Mechanisms of tableland failure, Factors influencing tableland instability, figure/table captions, reference sample]
+  confidence: medium

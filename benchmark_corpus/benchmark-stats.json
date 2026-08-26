@@ -1,0 +1,153 @@
+{
+  "n_documents": 60,
+  "paragraph_block_median_chars": {
+    "min": 427,
+    "median": 623,
+    "max": 4350,
+    "p25": 501,
+    "p75": 683
+  },
+  "citation_median_per_block": {
+    "min": 1,
+    "median": 3,
+    "max": 20,
+    "p25": 2,
+    "p75": 4
+  },
+  "figures_per_article": {
+    "min": 4,
+    "median": 6,
+    "max": 7,
+    "p25": 5,
+    "p75": 6
+  },
+  "reference_entries_per_article": {
+    "min": 20,
+    "median": 165,
+    "max": 320,
+    "p25": 77,
+    "p75": 213
+  },
+  "most_common_headings": [
+    {
+      "heading": "Review Article",
+      "count": 93
+    },
+    {
+      "heading": "Introduction",
+      "count": 69
+    },
+    {
+      "heading": "Abstract",
+      "count": 36
+    },
+    {
+      "heading": "Summary And Future",
+      "count": 34
+    },
+    {
+      "heading": "Check For Updates",
+      "count": 32
+    },
+    {
+      "heading": "Key Points",
+      "count": 26
+    },
+    {
+      "heading": "Author Addresses",
+      "count": 11
+    },
+    {
+      "heading": "Environmental Sciences,",
+      "count": 4
+    },
+    {
+      "heading": "Nature Reviews Earth & Environment",
+      "count": 3
+    },
+    {
+      "heading": "Record Statistics",
+      "count": 2
+    },
+    {
+      "heading": "Regime Shifts",
+      "count": 2
+    },
+    {
+      "heading": "Trends In The Land Carbon Sink",
+      "count": 2
+    },
+    {
+      "heading": "Accepted Version",
+      "count": 2
+    },
+    {
+      "heading": "Publisher: Nature",
+      "count": 2
+    },
+    {
+      "heading": "Central Archive At The University Of Reading",
+      "count": 2
+    },
+    {
+      "heading": "Reading’S Research Outputs Online",
+      "count": 2
+    },
+    {
+      "heading": "Internal Variability",
+      "count": 2
+    },
+    {
+      "heading": "University Of Exeter, Penryn",
+      "count": 2
+    },
+    {
+      "heading": "Median Basin-Average",
+      "count": 2
+    },
+    {
+      "heading": "Geographical Science, Beijing",
+      "count": 2
+    },
+    {
+      "heading": "Normal University, Beijing,",
+      "count": 2
+    },
+    {
+      "heading": "Water Availability",
+      "count": 2
+    },
+    {
+      "heading": "Geomorphic Constraints",
+      "count": 2
+    },
+    {
+      "heading": "Climate Change Impacts",
+      "count": 2
+    },
+    {
+      "heading": "Upstream Impacts",
+      "count": 2
+    },
+    {
+      "heading": "Earth’S Safe Operating Space",
+      "count": 2
+    },
+    {
+      "heading": "Urban Hydrology",
+      "count": 2
+    },
+    {
+      "heading": "Labour Supply",
+      "count": 2
+    },
+    {
+      "heading": "Global Metal Extraction",
+      "count": 2
+    },
+    {
+      "heading": "Hydrological Changes",
+      "count": 2
+    }
+  ]
+}

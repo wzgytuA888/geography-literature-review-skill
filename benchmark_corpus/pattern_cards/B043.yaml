@@ -1,0 +1,107 @@
+document_id: B043
+bibliographic:
+  title: Planetary Boundaries guide humanity's future on Earth
+  authors: [Johan Rockström, Jonathan F. Donges, Ingo Fetzer, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2024
+  doi: 10.1038/s43017-024-00597-z
+  review_type: conceptual
+overall_review_design:
+  review_objective: Trace the origin, evolution and societal mainstreaming of the Planetary Boundaries framework and position it as transformation guidance
+  review_scope: the PB framework itself — its intellectual roots, versions 1.0-3.0, uptake across science, economics, law and governance
+  review_mode: conceptual/intellectual-history review of a framework with bibliometric evidence of uptake
+  article_architecture: [Abstract, Introduction, Earth's safe operating space (incl. Emergence and fundamentals; Assessing Earth system risks), Mainstreaming PB thinking, Mainstreaming PBs in society, Guiding transformation, Summary and future perspectives]
+  organizing_principle: chronological (framework genesis -> versions) crossed with domain-thematic mainstreaming (science, economy, law, society)
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: 'great acceleration' global-change framing pushing Earth into the Anthropocene
+  problem_contextualization: tipping points approaching; framework positioned as response to planetary risk
+  fragmentation_statement: not fragmentation but single-dimension insufficiency — climate-only views rejected for systemic view
+  gap_or_need_statement: implicit need for guardrails; uptake growth shown rather than absence claimed
+  review_objective_statement: embedded in narrative of what the framework does rather than an explicit 'In this Review' sentence in digest
+  scope_definition: definitional — nine boundaries enumerated with version history PB 1.0/2.0/3.0
+  contribution_statement: authors are framework developers writing an authoritative status synthesis plus stewardship quest
+  roadmap_pattern: UNKNOWN in digest (no roadmap sentence captured in slices)
+section_architecture:
+  section_order: [Introduction, Earth's safe operating space, Mainstreaming PB thinking, Mainstreaming PBs in society, Guiding transformation, Summary and future perspectives]
+  dominant_logic: concept genealogy then diffusion across domains then normative guidance
+  chronological_logic: central (2009->2015->2023 versions; timeline figure)
+  thematic_logic: central (domain-by-domain mainstreaming)
+  mechanism_logic: partial (Earth-system feedback mechanisms inside boundary logic)
+  scale_logic: central (planetary scale is the framework's defining move)
+  region_logic: none
+  method_logic: partial (quantification methods per boundary discussed)
+  transition_between_sections: ["mainstreaming sections escalate from thinking to institutions", "guiding-transformation section converts synthesis into normative agenda"]
+argumentation:
+  dominant_argument_pattern: conceptual clarification then evidentiary demonstration of uptake and transgression
+  claim_evidence_relation: definitional claims rest on the framework's own canon; status claims on quantified assessments
+  comparison_pattern: PB versions compared across time; PB approach vs footprint/carrying-capacity alternatives
+  contradiction_handling: potential misreadings pre-empted ("boundaries are not synonyms for thresholds or tipping points")
+  boundary_condition_handling: scope limits stated as framework properties (biophysical only, no human needs factored in)
+  limitation_handling: criticisms acknowledged via cited critical appraisals within policy-relevance discussion
+  gap_identification_pattern: integration gap — scenario work confined to single domains
+synthesis:
+  synthesis_unit: theme/concept
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern: ["grouping moves ('core boundaries', extraction-vs-waste classes)", "cross-domain diffusion inventory (economics, law, philosophy)", "timeline synthesis of policy milestones"]
+  consensus_pattern: convergence shown by breadth of uptake across unrelated literatures
+  controversy_pattern: debates engaged as named positions (weak vs strong sustainability) adjudicated briefly
+  reconciliation_pattern: disambiguation subsections and supplementary definition table resolve term conflicts
+  evidence_weighting_pattern: framework's own quantitative updates treated as authoritative anchors; external fields as corroboration
+paragraph_rhetoric:
+  common_rhetorical_moves: ["definition sharpening", "historical positioning", "grouping/classifying", "normative escalation"]
+  typical_move_sequences: [["concept introduced", "precise delimitation against near-neighbour concepts", "uptake evidence"]]
+  topic_sentence_pattern: concept-centred statements ("The understanding of PBs as finite planetary commons calls for ...")
+  synthesis_sentence_pattern: "'In this way,' integrative sentences fusing disciplines into one lineage"
+  contrast_sentence_pattern: "'Rather than focusing on X,' contrast defining the framework's distinctness"
+  limitation_sentence_pattern: caveats framed as clarifications of what boundaries are not
+  transition_pattern: each mainstreaming section opens by naming the entering domain (economics, law, society)
+  paragraph_length_profile: q25=468, median=614, p75=867 chars
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 2, p75: 4}
+  citation_cluster_frequency: lower than batch median — conceptual prose carries fewer citations per block
+  single_vs_cluster: singles dominate; clusters reserved for multi-source lineage claims
+  seminal_recent_balance: recent5y share 0.406 despite canonical anchoring (Limits to Growth, Daly) — old roots, current evidence
+  citation_location: [sentence-final, after named works and frameworks]
+  citation_support_type: [foundational concept papers, assessment reports, policy documents]
+  method_citation_pattern: quantification sources cited per boundary update
+  gap_citation_pattern: cites single-domain scenario literature to show what remains unintegrated
+geography_reasoning:
+  whether_geography_is_central: partially — scale rather than place carries the geographic load
+  spatial_scale_usage: planetary scale as deliberate analytical choice contrasted with local framing traditions
+  regional_differentiation_usage: minimal; regions appear only as impact examples (Amazon tipping risk)
+  spatial_heterogeneity_usage: subordinated to global aggregate boundary logic
+  cross_scale_usage: local-to-planetary argument made explicitly ('local-level policies can have unintended consequences' analog in global framing)
+  place_context_usage: places used sparingly as illustrations of transgression consequences
+  human_environment_usage: central — entire framework couples human development to Earth-system state
+  flow_network_usage: none
+  spatial_dependence_usage: none
+  conditions_triggering_geographic_explanation: ["when justifying why the phenomenon demands planetary-scale analysis", "when illustrating boundary interactions through concrete biomes"]
+figure_strategy:
+  total_figures: 4
+  figure_roles: [origins-and-uptake timeline, framework status evolution chart, co-occurring-terms network analysis, past-future Earth system schematic]
+  conceptual_framework: Fig 1 doubles as historical genealogy and diffusion map of the idea
+  taxonomy: yes (boundary groupings in text and Table 1)
+  mechanism: partial (feedback/tipping-point schematics)
+  timeline: yes (Fig 1 milestone timeline — unique in this batch)
+  map: none
+  workflow: none
+  evidence_summary: Table 1 aligns definitions and quantifications across PB versions 1.0/2.0/3.0
+  figure_text_relation: bibliometric Fig 3 provides uptake evidence the prose alone could not
+gap_and_agenda:
+  how_gaps_are_derived: from coverage limits of current scenario practice rather than missing literature
+  types_of_gaps: [integration gap across domains, pathway-modelling gap, governance-monitoring gap]
+  evidence_required_before_gap_claim: survey of existing initiatives showing each stops at single domains
+  future_agenda_structure: named flagship activity (model intercomparison under Earth Commission auspices) as agenda vehicle
+  specificity_of_future_questions: programme-level rather than hypothesis-level questions
+quality_features:
+  major_strengths: [definitional precision maintenance throughout, versioned framework history table, uptake demonstrated with bibliometrics not assertion, normative close that lands the 'so what']
+  transferable_patterns: [review-the-framework genre: genealogy -> versions -> diffusion -> guidance, disambiguation box against concept drift, timeline figure for conceptual evolution, closing normative synthesis tied back to opening risk frame]
+  unique_but_nontransferable_features: [authors reviewing their own framework confers authority not reproducible elsewhere]
+  risks_of_imitation: [insider-status framing reads as advocacy if copied without the bibliometric distance; low citation density needs earned authority]
+anti_patterns:
+  weak_patterns_to_avoid: [letting a reviewed concept drift in meaning across sections, claiming influence without uptake evidence such as co-occurrence or adoption counts]
+source_provenance:
+  source_pages: ["pp. 773-788 (Vol 5, Nov 2024 running headers)", "p. 774 (opening/intro slice)", "p. 776 (BODY_SLICE_1@17%)", "~p. 780 (BODY_SLICE_2@33%)", "~p. 783 (BODY_SLICE_3@50%)", "~p. 785 (BODY_SLICE_4@67%)", "pp. 786-787 (closing + refs)"]
+  source_sections: [Introduction, Assessing Earth system risks, economic-thinking and social-science passages, Summary/future passage, Fig 1-4 and Table 1 captions]
+  confidence: medium

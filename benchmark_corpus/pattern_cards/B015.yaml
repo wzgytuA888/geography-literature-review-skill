@@ -1,0 +1,144 @@
+document_id: B015
+bibliographic:
+  title: "UNKNOWN (metadata title null; document is a review of the South Pacific Convergence Zone)"
+  authors: ["UNKNOWN (A.J. Matthews and J. Renwick visible as co-authors 8-9)"]
+  journal: Nature Reviews Earth & Environment
+  year: 2020
+  doi: UNKNOWN
+  review_type: narrative
+overall_review_design:
+  review_objective: >-
+    Synthesize post-2000 advances on SPCZ mechanisms, variability, impacts and
+    projected change since the last comprehensive review.
+  review_scope: SPCZ structure/mechanisms; variability synoptic-to-interdecadal; regional impacts; anthropogenic projections
+  review_mode: update-review of a defined phenomenon with explicit outstanding questions ending
+  article_architecture:
+    - Introduction (unheaded, incl. 25-year update justification)
+    - Physical mechanisms driving the SPCZ (three rival-mechanism subsections)
+    - Natural variability of the SPCZ (timescale ladder subsections)
+    - Impacts (rainfall, tropical cyclones, sea level)
+    - Projected changes
+    - Summary and future perspectives
+  organizing_principle: "mixed(mechanistic rivals first, then temporal-scale ladder, then impacts)"
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: urgency framing against warming background
+  problem_contextualization: island vulnerability and climate dynamics at stake
+  fragmentation_statement: >-
+    Progress scattered across data/model communities; framed as needing coherent synthesis "spanning synoptic, intraseasonal, interannual and longer timescales".
+  gap_or_need_statement: staleness-of-prior-review justification; "an urgent need to understand the mechanisms, variability and impacts".
+  review_objective_statement: '"In this Review, we synthesize these latest developments in the causes and consequences".'
+  scope_definition: bounded by the phenomenon (SPCZ) and the interval since last comprehensive review
+  contribution_statement: new observation types (satellite, reanalysis, palaeoclimate) enumerated as what changed
+  roadmap_pattern: present, closing with "outstanding research questions intended to drive the field forwards"
+section_architecture:
+  section_order: [Intro, Physical mechanisms, Natural variability (by timescale), Impacts, Projections, Summary and future perspectives]
+  dominant_logic: rival mechanisms -> timescale ladder -> consequences -> futures
+  chronological_logic: partial (within variability ladder only)
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: central
+  region_logic: partial
+  method_logic: none
+  transition_between_sections:
+    - '"As for the other climate impacts discussed, ENSO explains most ..." recap-link openers'
+    - variability subsections introduced by timescale labels
+argumentation:
+  dominant_argument_pattern: competing-explanations adjudication via model and observational evidence
+  claim_evidence_relation: mechanism claim -> idealized/modelling evidence -> caveat on idealization
+  comparison_pattern: three-way mechanism comparison held open rather than forced to a winner
+  contradiction_handling: >-
+    Disagreements named with their provenance: "Despite an absence of consensus ..."; "In contrast with results based on CMIP models ..., bias-corrected models do not predict ..."
+  boundary_condition_handling: SST-bias sensitivity of projections treated as condition on trustworthiness
+  limitation_handling: pre-industrial observational sparsity handled by recruiting palaeoclimate proxies
+  gap_identification_pattern: residual-attribution gaps restated verbatim in summary section
+synthesis:
+  synthesis_unit: mechanism and timescale
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - complementarity framing ("these mechanisms are likely to act in concert")
+    - quantitative frameworks (moist static energy budget) unifying disparate observations
+    - proxy-plus-instrument stitching across record-length gaps
+  consensus_pattern: settled dynamical claims cluster-cited; open items flagged explicitly
+  controversy_pattern: model-class disagreements presented side by side with cause hypotheses (SST biases)
+  reconciliation_pattern: energetics framework converts competing narratives into one diagnostic quantity
+  evidence_weighting_pattern: >-
+    Evidence graded by design; "Such an approach is highly idealized, but can provide useful dynamical insights".
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - question-posing openers ("One of the most intriguing questions ... is why ...")
+    - numbered candidate mechanisms enumerated then examined in turn
+    - named-event worked examples (1982-83, 1997-98 El Nino)
+  typical_move_sequences:
+    - [puzzle sentence, candidate mechanism, chain-of-causation explanation, supporting citations]
+  topic_sentence_pattern: mechanism-named declaratives matching run-in headings
+  synthesis_sentence_pattern: '"While these mechanisms are likely to act in concert ..." convergence sentences'
+  contrast_sentence_pattern: '"By contrast, during La Nina events ..." phase-flip contrasts'
+  limitation_sentence_pattern: record-length caveats preceding proxy introduction
+  transition_pattern: timescale-label subsection transitions within variability section
+  paragraph_length_profile: short-medium blocks (~438-char median)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 1}   # digest blocks include figure/reference text
+  citation_cluster_frequency: high per clause in body prose
+  single_vs_cluster: clusters for mechanism support; singles for landmark studies
+  seminal_recent_balance: early satellite identification classics beside recent modelling
+  citation_location: [sentence-final clusters]
+  citation_support_type: [mechanism support, composite analysis, proxy record]
+  method_citation_pattern: datasets/reanalyses cited at first use
+  gap_citation_pattern: open-question statements largely uncited by design
+geography_reasoning:
+  whether_geography_is_central: yes
+  spatial_scale_usage: zone position/orientation itself the object; displacement distances tracked
+  regional_differentiation_usage: diagonal vs zonal SPCZ states; southwest vs central Pacific impact splits
+  spatial_heterogeneity_usage: eastern-margin position shifts tied to moisture-budget terms
+  cross_scale_usage: timescale ladder from 5-day wave chains to interdecadal modulation
+  place_context_usage: Tahiti/Fiji/Vanuatu coral sites and cyclone tracks as anchored instances
+  human_environment_usage: reef, mangrove and coastal-flooding exposure tied to sea-level phases
+  flow_network_usage: Rossby-wave trains and westerly ducts as propagating pathways
+  spatial_dependence_usage: SPCZ displacement equal to energy-flux-equator shift (spatial co-variation law)
+  conditions_triggering_geographic_explanation:
+    - "when explaining orientation/position of a persistent feature requires background gradients (SST, vorticity)"
+    - "when instrumental records are too short, justifying spatially distributed proxies"
+figure_strategy:
+  total_figures: 6
+  figure_roles:
+    - Fig1 regional climatology maps
+    - Fig2 mechanism schematics (three panels matching subsections)
+    - Fig3 ENSO composite orientation states
+    - Fig4 impact time series (cyclones, sea level)
+    - Fig5 model simulation evaluation
+    - Fig6 projected future change panels
+  conceptual_framework: yes (Fig 2)
+  taxonomy: implicit (mechanism triad)
+  mechanism: yes (Fig 2)
+  timeline: no
+  map: yes (Figs 1, 5, 6)
+  workflow: no
+  evidence_summary: composites serve as evidence summaries
+  figure_text_relation: figure panel letters referenced precisely as each mechanism is argued
+gap_and_agenda:
+  how_gaps_are_derived: unresolved relative contributions of the three mechanisms restated in summary
+  types_of_gaps: [attribution among mechanisms, projection disagreement across model classes]
+  evidence_required_before_gap_claim: demonstrated divergence between credible model ensembles
+  future_agenda_structure: outstanding-research-questions list promised in roadmap and delivered at close
+  specificity_of_future_questions: specific and field-driving (named quantities to constrain)
+quality_features:
+  major_strengths:
+    - rival-mechanism architecture keeps alternatives live until evidence weighs in
+    - annotated selected references with one-line contributions
+    - timescale-ladder organization makes variability legible
+  transferable_patterns:
+    - 25-years-since-last-review update justification
+    - complementarity framing over winner-picking for competing explanations
+    - proxy recruitment justified by explicit record-length condition
+  unique_but_nontransferable_features:
+    - single-phenomenon focus permits deep mechanism decomposition
+  risks_of_imitation:
+    - mechanism triads can oversimplify if candidate enumeration is incomplete
+anti_patterns:
+  weak_patterns_to_avoid:
+    - declaring one mechanism the winner when evidence supports joint action
+source_provenance:
+  source_pages: [1-2 (OPENING), SLICE_1@17%, SLICE_2@33% (journal p.536), SLICE_3@50%, SLICE_4@67%, FIGURE_CAPTIONS]
+  source_sections: [Introduction, Physical mechanisms driving the SPCZ, Natural variability subsections, Sea level, Summary and future perspectives, figure captions]
+  confidence: high

@@ -1,0 +1,142 @@
+document_id: B017
+bibliographic:
+  title: "UNKNOWN (metadata title null; review of tropical forest soil responses to deforestation and reforestation)"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2020
+  doi: UNKNOWN
+  review_type: thematic-mixed   # narrative synthesis built on the authors' own quantitative compilation
+overall_review_design:
+  review_objective: >-
+    Examine deforestation/reforestation impacts on tropical soils via a compiled
+    dataset; connect property changes to soil functions and management.
+  review_scope: dynamic soil properties (pH, ECEC, base saturation, BD, SOC, C:N) across land-use transitions and depths in the tropics
+  review_mode: quantitative compilation review (120 studies, 35 countries) framed by causal chain to functions
+  article_architecture:
+    - Introduction (unheaded, assumption-correction gap)
+    - Impacts on dynamic soil properties (property-by-property run-in subsections)
+    - Soil-function consequences (nutrients, GHGs, water storage/filtration)
+    - Management practices and societal impacts
+    - Long-term legacy case discussion (incl. space-for-time caveat)
+    - Knowledge gaps/conclusion
+    - Box 1 (tropical soil diversity), Box 2 (societal impacts), Figs 1-5
+  organizing_principle: "mixed(thematic by property then function, ordered along a land-use-transition chronology)"
+  number_of_major_sections: 4-5
+introduction_pattern:
+  opening_move: myth-correction framing; widespread topsoil-only view attributed to sampling bias
+  problem_contextualization: tropical forest loss urgency implicit via land-use-change stakes
+  fragmentation_statement: >-
+    Field fragmented by shallow sampling; "this assumption has led to the relatively widespread view that only topsoils are affected".
+  gap_or_need_statement: depth-and-decade coverage missing from prior syntheses
+  review_objective_statement: '"In this Review, we examine the impacts of deforestation and reforestation on soils in the tropics."'
+  scope_definition: operative definition fixes the unit of analysis; "Dynamic soil properties, which we use here to describe ..."
+  contribution_statement: compilation of 120 studies across 35 tropical countries including deep horizons and decades-old transitions
+  roadmap_pattern: present ("We compile ... Finally, we discuss ... and identify important knowledge gaps")
+section_architecture:
+  section_order: [Intro, Properties (pH/ECEC/base saturation; BD/SOC/C:N), Soil functions, Management, Legacy/time-depth, Gaps]
+  dominant_logic: property -> function causal chain with chronosequence ordering inside each
+  chronological_logic: partial (age classes <10 y to >25 y organize evidence)
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: partial
+  region_logic: partial
+  method_logic: partial (compilation protocol stated)
+  transition_between_sections:
+    - 'function section opens by re-using property results as causes'
+    - '"In the following sections, we present ..." procedural signposts'
+argumentation:
+  dominant_argument_pattern: compiled-effect statement with means and uncertainty, split by soil class and age class
+  claim_evidence_relation: every property claim carries numeric effect size plus figure reference plus citations
+  comparison_pattern: recurring two-class contrast (low-activity vs high-activity clay soils) as explanatory axis
+  contradiction_handling: direct-vs-indirect effect distinctions prevent false attributions
+  boundary_condition_handling: generalizability guarded; Yucatan legacy case bounded ("How general these long-term effects are is presently unclear")
+  limitation_handling: space-for-time substitution named and discussed as design limit
+  gap_identification_pattern: gaps = unsampled combinations (depth x age x soil class x region)
+synthesis:
+  synthesis_unit: proposition (property response) stratified by soil class and transition age
+  study_by_study_ratio: low   # individual studies absorbed into compiled statistics
+  multi_source_synthesis_pattern:
+    - own-compilation meta-analysis with reported means +/- SE
+    - contrast-pair reasoning (LAC vs HAC) applied uniformly across properties
+    - function-level aggregation of multiple property changes
+  consensus_pattern: convergent directions asserted from compilation percentages
+  controversy_pattern: limited; discrepancies attributed to soil class or management intensity
+  reconciliation_pattern: opposing short-vs-long-term responses reconciled by process timing (ash pulse vs leaching trajectory)
+  evidence_weighting_pattern: sample-size-backed statistics weighted over single-site anecdotes
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - definition-first paragraph openers
+    - numeric effect sizes inline (percent changes, cmolc values)
+    - '"In contrast," class-flip pivots'
+  typical_move_sequences:
+    - [baseline value under forest, post-conversion change with magnitude, class contrast, mechanism attribution]
+  topic_sentence_pattern: property-named declaratives echoing run-in headings
+  synthesis_sentence_pattern: '"The differences between direct and indirect changes highlight ..." interpretive closers'
+  contrast_sentence_pattern: systematic LAC-vs-HAC and cropland-vs-pasture contrasts
+  limitation_sentence_pattern: generality caveats following flagship cases
+  transition_pattern: property-list order announced then followed
+  paragraph_length_profile: long dense paragraphs (~525-char median)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 3}   # digest blocks include figure/reference text
+  citation_cluster_frequency: high
+  single_vs_cluster: mixed; clusters for mechanisms, singles for pioneering observations
+  seminal_recent_balance: 1960s-1990s foundational studies beside 2010s compilations
+  citation_location: [sentence-final clusters, figure-reference pairs]
+  citation_support_type: [effect magnitude, mechanism, baseline characterization]
+  method_citation_pattern: classification systems (FAO Reference Base) and datasets cited in captions
+  gap_citation_pattern: gaps stated as unsampled strata without padding citations
+geography_reasoning:
+  whether_geography_is_central: yes
+  spatial_scale_usage: pan-tropical maps down to pedon depth profiles
+  regional_differentiation_usage: soil-mineralogy classes substitute for regions; mapped explicitly (Fig 1b)
+  spatial_heterogeneity_usage: clay-activity heterogeneity explains divergent responses at matched ages
+  cross_scale_usage: decadal chronosequences nested in millennial legacy cases
+  place_context_usage: Yucatan/Mayan landscape as deep-time exemplar; Indonesian plantations for biota
+  human_environment_usage: management practices (liming, slash-and-burn, grazing) are the treatments compared
+  flow_network_usage: nutrient leaching pathways treated as vertical fluxes
+  spatial_dependence_usage: depth-dependent property trajectories (progressive change at depth)
+  conditions_triggering_geographic_explanation:
+    - "when identical land-use change yields opposite outcomes across soil classes"
+    - "when legacy effects persist at specific locations due to historical land use"
+figure_strategy:
+  total_figures: 5
+  figure_roles:
+    - Fig1 dual map (tree-cover change x clay mineralogy)
+    - Fig2 linkage framework (activities -> properties -> functions)
+    - Fig3 compiled property changes for croplands/pastures by age and depth
+    - Fig4 compiled changes for plantations/agroforestry
+    - Fig5 function impacts (leaching, GHG, water)
+  conceptual_framework: yes (Fig 2)
+  taxonomy: Box 1 soil diversity typology
+  mechanism: yes (Fig 2 linkages)
+  timeline: implicit chronosequence axes in Figs 3-4
+  map: yes (Fig 1)
+  workflow: no
+  evidence_summary: yes (Figs 3-4 are the review's evidentiary core)
+  figure_text_relation: text cites exact panels for each numeric claim; figures carry the compilation
+gap_and_agenda:
+  how_gaps_are_derived: systematically from compilation coverage holes (depth, age, soil class, region)
+  types_of_gaps: [sampling-design gaps, mechanism gaps, long-term recovery gaps]
+  evidence_required_before_gap_claim: demonstrated empty cells in the compiled evidence matrix
+  future_agenda_structure: knowledge-gap identification promised in intro and delivered at close
+  specificity_of_future_questions: specific (named property-by-depth-by-age combinations needing study)
+quality_features:
+  major_strengths:
+    - review-as-dataset methodology with transparent scope numbers
+    - operative definition before any evidence
+    - consistent contrast-axis discipline (one explanatory dichotomy reused everywhere)
+  transferable_patterns:
+    - compile-your-own-evidence-matrix synthesis for contested quantitative fields
+    - myth-correction gap framing backed by sampling-bias diagnosis
+    - generalizability guard attached to every flagship case
+  unique_but_nontransferable_features:
+    - authors' access to harmonized primary measurements across 35 countries
+  risks_of_imitation:
+    - compilation reviews require data-cleaning labour and harmonization decisions that must be disclosed
+anti_patterns:
+  weak_patterns_to_avoid:
+    - uncritical space-for-time substitution without acknowledging its assumptions
+source_provenance:
+  source_pages: [1-2 (OPENING), SLICE_1@17% (journal p.592), SLICE_2@33%, SLICE_3@50%, SLICE_4@67%, FIGURE_CAPTIONS]
+  source_sections: [Introduction, Impacts on dynamic soil properties, property subsections, soil-function sections, legacy discussion, figure captions, Key points]
+  confidence: medium   # major-section headings not machine-detected; order inferred from slices and captions

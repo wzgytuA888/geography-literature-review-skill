@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+title: Geography Literature Review Research Skill
+type: software
+version: 1.0.0
+date-released: "2026-08-26"
+license: MIT
+repository-code: "https://github.com/USERNAME/geography-literature-review-skill"
+abstract: >-
+  A research skill that distills review methodology from a benchmark corpus of
+  high-quality geography reviews (Book-to-Skill approach) and executes an
+  evidence-first multi-agent pipeline — Google Scholar API-only discovery,
+  human-gated full-text acquisition, provenance-tracked synthesis, Zotero-verified
+  citations, draft figures, and independent audit — for arbitrary user topics.
+keywords:
+  - literature-review
+  - geography
+  - agent-skills
+  - multi-agent
+  - zotero
+  - google-scholar-api
+  - evidence-synthesis

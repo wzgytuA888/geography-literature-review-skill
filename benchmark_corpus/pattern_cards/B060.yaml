@@ -1,0 +1,134 @@
+document_id: B060
+bibliographic:
+  title: "Suspended particulate matter along [the land-ocean continuum; truncated in extraction]"
+  authors: ["partial author list visible: X. Shen, R. Verney, H.K. Ha & X. Desmit; full list UNKNOWN"]
+  journal: Nature Reviews Earth & Environment
+  year: UNKNOWN
+  doi: 10.1038/s43017-026-00815-w
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: >-
+    Synthesize physical, sedimentological and biogeochemical controls on suspended particulate matter (SPM)
+    along the land-ocean continuum and recommend monitoring/modeling priorities under global change.
+  review_scope: floc structure/composition, organo-mineral interactions, transport/settling behavior, biogeochemical implications, anthropogenic perturbations.
+  review_mode: bottom-up mechanistic synthesis from composition to system perturbation.
+  article_architecture:
+    - Abstract
+    - Key points
+    - Introduction
+    - Structure and composition of SPM (structural characteristics; minerals; organic matter/living organisms)
+    - Organo-mineral interactions
+    - Influence of transport, [settling and deposition]
+    - Implications (biogeochemical cycles, contaminants)
+    - Human activities and climate change
+    - Summary and future
+  organizing_principle: compositional hierarchy -> interaction mechanisms -> dynamic behavior -> global change implications
+  number_of_major_sections: 6-7
+introduction_pattern:
+  opening_move: ubiquity-and-role definition of SPM plus an invariant empirical relationship announced early.
+  problem_contextualization: quantified global perturbation (3,200 Pg trapped by dams; 49% coastal delivery reduction) then "their impacts remain poorly constrained".
+  fragmentation_statement: transdisciplinary gap — "resolving underlying controlling mechanisms requires a transdisciplinary approach" (Key points).
+  gap_or_need_statement: poorly constrained impacts + spatiotemporal variability unresolved by single disciplines.
+  review_objective_statement: "\"In this Review, we discuss the physical and biological processes governing SPM characteristics\"."
+  scope_definition: land-ocean continuum declared as spatial frame; phases (dissolved/colloidal/particulate) delimited by operational filtering.
+  contribution_statement: mechanism synthesis + parameterization guidance for models + recommendations.
+  roadmap_pattern: present ("we discuss... We explore... We then discuss... before considering... Finally...").
+section_architecture:
+  section_order: [Abstract+Key points, Introduction, Structure-composition, Organo-mineral interactions, Transport-settling, Implications, Human-climate change, Summary-future]
+  dominant_logic: bottom-up build — parts -> interactions -> behavior -> planetary change
+  chronological_logic: none
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: partial
+  region_logic: partial
+  method_logic: partial
+  transition_between_sections:
+    - "\"This section outlines...\" previews"
+    - size-scale narrative carries reader across sections (micrometre structure to global fluxes)
+argumentation:
+  dominant_argument_pattern: structure-begets-behavior - composition and interactions explain transport outcomes.
+  claim_evidence_relation: empirical regularities demonstrated across systems before being used explanatorily.
+  comparison_pattern: regime contrasts (dilute versus concentrated, cohesive versus non-cohesive) and position-along-continuum comparisons.
+  contradiction_handling: opposing regional trends acknowledged and mechanistically excused (rising tropical fluxes).
+  boundary_condition_handling: settling behavior bounded by turbulence, concentration and organic buoyancy.
+  limitation_handling: parameterization deficits stated as model-facing limitations.
+  gap_identification_pattern: monitoring and parameterization needs enumerated as concrete quantification targets.
+synthesis:
+  synthesis_unit: structural component or controlling mechanism
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - invariant relationships elevated to Key points as emergent synthesis findings
+    - cross-setting generalization ("hold regardless of latitude, climate, salinity and geomorphic setting")
+    - mineral/organic/biotic component inventories merged into one composition figure
+  consensus_pattern: power-law-style relationships presented as cross-system regularities.
+  controversy_pattern: opposing trends acknowledged regionally ("opposing trends observed in some regions") with tropical exception explained.
+  reconciliation_pattern: reconciles concentration-dependent reversals via mechanistic regimes (hindered settling; TEP buoyancy).
+  evidence_weighting_pattern: lab experiments for mechanism; field/global datasets for magnitude.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define-by-process ("SPM occurs as flocs, which are loose heterogeneous structures")
+    - size-spectrum narration walking scales
+    - conditional mechanism statements (salinity/pH/redox qualifiers)
+  typical_move_sequences:
+    - [component definition, size/state range, interaction consequence, model implication]
+  topic_sentence_pattern: component-led ("Detrital minerals are formed by erosion and weathering...").
+  synthesis_sentence_pattern: relationship-plus-domain sentences ("POC enrichment ... occurs along the vertical axis owing to differential settling").
+  contrast_sentence_pattern: dense-vs-dilute, cohesive-vs-non-cohesive regime contrasts.
+  limitation_sentence_pattern: parameterization deficits flagged for models.
+  transition_pattern: scale-stepping transitions; preview sentences.
+  paragraph_length_profile: q25=415, median=497, p75=709 chars — shortest paragraphs in batch; crisp modular units.
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 2, p75: 5}
+  citation_cluster_frequency: low-moderate; concept prose carries weight.
+  single_vs_cluster: singles for classic sedimentology anchors; clusters for empirical relationships.
+  seminal_recent_balance: recent5y share 0.242 with mid-century classics retained.
+  citation_location: [sentence-final clusters]
+  citation_support_type: [mechanism study, regional dataset, textbook/monograph]
+  method_citation_pattern: measurement/fractionation techniques cited at definition points.
+  gap_citation_pattern: gaps framed as parameterization and sustained-monitoring needs.
+geography_reasoning:
+  whether_geography_is_central: yes — the land-ocean continuum is the geographic spine.
+  spatial_scale_usage: molecular-to-millimetre particle scales explicitly bridged to estuarine/margin/global flux scales.
+  regional_differentiation_usage: tropical-vs-temperate flux trend divergence; river-specific examples (Yellow River, Mekong).
+  spatial_heterogeneity_usage: salinity/turbulence gradients along the continuum invoked to explain floc transformations.
+  cross_scale_usage: signature move — microphysics determines global biogeochemical export.
+  place_context_usage: named rivers/seas anchor perturbation examples.
+  human_environment_usage: dams, sand mining, trawling, wind farms as direct geomorphic agents.
+  flow_network_usage: fluvial-to-marine transport pathway as the structuring gradient.
+  spatial_dependence_usage: settling velocity vs turbulence dependence governs where particles deposit.
+  conditions_triggering_geographic_explanation:
+    - when universal micro-relations must be shown to hold across settings
+    - when human perturbations reverse regional trajectories
+    - when residence time depends on position along the continuum
+figure_strategy:
+  total_figures: 7
+  figure_roles: [continuum overview, size-composition spectrum diagram, molecular-to-mm interaction panels, size-concentration relationships, drivers/processes schematic, density-settling physics, anthropogenic perturbation summary]
+  conceptual_framework: Fig. 1 SPM along the continuum.
+  taxonomy: Fig. 2 phase/floc-type classification along a logarithmic size axis.
+  mechanism: Figs. 3/6 organo-mineral interactions and settling physics.
+  timeline: none
+  map: none detected in captions — relationships preferred over maps.
+  workflow: none
+  evidence_summary: Figs. 4/6 compile empirical relations across systems.
+  figure_text_relation: figures carry classification and scaling; captions define terms operationally.
+gap_and_agenda:
+  how_gaps_are_derived: from model parameterization failure plus monitoring discontinuity under climate stress.
+  types_of_gaps: [parameterization gap, transdisciplinary integration gap, sustained-monitoring gap]
+  evidence_required_before_gap_claim: demonstrated cross-system relation robustness plus named model deficiency.
+  future_agenda_structure: quantification asks (composition variation, pathways, carbon link, xenobiotic interaction) enumerated in close.
+  specificity_of_future_questions: high — four concrete quantification targets listed.
+quality_features:
+  major_strengths: [scale-bridging figures, emergent-relation foregrounding in Key points, shortest most modular paragraphs]
+  transferable_patterns:
+    - promote one cross-system empirical regularity into the Key points as the synthesis headline
+    - build one figure that spans molecular to global scales explicitly
+    - keep paragraphs short and single-mechanism when content is dense
+  unique_but_nontransferable_features: [flocculation/sedimentology terminology apparatus]
+  risks_of_imitation: invariant-relationship claims require genuinely broad evidence support before use.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - asserting a universal relation without naming the settings tested
+source_provenance:
+  source_pages: [UNKNOWN]
+  source_sections: [Introduction, Key points, Structure and composition of SPM, Organo-mineral interactions, transport sections, Human activities and climate change, figure captions]
+  confidence: medium

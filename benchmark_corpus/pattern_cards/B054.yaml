@@ -1,0 +1,134 @@
+document_id: B054
+bibliographic:
+  title: "Broad bidirectional effects of global [food production on the environment; truncated in extraction]"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2026
+  doi: 10.1038/s43017-026-00778-y
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: >-
+    Highlight environmental impacts of food production that feed back to threaten production itself,
+    and review solutions and research priorities for sustainable transformation.
+  review_scope: climate, soil, water, biodiversity impacts of production; reverse impacts of environmental change on crops/livestock/aquatic food; supply- and demand-side interventions.
+  review_mode: narrative feedback-loop synthesis with solution-oriented closing sections.
+  article_architecture:
+    - Abstract
+    - Key points
+    - Introduction
+    - Environmental impacts of food production
+    - Impacts of changing [environment on food production]
+    - Amplified feedback
+    - Supply-side transformations / demand-side interventions
+    - Summary and future
+    - References
+  organizing_principle: bidirectional feedback logic (production -> environment -> production) then intervention taxonomy
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: deep-historical framing (Neolithic revolution) moving to quantified present land use.
+  problem_contextualization: Green Revolution trade-offs; input dependency; quantified emissions and land shares.
+  fragmentation_statement: not used — need established via feedback-loop urgency instead.
+  gap_or_need_statement: "\"vicious cycle whereby more inputs are required\" — degrading resilience demands integrated review."
+  review_objective_statement: "\"In this Review, we highlight the specific environmental impacts that create ... detrimental feedback loops\"."
+  scope_definition: explicit exclusion move — "We do not provide an exhaustive list"; focus limited to feedback-threatening impacts.
+  contribution_statement: couples impact synthesis with mitigation/adaptation solutions and management priorities.
+  roadmap_pattern: present ("we highlight... We also review... Finally, we highlight...").
+section_architecture:
+  section_order: [Abstract+Key points, Introduction, Environmental impacts of production, Impacts of environment on production, Amplified feedback, Transformations/interventions, Summary-future]
+  dominant_logic: two-directional impact inventory closed by a feedback section that motivates solutions
+  chronological_logic: none
+  thematic_logic: central
+  mechanism_logic: partial
+  scale_logic: partial
+  region_logic: partial
+  method_logic: none
+  transition_between_sections:
+    - "\"Amplified feedback\" section explicitly bridges the two impact directions"
+    - bridge sentence into interventions ("several mitigation and adaptation interventions can be deployed...")
+argumentation:
+  dominant_argument_pattern: feedback-loop argument - only impacts that undermine production itself close the loop.
+  claim_evidence_relation: global budgets from institutional datasets anchored by peer-reviewed citations.
+  comparison_pattern: practice-versus-practice impact table; region-versus-region intervention fit.
+  contradiction_handling: UNKNOWN - little contestation visible in sampled slices.
+  boundary_condition_handling: interventions conditioned on regional driver profiles (deforestation type, yield gap status).
+  limitation_handling: scope exclusions declared up front instead of hedged later.
+  gap_identification_pattern: unevaluated combined interventions named as explicit research priorities.
+synthesis:
+  synthesis_unit: impact channel (climate, soil, water quality/quantity, terrestrial/aquatic biodiversity)
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - sector-wide budget aggregations from FAOSTAT-style data cited alongside studies
+    - comparative practice assessment in Table 1
+    - telecoupled trade analysis isolated in Box 1
+  consensus_pattern: risk statements presented as near-certain ("almost certain to undermine future food production").
+  controversy_pattern: UNKNOWN (little visible contestation; field consensus-oriented).
+  reconciliation_pattern: reconciles global vs regional by naming divergent drivers per continent.
+  evidence_weighting_pattern: global datasets for magnitudes; regional studies for mechanisms.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - quantified stakes sentence opening paragraphs
+    - chain-of-consequence narration (input -> emission -> impact -> yield risk)
+    - region-conditional recommendation
+  typical_move_sequences:
+    - [pressure quantification, pathway, affected production system, intervention pointer]
+  topic_sentence_pattern: pressure-led ("Excess delivery of nutrients to freshwater and coastal systems leads...").
+  synthesis_sentence_pattern: multi-driver compounding sentences ("warmer and more acidic waters that mix less, together with coral loss,...").
+  contrast_sentence_pattern: Latin America vs sub-Saharan Africa driver contrast to justify differentiated interventions.
+  limitation_sentence_pattern: scope exclusions stated up front rather than as hedging.
+  transition_pattern: feedback-loop callbacks connect otherwise separate impact channels.
+  paragraph_length_profile: q25=485, median=686, p75=898 chars.
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 5}
+  citation_cluster_frequency: moderate; clusters at headline statistics.
+  single_vs_cluster: mixed; institutional/data sources (FAOSTAT) cited parenthetically without ref numbers.
+  seminal_recent_balance: recent5y share 0.535 — highest tier in batch; policy-relevant recency.
+  citation_location: [sentence-final clusters, inline dataset attributions]
+  citation_support_type: [quantified budget, impact study, policy/institutional report]
+  method_citation_pattern: light; methods mostly out of scope.
+  gap_citation_pattern: gaps phrased as understudied interventions ("Further studies must evaluate...").
+geography_reasoning:
+  whether_geography_is_central: yes — regional differentiation is the pivot of the solution argument.
+  spatial_scale_usage: field-to-globe with trade flows connecting them.
+  regional_differentiation_usage: continental contrasts (breadbaskets bearing burdens; import dependence; region-specific deforestation drivers).
+  spatial_heterogeneity_usage: vulnerability concentrated in tropics/sub-Saharan Africa — explicit geographic risk statement.
+  cross_scale_usage: local practices aggregated to global pressures via trade (Box 1 telecoupling).
+  place_context_usage: continents and nations named as strategy units rather than case studies.
+  human_environment_usage: constitutive — human-environment feedback is the organizing frame.
+  flow_network_usage: international food trade mapped as burden-shifting flows.
+  spatial_dependence_usage: carrying capacity vs import dependence linkage.
+  conditions_triggering_geographic_explanation:
+    - when identical interventions fail across regions
+    - when burdens displace across borders through trade
+    - when vulnerability clusters in specific latitudes
+figure_strategy:
+  total_figures: 4
+  figure_roles: [trend dashboard of impacts, efficiency time series, pressure-per-calorie relationship, bidirectional framework schematic]
+  conceptual_framework: Fig. 4 global bidirectional impacts diagram.
+  taxonomy: Table 1 compares environmental impacts of agrifood practices.
+  mechanism: feedback loops embedded in Fig. 4 schematic.
+  timeline: Figs. 1-2 time series of pressures over decades.
+  map: none detected in captions (relationship plots instead).
+  workflow: none
+  evidence_summary: Fig. 3 cumulative environmental pressure per calorie supplied.
+  figure_text_relation: captions explain ratio semantics; text references panels sparingly.
+gap_and_agenda:
+  how_gaps_are_derived: from incomplete evaluation of coordinated interventions and regional transferability.
+  types_of_gaps: [evaluation gap (combined supply+demand strategies), monitoring gap (pesticides/emerging chemicals), equity gap]
+  evidence_required_before_gap_claim: demonstrated one-sidedness of existing intervention literature.
+  future_agenda_structure: paired research + management priorities guiding "transformation towards a sustainable global food system".
+  specificity_of_future_questions: medium-high — named interventions to evaluate.
+quality_features:
+  major_strengths: [Key-points bullets up front, explicit scope exclusions, feedback bridge section, region-conditioned prescriptions]
+  transferable_patterns:
+    - state what the review will NOT cover immediately after the objective
+    - use Key points box to pre-digest conclusions
+    - require regional differentiation before prescribing interventions
+  unique_but_nontransferable_features: [food-system commodity statistics infrastructure (FAOSTAT) as evidence base]
+  risks_of_imitation: advocacy tone ("must", "crucial") needs balanced evidence density to avoid polemic.
+anti_patterns:
+  weak_patterns_to_avoid:
+    - prescribing uniform solutions across regions with divergent drivers
+source_provenance:
+  source_pages: ["280-293 header", "281 opening", "~287 slice1", "~291 slice2", "~295 slice3", "~299 slice4", "~306 references"]
+  source_sections: [Introduction, Environmental impacts of food production, Box 1, Amplified feedback, Supply-side transformations, Key points, figure captions]
+  confidence: medium

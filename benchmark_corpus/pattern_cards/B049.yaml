@@ -1,0 +1,107 @@
+document_id: B049
+bibliographic:
+  title: Anthropogenic impacts on the Yellow River Basin
+  authors: [Shuai Wang, Shuang Song, Haoyu Zhang, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2025
+  doi: 10.1038/s43017-025-00718-2
+  review_type: narrative
+overall_review_design:
+  review_objective: Synthesise hydrological, sediment and anthropogenic changes in the Yellow River Basin and their feedbacks, deriving globally relevant lessons
+  review_scope: one basin (YRB) examined across natural water-cycle components, sediment regime, human water use, policy evolution and coupled feedbacks
+  review_mode: regional deep-dive narrative synthesis of a single socio-hydrological system
+  article_architecture: [Abstract, Introduction, Hydrological changes (precipitation; evapotranspiration; soil moisture and groundwater; water bodies; river discharge), Changing sediment load and deposition, Anthropogenic changes (population; water use; policies; feedback loops), Summary and future perspectives]
+  organizing_principle: nature-then-human coupling — physical components first, anthropogenic drivers second, interplay third
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: dryland-basin stakes framing (2 billion people in drylands) narrowing to the Yellow River's singular statistics
+  problem_contextualization: sediment extremes, flow interruptions and reservoir dominance establish the basin as a controlled system
+  fragmentation_statement: not used — coherence of one study system replaces fragmentation argument
+  gap_or_need_statement: implicit — multiple unresolved eco-hydrological challenges deferred to closing section
+  review_objective_statement: delivered through section-by-section description of what the basin exhibits rather than an 'In this Review' formula in digest slices
+  scope_definition: basin boundary plus component list; Supplementary figures extend mapping scope
+  contribution_statement: positions YRB as exemplar for globally shared arid-basin challenges
+  roadmap_pattern: UNKNOWN (no explicit itinerary sentence captured in digest)
+section_architecture:
+  section_order: [Introduction, Hydrological changes, Changing sediment load and deposition, Anthropogenic changes, Summary and future perspectives]
+  dominant_logic: component-by-component natural accounting then human overlay then feedback integration
+  chronological_logic: partial (policy eras 1950s-2020s inside anthropogenic section)
+  thematic_logic: central
+  mechanism_logic: central (runoff-generation and erosion mechanisms; vegetation-restoration effects)
+  scale_logic: central (source -> upper -> middle -> lower reaches ladder throughout)
+  region_logic: central (the single region is the object; reach-level differentiation substitutes for cross-regional comparison)
+  method_logic: partial (multi-dataset comparison ERA5/GLEAM/GRACE with divergence reported)
+  transition_between_sections: ["anthropogenic section opens after natural baseline established", "interplay passage converts parallel accounts into feedback loops"]
+argumentation:
+  dominant_argument_pattern: component trend with sign and significance -> attribution split between climate and human drivers
+  claim_evidence_relation: every flux carries value, unit, period and P-value; divergent datasets shown side by side
+  comparison_pattern: upper vs lower reaches; ERA5 vs GLEAM vs observations; pre- vs post-policy eras
+  contradiction_handling: dataset divergence admitted openly ('ERA5 data suggest a decrease ... whereas GLEAM data show an increase')
+  boundary_condition_handling: trend statements conditioned on period splits (decreasing 1960-2000, increasing thereafter)
+  limitation_handling: sparse groundwater monitoring acknowledged before inference
+  gap_identification_pattern: mechanism-understanding gaps (vegetation-precipitation feedback) named at close, generalised outward
+synthesis:
+  synthesis_unit: component/period
+  study_by_study_ratio: low-medium
+  multi_source_synthesis_pattern: ["multi-dataset triangulation per component", "reach-stratified trend tables", "feedback-loop diagram integrating biophysical and institutional strands", "policy-timeline synthesis inside governance subsection"]
+  consensus_pattern: 'all estimations consistently show an increasing trend' — convergence language when sources agree
+  controversy_pattern: disagreements handled by displaying both estimates and attributing differences to data provenance
+  reconciliation_pattern: apparent contradictions reconciled via spatial disaggregation (heterogeneous well data vs coherent GRACE decline)
+  evidence_weighting_pattern: gauge observations > satellite products > model reanalysis, stated where they conflict
+paragraph_rhetoric:
+  common_rhetorical_moves: ["quantified trend statement", "reach stratification", "dataset juxtaposition", "attribution split"]
+  typical_move_sequences: [["component trend number + P-value", "spatial pattern qualifier", "driver attribution", "management implication"]]
+  topic_sentence_pattern: component-named openers ("Precipitation", "River discharge") followed immediately by magnitude
+  synthesis_sentence_pattern: "'Consequently,' basin-scale roll-up sentences aggregating component changes"
+  contrast_sentence_pattern: "'Conversely, discharge in the middle and lower reaches declined' reach contrasts"
+  limitation_sentence_pattern: "'Although available data on groundwater are limited' sparsity hedges"
+  transition_pattern: numbered challenge enumeration (First/Second/Third) structures the closing agenda
+  paragraph_length_profile: q25=477, median=647, p75=814 chars
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 4, p75: 8}
+  citation_cluster_frequency: high — dense clusters on regional findings (e.g., refs 57-61 on plateau glacier change)
+  single_vs_cluster: clusters for regional literature bodies; singles for specific gauge statistics
+  seminal_recent_balance: recent5y share 0.399; reference count highest in batch (~213) reflecting case-literature depth
+  citation_location: [sentence-final clusters after regional claims, mid-sentence after programme names]
+  citation_support_type: [gauged hydrometric studies, remote-sensing analyses, Chinese policy documents]
+  method_citation_pattern: dataset descriptions cited at first use with supplementary table cross-reference
+  gap_citation_pattern: cites restoration-feedback and transboundary literatures to frame open questions
+geography_reasoning:
+  whether_geography_is_central: yes — the review is an exercise in regional geographic synthesis
+  spatial_scale_usage: reach-level ladder (source/middle/lower) applied to every component consistently
+  regional_differentiation_usage: internal differentiation replaces comparative regionalism; southeast-to-northwest gradients quantified
+  spatial_heterogeneity_usage: high heterogeneity explicitly reported (groundwater wells, soil moisture) rather than averaged
+  cross_scale_usage: site interventions aggregated to basin regime change then projected to global dryland class
+  place_context_usage: dense toponymic anchoring (Loess Plateau, TNH/TDG/HYK/LJ stations) as evidence coordinates
+  human_environment_usage: fully central — feedback loops between institutions, engineering and hydrology are the thesis
+  flow_network_usage: river network structure organises discharge and sediment narratives
+  spatial_dependence_usage: upstream storage changes condition downstream flow; spatial mismatch between water endowment and population stated as key finding ("pronounced spatial mismatch between water resource endowments and population distributions")
+  conditions_triggering_geographic_explanation: ["when a component's trend flips sign along the river", "when attributing discharge decline between climate and abstraction", "when generalising basin lessons to other arid rivers"]
+figure_strategy:
+  total_figures: 6
+  figure_roles: [water-cycle schematic with magnitudes, multi-panel time series per component, sediment spatiotemporal panels, population-water-use charts, land-use/economic maps, feedback-loop diagram]
+  conceptual_framework: Fig 1 annotated cycle schematic quantifies storages and fluxes upfront
+  taxonomy: none
+  mechanism: yes (Fig 6 feedback loops)
+  timeline: yes (station-wise annual/trend dual panels)
+  map: yes (land use and economic spatial distributions)
+  workflow: none
+  evidence_summary: Fig 2 stacks eight panels so every water-cycle component shares one visual grammar
+  figure_text_relation: station abbreviations defined once and reused across text and panels; captions specify periods and datasets
+gap_and_agenda:
+  how_gaps_are_derived: from mechanisms the synthesis could not close, then tested for global generality
+  types_of_gaps: [process-understanding gap (vegetation-precipitation feedback), policy-side-effect gap (surface-to-groundwater stress transfer), delta-management dilemma]
+  evidence_required_before_gap_claim: demonstration that named mechanisms remain poorly constrained within reviewed studies
+  future_agenda_structure: three numbered unresolved challenges, each paired with analogous global basins (Tarim, Congo, Amazon, Mekong, Rhine, Yangtze, Colorado, Murray, Orange)
+  specificity_of_future_questions: specific processes named; "issues shared by major river basins globally" generalisation move
+quality_features:
+  major_strengths: [consistent reach-ladder discipline, dataset-divergence honesty, policy-institutional integration rare in physical reviews, closing generalisation from case to class]
+  transferable_patterns: [nature-then-human ordering for coupled systems, apply one spatial partition uniformly across all components, show conflicting datasets side by side instead of selecting, convert single-case lessons into numbered globally-shared questions with analogues]
+  unique_but_nontransferable_features: [China-specific policy archive (Water Allocation Scheme, Yellow River Protection Law); station network depth]
+  risks_of_imitation: [single-basin format requires exceptional data density; without the closing generalisation move it reads as parochial reportage]
+anti_patterns:
+  weak_patterns_to_avoid: [hiding dataset disagreement by choosing one product silently, narrating policies without linking them to measured hydrological response]
+source_provenance:
+  source_pages: ["pp. 656-671 (Vol 6, Oct 2025 running headers)", "pp. 656-657 (opening/intro slice)", "p. 660 (BODY_SLICE_1@17%)", "~p. 663 (BODY_SLICE_2@33%)", "~p. 664 (BODY_SLICE_3@50%)", "~p. 667 (BODY_SLICE_4@67% incl Summary)", "closing/refs slice"]
+  source_sections: [Introduction, Hydrological changes (precipitation/ET/soil moisture/discharge passages), Anthropogenic changes passages, Fig 1-6 captions, reference sample]
+  confidence: medium

@@ -1,0 +1,24 @@
+flowchart TB
+    SRC[("Task Source PDF / Record<br/>fulltext_status tracked")] --> CARD["Task Literature Card (P###)<br/>claims · methods · geography · limitations"]
+    CARD --> EU["Evidence Units (E###)<br/>claim+result+context+<b>source_page</b>"]
+    EU --> MATRIX[("Evidence Matrix CSV<br/>claim × paper × conditions")]
+    MATRIX --> CLAIM["Claims (C###)<br/>propositions in argument map"]
+    CLAIM --> AMAP["Argument Map<br/>support / contradict / conditions / strength"]
+    AMAP --> SENT["Draft Sentence / Paragraph<br/>(synthesis of E-ids)"]
+    SENT --> PH["Citation Placeholder<br/>&lt;CITE claim_id evidence_ids paper_ids&gt;"]
+    PH --> ZOT["Zotero Item / DOI match<br/>(zotero_adapter)"]
+    ZOT --> MV["Metadata Verification<br/>(Crossref consistency check)"]
+    MV --> CSV_["Claim-support Verification<br/>(sentence ↔ evidence ↔ source_page)"]
+    CSV_ --> VC["Verified Citation"]
+    VC --> BIB["Bibliography (+ static-CSL docx)<br/>audit: citation-audit.csv"]
+
+    AUDIT["Evidence & Citation Auditor"] -. "verifies every chain link" .-> CARD
+    AUDIT -.-> EU
+    AUDIT -.-> MATRIX
+    AUDIT -.-> SENT
+    AUDIT -.-> BIB
+    FAIL["UNRESOLVED CITATION<br/>→ removed from references,<br/>listed in unresolved_citations.csv"] -.-> ZOT
+
+    style SRC fill:#e8eef8
+    style BIB fill:#e8f0e8
+    style FAIL fill:#ffe0e0

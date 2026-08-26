@@ -1,0 +1,144 @@
+document_id: B020
+bibliographic:
+  title: "UNKNOWN (metadata title null; review of Indian Ocean heat and freshwater changes)"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2021
+  doi: UNKNOWN
+  review_type: narrative   # detection-and-attribution oriented synthesis
+overall_review_design:
+  review_objective: >-
+    Synthesize Indian Ocean heat/freshwater changes at decadal-to-multidecadal
+    scales to test whether hydrological intensification has occurred.
+  review_scope: basin and Maritime Continent region; observations, modes of variability, thermodynamic/dynamic drivers, coral-proxy context, projections
+  review_mode: attribution-question-driven synthesis with explicit evidence-base audit
+  article_architecture:
+    - Introduction (unheaded, societal stakes + attribution question + roadmap)
+    - Indian Ocean climatological conditions (basin distinctiveness)
+    - Observational basis (in situ, Argo, moorings, remote sensing)
+    - Modes of variability (IOD, ENSO, IPO)
+    - Drivers of multi-decadal change (Thermodynamic considerations / Dynamical considerations run-in subsections)
+    - Palaeo perspective (coral proxies)
+    - Summary and future perspectives
+    - Box 1 (observations and corals), Box 2 (reanalyses and models); Figs 1-5; Key points box
+  organizing_principle: "mixed(evidence-source -> mechanism -> attribution verdict; scale ladder interannual to centennial)"
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: societal-vulnerability framing (agrarian Indian Ocean rim rainfall dependence)
+  problem_contextualization: regional sea-level and rainfall extremes tied to basin changes
+  fragmentation_statement: sparse observational network leaves trend magnitude/confidence contested at regional scales
+  gap_or_need_statement: disentangling natural multidecadal variability from forced change is the stated need
+  review_objective_statement: '"In this Review, we synthesize current understanding of Indian Ocean heat and freshwater changes".'
+  scope_definition: timescale band (decadal to multi-decadal) plus focal region (broader Indian Ocean with MC focus) declared
+  contribution_statement: distinctive move — recruits coral proxies for long-term context of satellite-era trends
+  roadmap_pattern: present ("We highlight ... The observed changes ... are evaluated ... We finish by highlighting outstanding challenges")
+section_architecture:
+  section_order: [Intro, Climatological setting, Observational basis, Modes of variability, Drivers (thermo/dynamical), Palaeo context, Summary/futures]
+  dominant_logic: evidence inventory -> process explanation -> attribution verdict
+  chronological_logic: partial (record-length ordering of evidence types)
+  thematic_logic: central
+  mechanism_logic: central
+  scale_logic: central
+  region_logic: central
+  method_logic: partial (data-source evaluation)
+  transition_between_sections:
+    - '"Several unique characteristics distinguish the climatological structure ..." setup openers'
+    - palaeo section framed as providing "context for the observational ... data sets"
+argumentation:
+  dominant_argument_pattern: thermodynamic-vs-dynamic decomposition then variability-vs-forced-signal adjudication
+  claim_evidence_relation: claims graded by data source capability; each trend tied to named observing systems
+  comparison_pattern: basin-scale vs regional-scale verdicts compared; multiple data sources cross-checked
+  contradiction_handling: >-
+    Attribution tension held explicitly: basin warming "unequivocally attributed" while regional trends show "inconclusive evidence".
+  boundary_condition_handling: sampling-footprint mismatches bound comparability of satellite vs in situ products
+  limitation_handling: per-dataset quality caveats (coastal altimetry, salinity sparsity) attached where used
+  gap_identification_pattern: gaps = sustained-observation deficits blocking detection/attribution
+synthesis:
+  synthesis_unit: proposition (signal) qualified by source, depth and timescale
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - complementary-data-sources synthesis ("Different data sources can provide complementary information")
+    - thermodynamic/dynamic factor decomposition applied across variables
+    - proxy-plus-instrument stitching to extend record before 1980
+  consensus_pattern: '"At the broad scale, there is general agreement ..., albeit with low confidence" calibrated consensus'
+  controversy_pattern: hiatus-era OHC debate folded into IPO-phase explanation rather than left as dispute
+  reconciliation_pattern: apparent trend acceleration decomposed into forced signal plus natural IPO phasing rather than left as dispute
+  evidence_weighting_pattern: >-
+    Evidence weighted by observing-system era (Argo post-2003; satellite salinity post-2010); pre-instrumental claims routed through corals.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - enumerated basin-distinctiveness list (three characteristics) in one sentence chain
+    - run-in headed subsections ("Thermodynamic considerations.")
+    - italic defined terms at first use (glossary-in-text)
+  typical_move_sequences:
+    - [climatological baseline, expected response from theory, observed change with source caveats, attribution statement]
+  topic_sentence_pattern: variable-or-process declaratives echoing headings
+  synthesis_sentence_pattern: confidence-calibrated verdict sentences closing each evidence block
+  contrast_sentence_pattern: '"While focus has often been on the Pacific ..." refocusing contrasts'
+  limitation_sentence_pattern: dataset-quality clauses embedded at point of use
+  transition_pattern: evidence-type transitions (instrument -> proxy -> model)
+  paragraph_length_profile: medium (~448-char median)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 1}   # digest blocks include figure/reference text
+  citation_cluster_frequency: high in prose
+  single_vs_cluster: clusters for multi-product findings; singles for landmark analyses
+  seminal_recent_balance: circulation classics beside Argo/satellite-era results
+  citation_location: [sentence-final clusters]
+  citation_support_type: [trend statistic, mechanism support, dataset description, proxy record]
+  method_citation_pattern: every named product/mission cited at first mention
+  gap_citation_pattern: observation-deficit gaps supported by network descriptions rather than citations
+geography_reasoning:
+  whether_geography_is_central: yes
+  spatial_scale_usage: basin scale vs regional (Maritime Continent) scale kept analytically distinct throughout
+  regional_differentiation_usage: basin distinctiveness (monsoon reversal, ITF connection, no northward heat export) drives all explanations
+  spatial_heterogeneity_usage: fresh pool, salinity front, orographic precipitation hotspots localized precisely
+  cross_scale_usage: interannual IOD to multidecadal IPO to centennial coral trends nested
+  place_context_usage: strait-by-strait passages and Leeuwin Current marine heatwave as anchored instances
+  human_environment_usage: water resources of rim countries motivate the whole review
+  flow_network_usage: Indonesian Throughflow as inter-basin conduit is a core explanatory object
+  spatial_dependence_usage: steric-height gradients regulate ITF via pressure-gradient logic
+  conditions_triggering_geographic_explanation:
+    - "when a basin's unique geometry sets its climate vulnerability"
+    - "when claims must be bounded by where/when instruments can observe"
+figure_strategy:
+  total_figures: 5
+  figure_roles:
+    - Fig1 climatology maps (precipitation, SST, SSS)
+    - Fig2 multi-variable linear-trend panels
+    - Fig3 time series of key heat/freshwater metrics
+    - Fig4 variability-phase impacts schematic/time series
+    - Fig5 coral-proxy reconstructions grouped by region against instrumental SST
+  conceptual_framework: yes (Fig 4 mechanisms)
+  taxonomy: implicit mode typology
+  mechanism: yes (Fig 4)
+  timeline: yes (Figs 3, 5 time series)
+  map: yes (Figs 1, 2)
+  workflow: no
+  evidence_summary: Boxes 1-2 inventory evidence sources
+  figure_text_relation: figures pair observed trends with reconstructions so attribution can be read off panels
+gap_and_agenda:
+  how_gaps_are_derived: derived from what current networks cannot resolve (subsurface, coastal, pre-1980)
+  types_of_gaps: [observational sustainability, detection/attribution separation, projection constraint]
+  evidence_required_before_gap_claim: shown inability to separate IPO phasing from forced signal in available records
+  future_agenda_structure: sustained/enhanced observations imperative linked to climate-risk use case
+  specificity_of_future_questions: specific variables, depths and regions named for monitoring
+quality_features:
+  major_strengths:
+    - Key-points box whose bullets are themselves calibrated attribution statements
+    - annotated selected references
+    - evidence-source boxes separating observational from model-based knowledge
+  transferable_patterns:
+    - attribution-question framing giving the review a falsifiable spine
+    - evidence-base audit section before any trend claims
+    - graded-verdict language mapped to scale (unequivocal basin / inconclusive regional)
+  unique_but_nontransferable_features:
+    - coral-proxy extension specific to tropical ocean archives
+  risks_of_imitation:
+    - heavy dataset plumbing can overwhelm readers without the Box-based offloading used here
+anti_patterns:
+  weak_patterns_to_avoid:
+    - reporting satellite-era trends without stating observing-system start dates and footprints
+source_provenance:
+  source_pages: [1-2 (OPENING), SLICE_1@17% (journal p.529), SLICE_2@33%, SLICE_3@50%, SLICE_4@67% (journal p.539 vicinity), FIGURE_CAPTIONS]
+  source_sections: [Introduction, Indian Ocean climatological conditions, Remote sensing/data sections, Drivers of multi-decadal change, Thermodynamic/Dynamical subsections, Summary and future perspectives, Boxes 1-2, Key points]
+  confidence: high

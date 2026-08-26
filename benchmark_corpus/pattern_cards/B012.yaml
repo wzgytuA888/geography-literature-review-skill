@@ -1,0 +1,142 @@
+document_id: B012
+bibliographic:
+  title: "Burning embers: towards more transparent and robust climate-change risk assessment (title truncated in metadata)"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2020
+  doi: UNKNOWN
+  review_type: narrative   # methodological-history review of an assessment framework
+overall_review_design:
+  review_objective: >-
+    Trace evolution of the IPCC 'reasons for concern' framework and burning-embers
+    diagrams; evaluate methodological changes and propose improvements.
+  review_scope: methods, design and expert-elicitation processes across IPCC assessment cycles (TAR to Special Reports)
+  review_mode: historical-methodological appraisal with prescriptive ending
+  article_architecture:
+    - Introduction (unheaded framing incl. criticism survey)
+    - History (Emergence of the RFC framework / Evolution of methods and design)
+    - Expert judgement and uncertainty guidance context
+    - Lessons from other fields
+    - Expert elicitation in IPCC Special Reports (SRCCL methods / SROCC methods / Strengths and limitations)
+    - Future improvements/conclusion
+    - Box 1 (formal expert-elicitation overview); Table 1 (approach comparison); Key points box
+  organizing_principle: "mixed(chronological across assessment cycles + methodological evaluation)"
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: policy-decision framing (Paris/UNFCCC/Sendai information needs)
+  problem_contextualization: upcoming AR6 stocktake makes the framework's reliability decision-critical now
+  fragmentation_statement: >-
+    Criticism cluster cited directly: production "should be more systematic, transparent and comparable".
+  gap_or_need_statement: undocumented expert judgement undermines reproducibility and confidence
+  review_objective_statement: '"In this Review, we trace the evolution of the RFC framework and burning embers".'
+  scope_definition: >-
+    Delimitation by pointer: "Readers are referred to other reviews" for elicitation-method detail.
+  contribution_statement: combines published literature with author experience inside IPCC assessments
+  roadmap_pattern: present ("After outlining the history, we highlight ... We subsequently discuss ...")
+section_architecture:
+  section_order: [Introduction, History, Guidance context, Lessons from other fields, Special Report case studies, Future improvements]
+  dominant_logic: chronological narrative turned into methodological evaluation
+  chronological_logic: central
+  thematic_logic: partial
+  mechanism_logic: none
+  scale_logic: none
+  region_logic: none
+  method_logic: central
+  transition_between_sections:
+    - '"We begin by outlining the history ..." explicit stage-setting opener'
+    - 'case-study section introduced as a response to earlier critique'
+argumentation:
+  dominant_argument_pattern: problem -> documented practice evolution -> evaluated remedy
+  claim_evidence_relation: claims about process change supported by report documents plus participant recollection
+  comparison_pattern: cross-assessment comparison (TAR vs AR4 vs AR5 vs SRCCL/SROCC) on fixed criteria
+  contradiction_handling: critics quoted via citations then addressed point-by-point with design responses
+  boundary_condition_handling: trade-off framing for protocol choice (confidentiality, funds, time, author geography)
+  limitation_handling: dedicated strengths-and-limitations subsection evaluating the reviewed protocols themselves
+  gap_identification_pattern: gap = transparency/reproducibility deficit established by named critiques
+synthesis:
+  synthesis_unit: theme (method component) within a chronological frame
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - triangulation of literature + institutional documents + author experience
+    - criteria lists abstracted from successive assessments into comparable dimensions
+  consensus_pattern: convergence framed as progress toward structured elicitation
+  controversy_pattern: controversy is the review's engine; critic positions enumerated with citations
+  reconciliation_pattern: shows each criticized element matched by a later design fix or residual limit
+  evidence_weighting_pattern: formalized protocols weighted above ad hoc judgement; bias literature as evaluator
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - dated milestone narration
+    - colour/design decisions explained by communicative intent
+    - bias naming from decision-science literature
+  typical_move_sequences:
+    - [milestone sentence, what changed methodologically, why (bias/robustness rationale), citation]
+  topic_sentence_pattern: period-labelled openers ("Since the TAR, ...")
+  synthesis_sentence_pattern: '"These changes contributed to transparency and reliability" style verdicts'
+  contrast_sentence_pattern: '"Instead of green, however, white was used ..." deliberate-design contrasts'
+  limitation_sentence_pattern: '"Despite this progress, limitations remain." pivot paragraph'
+  transition_pattern: temporal connectives anchoring each move to an assessment cycle
+  paragraph_length_profile: medium blocks (~510-char median)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 1}   # digest blocks include figure/reference text
+  citation_cluster_frequency: moderate; heaviest on criticism and bias literatures
+  single_vs_cluster: singles for report milestones; clusters for critiques and biases
+  seminal_recent_balance: spans 1990s policy origins to 2020 special reports
+  citation_location: [sentence-final clusters, report-document citations]
+  citation_support_type: [institutional document, critique position, method provenance]
+  method_citation_pattern: protocols and standards cited at adoption points
+  gap_citation_pattern: gap anchored to numbered critics rather than absence of study
+geography_reasoning:
+  whether_geography_is_central: no (peripheral)
+  spatial_scale_usage: global assessment scale; temperature axis substitutes for space
+  regional_differentiation_usage: regional RFCs and per-geography elicitation rounds appear as units of assessment
+  spatial_heterogeneity_usage: minimal
+  cross_scale_usage: temperature thresholds substitute for spatial scales
+  place_context_usage: places only as case-study illustrations within elicitation rounds
+  human_environment_usage: risk-to-people framing throughout; policy instruments cited
+  flow_network_usage: none
+  spatial_dependence_usage: author time zones/geographical distribution noted as practical constraint
+  conditions_triggering_geographic_explanation:
+    - "when assessments are disaggregated per geography in elicitation protocols"
+figure_strategy:
+  total_figures: 6   # Fig2 present per caption text though index missed it
+  figure_roles:
+    - Fig1 historical rendition of the original embers figure
+    - Fig2 timeline of design evolution across reports
+    - Fig3 cross-assessment threshold comparison
+    - Fig4 flow chart of SRCCL elicitation protocol
+    - Fig5 worked example ember (food stability)
+    - Fig6 flow chart of SROCC sea-level assessment
+  conceptual_framework: yes (framework anatomy figures)
+  taxonomy: Table 1 typology of elicitation approaches
+  mechanism: no
+  timeline: yes (Fig 2)
+  map: no
+  workflow: yes (Figs 4 and 6 document process steps)
+  evidence_summary: yes (Fig 3 comparison)
+  figure_text_relation: figures serve as primary evidence objects; the text narrates their design history
+gap_and_agenda:
+  how_gaps_are_derived: comparative limitation analysis of the two newest protocols
+  types_of_gaps: [procedural (expert diversity), metric articulation, validation of score-risk relation]
+  evidence_required_before_gap_claim: documented protocol steps plus decision-science bias evidence
+  future_agenda_structure: prescriptive list for next IPCC cycle balancing rigour against practical constraints
+  specificity_of_future_questions: specific procedural recommendations (rounds, anonymity, metrics)
+quality_features:
+  major_strengths:
+    - reflexive insider access disclosed as an evidence source
+    - controversy used as organizing spine rather than avoided
+    - Key-points box stating actionable conclusions
+  transferable_patterns:
+    - history-of-method reviews organized as critique -> response ledger
+    - workflow figures as documentation of reviewed protocols
+    - pointer-delimitation to sibling reviews instead of scope bloat
+  unique_but_nontransferable_features:
+    - authors were participants in the assessed process
+  risks_of_imitation:
+    - insider retrospection can drift into self-justification without external checks
+anti_patterns:
+  weak_patterns_to_avoid:
+    - describing a framework's history without stating evaluative criteria first
+source_provenance:
+  source_pages: [1-2 (OPENING), SLICE_1@17%, SLICE_2@33% (journal p.520), SLICE_3@50%, SLICE_4@67%, FIGURE_CAPTIONS]
+  source_sections: [Introduction, History, Evolution of methods and design, Expert elicitation in IPCC Special Reports, Strengths and limitations, figure captions, Key points]
+  confidence: high

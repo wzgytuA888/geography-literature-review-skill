@@ -1,0 +1,139 @@
+document_id: B029
+bibliographic:
+  title: Grassland changes and adaptive management on the Qinghai–Tibetan Plateau
+  authors: [UNKNOWN]           # affiliation list (CAS TPESRE, UCAS) captured; names not in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2022                   # page footer "October 2022 | volume 3"
+  doi: 10.1038/s43017-022-00330-8   # inferred from filename s43017-022-00330-8.pdf
+  review_type: thematic-mixed  # regional synthesis with meta-analysis of manipulation experiments
+overall_review_design:
+  review_objective: >-
+    Describe spatio-temporal grassland changes on the QTP since the 1980s, weigh climatic vs
+    anthropogenic drivers via experimental evidence, and identify gaps to inform adaptive management.
+  review_scope: >-
+    QTP alpine grasslands (steppe, meadow, swamp meadow, desert steppe); vegetation, species
+    composition, soil properties; warming/precipitation/grazing/policy drivers; adaptive management.
+  review_mode: >-
+    Attribution-adjudicating synthesis: remote-sensing trends reconciled with pooled
+    manipulation-experiment effect sizes; controversy over driver dominance explicitly settled by scale.
+  article_architecture:
+    - Introduction (controversy framing, four-move roadmap)
+    - Grassland changes        # run-ins: temporal vegetation; spatial variability; species composition; soil properties
+    - Climatic drivers         # warming effects on productivity/diversity/composition; precipitation
+    - Anthropogenic activities # grazing, fencing/exclusion, policy, settlement and urbanization
+    - Contributions of various drivers   # attribution adjudication (Table 1)
+    - Adaptive management
+    - Summary and future perspectives
+  organizing_principle: mixed — change -> natural driver -> human driver -> attribution -> response chain; precipitation zoning as explanatory frame
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: importance-plus-controversy opening — grassland extent share stated, then "relative contributions ... are still controversial"
+  problem_contextualization: degradation consequences and policy stakes (grazing bans, reserves) precede synthesis need
+  fragmentation_statement: driver-attribution dispute named as the field's central unresolved tension
+  gap_or_need_statement: comprehensive understanding of drivers and interactions declared key to protection/restoration
+  review_objective_statement: explicit four-move roadmap ("we describe... We examine... The relative contributions... are considered, and key knowledge gaps are identified")
+  scope_definition: grassland types delimited by precipitation/temperature zones; methods pointer to supplements
+  contribution_statement: scale-resolved attribution and management implications presented as deliverables
+  roadmap_pattern: present — sequenced verbs in one paragraph
+section_architecture:
+  section_order: [Introduction, Grassland changes, Climatic drivers, Anthropogenic activities, Contributions of various drivers, Adaptive management, Summary and future perspectives]
+  dominant_logic: document change, test natural causes, test human causes, adjudicate shares, translate to management
+  chronological_logic: partial      # segmented NDVI windows (1981-2000, 2000-2015, 2015-2020)
+  thematic_logic: central           # response variables organized via run-in headings
+  mechanism_logic: central          # experimental mechanisms explain correlational patterns
+  scale_logic: central              # plot -> zone -> plateau scaling treated explicitly
+  region_logic: partial             # meadow-vs-steppe differentiation throughout
+  method_logic: partial             # satellite product comparison and experiment counts audited
+  transition_between_sections:
+    - change-to-driver bridge via "as discussed in this section" preambles
+    - natural-to-human driver handoff within the driver block
+    - adjudication section resolves the two preceding threads
+argumentation:
+  dominant_argument_pattern: converging-lines argument — remote-sensing trends, experiments and gradients must agree before a driver claim stands
+  claim_evidence_relation: effect sizes with errors and sample sizes ("decreases plant richness by 7.97% (± 2.32%)")
+  comparison_pattern: meadow-vs-steppe contrasts; yak-vs-sheep grazing effects; climate-dominated-vs-human-dominated map dichotomy
+  contradiction_handling: >-
+    Driver-dominance dispute resolved by declaring scale dependence — contributions "vary across spatio-temporal scales".
+  boundary_condition_handling: treatment-duration dependence of warming effects stated as boundary condition (initial decline then rebound)
+  limitation_handling: short-window trend flagged as under-powered before interpretation
+  gap_identification_pattern: missing-evidence-class gaps (no plateau-scale diversity comparisons; insufficient ground data for species mapping)
+synthesis:
+  synthesis_unit: theme             # response variable crossed with driver
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - meta-pooling of warming/grazing experiments into percentage effects with n counts
+    - multi-product NDVI triangulation with segment-wise significance testing
+    - attribution table summarizing driver shares per variable and period
+  consensus_pattern: consistency-across-products phrasing anchoring headline trends
+  controversy_pattern: competing attributions staged then adjudicated by scale rather than dismissed
+  reconciliation_pattern: residual-trend methods partition climate vs human contributions where experiments cannot
+  evidence_weighting_pattern: experimental causality weighted above observational correlation; sample sizes displayed
+paragraph_rhetoric:
+  common_rhetorical_moves: [segmented-trend narration, effect-size quotation, mechanism attribution, policy linkage]
+  typical_move_sequences:
+    - [trend statement, pooled estimate, exception zone]
+    - [experimental effect, field mechanism, management implication]
+  topic_sentence_pattern: variable-naming run-in sentence ("Temporal changes in vegetation.", "Soil properties.")
+  synthesis_sentence_pattern: convergence clause across independent data streams
+  contrast_sentence_pattern: grazing-intensity and grassland-type paired contrasts
+  limitation_sentence_pattern: interpret-with-caution clauses on short or sparse data
+  transition_pattern: numbered driver progression; summary section re-collects all threads
+  paragraph_length_profile: q25=383, median=472, p75=608 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 4}   # index block values
+  citation_cluster_frequency: high at effect-size claims
+  single_vs_cluster: clusters for pooled effects; singles for policies and site studies
+  seminal_recent_balance: recent5y share 0.107; annotated key references appear in list
+  citation_location: [sentence-final clusters, figure-panel citations]
+  citation_support_type: [experiment result, remote-sensing estimate, policy document, prior synthesis]
+  method_citation_pattern: products and experimental designs cited at first use; pooling details in supplements
+  gap_citation_pattern: absence claims cite nearest existing attempts then name the void
+geography_reasoning:
+  whether_geography_is_central: yes-structural — precipitation-defined grassland zones organize explanation
+  spatial_scale_usage: plot experiments -> climate zones -> whole plateau, with explicit scaling caution
+  regional_differentiation_usage: meadow/steppe/desert-steppe zonation determines responses everywhere
+  spatial_heterogeneity_usage: distance-decay degradation around settlements and roads quantified
+  cross_scale_usage: plot-scale mechanisms checked against plateau-scale residuals before acceptance
+  place_context_usage: named basins and counties anchor policy examples
+  human_environment_usage: pastoral economy, herder survey percentages and compensation policy integrated as system components
+  flow_network_usage: none
+  spatial_dependence_usage: degraded-area concentration within 10 km of roads used as causal evidence
+  conditions_triggering_geographic_explanation:
+    - when response signs flip between precipitation zones
+    - when human-activity proxies vary spatially (settlements, roads, fences)
+    - when attribution must be resolved differently at different scales
+figure_strategy:
+  total_figures: 5
+  figure_roles: [driver-impact framework schematic, climate-gradient experiment map, NDVI trend composite, climate-effect meta-panel with n counts, anthropogenic-effect meta-panel]
+  conceptual_framework: Fig. 1 boxes drivers, receptors and broader impacts with feedback arrows
+  taxonomy: grassland-type classification mapped against climate space
+  mechanism: Fig. 4 separates temperature/precipitation/grazing effect channels
+  timeline: Fig. 3 segmented trend lines mark policy-relevant breaks
+  map: Figs. 2-3 map experiments and vegetation trends across the plateau
+  workflow: none
+  evidence_summary: Table 1 tabulates driver contributions per indicator — the paper's verdict device
+  figure_text_relation: captions report sample sizes and significance stars; text interprets exceptions
+gap_and_agenda:
+  how_gaps_are_derived: from unresolvable attributions and missing observation classes surfaced during synthesis
+  types_of_gaps: [measurement (ground species-composition data), mechanistic (driver interactions), predictive (carrying-capacity thresholds)]
+  evidence_required_before_gap_claim: shown failure of current datasets/products to resolve the question
+  future_agenda_structure: management-oriented agenda keyed to identified gaps
+  specificity_of_future_questions: thresholds and interaction effects named as measurable targets
+quality_features:
+  major_strengths:
+    - settles a live controversy with an explicit scale-dependence verdict
+    - effect-size discipline (means, errors, n) imported from meta-analysis practice
+    - herder survey data humanizes the management layer
+  transferable_patterns:
+    - stage the field's core controversy in sentence one of the introduction
+    - require observational, experimental and gradient evidence to converge before attribution
+    - attach sample sizes to every pooled percentage you synthesize
+  unique_but_nontransferable_features: dense local experiment network enables true meta-pooling
+  risks_of_imitation: percentage-dense prose needs careful signposting to stay readable
+anti_patterns:
+  weak_patterns_to_avoid:
+    - adjudicating driver dominance from one evidence type alone
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2 incl. six-bullet Key points)", "BODY_SLICE_1@17% (Fig.1 caption, species composition)", "BODY_SLICE_2@33% (warming meta-effects)", "BODY_SLICE_3@50% (grazing effects)", "BODY_SLICE_4@67% (settlement, urbanization)", "FIGURE/TABLE CAPTIONS slice"]
+  source_sections: [Introduction, Grassland changes, Climatic drivers, Anthropogenic activities, Summary, Figure/Table captions]
+  confidence: high

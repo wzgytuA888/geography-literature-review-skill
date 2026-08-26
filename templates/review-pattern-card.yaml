@@ -1,0 +1,125 @@
+# Review Pattern Card Schema (Benchmark Corpus)
+
+> Applies to `benchmark_corpus/pattern_cards/B*.yaml`. One card per benchmark review.
+> Captures transferable FORM (methodology), never topic content. UNKNOWN is a legal
+> value — record it verbatim; do not guess.
+
+```yaml
+document_id: B001            # matches manifest.jsonl
+bibliographic:
+  title:                     # from PDF metadata / filename
+  authors: []                # may be [UNKNOWN]
+  journal:
+  year:
+  doi:
+  review_type:               # narrative | conceptual | systematic | scoping |
+                             # methodological | bibliometric | thematic-mixed
+overall_review_design:
+  review_objective:
+  review_scope:
+  review_mode:
+  article_architecture:      # ordered list of major sections (headings as-is)
+  organizing_principle:      # thematic | chronological | mechanistic | scale |
+                             # regional | methodological | mixed(+how)
+  number_of_major_sections:
+introduction_pattern:
+  opening_move:              # e.g. global-change framing, definition, puzzle
+  problem_contextualization:
+  fragmentation_statement:   # how "the field is fragmented/unclear" is argued
+  gap_or_need_statement:
+  review_objective_statement:
+  scope_definition:
+  contribution_statement:
+  roadmap_pattern:           # present | absent | variant
+section_architecture:
+  section_order: []
+  dominant_logic:
+  chronological_logic: none|partial|central
+  thematic_logic: none|partial|central
+  mechanism_logic: none|partial|central
+  scale_logic: none|partial|central
+  region_logic: none|partial|central
+  method_logic: none|partial|central
+  transition_between_sections: []
+argumentation:
+  dominant_argument_pattern:
+  claim_evidence_relation:
+  comparison_pattern:
+  contradiction_handling:
+  boundary_condition_handling:
+  limitation_handling:
+  gap_identification_pattern:
+synthesis:
+  synthesis_unit:            # proposition | theme | mechanism | period | region
+  study_by_study_ratio: low|medium|high   # share of paragraphs that enumerate
+  multi_source_synthesis_pattern: []
+  consensus_pattern:
+  controversy_pattern:
+  reconciliation_pattern:
+  evidence_weighting_pattern:
+paragraph_rhetoric:
+  common_rhetorical_moves: []
+  typical_move_sequences: [[]]
+  topic_sentence_pattern:
+  synthesis_sentence_pattern:
+  contrast_sentence_pattern:
+  limitation_sentence_pattern:
+  transition_pattern:
+  paragraph_length_profile:
+citation_behavior:
+  citations_per_paragraph: {p25: , median: , p75: }
+  citation_cluster_frequency:
+  single_vs_cluster:
+  seminal_recent_balance:
+  citation_location: []       # sentence-final | mid-sentence | narrative-author
+  citation_support_type: []
+  method_citation_pattern:
+  gap_citation_pattern:
+geography_reasoning:
+  whether_geography_is_central:
+  spatial_scale_usage:
+  regional_differentiation_usage:
+  spatial_heterogeneity_usage:
+  cross_scale_usage:
+  place_context_usage:
+  human_environment_usage:
+  flow_network_usage:
+  spatial_dependence_usage:
+  conditions_triggering_geographic_explanation: []
+figure_strategy:
+  total_figures:
+  figure_roles: []
+  conceptual_framework:
+  taxonomy:
+  mechanism:
+  timeline:
+  map:
+  workflow:
+  evidence_summary:
+  figure_text_relation:
+gap_and_agenda:
+  how_gaps_are_derived:
+  types_of_gaps: []
+  evidence_required_before_gap_claim:
+  future_agenda_structure:
+  specificity_of_future_questions:
+quality_features:
+  major_strengths: []
+  transferable_patterns: []
+  unique_but_nontransferable_features: []
+  risks_of_imitation: []
+anti_patterns:
+  weak_patterns_to_avoid: []
+source_provenance:
+  source_pages: []
+  source_sections: []
+  confidence: high|medium|low
+```
+
+## Extraction rules
+
+1. Evidence-based: every non-UNKNOWN field cites page numbers in `source_provenance`.
+2. Form over content: describe the *move*, quote at most one short exemplar fragment
+   (<15 words) per field for grounding; long quotes forbidden.
+3. Cross-check section architecture against extracted headings, not impressions.
+4. A card that cannot reach medium confidence gets flagged for consolidator review.

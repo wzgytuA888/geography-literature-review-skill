@@ -1,0 +1,128 @@
+document_id: B034
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of geomorphic and ecological constraints on the coastal carbon sink under sea level rise)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2023
+  doi: 10.1038/s43017-023-00429-6
+  review_type: narrative
+overall_review_design:
+  review_objective: Integrate geomorphic and ecological controls on how sea level rise reshapes the coastal carbon sink.
+  review_scope: marshes, mangroves and seagrass; regional-to-continental ecosystem transitions; carbon sequestration plus CH4 emissions
+  review_mode: argument-driven synthesis advancing a two-pillar thesis with a continental quantification
+  article_architecture: [Abstract, Introduction, Geomorphic constraints, Ecological constraints, Summary and future]
+  organizing_principle: thematic — two constraint pillars (geomorphic vs ecological) in deliberate division of labor
+  number_of_major_sections: 4
+introduction_pattern:
+  opening_move: magnitude-stakes framing ("Approximately half of all marine soil carbon is buried" in vegetated coasts)
+  problem_contextualization: boundary-location vulnerability (land–sea margin, moving target) sets up SLR threat
+  fragmentation_statement: debate framing — "a subject of debate5–7"; divergent predictions (moderate gains to catastrophic losses) stated as spread
+  gap_or_need_statement: need for landscape-scale budgets crossing traditional ecosystem boundaries and including greenhouse gases
+  review_objective_statement: "In this Review, we explore how geomorphology and ecology interact to determine" SLR effects on the sink
+  scope_definition: scale bound declared ("regional to continental scales") with management caveat acknowledged
+  contribution_statement: thesis claim advanced explicitly ("we argue that the persistence of the coastal carbon sink depends principally on...")
+  roadmap_pattern: present — "We first consider... before considering... Nevertheless, we argue..." sequence mirrors sections
+section_architecture:
+  section_order: [Introduction, Geomorphic constraints, Ecological constraints, Summary and future]
+  dominant_logic: two-pillar comparative architecture; each pillar gets mechanism → evidence → quantification
+  chronological_logic: none
+  thematic_logic: central
+  mechanism_logic: central (accommodation space, salinity suppression of methanogenesis)
+  scale_logic: partial (vertical vs lateral accommodation space distinguished)
+  region_logic: partial (US continental roll-up as quantified case)
+  method_logic: partial (Table 1 accounting method documented in footnotes)
+  transition_between_sections:
+    - reversal pivot between pillars ("We propose that the relative importance ... is reversed when considering emissions")
+    - pillar-summary sentence closing geomorphic section before ecological section opens
+argumentation:
+  dominant_argument_pattern: constraint claim → mechanism chain → cross-continental empirical correlation
+  claim_evidence_relation: correlations between accumulation rates and relative SLR cited with multi-study support; Table 1 supplies derived net values
+  comparison_pattern: sequestration-vs-emission control contrast structures the whole argument
+  contradiction_handling: opposing predictions held open ("range from moderate gains ... to catastrophic losses") then conditioned
+  boundary_condition_handling: threshold rate beyond which ecosystems deteriorate treated as explicit condition
+  limitation_handling: budget data scarcity admitted ("similar landscape-scale carbon budgets have not been developed elsewhere")
+  gap_identification_pattern: integration gap — disconnected sequestration vs emissions literatures must be joined
+synthesis:
+  synthesis_unit: proposition (control attribution per carbon pathway)
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - two-factor attribution framework dividing evidence by control type
+    - ecosystem-state-transition accounting rolled up to national CO2eq totals (Table 1)
+    - paired-case contrast (Louisiana land-loss history)
+  consensus_pattern: strong claims where mechanisms converge (depositional burial advantage)
+  controversy_pattern: debate named early then adjudicated by proposing reversed control hierarchy for emissions
+  reconciliation_pattern: offsetting effects reconciled quantitatively (accumulation loss ~offset by methane suppression)
+  evidence_weighting_pattern: observational gradients and whole-system experiments weighted above single-site studies
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define-construct-in-line (accommodation space)
+    - mechanism-then-corroboration
+    - quantitative-offset statement
+    - migration-trajectory narration (landward/seaward margins)
+  typical_move_sequences:
+    - ["constraint statement", "process chain", "citation cluster", "landscape consequence"]
+    - ["claim", "quantified national estimate", "method footnote hedge"]
+  topic_sentence_pattern: control-attribution sentence opens paragraph
+  synthesis_sentence_pattern: multiple factors joined as "interplay between X and Y determines Z"
+  contrast_sentence_pattern: "unlike terrestrial soils..." comparative pivots against adjacent fields
+  limitation_sentence_pattern: extrapolation limits flagged when only one region's budget exists
+  transition_pattern: reversal sentence explicitly reassigns explanatory primacy between pillars
+  paragraph_length_profile: median ~709 chars (q25 533, q75 913)
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 5}
+  citation_cluster_frequency: moderate — clusters close mechanistic sentences
+  single_vs_cluster: singles used for specific sites/figures; clusters for general mechanisms
+  seminal_recent_balance: recent5y share ~28%; includes very current (2022-2023) results
+  citation_location: [sentence-final cluster, mid-sentence]
+  citation_support_type: [empirical gradient study, experiment, remote-sensing assessment, model observation hybrid]
+  method_citation_pattern: accounting choices (GWP variant) documented via reference + supplementary pointer
+  gap_citation_pattern: gap claimed after showing literature covers only part of the coupled system
+geography_reasoning:
+  whether_geography_is_central: yes — coastal margin position and along-coast heterogeneity are constitutive
+  spatial_scale_usage: vertical (accretion) vs lateral (migration) space treated as distinct geographic axes
+  regional_differentiation_usage: US regional partition (Lower Mississippi, North East, Pacific NW...) organizes Table 1
+  spatial_heterogeneity_usage: passive-margin slope/sedimentation explains continent-scale carbon distribution
+  cross_scale_usage: site processes scaled to national totals through area-weighted transition accounting
+  place_context_usage: Gulf Coast share (~50% of wetland soil carbon) anchors quantitative claims
+  human_environment_usage: dams/barriers altering sediment delivery enter as anthropogenic modifiers
+  flow_network_usage: tidal-channel network density linked to export fluxes
+  spatial_dependence_usage: landward-margin migration dependent on upland slope and land use
+  conditions_triggering_geographic_explanation:
+    - when a process requires accommodation space or sediment supply that varies by setting
+    - when transitions are mapped regionally before scaling up
+    - when salinity gradients govern biogeochemical pathways
+figure_strategy:
+  total_figures: 5
+  figure_roles: [system schematic, gradient correlation chart, historical case map/series, driver-interaction schematic, radiative-forcing outcome chart]
+  conceptual_framework: Fig. 1 simplified coastal carbon sink schematic with carbon forms labeled
+  taxonomy: Table 1 ecosystem-transition typology
+  mechanism: Fig. 4 interacting-driver offset diagrams
+  timeline: Fig. 3 historical land-loss time series (Louisiana)
+  map: Fig. 2 SLR-carbon correlation geography; Fig. 3 case map
+  workflow: none
+  evidence_summary: Table 1 rolls all transitions into net CO2eq with uncertainty stars
+  figure_text_relation: photos credited inline; panels carry the migration geometry prose describes
+gap_and_agenda:
+  how_gaps_are_derived: from uncoupled sub-literatures (sequestration studied apart from emissions) and single-region budgets
+  types_of_gaps: [integration gap, geographic-generalization gap, budget-method gap]
+  evidence_required_before_gap_claim: demonstrated absence of comparable budgets outside one region
+  future_agenda_structure: capability goal (landscape-scale budgets crossing boundaries, incorporating GHG) stated as necessity
+  specificity_of_future_questions: mid-level — names the required budget construct rather than discrete hypotheses
+quality_features:
+  major_strengths:
+    - clean two-pillar architecture with an explicit reversal claim joining them
+    - Key points quantify headline offsets before the reader reaches evidence
+    - thesis sentence gives the review an arguable position
+  transferable_patterns:
+    - two-constraint architecture with division-of-labor framing
+    - control-reversal move (same factors, different response variable)
+    - transition-accounting table turning qualitative ecology into commensurable numbers
+  unique_but_nontransferable_features: blue-carbon terminology and CO2eq machinery
+  risks_of_imitation: reversal claims need genuine evidential basis in both regimes, else they collapse
+anti_patterns:
+  weak_patterns_to_avoid:
+    - describing each ecosystem separately without the cross-cutting control framework
+source_provenance:
+  source_pages: ["pp. 393-406 (journal); opening p. 394; slice @17% p. 396"]
+  source_sections: [Introduction, Geomorphic constraints, Vertical soil carbon accumulation, Ecological constraints, Influences on greenhouse gas emissions, Summary and future, Table 1, figure captions]
+  confidence: medium

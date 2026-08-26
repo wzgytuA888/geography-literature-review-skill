@@ -1,0 +1,22 @@
+flowchart TB
+    TOPIC["User Topic"] --> PF["Google Scholar API Preflight<br/>provider · key · endpoint · test query"]
+    PF -- fail --> P1["PAUSED_GOOGLE_SCHOLAR_API_NOT_READY<br/>no backend switching — fix config first"]
+    PF -- ok --> SEARCH["Google Scholar API Search<br/>(Scouts A–E via adapter)"]
+    SEARCH --> SCREEN["Screening / Deduplication"]
+    SCREEN --> FT["Full-text Acquisition<br/>Zotero/local → legal links → OA → institution"]
+    FT --> Q{"Important included literature<br/>missing full text?"}
+    Q -- "No" --> EXTRACT["Evidence Extraction"]
+    Q -- "Yes" --> REPORT["Generate missing_fulltext_literature.txt<br/>(+ .xlsx when openpyxl available)"]
+    REPORT --> SAVE["Save checkpoint:<br/>search results · screening · acquired texts"]
+    SAVE --> PAUSE["PAUSED_WAITING_FOR_USER_FULLTEXT<br/><b>HUMAN-IN-THE-LOOP REQUIRED</b>"]
+    PAUSE --> USER["User uploads PDFs to run folder / Zotero<br/>or marks explicit_user_skip"]
+    USER --> RESUME["resume_helper.py validate-pdf<br/>paper↔PDF↔DOI↔Zotero mapping check"]
+    RESUME -- "high-priority still missing" --> PAUSE
+    RESUME -- gate clear --> EXTRACT
+
+    EXTRACT --> CONTINUE["Continue Workflow:<br/>synthesis → outline → draft → cite → final"]
+
+    style P1 fill:#ffe0e0
+    style PAUSE fill:#ffd0d0
+    style CONTINUE fill:#e8f0e8
+    style USER fill:#fff4cc

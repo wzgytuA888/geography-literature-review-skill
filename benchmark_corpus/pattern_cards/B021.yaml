@@ -1,0 +1,147 @@
+document_id: B021
+bibliographic:
+  title: Changing El Niño–Southern Oscillation in a warming climate
+  authors: [UNKNOWN]           # digest captures only partial co-author names (Karamperidou, Kug, Lengaigne) and affiliation list
+  journal: Nature Reviews Earth & Environment
+  year: 2021                   # page footer "September 2021 | volume 2"
+  doi: 10.1038/s43017-021-00199-z   # inferred from filename s43017-021-00199-z.pdf
+  review_type: narrative       # expert update-review anchored to a prior synthesis
+overall_review_design:
+  review_objective: >-
+    Summarize observed and projected ENSO responses to greenhouse warming,
+    explicitly building on advances since the previous synthesis in 2015.
+  review_scope: >-
+    ENSO event diversity/asymmetry, feedbacks and mean state, internal variability,
+    inter-basin interactions, model projections, palaeo constraints, teleconnections.
+  review_mode: >-
+    Delta-since-last-synthesis update; tracks emergence of inter-model consensus
+    against a baseline review.
+  article_architecture:
+    - Introduction (impacts, societal need, roadmap)
+    - ENSO in observations
+    - ENSO event diversity and asymmetry
+    - ENSO feedbacks and mean state
+    - Observed ENSO changes / Changes in the mean state
+    - Forcing contemporary mean state changes   # internal variability; inter-basin interactions
+    - Factors affecting mean state projections  # ocean warming, rectification, cold tongue bias
+    - Projected ENSO changes
+    - Palaeo-proxy synthesis (past climates)
+    - Uncertainties and prospects
+  organizing_principle: mixed — mechanistic core (feedbacks -> mean state -> projections) wrapped in observed-to-projected progression, closing on uncertainty
+  number_of_major_sections: 7
+introduction_pattern:
+  opening_move: disaster-impact catalogue with quantified tolls (deaths, displaced millions, flooded land area)
+  problem_contextualization: >-
+    Impact domains enumerated (agriculture, health, infrastructure) then converted into
+    "clear societal need to understand observed and projected ENSO responses".
+  fragmentation_statement: >-
+    Not a silo claim; fragmentation staged as absence of model consensus on ENSO SST
+    variability change in conventional regions.
+  gap_or_need_statement: update-gap form — "building on advances since the previous synthesis in 2015"
+  review_objective_statement: explicit first-person plural ("In this Review, we summarize ENSO projections under anthropogenic warming")
+  scope_definition: partial — variables and mechanisms listed; geographic scope fixed by phenomenon (tropical Pacific)
+  contribution_statement: implicit — consensus-emergence tracking itself presented as the advance
+  roadmap_pattern: present — fully sequenced ("We begin by describing... We follow with... We continue by outlining... We then synthesize... The Review ends with")
+section_architecture:
+  section_order: [Introduction, ENSO in observations, Observed ENSO changes, Forcing contemporary mean state changes, Factors affecting mean state projections, Projected ENSO changes, Palaeo synthesis, Uncertainties and prospects]
+  dominant_logic: establish what changed in observations, explain mechanisms behind change, then project, then constrain with palaeo records, close on unknowns
+  chronological_logic: partial      # observations -> projections; multidecadal windows compared
+  thematic_logic: central           # one mechanism per run-in-headed block
+  mechanism_logic: central          # feedbacks, rectification, stratification drive ordering
+  scale_logic: partial              # event scale to basin and inter-basin scales
+  region_logic: none                # other basins enter as interaction terms, not sections
+  method_logic: partial             # model selection and metric choice discussed inline
+  transition_between_sections:
+    - run-in mechanism headings continue the causal chain across sections
+    - pivot from contemporary to projected via "Factors affecting mean state projections"
+    - closing pivot from mechanisms to uncertainty enumeration
+argumentation:
+  dominant_argument_pattern: consensus-tracking — quantify agreement across model ensembles, explain residual disagreement via processes or biases
+  claim_evidence_relation: model-vote counting with percentages and ensemble sizes attached to every projection claim
+  comparison_pattern: EP-vs-CP event mirroring; CMIP5-vs-CMIP6 replication check; observations-vs-models-vs-palaeo triangulation
+  contradiction_handling: >-
+    Lack of consensus reframed as competing feedback changes; disagreement dissolved by
+    correcting for model-specific anomaly centres.
+  boundary_condition_handling: internal variability bounded as modulator whose relative weight decays after the 2040s
+  limitation_handling: cold-tongue bias caveats attached directly to affected projection claims
+  gap_identification_pattern: process-gap listing in closing — phenomena "not well understood or parameterized"
+synthesis:
+  synthesis_unit: mechanism         # feedback balance, stratification, rectification
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - pooling model votes across CMIP5 and CMIP6 generations
+    - consistency check against palaeo-proxy records
+    - reconciling metric-region disagreements via corrected anomaly centres
+  consensus_pattern: emergence phrasing — "an inter-model consensus on increased ENSO SST variability is emerging"
+  controversy_pattern: disputes attributed to feedback-process competition rather than data conflict
+  reconciliation_pattern: apparent disagreement removed once model-specific definitions are aligned
+  evidence_weighting_pattern: models that realistically simulate extreme events weighted above full ensembles
+paragraph_rhetoric:
+  common_rhetorical_moves: [quantified ensemble vote, mechanism chain, asymmetry contrast, bias confession]
+  typical_move_sequences:
+    - [claim, model-count evidence, percentage, mechanism attribution]
+    - [consensus statement, quoted-connector reinforcement, forward link]
+  topic_sentence_pattern: proposition naming the factor controlling ENSO behaviour
+  synthesis_sentence_pattern: convergence clause tying lines of evidence together
+  contrast_sentence_pattern: EP/CP and El Niño/La Niña paired contrasts
+  limitation_sentence_pattern: model-bias caveat appended to the dependent claim
+  transition_pattern: additive connectors ("Indeed,", "Moreover,"); run-in headings carry continuity
+  paragraph_length_profile: q25=380, median=427, p75=568 chars (index stats; includes caption blocks)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 3}   # block-level index values; caption blocks depress medians
+  citation_cluster_frequency: high in prose — 3-6 reference clusters anchor empirical claims
+  single_vs_cluster: clusters dominate; singles reserved for landmark papers and definitions
+  seminal_recent_balance: recent5y share 0.065; theory carried by older classics, projections by 2015-2021 work
+  citation_location: [sentence-final superscript clusters, timeline-figure annotations]
+  citation_support_type: [empirical anchor, model result, prior-synthesis pointer, mechanism source]
+  method_citation_pattern: indices and datasets cited at first mention
+  gap_citation_pattern: closing unknowns asserted uncited (expert-judgement register)
+geography_reasoning:
+  whether_geography_is_central: supporting — phenomenon-defined region; space enters via gradients and inter-basin links
+  spatial_scale_usage: equatorial Pacific core, expanded to tropical-belt interactions
+  regional_differentiation_usage: EP vs CP anomaly locations treated as distinct physical regimes
+  spatial_heterogeneity_usage: longitude-span of anomaly centres (up to 30 degrees) used to justify metric care
+  cross_scale_usage: event-to-multidecadal aggregation changes stated relationships
+  place_context_usage: named islands/events motivate; not units of analysis
+  human_environment_usage: teleconnection impacts (rainfall, cyclones) justify societal stakes
+  flow_network_usage: teleconnections rendered as regression maps
+  spatial_dependence_usage: zonal SST gradient and thermocline structure as spatially organized controls
+  conditions_triggering_geographic_explanation:
+    - when anomaly location differs between observations and models
+    - when other basins modulate Pacific behaviour
+    - when impact relevance depends on where teleconnections land
+figure_strategy:
+  total_figures: 7
+  figure_roles: [annotated milestone timeline, observed index/pattern display, mean-state obs-vs-model comparison, projection vote charts, teleconnection regressions, past-climate variability, time-of-emergence curves]
+  conceptual_framework: Fig. 1 timeline of key developments doubles as intellectual history
+  taxonomy: EP/CP event typology maintained across figures
+  mechanism: Fig. 4 pairs variance increases with extreme-event frequency panels
+  timeline: Fig. 1 dated milestones annotated with citations
+  map: Fig. 2 spatial patterns; Fig. 5 regression maps; Fig. 6 palaeo variability
+  workflow: none
+  evidence_summary: Figs. 3-4 fuse observations, simulations and projections in comparable formats
+  figure_text_relation: self-contained multi-panel captions declaring methods and thresholds
+gap_and_agenda:
+  how_gaps_are_derived: residual unknowns collected through preceding mechanism sections, then enumerated
+  types_of_gaps: [process-understanding (mixing, convection), predictive (time of emergence), collaborative (community efforts)]
+  evidence_required_before_gap_claim: demonstrated inter-model spread plus identified bias sources
+  future_agenda_structure: prospect list keyed to quantification, detection, high-resolution modelling
+  specificity_of_future_questions: targets named; few falsifiable hypotheses
+quality_features:
+  major_strengths:
+    - update-review discipline makes progress measurable against a dated baseline
+    - disagreement explained physically instead of averaged away
+    - timeline figure converts literature into visible trajectory
+  transferable_patterns:
+    - open with quantified impacts, convert to societal need, then roadmap the synthesis
+    - track consensus emergence across model generations as the review's spine
+    - attach every projection claim to ensemble size and percentage
+  unique_but_nontransferable_features: ENSO's single-region clarity permits mechanism-first ordering
+  risks_of_imitation: dense model acronyms assume expert readership
+anti_patterns:
+  weak_patterns_to_avoid:
+    - reporting inter-model spread without diagnosing its sources
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2)", "BODY_SLICE_1@17% (Fig.1 caption, feedbacks)", "BODY_SLICE_2@33% (model votes)", "BODY_SLICE_3@50% (internal variability, cold tongue bias)", "BODY_SLICE_4@67% (Fig.7 ToE, outlook)", "BODY_SLICE_5@83% (annotated references)", "FIGURE CAPTIONS slice"]
+  source_sections: [Introduction, ENSO in observations, Projected ENSO changes, Figure captions]
+  confidence: high

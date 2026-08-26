@@ -1,0 +1,128 @@
+document_id: B032
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of compound heat–moisture extremes and crop impacts)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2022
+  doi: 10.1038/s43017-022-00368-8
+  review_type: conceptual
+overall_review_design:
+  review_objective: Synthesize how interacting heat and moisture extremes affect crop yields, and derive adaptation strategies.
+  review_scope: compound extremes within a single growing season at a given location; global crop production with yield emphasis
+  review_mode: concept-framing narrative — proposes a typology then organizes evidence under it
+  article_architecture: [Abstract, Introduction, Compound extreme and crop impact dynamics, Historical trends, Future projections, Implications for adaptation, Summary and future]
+  organizing_principle: mixed — conceptual typology first (three compounding modes), then temporal (historical→future), then response
+  number_of_major_sections: 6
+introduction_pattern:
+  opening_move: system-stakes framing (crops underpin food system) immediately quantified (climate drives up to 50% of yield variability)
+  problem_contextualization: complexity demonstrated by chained examples of interacting physics and physiology
+  fragmentation_statement: "myriad complex interactions ... pose a challenge to understanding" — complexity-as-deficit move
+  gap_or_need_statement: new mechanistic understanding "raises new scientific questions and presents challenges" for adaptation
+  review_objective_statement: "In this Review, we synthesize and interpret advances in the understanding" of compound-extreme impacts
+  scope_definition: explicit spatiotemporal bounds stated ("single growing season at a given location"), plus biophysical emphasis caveat
+  contribution_statement: proposes a three-mode framework of compounding as the review's organizing contribution
+  roadmap_pattern: present — "We first propose... We then assess... With this conceptual and prognostic basis, we identify..."
+section_architecture:
+  section_order: [Introduction, Compound extreme and crop impact dynamics, Historical trends, Future projections, Implications for adaptation, Summary and future]
+  dominant_logic: concept → historical evidence → projection → adaptation implication
+  chronological_logic: partial (historical vs future sections)
+  thematic_logic: central (three interaction modes structure the core)
+  mechanism_logic: central (physiological, land–atmosphere and circulation mechanisms)
+  scale_logic: none
+  region_logic: partial (cropping-region contrasts inside mechanisms)
+  method_logic: none
+  transition_between_sections:
+    - framework introduced in Introduction then reused as section scaffolding (Fig. 1 modes = subsection names)
+    - pivot sentence from understanding to action ("With this conceptual and prognostic basis...")
+argumentation:
+  dominant_argument_pattern: mode-statement → physical/physiological mechanism → event exemplar with yield numbers
+  claim_evidence_relation: mechanism claims supported by cited experiments; impact claims anchored to dated case events with % losses
+  comparison_pattern: individual-vs-compound stress contrast used to justify the whole framing
+  contradiction_handling: emerging-consensus hedge ("consensus is emerging on the future... [but] projections are in their infancy")
+  boundary_condition_handling: humid-heat case flagged where the heat–VPD link weakens — conditions on the framework named
+  limitation_handling: model and knowledge-production limitations given their own paragraph near the end
+  gap_identification_pattern: asymmetry gap — research skewed to industrialized countries and univariate risks
+synthesis:
+  synthesis_unit: theme (compounding mode); events used as anchors not units
+  study_by_study_ratio: low-medium
+  multi_source_synthesis_pattern:
+    - typology synthesis (three modes subsume heterogeneous processes)
+    - event-cascade synthesis (2003 Europe, 2010 Russia, 2012 US, 2015-16 Africa, 2016 France)
+    - correlation-metric synthesis (temperature–precipitation correlation change)
+  consensus_pattern: calibrated language ("Future warming is, by contrast, projected with high confidence")
+  controversy_pattern: uncertainty located in specific processes (aridity, land–atmosphere interactions), not the whole field
+  reconciliation_pattern: competing yield-direction possibilities held together as exacerbating-or-compensating outcomes
+  evidence_weighting_pattern: multi-model/projection results weighted above single events for trend claims
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - define-term-inline ("compound extremes (multiple, potentially interacting hazards...)")
+    - quantify-stakes-with-number
+    - example-event-with-yield-loss
+    - process-chain explanation
+  typical_move_sequences:
+    - ["mode claim", "mechanism chain", "citation cluster", "regional qualifier"]
+    - ["event anchor", "quantified loss", "generalization to class"]
+  topic_sentence_pattern: paragraph opens with the mode or factor under discussion
+  synthesis_sentence_pattern: multiple stressors joined via "interactions among/amplify" constructions
+  contrast_sentence_pattern: "However," reversals for exceptions (humid-heat weakening the VPD link)
+  limitation_sentence_pattern: disentangling difficulty stated as methodological challenge for large scales
+  transition_pattern: framework nouns repeated across section boundaries as connective tissue
+  paragraph_length_profile: median ~620 chars (q25 461, q75 829); many shorter evidence paragraphs
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 2, p75: 6}
+  citation_cluster_frequency: moderate-high on evidential sentences; conceptual passages run citation-light
+  single_vs_cluster: clusters for established processes; single citations for specific events/models
+  seminal_recent_balance: recent5y share ~29%; foundational stats papers paired with current projections
+  citation_location: [sentence-final cluster, mid-sentence]
+  citation_support_type: [empirical event study, model projection, physiological experiment, meta-analysis]
+  method_citation_pattern: metrics (e.g., likelihood multiplication factor) introduced with citations at first use
+  gap_citation_pattern: gap tied to authoritative assessments (IPCC-style) and to prior-review limitations
+geography_reasoning:
+  whether_geography_is_central: partially — cropping regions and climate belts organize where impacts occur
+  spatial_scale_usage: moves field→region→point-event; regional scale invoked for land–atmosphere coupling strength
+  regional_differentiation_usage: transition zones between energy-limited and water-limited environments explain hot-spot geography
+  spatial_heterogeneity_usage: co-occurrence probability mapped across regions (China factors of 5–10)
+  cross_scale_usage: leaf/canopy physiology linked to circulation-scale co-variability
+  place_context_usage: breadbasket regions function as recurring evidence anchors
+  human_environment_usage: adaptation, food security and indigenous-knowledge systems brought into scope at the end
+  flow_network_usage: none
+  spatial_dependence_usage: temperature–precipitation dependence used as a spatially variable statistic
+  conditions_triggering_geographic_explanation:
+    - when coupling strength differs by environment (energy- vs water-limited)
+    - when impacts concentrate in named cropping regions
+    - when data availability differs geographically (research-skew argument)
+figure_strategy:
+  total_figures: 5
+  figure_roles: [conceptual framework diagram, observation+projection composite, response-surface chart, event-impact map, outlook matrix]
+  conceptual_framework: Fig. 1 three-mode compounding diagram mirrored by subsection headings
+  taxonomy: none
+  mechanism: Fig. 1 encodes process interactions with labeled boxes/arrows
+  timeline: none
+  map: Fig. 4 maps major compound events to yield losses
+  workflow: none
+  evidence_summary: Figs. 2-3 pool model ensembles and response surfaces
+  figure_text_relation: framework figure is referenced whenever a mode is invoked; panels lettered a-f in text order
+gap_and_agenda:
+  how_gaps_are_derived: from limits of univariate paradigms and geographic skew of the evidence base
+  types_of_gaps: [paradigm gap (univariate→compound), model-capability gap, geographic-coverage gap, science–practice divide]
+  evidence_required_before_gap_claim: named missing regions/knowledge systems and immature model capability
+  future_agenda_structure: adaptation avenues arranged in a matrix (scale × timescale × avenue) as Table 1
+  specificity_of_future_questions: strategy-level actions rather than hypotheses; explicit research-paradigm critique
+quality_features:
+  major_strengths:
+    - proposed typology doubles as navigation device for reader
+    - scope caveats stated upfront (biophysical focus acknowledged)
+    - event evidence always carries quantified losses
+  transferable_patterns:
+    - define-your-own-typology-then-fill-it architecture
+    - inline definition move for the key construct
+    - adaptation-matrix table converting findings into options
+  unique_but_nontransferable_features: crop-physiology terminology and VPD machinery
+  risks_of_imitation: typology must genuinely organize the literature; forced typologies read as decoration
+anti_patterns:
+  weak_patterns_to_avoid:
+    - listing extreme events without extracting a transferable mechanism or pattern
+source_provenance:
+  source_pages: ["pp. 872-889 (journal); opening pp. 873, 875; slice @17% p. 876; slice @67% p. 884"]
+  source_sections: [Introduction, Compound extreme and crop impact dynamics, Heat–moisture interactions, Historical trends, Future projections, Implications for adaptation, Table 1, figure captions]
+  confidence: high

@@ -1,0 +1,9 @@
+{
+  "draft": "benchmark_corpus\\quality-rubric.md",
+  "n": 8,
+  "distinct_draft_ngrams": 556,
+  "total_shared_with_benchmark": 0,
+  "per_document": {},
+  "policy": "Any document with >=12 shared 8-grams requires rewriting (match logic, never wording).",
+  "status": "PASS"
+}

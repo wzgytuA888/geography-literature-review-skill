@@ -1,0 +1,137 @@
+document_id: B025
+bibliographic:
+  title: Blue carbon as a natural climate solution
+  authors: [UNKNOWN]           # affiliation list (Deakin, UQ) captured; names not in digest
+  journal: Nature Reviews Earth & Environment
+  year: 2021                   # page footer "December 2021 | volume 2"
+  doi: 10.1038/s43017-021-00224-1   # inferred from filename s43017-021-00224-1.pdf
+  review_type: thematic-mixed  # narrative synthesis that also performs its own quantitative compilation
+overall_review_design:
+  review_objective: >-
+    Assess global potential of blue carbon ecosystems for mitigation and adaptation,
+    quantifying stocks, restoration feasibility and policy integration pathways.
+  review_scope: >-
+    Three ecosystem types (mangroves, tidal marshes, seagrasses); global extent, carbon
+    stocks, loss rates, restoration constraints, carbon-market and NDC mechanisms, road map.
+  review_mode: >-
+    Review-as-data-analysis: authors extract literature data themselves, derive interval
+    bounds and new aggregate estimates, and disclose the procedure.
+  article_architecture:
+    - Introduction (urgency, flagship case, win-win framing, objective enumeration)
+    - Global blue carbon stocks       # per-ecosystem extent and pools
+    - Restoration feasibility and constraints per ecosystem type
+    - Role in national/international climate targets (NDCs)
+    - Practical aspects of restoration   # cost, markets, methods
+    - Road map for accounting frameworks and conservation strategy
+  organizing_principle: mixed — thematic by ecosystem within a policy-pipeline logic (stock -> feasibility -> instrument -> roadmap)
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: urgency statement plus flagship case study with equivalence arithmetic (restored mangroves vs national emissions)
+  problem_contextualization: half of global extent lost; only ~1.5% protected — scarcity converted to opportunity
+  fragmentation_statement: implicit — mapping and stock-estimate uncertainty framed as the barrier to policy uptake
+  gap_or_need_statement: robust extent/stock information declared prerequisite for mitigation accounting
+  review_objective_statement: explicit four-move enumeration ("Global estimates ... are described, and the main constraints ... are outlined")
+  scope_definition: focus on large-scale restoration announced; co-benefits included by design
+  contribution_statement: new global bounds (~36-185 million ha; ~8,970-32,650 Tg C) derived within the review
+  roadmap_pattern: variant — enumerated objective sentences without "we begin/we end" scaffolding
+section_architecture:
+  section_order: [Introduction, Global blue carbon stocks, Restoration constraints and feasibility, Policy instruments, Practical aspects, Road map]
+  dominant_logic: quantify what exists, test what is achievable, match to policy instruments, prescribe process
+  chronological_logic: partial      # dual-stream history figure; restoration trajectories over time
+  thematic_logic: central           # one ecosystem per comparison slot throughout
+  mechanism_logic: partial          # cycling and turnover-time mechanisms support stock claims
+  scale_logic: central              # site case -> country totals -> global bounds
+  region_logic: partial             # Indo-Pacific vs Americas hotspots discussed within sections
+  method_logic: partial             # estimation protocol disclosed in text plus supplements
+  transition_between_sections:
+    - stock-to-feasibility bridge ("Restoration of BCEs at large scale is potentially feasible...")
+    - biophysical-to-socio-economic constraint layering
+    - closing pivot to procedural road map
+argumentation:
+  dominant_argument_pattern: bound-based argument — give conservative-to-generous intervals rather than point values, then argue decisions survive the range
+  claim_evidence_relation: every headline quantity carries an interval and its derivation caveat
+  comparison_pattern: three-way ecosystem comparison (mangrove vs marsh vs seagrass) repeated across stocks, losses, restorability
+  contradiction_handling: estimate spread attributed to unmapped regions and missing error propagation in source studies
+  boundary_condition_handling: socio-economic filters applied after biophysical suitability (only 5.5-34.2% remains restorable in SE Asia example)
+  limitation_handling: self-audit of the review's own data extraction placed immediately after first global numbers
+  gap_identification_pattern: mapping-gap identification — regions absent from current maps become named research targets
+synthesis:
+  synthesis_unit: theme             # ecosystem-by-theme matrix cells
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - pooled stock estimates assembled into upper/lower interval bounds
+    - cross-ecosystem comparative panels normalizing different metrics
+    - science-milestone timeline fused with policy-milestone timeline
+  consensus_pattern: multi-source agreement phrasing where datasets align on extent
+  controversy_pattern: wide ranges presented openly as uncertainty, not as dispute
+  reconciliation_pattern: ranges decomposed by which ecosystem's distribution is poorly known
+  evidence_weighting_pattern: best-mapped ecosystem (mangroves) used as anchor; weaker evidence flagged per pool
+paragraph_rhetoric:
+  common_rhetorical_moves: [equivalence arithmetic, interval quotation, constraint layering, benefit enumeration]
+  typical_move_sequences:
+    - [global number, caveat, regional exemplar]
+    - [feasibility claim, socio-economic qualifier, method note]
+  topic_sentence_pattern: ecosystem-naming or question-naming sentence opens each block
+  synthesis_sentence_pattern: aggregation clause deriving totals from compiled parts
+  contrast_sentence_pattern: protection-vs-restoration cost-effectiveness contrasts
+  limitation_sentence_pattern: first-person data caveats ("one major caveat associated with these global estimates...")
+  transition_pattern: functional connectors ("As such,", "Hence,") linking benefit chains
+  paragraph_length_profile: q25=427, median=495, p75=749 chars (index stats)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 3}   # index block values
+  citation_cluster_frequency: moderate-high at stock and loss claims
+  single_vs_cluster: singles for policy events and flagship projects; clusters for inventories
+  seminal_recent_balance: recent5y share 0.060; field-defining older papers anchor concepts
+  citation_location: [sentence-final clusters, timeline annotations, figure data credits]
+  citation_support_type: [inventory estimate, restoration outcome, policy milestone, market standard]
+  method_citation_pattern: supplementary methods carry estimation protocol; standards cited by name (VM0033)
+  gap_citation_pattern: unmapped-region gaps asserted against current maps
+geography_reasoning:
+  whether_geography_is_central: yes-operational — global distribution maps and country-level accounting are the decision surface
+  spatial_scale_usage: site restoration project -> country stock -> global potential chain
+  regional_differentiation_usage: tropical/subtropical zoning; Indo-Pacific concentration explains stock patterns
+  spatial_heterogeneity_usage: country-level choropleths expose between-country inequality in stocks
+  cross_scale_usage: local case outcomes scaled to national NDC contributions
+  place_context_usage: Can Gio/Mekong restoration serves as existence proof at introduction
+  human_environment_usage: livelihoods, land rights and food security treated as binding constraints on feasibility
+  flow_network_usage: carbon cycling diagram links terrestrial runoff, ocean and burial pathways
+  spatial_dependence_usage: depositional-setting logic ties carbon retention to coastal position
+  conditions_triggering_geographic_explanation:
+    - when mapped extent diverges from potential extent by region
+    - when socio-economic viability differs across jurisdictions
+    - when accounting obligations attach to national territories
+figure_strategy:
+  total_figures: 6
+  figure_roles: [cycling-plus-dual-timeline hybrid, co-benefits wheel, global distribution maps, country-stock bound maps, cross-ecosystem mitigation bar panels, road-map flowchart]
+  conceptual_framework: Fig. 6 road map operationalizes the whole review as a procedure
+  taxonomy: three-ecosystem typology carried consistently through every panel set
+  mechanism: Fig. 1a renders accumulation/degradation processes before quantities appear
+  timeline: Fig. 1b interleaves science milestones with policy milestones on one axis
+  map: Figs. 3-4 map extent and stocks including upper/lower bound versions
+  workflow: Fig. 6 sequences data-to-accounting-to-conservation steps
+  evidence_summary: Fig. 5 condenses loss rate, stocks, avoidable fluxes and mitigation potential into one comparison
+  figure_text_relation: captions name data sources and assumptions; intervals repeated in text
+gap_and_agenda:
+  how_gaps_are_derived: gaps read off map-data shortfalls and unanswered restoration-trajectory questions
+  types_of_gaps: [mapping/extent, stock-measurement error propagation, restoration-trajectory data, market-design]
+  evidence_required_before_gap_claim: shown absence of regions from current maps and missing time-series trajectories
+  future_agenda_structure: road-map figure plus imperative targets (improve mapping, standardize protocols, demonstration projects)
+  specificity_of_future_questions: one fundamental question posed explicitly (carbon accumulation trajectory since restoration)
+quality_features:
+  major_strengths:
+    - interval honesty converts uncertain science into usable policy bounds
+    - dual timeline shows co-evolution of knowledge and governance
+    - agenda rendered as executable flowchart, not prose wish-list
+  transferable_patterns:
+    - disclose your own synthesis dataset construction and its limits up front
+    - layer biophysical then socio-economic constraints when assessing feasibility
+    - fuse science-history and policy-history timelines to explain the present agenda
+  unique_but_nontransferable_features: carbon-market specificity (verified standards, NDC mechanics)
+  risks_of_imitation: interval reporting requires genuine recompilation capacity, not decoration
+anti_patterns:
+  weak_patterns_to_avoid:
+    - quoting single-point global totals without interval or provenance disclosure
+source_provenance:
+  source_pages: ["digest OPENING (p.1-2 incl. five-bullet Key points)", "BODY_SLICE_1@17% (Fig.1 caption, timeline)", "BODY_SLICE_2@33% (SE Asia constraints, seagrass)", "BODY_SLICE_3@50% (NDCs, practical aspects)", "BODY_SLICE_4@67% (protocols, other considerations)", "FIGURE CAPTIONS slice"]
+  source_sections: [Introduction, Global blue carbon stocks, Restoration feasibility, Practical aspects, Figure captions]
+  confidence: high

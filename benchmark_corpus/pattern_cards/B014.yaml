@@ -1,0 +1,132 @@
+document_id: B014
+bibliographic:
+  title: "Global lake responses to climate change"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2020
+  doi: 10.1038/s43017-020-0067-5
+  review_type: narrative
+overall_review_design:
+  review_objective: >-
+    Synthesize how climate change alters lake physical, chemical and ecological
+    responses across variables.
+  review_scope: global lakes; ice phenology, surface temperature, evaporation/storage, ecosystem consequences
+  review_mode: variable-by-variable thematic synthesis with mechanistic drivers
+  article_architecture:   # from surviving [H1] markers; full heading list not extracted
+    - Introduction / framing (not preserved)
+    - Ice phenology section (partial)
+    - "[H1] Warming lake surface waters"
+    - Evaporation and precipitation regionality (DDWW discussion)
+    - "[H1] Changing lake water storage"
+    - Lake ecosystem consequences
+    - Highlighted references end-matter
+  organizing_principle: thematic (one response variable per section) with mechanistic driver logic inside each
+  number_of_major_sections: UNKNOWN (approximately 5-6)
+introduction_pattern:
+  opening_move: UNKNOWN (intro not preserved in digest)
+  problem_contextualization: UNKNOWN
+  fragmentation_statement: UNKNOWN
+  gap_or_need_statement: UNKNOWN
+  review_objective_statement: UNKNOWN
+  scope_definition: UNKNOWN
+  contribution_statement: UNKNOWN
+  roadmap_pattern: UNKNOWN
+section_architecture:
+  section_order: [Ice phenology, Warming lake surface waters, Evaporation/precipitation, Changing lake water storage, Ecosystem consequences]
+  dominant_logic: response-variable themes
+  chronological_logic: none
+  thematic_logic: central
+  mechanism_logic: partial
+  scale_logic: partial
+  region_logic: partial
+  method_logic: none
+  transition_between_sections:
+    - 'each theme opens with its controlling mechanism ("influenced by climatic and in-lake drivers ... energy budget")'
+argumentation:
+  dominant_argument_pattern: expected-response-from-theory then observed exceptions with named amplifiers/dampeners
+  claim_evidence_relation: mechanism statement -> multi-citation evidence -> lake-specific quantified instance
+  comparison_pattern: paradigm testing; "In contrast to the DDWW paradigm" regional expectation checks
+  contradiction_handling: anomalies explained by secondary drivers rather than dismissed
+  boundary_condition_handling: '"Lake-specific factors" clause bounds generality of thermal responses'
+  limitation_handling: UNKNOWN
+  gap_identification_pattern: forecast-confidence limits stated where oscillations interact non-linearly
+synthesis:
+  synthesis_unit: proposition (response variable)
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - driver-inventory paragraphs listing interacting controls before evidence
+    - quantified paired exemplars from single lakes used as convergent instances
+  consensus_pattern: trends asserted with citation clusters after mechanism setup
+  controversy_pattern: paradigms (e.g. dry-gets-drier/wet-gets-wetter) evaluated against lake evidence
+  reconciliation_pattern: opposing regional trends reconciled by complementary relationship physics
+  evidence_weighting_pattern: satellite-era global analyses weighted as first-order evidence (per highlighted-reference significance notes)
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - mechanism-first topic sentences
+    - '"For example," exemplification'
+    - '"However," anomaly pivots'
+  typical_move_sequences:
+    - [driver inventory, expected direction, observed exception, secondary-driver explanation]
+  topic_sentence_pattern: variable-definition opener anchoring the paragraph
+  synthesis_sentence_pattern: aggregation of multiple stressor effects into ecosystem-level statements
+  contrast_sentence_pattern: '"In contrast to the DDWW paradigm ..." paradigm-contrast openers'
+  limitation_sentence_pattern: non-linear interaction clauses limiting predictability
+  transition_pattern: theme-to-theme via shared drivers
+  paragraph_length_profile: long merged blocks in extraction
+citation_behavior:
+  citations_per_paragraph: {p25: UNKNOWN, median: UNKNOWN, p75: UNKNOWN}   # stats null in digest
+  citation_cluster_frequency: high in surviving text (2-4 refs per claim)
+  single_vs_cluster: clusters dominate
+  seminal_recent_balance: UNKNOWN
+  citation_location: [clause-final numeric clusters]
+  citation_support_type: [trend observation, process attribution, regional analysis]
+  method_citation_pattern: dataset/product citations present in reference list
+  gap_citation_pattern: UNKNOWN
+geography_reasoning:
+  whether_geography_is_central: yes
+  spatial_scale_usage: global syntheses down to individual named lakes
+  regional_differentiation_usage: wet vs dry regions differentiated for precipitation/evaporation regimes
+  spatial_heterogeneity_usage: '"significant spatial heterogeneity" explicitly invoked when uniform trends fail'
+  cross_scale_usage: interannual oscillations (ENSO, NAO) to centennial ice records
+  place_context_usage: named lakes (Taihu, Koeylioenjaervi, Aral, Victoria) as quantified instances
+  human_environment_usage: human activities named as compounding stressors alongside climate
+  flow_network_usage: none
+  spatial_dependence_usage: air-water interface exchange ties lake response to regional climate setting
+  conditions_triggering_geographic_explanation:
+    - "when uniform warming expectations break down regionally"
+    - "when water balance flips sign between humid and dry zones"
+figure_strategy:
+  total_figures: UNKNOWN   # figure numbering not preserved
+  figure_roles: [UNKNOWN]
+  conceptual_framework: referenced (energy-budget schematic mentioned as Fig. 3)
+  taxonomy: no
+  mechanism: yes (driver-feedback schematics referenced)
+  timeline: no
+  map: UNKNOWN
+  workflow: no
+  evidence_summary: UNKNOWN
+  figure_text_relation: figures referenced inline as mechanism anchors
+gap_and_agenda:
+  how_gaps_are_derived: UNKNOWN
+  types_of_gaps: [forecast confidence under interacting oscillations, attribution amid multiple stressors]
+  evidence_required_before_gap_claim: UNKNOWN
+  future_agenda_structure: UNKNOWN
+  specificity_of_future_questions: UNKNOWN
+quality_features:
+  major_strengths:
+    - terminal "Highlighted references" with numbered key papers plus one-line Significance statements
+    - glossary-tagged terms ([G]) woven through text
+  transferable_patterns:
+    - expected-vs-observed contrast template per response variable
+    - highlighted/key-reference apparatus signalling must-read sources
+  unique_but_nontransferable_features:
+    - accepted-manuscript formatting differs from typeset version
+  risks_of_imitation:
+    - variable-by-variable structure can fragment cross-variable interactions
+anti_patterns:
+  weak_patterns_to_avoid:
+    - asserting monotonic regional trends without acknowledging oscillation-driven non-linearity
+source_provenance:
+  source_pages: ["digest WARNING: poor text extraction quality", SLICE_1@17%, SLICE_2@33%, SLICE_3@50%, REFERENCES_HEAD_SAMPLE + Highlighted references block]
+  source_sections: ["[H1] Warming lake surface waters", "[H1] Changing lake water storage", DDWW discussion, Highlighted references]
+  confidence: low

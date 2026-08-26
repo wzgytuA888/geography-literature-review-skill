@@ -1,0 +1,128 @@
+document_id: B038
+bibliographic:
+  title: UNKNOWN (metadata absent; digest indicates review of climate change impacts on crop yield)
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2023
+  doi: 10.1038/s43017-023-00491-0
+  review_type: thematic-mixed
+overall_review_design:
+  review_objective: Attribute yield change to individual and interacting climate drivers and assess implications for production and adaptation.
+  review_scope: major cereals; CO2, temperature, water drivers; experimental + model evidence; global production implications
+  review_mode: mechanism-to-impact narrative with meta-analytic pooling of experiments and model intercomparison results
+  article_architecture: [Abstract, Introduction, Driving mechanisms of yield change, Yield response to climate drivers, Relative yield impacts, Methods to study climate change impacts on crop yield, Implications for global production, Summary and future]
+  organizing_principle: mechanistic — mechanisms → single-driver responses → interactions → relative impacts → methods audit → implications
+  number_of_major_sections: 7
+introduction_pattern:
+  opening_move: demand-side framing (food demand +30–62% by 2050) constraining the solution space
+  problem_contextualization: intensification-vs-expansion trade-off narrows to yield growth as the only acceptable lever
+  fragmentation_statement: interaction complexity stated ("interactions ... are specific to the crop, cultivar, production system and region")
+  gap_or_need_statement: attribution declared indispensable for designing region-specific adaptation strategies
+  review_objective_statement: embedded in attribution framing rather than a single "In this Review" chain in digest capture
+  scope_definition: crop set, driver set and comparison basis (relative yield change) specified via figures
+  contribution_statement: comprehensive cross-region cross-crop comparison positioned as policy input (Paris Agreement context)
+  roadmap_pattern: variant — heading sequence carries the arc; intro ends on need/contribution instead of numbered plan
+section_architecture:
+  section_order: [Introduction, Driving mechanisms of yield change, Yield response to climate drivers, Relative yield impacts, Methods to study climate change impacts on crop yield, Implications for global production, Summary and future]
+  dominant_logic: mechanism → dose-response → comparative impact → methodological reflection → application
+  chronological_logic: none
+  thematic_logic: central (drivers as chapters)
+  mechanism_logic: central (photosynthesis, phenology, stomatal pathways)
+  scale_logic: partial (plot experiments vs regional projections)
+  region_logic: partial (tropical vs temperate contrast is pivotal)
+  method_logic: central — dedicated methods section appraises platforms honestly
+  transition_between_sections:
+    - individual-drivers then co-occurring-drivers escalation within responses section
+    - methods section inserted before implications to certify the evidence just summarized
+argumentation:
+  dominant_argument_pattern: physiological mechanism → directional yield consequence → quantified experimental range
+  claim_evidence_relation: response magnitudes tied to cumulative sample sizes (n = 583 wheat) and % changes versus control
+  comparison_pattern: crop-vs-crop sensitivity ranking; tropical-vs-temperate projection contrast
+  contradiction_handling: benefit-vs-damage duality held per driver ("warmer temperature can lead to increased or decreased yield")
+  boundary_condition_handling: ambient-temperature dependence of warming response treated as explicit moderator
+  limitation_handling: sample-size asymmetries flagged as blocking fair comparison among crops
+  gap_identification_pattern: comparability gap — uneven experiment coverage prevents generalizable adaptation ranking
+synthesis:
+  synthesis_unit: driver-response function per crop; experiments pooled as distributions
+  study_by_study_ratio: low-medium
+  multi_source_synthesis_pattern:
+    - meta-analytic pooling across treatments displayed as relative-yield panels
+    - interaction synthesis (co-occurring drivers modify single-driver signs)
+    - model-platform appraisal synthesis (advantages/disadvantages table logic)
+  consensus_pattern: robust directions stated where experiment counts are large; small-n crops hedged
+  controversy_pattern: aridity/projection debates referenced through model-structure choices
+  reconciliation_pattern: opposing outcomes reconciled by phenological stage and management context
+  evidence_weighting_pattern: field experiments > pot studies noted implicitly via n reporting; multi-model ensembles for futures
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - mechanism-first exposition with causal chains
+    - quantify-with-sample-size
+    - dual-outcome statement ("can lead to increased or decreased")
+    - stage-specificity qualifier (anthesis, grain filling)
+  typical_move_sequences:
+    - ["driver mechanism", "yield pathway", "citation cluster", "crop contrast"]
+    - ["projection claim", "regional split", "significance caveat"]
+  topic_sentence_pattern: driver or process named in first sentence
+  synthesis_sentence_pattern: convergent-evidence sentence listing observations, catchment-style analyses and models
+  contrast_sentence_pattern: C3-vs-C4 and tropical-vs-temperate contrasts recur
+  limitation_sentence_pattern: "constraining fair comparison among those crops" honesty markers
+  transition_pattern: driver vocabulary carried into response and projection sections
+  paragraph_length_profile: median ~699 chars (q25 492, q75 911)
+citation_behavior:
+  citations_per_paragraph: {p25: 1, median: 3, p75: 5}
+  citation_cluster_frequency: moderate-high on mechanism claims
+  single_vs_cluster: clusters for mechanisms; singles for cultivar/site specifics
+  seminal_recent_balance: recent5y share ~25%; canonical experiments (FACE) retained alongside new results
+  citation_location: [sentence-final cluster, mid-sentence]
+  citation_support_type: [field experiment, FACE study, process-model assessment, meta-analysis]
+  method_citation_pattern: dedicated methods section cites platform inventories and model documentation
+  gap_citation_pattern: gaps pointed at missing countries/crops by count (five countries vs >60)
+geography_reasoning:
+  whether_geography_is_central: yes — latitude-dependent impact asymmetry is a headline finding type
+  spatial_scale_usage: plot→region→globe progression explicit; high-latitude gains vs tropical losses
+  regional_differentiation_usage: tropics/temperate split explained mechanistically (crops near optimal thresholds)
+  spatial_heterogeneity_usage: heterogeneity in sensitivity drives the adaptation-strategy regionalization argument
+  cross_scale_usage: leaf-level physiology scaled to global production and market shocks
+  place_context_usage: southern Europe winter wheat example shows geographically contingent benefits
+  human_environment_usage: food demand, price shocks and political instability extend to human systems
+  flow_network_usage: market/trade transmission of synchronous shocks touched on
+  spatial_dependence_usage: growing-season length and frost-date geography condition benefits
+  conditions_triggering_geographic_explanation:
+    - when crops approach biological temperature optima that vary by zone
+    - when adaptation efficacy depends on local water and sociocultural constraints
+    - when production shocks propagate through geographically concentrated exporters
+figure_strategy:
+  total_figures: 4
+  figure_roles: [experimental-response panels, tropical-temperate projection densities, regional-crop projection matrix, adaptation-effect chart]
+  conceptual_framework: none standalone — driver taxonomy carried by section structure
+  taxonomy: driver × crop classification implicit in Fig. 1 panels
+  mechanism: Fig. 1 links dose (CO2/T/water) to relative yield by crop
+  timeline: none
+  map: none prominent
+  workflow: experimental-platform schematic (tunnels, rainout shelters) illustrates methods section
+  evidence_summary: Figs. 2-4 pool projections across crops/regions/adaptation options
+  figure_text_relation: every panel reference accompanied by n or scenario identifiers in text
+gap_and_agenda:
+  how_gaps_are_derived: from incomparable evidence bases (uneven n across crops/regions) and untested adaptation portfolios
+  types_of_gaps: [comparability gap, geographic-coverage gap, adaptation-evaluation gap, implementation-constraint gap]
+  evidence_required_before_gap_claim: explicit counts showing coverage imbalance (n values, country tallies)
+  future_agenda_structure: needs chain — comprehensive comparison, integrated crop-socioeconomic modeling, region-specific strategy design
+  specificity_of_future_questions: mid-level; names integration targets rather than falsifiable hypotheses
+quality_features:
+  major_strengths:
+    - sample-size transparency converts a narrative review into an auditable one
+    - methods-audit section certifies evidence quality before implications drawn
+    - dual-outcome honesty avoids overclaiming for any single driver
+  transferable_patterns:
+    - report-n-with-every-pooled-comparison pattern
+    - insert-methods-before-implications architecture
+    - mechanism-moderator-outcome template (ambient range moderates warming effect)
+  unique_but_nontransferable_features: crop physiology detail (Rubisco, phenology stages)
+  risks_of_imitation: meta-analytic figures require actual extraction effort; decorative pooling misleads
+anti_patterns:
+  weak_patterns_to_avoid:
+    - comparing sensitivities across groups with undisclosed or wildly unequal sample sizes
+source_provenance:
+  source_pages: ["pp. 831-846 (journal); opening p. 832; slices @17/33/50/67%"]
+  source_sections: [Introduction, Driving mechanisms of yield change, Water availability, High temperatures heat and frost stress, Yield response to climate drivers, Methods to study climate change impacts on crop yield, Implications for global production, figure captions]
+  confidence: medium

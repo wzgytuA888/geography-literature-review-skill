@@ -1,0 +1,25 @@
+flowchart TB
+    IN["High-quality Review Benchmark Corpus<br/>(60 PDFs, local)"] --> EX["extract_documents.py<br/>manifest.jsonl + cached fulltext (git-ignored)"]
+    EX --> IDX["benchmark_index.py<br/>headings · paragraph blocks · citation stats · figures"]
+    IDX --> DIG["prepare_mining_digests.py<br/>.cache/digests/B###.txt"]
+    DIG --> MINERS
+
+    subgraph MINERS["Compile-time Pattern Miners (parallel batches)"]
+        M1["Review Pattern Miner<br/>architecture · rhetoric"]
+        M2["Citation Pattern Miner<br/>density · clusters · placement"]
+        M3["Geography Reasoning Miner<br/>condition→interpretation rules"]
+        M4["Figure Pattern Miner<br/>roles · grammar · placement"]
+    end
+    MINERS --> CARDS["pattern_cards/B001–B060.yaml<br/>(form only, UNKNOWN allowed)"]
+    MINERS --> FIND[".cache/mining/batch-N-findings.md"]
+
+    CARDS --> CONS["Benchmark Consolidator<br/>frequency tiers · anti-dominance check"]
+    FIND --> CONS
+    CONS --> OUTFILES["review-architecture.md · section-patterns.md<br/>paragraph-rhetoric.md · synthesis-patterns.md<br/>argument-patterns.md · citation-patterns.md<br/>geography-reasoning-patterns.md<br/>gap/future-agenda-patterns.md · figure-patterns.md<br/>quality-rubric.md · anti-patterns.md"]
+    CONS --> ARCH["archetypes/*.md<br/>narrative · conceptual · systematic · scoping<br/>methodological · geography-thematic"]
+    OUTFILES --> SKILL["Distilled Geography Review Method Skill<br/>(HOW TO REVIEW)"]
+    ARCH --> SKILL
+    NEW["new_benchmark_reviews/"] -. "incremental fold-in<br/>(support/extend/contradict)" .-> CONS
+
+    style SKILL fill:#e8f0e8
+    style MINERS fill:#f4efe0

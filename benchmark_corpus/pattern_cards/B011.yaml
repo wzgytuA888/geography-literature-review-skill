@@ -1,0 +1,152 @@
+document_id: B011
+bibliographic:
+  title: "Measuring, modelling and projecting coastal land subsidence"
+  authors: [UNKNOWN]
+  journal: Nature Reviews Earth & Environment
+  year: 2021
+  doi: UNKNOWN
+  review_type: narrative
+overall_review_design:
+  review_objective: >-
+    Synthesize drivers, measurement techniques, models and projections of coastal
+    land subsidence to inform flood-resilience planning.
+  review_scope: >-
+    Natural and anthropogenic subsidence processes in coastal zones; excludes slow
+    thermal subsidence by explicit rate-based de-scoping.
+  review_mode: comprehensive topical synthesis with method assessment
+  article_architecture:
+    - Introduction (unheaded framing)
+    - Drivers of coastal subsidence (Natural processes / Anthropogenic processes run-in subsections)
+    - Measuring coastal subsidence (incl. Challenges run-in subsection)
+    - Modelling subsidence (incl. Challenges)
+    - Projections and examples from coastal cities / socio-economic consequences
+    - Outlook (conclusion)
+    - Box 1 (InSAR advances); Key points box
+  organizing_principle: "mixed(mechanistic process pipeline: causes -> measurement -> models -> projections -> impacts)"
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: global-change framing (sea-level rise plus coastal population concentration)
+  problem_contextualization: >-
+    Quantified hazard escalation; e.g. "metres of land subsidence over decades" raising flood risk.
+  fragmentation_statement: >-
+    Prior treatments are narrow; "several of which have been the subject of more focused overviews".
+  gap_or_need_statement: >-
+    Need stated as observational/predictive deficit informing policy; "needed to inform policy decisions".
+  review_objective_statement: '"In this Review, we discuss the diverse processes that cause coastal subsidence".'
+  scope_definition: >-
+    Upfront conceptual split of static vs dynamic landscapes sets what counts as measurable subsidence.
+  contribution_statement: >-
+    Positions itself as "comprehensive synthesis" spanning siloed literatures, enabled by new satellite geodesy.
+  roadmap_pattern: present
+section_architecture:
+  section_order: [Introduction, Drivers, Measuring, Modelling, Projections/examples, Outlook]
+  dominant_logic: mechanistic pipeline (cause -> observe -> model -> project -> impact)
+  chronological_logic: none
+  thematic_logic: partial
+  mechanism_logic: central
+  scale_logic: partial
+  region_logic: none
+  method_logic: central
+  transition_between_sections:
+    - "Section opens by defining the distinction needed before the next step ('Before discussing ..., we highlight ...')"
+    - "Rate-threshold de-scoping closes a subsection ('Thus, we do not discuss it further herein')"
+argumentation:
+  dominant_argument_pattern: mechanism-first explanation then evidentiary exemplar with magnitudes
+  claim_evidence_relation: process claim -> clustered citations -> named-place quantified instance
+  comparison_pattern: technique-vs-technique trade-offs (accuracy, coverage, reference frame)
+  contradiction_handling: competing mechanisms reconciled by superposition; "often, more than one mechanism affects observations at a given site"
+  boundary_condition_handling: >-
+    Applicability bounds stated physically (elastic vs preconsolidation stress threshold governs reversible vs permanent compaction).
+  limitation_handling: dedicated 'Challenges' run-in subsections after each method/model block
+  gap_identification_pattern: gap = specific measurement/modelling incapacity tied to a decision need
+synthesis:
+  synthesis_unit: proposition (process mechanism)
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern:
+    - cluster-cited quantified magnitudes (rates with ranges) per mechanism
+    - superposition framing combining co-acting mechanisms at one site
+    - technique-capability matrix reasoning (what each instrument resolves)
+  consensus_pattern: settled mechanisms asserted with cluster citations; seminal anchors (e.g. Terzaghi 1943) beside recent work
+  controversy_pattern: little overt dispute; disagreement displaced into method limitations
+  reconciliation_pattern: attribute site differences to differing mixtures of mechanisms
+  evidence_weighting_pattern: >-
+    Instrument precision/spatial density used as weight; satellite-era data framed as transformative for rate estimates.
+paragraph_rhetoric:
+  common_rhetorical_moves:
+    - run-in bold mini-heading opens paragraph family (e.g. "Anthropogenic processes.")
+    - general principle -> named-place magnitude example
+    - counter-intuitive relationship flagged and corrected
+  typical_move_sequences:
+    - [topic sentence stating process, mechanism explanation, quantified place exemplar, citation cluster]
+  topic_sentence_pattern: declarative process claim, often with a range qualifier
+  synthesis_sentence_pattern: '"Thus"/"In these cases" sentences aggregate mechanisms into an interpretation'
+  contrast_sentence_pattern: '"However"-pivots from expected to exceptional behaviour'
+  limitation_sentence_pattern: '"Challenges." + enumerated difficulty list'
+  transition_pattern: purpose-signalled openers ("Before discussing X, we highlight Y")
+  paragraph_length_profile: medium-long explanatory paragraphs (block median ~474 chars in digest)
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 0, p75: 2}   # digest blocks incl. figure/reference text depress counts
+  citation_cluster_frequency: high at clause level (2-6 refs per claim)
+  single_vs_cluster: clusters dominate for mechanism claims; singles for landmark events
+  seminal_recent_balance: mixes classics (Terzaghi 1943; Biot 1957) with 2010s remote-sensing literature
+  citation_location: [sentence-final clusters, occasional narrative-author]
+  citation_support_type: [mechanism support, rate/magnitude support, method provenance]
+  method_citation_pattern: standards/theory cited at first definition (effective stress principle)
+  gap_citation_pattern: gap statements carry few/no citations; supported by prior review pointers
+geography_reasoning:
+  whether_geography_is_central: yes
+  spatial_scale_usage: explicit multi-scale (mm/yr compaction to metre coseismic steps; local to ~300-600 km deformation wavelengths)
+  regional_differentiation_usage: tectonic setting differentiates process suites (active vs passive margins)
+  spatial_heterogeneity_usage: site-level mixtures of mechanisms emphasized against uniform-rate assumptions
+  cross_scale_usage: geologic-to-decadal timescales mapped onto process classes
+  place_context_usage: named cities/deltas as quantified existence proofs (Mekong, Bangkok, Louisiana)
+  human_environment_usage: groundwater/hydrocarbon extraction framed as first-order anthropogenic driver; policy endpoints
+  flow_network_usage: none
+  spatial_dependence_usage: shoreline position relative to fault-slip patch controls uplift/subsidence sign
+  conditions_triggering_geographic_explanation:
+    - "when process rates differ by tectonic/depocentre setting"
+    - "when measurement feasibility varies with land cover (vegetation degrades InSAR coherence)"
+    - "when comparability requires common reference frames across sites"
+figure_strategy:
+  total_figures: 6
+  figure_roles:
+    - Fig1 conceptual model of driving mechanisms
+    - Fig2 measurement-technique schematics
+    - Fig3 worldwide map of observed rates
+    - Fig4 model-prediction map
+    - Fig5 observed-vs-modelled case integration
+    - Fig6 inundation impact projection
+  conceptual_framework: yes (Fig 1)
+  taxonomy: implicit (process classes in Fig 1 panels)
+  mechanism: yes (Fig 1)
+  timeline: no
+  map: yes (Figs 3-4)
+  workflow: no
+  evidence_summary: partial (Fig 5 case compilation)
+  figure_text_relation: figure sequence mirrors section pipeline (drivers -> measure -> model -> impact)
+gap_and_agenda:
+  how_gaps_are_derived: from method-challenge audits and from decision needs (flood resilience)
+  types_of_gaps: [observational (dynamic landscapes), methodological (reference frames), integrative (coupled modelling)]
+  evidence_required_before_gap_claim: demonstrated technique incapacity + stakeholder need statement
+  future_agenda_structure: integration imperative (couple subsidence models with surface-process/accretion models)
+  specificity_of_future_questions: moderately specific (named couplings and monitoring targets)
+quality_features:
+  major_strengths:
+    - Key-points box up front distilling takeaways
+    - annotated selected references (one-line significance notes)
+    - explicit scope-setting distinctions before each body section
+  transferable_patterns:
+    - cause->measure->model->project pipeline architecture
+    - run-in challenge subsections after each method block
+    - rate-threshold de-scoping of negligible processes
+  unique_but_nontransferable_features:
+    - dependence on space-geodetic data availability narrative
+  risks_of_imitation:
+    - mechanism catalogue can sprawl without the discipline of the static/dynamic scoping distinction
+anti_patterns:
+  weak_patterns_to_avoid:
+    - treating subsidence (or any rate) as spatially uniform without testing mechanism mixtures
+source_provenance:
+  source_pages: [1-2 (OPENING), BODY_SLICE_1@17%, SLICE_2@33% (journal p.46), SLICE_3@50%, SLICE_4@67% (journal p.53), FIGURE_CAPTIONS]
+  source_sections: [Introduction, Drivers of coastal subsidence, Measuring coastal subsidence, Challenges, Outlook, figure captions, Key points]
+  confidence: high

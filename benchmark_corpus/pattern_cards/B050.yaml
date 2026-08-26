@@ -1,0 +1,107 @@
+document_id: B050
+bibliographic:
+  title: Elevation-dependent climate change in mountain environments
+  authors: [Nick Pepin, Martha Apple, John Knowles, et al.]
+  journal: Nature Reviews Earth & Environment
+  year: 2025
+  doi: 10.1038/s43017-025-00740-4
+  review_type: narrative
+overall_review_design:
+  review_objective: Synthesise physically based expectations, observations and model projections of elevation-dependent climate change (EDCC) across variables and mountain ranges
+  review_scope: systematic climate change along elevation gradients — temperature, precipitation, snow, radiation, wind, aerosols — across global mountain ranges
+  review_mode: expert narrative synthesis structured as theory-prediction versus observation reconciliation
+  article_architecture: [Abstract, Introduction, Physical-based perspectives on EDW and EDCC, Observed EDCC, Modelling future EDCC, Summary and future perspectives, Box 1, Box 2, Table 1]
+  organizing_principle: theory -> observation -> projection pipeline crossed with region-by-region treatment inside evidence sections
+  number_of_major_sections: 5
+introduction_pattern:
+  opening_move: polar-analogy framing — Arctic amplification extended to mountain regions via shared thermal characteristics
+  problem_contextualization: established EDW result (~50% faster warming at high elevations since 1950) grounds the extension beyond temperature
+  fragmentation_statement: not fragmentation but attention deficit — "despite the substantial impacts, EDCC remains little examined"
+  gap_or_need_statement: one-line gap after impact inventory; understudied variables and ranges itemised later
+  review_objective_statement: "In this Review, we synthesize knowledge of EDCC in a range of climate variables"
+  scope_definition: definitional first sentence of theory section ('any systematic change in climate-related trends across an elevation gradient')
+  contribution_statement: synthesis across variables and ranges plus identification of observation priorities (in situ data)
+  roadmap_pattern: present ("We begin by outlining ... We next document ... before turning to ... In the final section")
+section_architecture:
+  section_order: [Introduction, Physical-based perspectives on EDW and EDCC, Observed EDCC, Modelling future EDCC, Summary and future perspectives]
+  dominant_logic: mechanism-first expectation setting so observations can be judged against predictions
+  chronological_logic: partial (historical vs future split; LGM palaeo-anchors)
+  thematic_logic: central (variable-by-variable physics)
+  mechanism_logic: central (albedo, humidity, aerosol, circulation mechanisms)
+  scale_logic: central (elevation gradient as the vertical scale axis; mountain-lowland contrast)
+  region_logic: central (range-by-range subsections: TP/HMA, Alps/Caucasus, Andes, etc.)
+  method_logic: partial (gridded vs station data; CORDEX/CMIP ensembles)
+  transition_between_sections: ["observation section opens to 'assess these potential discrepancies' against theory", "priorities section converts residual mismatches into agenda"]
+argumentation:
+  dominant_argument_pattern: theorised vertical profile -> observed profile comparison -> discrepancy attribution
+  claim_evidence_relation: observational claims carry dataset, period and elevation band; projections carry model ensemble and scenario
+  comparison_pattern: expected vs observed profiles; range-vs-range comparisons; mountain-lowland difference table
+  contradiction_handling: model-dependent driver disagreements reported as such ('sometimes reported as a major driver ... other times as secondary')
+  boundary_condition_handling: EDCC sign conditioned on season, time of day, latitude and synoptic context
+  limitation_handling: extrapolated lapse rates in ice-sheet modelling flagged as needing in situ validation
+  gap_identification_pattern: coverage gaps by variable, season and range derived from the assembled observation inventory
+synthesis:
+  synthesis_unit: proposition/profile
+  study_by_study_ratio: low
+  multi_source_synthesis_pattern: ["profile-comparison synthesis across ranges", "sign tables pooling mountain-lowland differences", "process checklist maintained across theory and observation sections"]
+  consensus_pattern: convergence stated for temperature EDW; divergence preserved for precipitation
+  controversy_pattern: conflicting driver attributions left explicit with model dependency named rather than adjudicated
+  reconciliation_pattern: theory-observation mismatches become the organising question of subsequent sections
+  evidence_weighting_pattern: station evidence valued over gridded products where they conflict; ensemble spread reported
+paragraph_rhetoric:
+  common_rhetorical_moves: ["mechanism narration", "elevation-band quantification", "range-profile comparison", "seasonality qualification"]
+  typical_move_sequences: [["theorised direction", "observed magnitude with elevation band", "residual uncertainty"]]
+  topic_sentence_pattern: variable-or-region-named openers ("Specific humidity", "Anthropogenic aerosols", "Tibetan Plateau and High Mountain Asia.")
+  synthesis_sentence_pattern: "'This elevational gradient in snow-cover change has intensified positive EDW' consequence sentences"
+  contrast_sentence_pattern: day-vs-night, windward-vs-leeward, low-vs-high elevation contrasts within paragraphs
+  limitation_sentence_pattern: "'more in situ data are urgently needed' needs-statement closures"
+  transition_pattern: 'now discussed' signposting ("Historical changes are now discussed to assess these potential discrepancies")
+  paragraph_length_profile: q25=461, median=729, p75=1042 chars
+citation_behavior:
+  citations_per_paragraph: {p25: 0, median: 2, p75: 4}
+  citation_cluster_frequency: moderate-low; regional findings cluster (refs 92,93; 95,96), physics passages sparser
+  single_vs_cluster: singles for single-range results; clusters for multi-range generalisations
+  seminal_recent_balance: recent5y share 0.315; canonical EDW literature plus current CORDEX output
+  citation_location: [sentence-final, mid-sentence after elevation intervals]
+  citation_support_type: [station analyses, gridded-product studies, regional climate model ensembles]
+  method_citation_pattern: dataset/model configurations cited with experiment details at point of use
+  gap_citation_pattern: cites absent-monitoring contexts (Antarctic peninsula conflation) to justify new measurements
+geography_reasoning:
+  whether_geography_is_central: yes — elevation is treated as geographic coordinate equivalent to latitude
+  spatial_scale_usage: vertical dimension formalised (elevation bands, lapse rates); horizontal range-to-range comparison layered on top
+  regional_differentiation_usage: systematic range-by-range treatment with named boundaries (Greater Alpine Region, HMA, tropical Andes)
+  spatial_heterogeneity_usage: microclimate and topographic complexity presented as irreducible heterogeneity requiring local data
+  cross_scale_usage: local mass-elevation effects linked to hemispheric teleconnections (Box 2)
+  place_context_usage: specific valleys/ranges carry profile evidence (Tien Shan snowline rise rates)
+  human_environment_usage: downstream water dependence of >1 billion people motivates relevance
+  flow_network_usage: none
+  spatial_dependence_usage: elevation-dependent feedbacks (snow-albedo) are the causal core — dependence is the object
+  conditions_triggering_geographic_explanation: ["when explaining why warming rate varies with elevation", "when a process flips sign between aspects or day/night", "when observation density itself varies with terrain"]
+figure_strategy:
+  total_figures: 5
+  figure_roles: [annotated process schematic, expected vertical profiles diagram, observed T/P panels by range, projected panels by range, synthesis figure of observed EDCC]
+  conceptual_framework: Fig 1 numbered-process schematic serves as running index for the whole paper
+  taxonomy: none
+  mechanism: yes (Fig 2 theoretical profiles per variable)
+  timeline: partial (observed vs projected period contrasts)
+  map: partial (range locations implicit in regional panels)
+  workflow: none
+  evidence_summary: Fig 5 synthesis panel consolidates observed EDCC signs — closing evidence summary
+  figure_text_relation: numbered annotations in Fig 1 referenced from text like an indexed glossary; boxes extend profiles to extra variables
+gap_and_agenda:
+  how_gaps_are_derived: from variables, seasons and ranges missing in the assembled observation matrix
+  types_of_gaps: [understudied-variable gap, seasonal-detail gap, high-latitude/polar-mountain gap, in-situ-data gap]
+  evidence_required_before_gap_claim: completed variable-x-range inventory showing empty cells
+  future_agenda_structure: research-priority list organised by understudied variables then regions; sea-level stake attached to polar gaps
+  specificity_of_future_questions: measurable targets (in situ lapse-rate data; ENSO-IOD links to tropical EDCC)
+quality_features:
+  major_strengths: [theory-before-evidence ordering enabling discrepancy-driven reading, numbered schematic doubling as navigation device, consistent mountain-lowland differencing, honest preservation of driver disagreements]
+  transferable_patterns: [state theoretical expectations first so observations acquire meaning, use one annotated schematic as persistent section index, organise evidence by named natural regions within a global frame, derive agenda from empty cells of a variable-x-region matrix]
+  unique_but_nontransferable_features: [elevation gradient as axis requires atmospherically stratified phenomena; teleconnection box specific to mountain climates]
+  risks_of_imitation: [theory-first format fails where mechanisms are unknown; range-by-range treatment can fragment synthesis without a closing integration figure]
+anti_patterns:
+  weak_patterns_to_avoid: [reporting regional trends with no stated elevation bands, letting projection scenarios float without baseline definition]
+source_provenance:
+  source_pages: ["pp. 772-788 (Vol 6, Dec 2025 running headers)", "pp. 772-773 (opening/intro slice)", "~p. 776 (BODY_SLICE_1@17%)", "p. 779 (BODY_SLICE_2@33%)", "~p. 781 (BODY_SLICE_3@50%)", "~p. 784 (BODY_SLICE_4@67%)", "pp. 787-788 (closing/refs)"]
+  source_sections: [Introduction, Physical-based perspectives, Observed EDCC (TP/HMA and Alpine passages), Modelling future EDCC passage, Fig 1-5, Box 1-2 and Table 1 captions, reference sample]
+  confidence: medium

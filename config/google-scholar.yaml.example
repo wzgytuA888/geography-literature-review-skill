@@ -1,0 +1,16 @@
+# Google Scholar API provider configuration — copy to google-scholar.yaml
+# or google-scholar.local.yaml (untracked) and fill in NON-SECRET values only.
+# Secrets NEVER go in this file; use environment variables.
+
+provider_defaults:
+  engine: google_scholar          # provider-specific; serpapi uses this
+  language: en                    # hl parameter
+  region: ""                      # lr parameter, e.g. lang_en
+  results_per_page: 20            # <= 20 for serpapi-class providers
+  max_pages: 5                    # per-query page budget
+  rate_limit_seconds: 1.0         # polite spacing between requests
+  extra_params: {}                # provider-specific extras, non-secret only
+
+quota_policy:
+  safety_margin_results: 50       # stop this short of quota to allow resume probes
+  checkpoint_every_pages: 5
