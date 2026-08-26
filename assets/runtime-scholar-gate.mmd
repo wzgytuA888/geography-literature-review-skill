@@ -1,7 +1,7 @@
 flowchart TB
-    TOPIC["User Topic"] --> PF["Google Scholar API Preflight<br/>provider · key · endpoint · test query"]
-    PF -- fail --> P1["PAUSED_GOOGLE_SCHOLAR_API_NOT_READY<br/>no backend switching — fix config first"]
-    PF -- ok --> SEARCH["Google Scholar API Search<br/>(Scouts A–E via adapter)"]
+    TOPIC["User Topic"] --> PF["Academic API Preflight<br/>Semantic Scholar · OpenAlex"]
+    PF -- all fail --> P1["PAUSED_ACADEMIC_APIS_NOT_READY<br/>fix connectivity/config"]
+    PF -- at least one ready --> SEARCH["API-first Search<br/>(S2 + OpenAlex; Crossref validates)"]
     SEARCH --> SCREEN["Screening / Deduplication"]
     SCREEN --> FT["Full-text Acquisition<br/>Zotero/local → legal links → OA → institution"]
     FT --> Q{"Important included literature<br/>missing full text?"}

@@ -1,32 +1,17 @@
-# Agent 0: Research Orchestrator (runtime)
+# Runtime Orchestrator (v2)
 
-## Role
-Own the run end-to-end. You receive the user's review topic/question and drive all
-stages via `workflows/full-review-workflow.md`. You do NOT generate the user's
-research question from the benchmark corpus.
+Coordinate the staged workflow and keep `state.json` current. Delegate independent
+API query lanes when the host supports parallel agents, but require workers to
+write artifacts and return compact summaries.
 
-## Startup sequence (mandatory order)
-1. Create `runs/<run-id>/` (run-id = YYYYMMDD-short-topic-slug) + `state.json`.
-2. Run `scripts/google_scholar_preflight.py`. Non-zero exit ⇒ write state
-   `PAUSED_GOOGLE_SCHOLAR_API_NOT_READY`, report to user, STOP. Never switch backends.
-3. Task interpretation: restate topic, propose review mode (see Router), scope,
-   time window, language coverage; proceed without asking unless the choice would
-   materially change user expectations.
-4. Write `task.md`, `review-mode.yaml`, then delegate Search Strategist.
+Before discovery, confirm scope, provider readiness and query budget. A failed
+provider is logged as degraded coverage; continue other approved APIs. If every
+primary provider fails, pause as `PAUSED_ACADEMIC_APIS_NOT_READY`. Never substitute
+Google Scholar page scraping.
 
-## Stage control
-- Maintain `state.json` after every stage completion (stage id, status, artifacts).
-- Parallelize Scouts A–E with non-overlap boundaries written in each brief.
-- Enforce stopping rules (search saturation, page limits, quota).
-- Trigger MissingFullTextGate when screening reports pending full texts;
-  on trigger, STOP downstream stages.
-- After writing+review+audit, run benchmark quality matching, then final QA.
+Enforce stage order: search log → normalization → deduplication → screening →
+snowballing/re-screening → full-text gate → evidence matrix → synthesis → writing
+→ citation/figure/reviewer/audit gates → structured export.
 
-## State machine statuses
-RUNNING · PAUSED_GOOGLE_SCHOLAR_API_NOT_READY · PAUSED_WAITING_FOR_USER_FULLTEXT ·
-AWAITING_REVIEW · COMPLETE · FAILED_<stage>
-
-## Refusals
-- No synthesis/outline/draft/gap-finalization/citation while paused.
-- No benchmark corpus content as task evidence — method files only.
-- No silent skipping of high-priority missing full text.
+Never treat retrieval as inclusion, metadata as findings, or benchmark facts as
+task evidence. Resume from checkpoints without repeating cached requests.

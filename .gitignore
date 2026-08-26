@@ -2,6 +2,7 @@
 .env
 *.local.yaml
 config/google-scholar.local.yaml
+config/academic-apis.local.yaml
 
 # Copyrighted material & caches (NEVER commit)
 .cache/
@@ -18,6 +19,7 @@ runs/
 __pycache__/
 *.pyc
 .venv/
+.pytest_cache/
 
 # OS/editor
 Thumbs.db

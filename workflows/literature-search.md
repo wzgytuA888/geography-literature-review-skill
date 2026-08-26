@@ -1,33 +1,47 @@
-# Workflow: Literature Search → Screen → Full-text
+# Workflow: API Search → Deduplicate → Screen → Snowball → Full-text
 
-Mandatory order: Google Scholar API Search → Screening → Full-text Acquisition.
-(Discovery backend is non-negotiable; see references/search-strategy.md.)
+Read `references/search-strategy.md` before this stage.
 
-## 1. Search execution
-- Strategist emits `search/search-plan.yaml`; Scouts A–E run lanes in parallel via
-  adapter; every hit appended to `search/google-scholar-search-log.csv`.
-- Provider 401/403/429/schema errors → Orchestrator pauses (preflight states).
-- Stopping rules from plan (budgets/saturation/quota guard).
+## 1. Search strategy
 
-## 2. Screening
-Librarian dedupes (DOI > result_id > title≥0.9) then screens:
-| status | meaning |
-| --- | --- |
-| INCLUDED_PENDING_FULLTEXT | passes title/abstract bar; needs text |
-| HIGH_PRIORITY_PENDING_FULLTEXT | clearly central; blocking priority |
-| EXCLUDED_TITLE_ABSTRACT / OUT_OF_SCOPE / DUPLICATE | logged, non-blocking |
-All decisions land in `screening.csv` with one-line reasons.
+Preserve user terms and generate no more than the configured query budget.
+Record actual queries, filters, date range and language in `search_strategy.json`.
 
-## 3. Full-text acquisition (legal channels only)
-Order: Zotero/local PDFs → provider-returned legal links → DOI/publisher open
-access → OA resolvers → institution-accessible copies → ask user.
-Track `fulltext_status` enum honestly; never bypass paywalls/CAPTCHA.
+## 2. Discovery
 
-## 4. MissingFullTextGate (mandatory human gate)
-`python scripts/missing_fulltext_gate.py --run-dir runs/<id>`
-- CLEAR → proceed to evidence extraction;
-- TRIGGERED → TXT (+XLSX) report generated, checkpoint saved, state=
-  PAUSED_WAITING_FOR_USER_FULLTEXT, downstream stages BLOCKED.
-Resume path: user supplies PDFs → `scripts/resume_helper.py validate-pdf` →
-matched items updated; gate clears only when no blocking item remains OR user
-marks explicit_user_skip (recorded in audit + limitations forever).
+Run `scripts/literature_review_pipeline.py search`:
+
+- Semantic Scholar: metadata, abstracts, S2 IDs, citation/reference counts,
+  open-access PDF links and later citation edges.
+- OpenAlex: broad works coverage, topics, authorships, institutions, countries,
+  referenced works and citation counts using cursor pagination.
+- Crossref: DOI metadata validation/enrichment only.
+
+One provider failing does not discard successful results from another. Retry
+429/5xx/timeouts with bounded exponential backoff, cache completed requests, log
+permanent errors and continue with other query/provider pairs.
+
+## 3. Deduplication and screening
+
+Merge exact identity matches by DOI → Semantic Scholar ID → OpenAlex ID → exact
+normalized title. Preserve fuzzy matches with `possible_duplicate=true`.
+
+Statuses: retrieved → deduplicated → title_screened → abstract_screened →
+fulltext_screened → included. Every exclusion uses the controlled reason list in
+`src/geo_review/pipeline.py`. Never auto-include all retrieved papers.
+
+## 4. Snowballing
+
+After selecting core seed papers, use the `snowball` command for backward and
+forward Semantic Scholar citation expansion. Record direction and seed ID, merge,
+deduplicate and screen all new papers under the same criteria.
+
+## 5. Legal full text
+
+Acquisition order remains Zotero/local files → API-provided OA link → DOI/
+publisher OA → legal resolver → institutional/user-provided copy. Important
+included papers still missing text trigger `MissingFullTextGate`; downstream
+finding/mechanism synthesis remains blocked.
+
+Outputs: literature.json/csv/xlsx, Search_Log, deduplication log, screening table,
+citation network, errors.log and cached request payloads.

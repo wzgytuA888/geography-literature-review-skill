@@ -1,51 +1,41 @@
-# Architecture
+# Architecture v2
 
-## The one idea that organizes everything
+The project keeps v1's compile-time/runtime boundary and dual-corpus isolation.
+Version 2 changes only the runtime discovery and structured-review layer.
 
-**Benchmark teaches HOW; task literature provides WHAT.**
-A corpus of 60 high-quality geography reviews (mostly *Nature Reviews Earth &
-Environment*) is distilled into transferable review-method knowledge
-(architecture, rhetoric moves, synthesis patterns, citation behavior,
-conditional geography reasoning, gap/agenda logic, figure grammar, quality
-rubric). At runtime, a user-specified topic triggers a fresh evidence pipeline:
-Google Scholar API discovery → legal full-text acquisition (with a mandatory
-human pause when key PDFs cannot be obtained) → structured evidence → synthesis
-→ outline → drafting → Zotero-verified citations → figures → independent
-review/audit → final manuscript. Benchmark content never becomes runtime facts.
+## Compile time
 
-## Compile-time vs Runtime
+Benchmark PDFs are converted into form-only review pattern cards and consolidated
+method knowledge. These resources teach architecture, rhetoric, synthesis,
+geography reasoning, gap derivation and figure design. They never supply topic
+facts or citations to a new review.
 
-| | Compile-time | Runtime |
-| --- | --- | --- |
-| Input | benchmark PDFs | user topic |
-| Output | `benchmark_corpus/*.md` method files + archetypes + rubric | `runs/<run-id>/` full manuscript package |
-| Data structure | Review Pattern Card (`templates/review-pattern-card.yaml`) | Task Literature Card + Evidence Matrix |
-| Frequency | once + incremental fold-ins | per topic |
+## Runtime
 
-## Agents
+```
+user question
+  → bounded search strategy
+  → Semantic Scholar ┐
+                     ├→ normalized PaperRecord → dedup → screen → Search Log
+  → OpenAlex         ┘
+  → Crossref DOI validation/enrichment
+  → core seeds → backward/forward snowballing → re-screen
+  → legal full text / MissingFullTextGate
+  → evidence matrix → themes → traceable claims/argument map
+  → outline/draft → Zotero/DOI citations → figures → independent audit
+  → CSV + JSON + XLSX + manuscript package
+```
 
-Compile-time (agents/compiletime/): curator · review/citation/geography/figure
-pattern miners · consolidator.
-Runtime (agents/runtime/): orchestrator · librarian · strategist · scouts A–E ·
-extractor · synthesizer · outline · writer · citation · figure · reviewer ·
-auditor · revision.
+`src/geo_review/http.py` owns request throttling, retries, caching and error logs.
+Provider clients normalize to `PaperRecord`; pipeline code owns query generation,
+deduplication, explicit screening and transparent triage scoring. Deterministic
+exports are generated independently of the writing agents.
 
-## Hard policy spine (non-negotiable)
+Google Scholar is no longer a runtime dependency. Researcher-supplied manual
+records may be added with full provenance, but result-page scraping is prohibited.
 
-1. Google Scholar-compatible API = only discovery backend; preflight required;
-   failures pause, never switch backends.
-2. MissingFullTextGate: included/high-priority paper without legal full text ⇒
-   TXT(+XLSX) report + checkpoint + PAUSED_WAITING_FOR_USER_FULLTEXT; resume via
-   validated PDFs or explicit skip recorded forever.
-3. Zero hallucinated citations: Zotero item / verifiable DOI / authoritative
-   metadata only; claim-support verified; unresolved ⇒ removed + reported.
-4. Evidence-first: search→screen→extract→matrix→synthesis→outline→draft.
-5. Gaps & geography reasoning conditional on task evidence.
-6. Copyright: PDFs/full-text caches git-ignored; repo carries code, prompts,
-   generic rules, statistics — never source text.
+## Failure behavior
 
-## Diagrams
-
-See `assets/*.mmd` (+ .svg where rendered):
-overall-architecture · compiletime-workflow · runtime-multi-agent-workflow ·
-runtime-scholar-gate · evidence-citation-lineage.
+Individual provider/query failures are logged and do not erase other results. A
+complete primary-provider outage pauses discovery. Missing important full text and
+unverified citations remain hard gates. State and cached requests make runs resumable.

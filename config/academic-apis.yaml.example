@@ -1,0 +1,17 @@
+search:
+  provider_priority: [semantic_scholar, openalex]
+  crossref_role: metadata_validation
+  google_scholar_role: manual_supplement_only
+  max_queries: 8
+  max_papers: 200
+  cache_dir: .cache/api
+
+retry:
+  max_retries: 4
+  exponential_backoff: true
+  retry_statuses: [429, 500, 502, 503, 504]
+
+screening:
+  uncertain_duplicates: preserve_and_flag
+  automatic_inclusion: false
+

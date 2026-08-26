@@ -1,27 +1,38 @@
-# Workflow: Evidence Extraction & Synthesis
+# Workflow: Evidence Matrix, Themes and Traceable Synthesis
 
-Precondition: gate CLEAR; ≥1 full text AVAILABLE_*.
+## Evidence extraction
 
-## Extraction pass
-For each available paper → Evidence Extractor produces
-`evidence/literature-cards/P###.yaml` (schema templates/task-literature-card.yaml);
-every evidence unit gets global E### id, source_page REQUIRED.
+For each included paper, extract only explicit abstract/full-text information into
+`templates/task-literature-card.yaml`. Full-text evidence units require a page or
+section location. Metadata-only records may inform screening or bibliometrics but
+not findings/mechanisms.
 
-## Matrix assembly
-Append rows to `evidence/evidence-matrix.csv` (columns exactly as template header):
-claim_id, theme, paper_id, evidence_id, claim_text, evidence_summary, methodology,
-geography, spatial_scale, temporal_scope, support_or_contradict, confidence,
-source_location, doi, zotero_key.
-Integrity checks: unique evidence_ids; paper_ids exist in registry; source_location
-non-empty; confidence present.
+Unknown fields are `null` or `not_reported`. Separate source fact, AI extraction
+and inference. Necessary inference uses `inference=true` plus low/medium/high
+confidence and may not be worded as an author conclusion.
 
-## Argument map
-`evidence/argument-map.md`: proposition table — statement | supporting evidence_ids |
-contradicting evidence_ids | conditions | evidence strength | unresolved uncertainty.
+Store main findings as arrays of finding/direction/variable/confidence objects.
 
-## Synthesis pass
-Synthesis Agent walks themes per references/synthesis-rules.md →
-`evidence/synthesis-notes.md`; conflict diagnosis ladder applied; gap candidates
-flagged with their evidential basis (deficit counts, blind spots, contradictions).
+## Iterative themes
 
-Checkpoint: matrix+map saved = resumable before any drafting.
+Start with task-derived topics, code papers to one or more topics, merge overlapping
+codes and freeze a final theme vocabulary. Do not impose a fixed geography theme
+list before the evidence is seen.
+
+## Synthesis
+
+Build claim records containing:
+
+```json
+{"claim":"...","supporting_papers":[],"contradicting_papers":[],
+ "conditions":[],"confidence":"low|medium|high","notes":""}
+```
+
+Analyze temporal development, spatial coverage, data/method evolution, scales,
+consensus and disagreement. Diagnose disagreements through definition, data,
+method, scale, period and geography before calling results inconsistent.
+
+Derive data, methodological, spatial, temporal, mechanism, scale, theoretical and
+validation gaps from the included matrix. Do not concatenate future-work sections.
+
+The argument map remains the contract between evidence and drafting.

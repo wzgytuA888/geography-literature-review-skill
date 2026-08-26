@@ -2,10 +2,11 @@
 
 | Symptom | Cause | Fix |
 | --- | --- | --- |
-| preflight exit 3, "Missing env vars" | Google Scholar provider not configured | see docs/google-scholar-setup.md; state stays PAUSED_GOOGLE_SCHOLAR_API_NOT_READY |
-| preflight 401/403 | bad/expired API key | rotate key; re-run scholar-check |
-| 429 / QuotaError | rate limit or monthly cap hit | wait/refill; runs checkpoint — resume later without redoing searches |
-| Adapter "Unexpected response shape" | unknown provider contract | implement mapping in google_scholar_adapter.py BACKENDS; do NOT scrape |
+| preflight reports one provider error | quota/network/schema issue | inspect errors.log; the other primary API may continue with degraded coverage |
+| preflight reports both providers unavailable | complete discovery outage | see docs/academic-api-setup.md; pause as PAUSED_ACADEMIC_APIS_NOT_READY |
+| Semantic Scholar 401/403 | bad/expired optional API key | rotate or remove the key and retry public access |
+| 429 / 5xx / timeout | temporary API pressure | bounded retry runs automatically; cached successes are reused on resume |
+| malformed response | provider schema drift | inspect errors.log and update the relevant client; do not invent missing fields |
 | Zotero usable=false | desktop off / local server disabled / no web key | docs/zotero-setup.md; otherwise DOI/Crossref fallback (more UNRESOLVED risk) |
 | Better BibTeX probe false | BBT not installed / wrong port | install extension; Juris-M uses port 24119 (unsupported by default) |
 | Gate triggered unexpectedly many items | screening too inclusive | tighten inclusion criteria in search-plan; or provide PDFs / mark skips |

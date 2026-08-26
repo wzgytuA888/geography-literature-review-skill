@@ -1,6 +1,6 @@
 # ARCHITECTURE_PLAN.md — Geography Literature Review Research Skill
 
-> Status: v1.0 · Generated before core implementation, as required by spec §38.
+> Status: v2.0 · v1 architecture retained with an incremental API-first runtime upgrade.
 > This document fixes the architectural decisions for the whole repository.
 > Technology evidence lives in `docs/technology-baseline.md`.
 
@@ -16,8 +16,9 @@ evidence table is in `docs/technology-baseline.md`. Key conclusions:
 - **Agent Skills open standard**: `SKILL.md` with YAML frontmatter (`name`, `description`),
   progressive disclosure L1 metadata → L2 SKILL.md → L3 on-demand resources. We follow
   agentskills.io / Anthropic conventions and keep SKILL.md < 500 lines.
-- **Google Scholar**: no official public API exists. Discovery MUST go through a
-  user-configured Google-Scholar-compatible provider (SerpAPI-style gateways).
+- **Academic discovery v2**: Semantic Scholar and OpenAlex are primary APIs;
+  Crossref validates/enriches DOI metadata. Google Scholar is a logged manual
+  supplement only and its result pages are never scraped.
 - **Zotero**: Web API v3 + local HTTP server (Zotero 7) + Better BibTeX JSON-RPC;
   adapter with capability detection and fallback chain.
 - **Multi-agent**: orchestrator-worker pattern (Anthropic research-system practice);
@@ -50,7 +51,7 @@ conditions, gap derivation logic, figure strategy, quality rubric.
 
 It must never supply WHAT is true about a new topic. Every runtime fact, number,
 consensus/controversy claim, gap, and citation comes exclusively from the
-task-specific Evidence Corpus built fresh via Google Scholar API search +
+task-specific Evidence Corpus built fresh via Semantic Scholar/OpenAlex search +
 legal full-text acquisition. On conflict, task evidence wins.
 
 Enforcement mechanisms (defense in depth):
@@ -70,7 +71,7 @@ parse PDFs → structural metadata → Review Pattern Cards → pattern mining
 rubric + anti-patterns. Agents: curator, miners (review/citation/geography/figure),
 consolidator.
 
-**Runtime** (per user topic): Google Scholar preflight → task interpretation →
+**Runtime** (per user topic): academic-API preflight → task interpretation →
 review-mode routing → search planning → parallel retrieval → screening/dedup →
 full-text acquisition (**MissingFullTextGate**) → evidence extraction → evidence
 matrix → synthesis → argument map → outline → drafting → citation resolution →
@@ -115,8 +116,8 @@ resumable.
 ## 10. Skill ↔ MCP boundary
 
 Skills provide procedural knowledge and file artifacts; MCP provides tool access.
-Google Scholar calls go through the provider REST gateway (plain HTTPS via the
-adapter script — not an MCP dependency). Zotero access uses Web API/local server/
+Academic API calls go through the v2 REST clients (plain HTTPS, not an MCP
+dependency). Zotero access uses Web API/local server/
 Better BibTeX directly through `scripts/zotero_adapter.py`; if a Zotero MCP is
 present in the host it may be used opportunistically, but is not required.
 
@@ -141,7 +142,7 @@ leakage = 0, silent skips = 0).
 ## 17. Long-running checkpointing
 
 `runs/<run-id>/state.json` records stage, status enum
-(`PAUSED_GOOGLE_SCHOLAR_API_NOT_READY`, `PAUSED_WAITING_FOR_USER_FULLTEXT`, …),
+(`PAUSED_ACADEMIC_APIS_NOT_READY`, `PAUSED_WAITING_FOR_USER_FULLTEXT`, …),
 artifacts, timestamps. Resume continues from last completed stage; completed
 searches are never redone unless invalidated.
 
@@ -152,19 +153,16 @@ local via `.gitignore`. Public-safe repo contains code, prompts, templates, gene
 rules, synthetic examples only. Default GitHub target: **private** repository
 named `geography-literature-review-skill`.
 
-## 20–24. Google Scholar provider abstraction & preflight; discovery-only rule;
+## 20–24. Academic API abstraction & preflight; provider roles;
 missing-fulltext gate; missing report schema; pause/resume machine
 
-- Provider abstraction (`scripts/google_scholar_adapter.py`): env-configured
-  provider/key/endpoint (+engine/language/region/pagination/rate limit in
-  `config/google-scholar.yaml`). Normalized result schema incl.
-  scholar_result_id, doi-if-available, cited-by fields.
-- Preflight (`google_scholar_preflight.py`): config presence → auth → minimal test
-  query → schema validation → capability log. Failure ⇒
-  `PAUSED_GOOGLE_SCHOLAR_API_NOT_READY`, no backend switching, ever.
-- Discovery-only rule: WoS/Scopus/OpenAlex/Semantic Scholar/web scraping are
-  forbidden as topic-discovery backends. Crossref/DOI/OA resolvers only validate
-  metadata / resolve DOIs / check availability.
+- Provider abstraction (`src/geo_review/clients`): Semantic Scholar and OpenAlex
+  primary discovery, Crossref DOI validation/enrichment, shared normalized record.
+- Preflight (`scripts/literature_review_pipeline.py preflight`): each primary API
+  is probed independently. Complete outage pauses; partial failure logs degraded
+  coverage and preserves successful results.
+- Provider rule: Google Scholar is optional manual supplementation only; result
+  pages are never scraped. Crossref is not the primary topical search engine.
 - MissingFullTextGate: INCLUDED_PENDING_FULLTEXT /
   HIGH_PRIORITY_PENDING_FULLTEXT items without legal fulltext ⇒ generate
   `missing_fulltext_literature.txt` (+ .xlsx when openpyxl available), save all

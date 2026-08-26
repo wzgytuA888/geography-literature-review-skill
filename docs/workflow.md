@@ -1,42 +1,21 @@
-# Workflow Overview
+# Workflow Overview v2
 
-Entry points:
-- **Runtime**: `workflows/full-review-workflow.md` chains task-init → search-plan
-  → literature-search → evidence-synthesis → outline → review-writing →
-  zotero-citation → figure-generation → independent-review → finalize.
-- **Compile-time**: `workflows/benchmark-distillation.md` and
-  `workflows/benchmark-update.md` (fold-in).
-
-## State machine
+Runtime entry point: `workflows/full-review-workflow.md`.
 
 ```
 RUNNING ─┬─> COMPLETE
-         ├─> PAUSED_GOOGLE_SCHOLAR_API_NOT_READY   (fix config → resume)
-         ├─> PAUSED_WAITING_FOR_USER_FULLTEXT      (supply PDFs / skip → resume)
-         ├─> AWAITING_REVIEW                        (systematic/scoping outline gate)
-         └─> FAILED_<stage>                         (inspect run-summary)
+         ├─> PAUSED_ACADEMIC_APIS_NOT_READY
+         ├─> PAUSED_WAITING_FOR_USER_FULLTEXT
+         ├─> AWAITING_REVIEW
+         └─> FAILED_<stage>
 ```
 
-`runs/<id>/state.json` is written after every stage; resume replays artifacts and
-never repeats completed Scholar queries.
+Provider-specific failures normally produce degraded coverage and an `errors.log`
+entry, not a failed run. The complete-API outage state is used only when neither
+Semantic Scholar nor OpenAlex is usable.
 
-## Command surface
+Commands: `api-check`, `start`, `search`, `screen`, `snowball`, `evidence`,
+`themes`, `synthesize`, `outline`, `draft`, `cite`, `figures`, `review`, `audit`,
+`export`, `missing-fulltext`, `resume`, `full`, plus benchmark compile-time commands.
 
-| Command | Effect |
-| --- | --- |
-| scholar-check | preflight only |
-| start "<topic>" | init + plan |
-| search / screen | stage 2 parts |
-| evidence / synthesize | stage 3 |
-| outline | stage 4 |
-| draft | stage 5 |
-| cite | stage 6 |
-| figures | stage 7 |
-| review / audit | stage 8 |
-| missing-fulltext | regenerate gate report |
-| resume | continue from checkpoint |
-| full | whole pipeline |
-| benchmark-ingest / -update / -audit / -profile | compile-time |
-
-Slash commands work where the host supports them; otherwise use natural language
-("write a literature review on X") — SKILL description routes it here.
+Legacy `scholar-check` maps to `api-check` for compatibility.

@@ -11,7 +11,7 @@ Backends used:
   * Zotero local server http://localhost:23119/api/users/0/...  (Zotero 7 desktop)
   * Better BibTeX JSON-RPC http://localhost:23119/better-bibtex/json-rpc
 
-This module NEVER performs topic discovery — that is forbidden (Scholar-only).
+This module NEVER performs topic discovery; v2 uses Semantic Scholar/OpenAlex.
 """
 from __future__ import annotations
 

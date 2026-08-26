@@ -2,7 +2,8 @@
 
 ## Position in system
 Zotero = Reference Source of Truth (management, metadata, full text, citekeys,
-bibliography). It is NOT a discovery backend — topic search stays Scholar-only.
+bibliography). It is NOT a discovery backend — topic discovery stays with
+Semantic Scholar and OpenAlex.
 
 ## Capability detection (run `python scripts/zotero_adapter.py`)
 Probes in order: Web API v3 (needs ZOTERO_API_KEY + ZOTERO_USER_ID) · local HTTP

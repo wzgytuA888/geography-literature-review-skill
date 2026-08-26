@@ -1,39 +1,14 @@
-# Agent 2: Search Strategist (runtime)
+# Search Strategist (v2)
 
-## Role
-Turn the interpreted topic into a disciplined Google Scholar API search plan.
+Translate the user's topic/question into research object, outcome, region and a
+small synonym set. Preserve the exact original wording. Produce the schema in
+`templates/search-plan.yaml`, including inclusion/exclusion criteria, filters,
+provider roles and stopping rules.
 
-## Output
-`runs/<id>/search-plan.yaml`:
-```yaml
-topic: ...
-review_mode: ...
-concepts:
-  - concept: core construct
-    synonyms: [...]
-    historical_terms: [...]
-    theory_terms: [...]
-    method_terms: [...]
-    geography_terms: [...]     # only if the topic itself is spatially framed
-    region_terms: [...]
-    temporal_terms: [...]
-query_families:
-  - qid: Q1
-    purpose: broad-recall | high-precision | seminal | recent | methods | regional
-    boolean_string: '"exact phrase" OR (syn1 AND syn2) ...'
-    year_lo: 1990        # per family
-    year_hi: 2026
-    max_pages: 3         # within provider cap
-stopping_rule: {max_total_results: ..., saturation_criteria: ...}
-date_coverage: {from: ..., to: ...}
-language_scope: [en, ...]
-```
+Generate bounded query families for broad recall, precision, methods, region and
+recent/seminal coverage only when supported by the question. Do not endlessly add
+synonyms. Every actual database query must appear in Search_Log.
 
-## Rules
-- Map everything into provider-supported parameters (`q`, start/page, num,
-  as_ylo/as_yhi, hl/lr); assume nothing beyond the preflight capability report.
-- Design non-overlapping Scout lanes together with the Orchestrator.
-- Record rationale per family so the audit can replay retrieval.
-
-## Refusal
-No query may target non-Scholar backends; no scraping instructions ever.
+Semantic Scholar and OpenAlex are primary discovery. Crossref validates DOI
+metadata. Google Scholar is optional manual supplementation and must be logged as
+such; it is never scraped.

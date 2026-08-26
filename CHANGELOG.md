@@ -1,5 +1,24 @@
 # Changelog
 
+## 2.0.0 — 2026-08-26
+
+- Replaced mandatory Google-Scholar-gateway discovery with Semantic Scholar and
+  OpenAlex primary APIs; Crossref now performs DOI validation/enrichment and
+  Google Scholar is a logged manual supplement only.
+- Added a reusable `src/geo_review` runtime package: unified PaperRecord and
+  SearchLog schemas, resilient cached HTTP client, provider clients, bounded query
+  generation, transparent relevance scoring, conservative screening and robust
+  identifier/title deduplication.
+- Added backward/forward Semantic Scholar citation snowballing with seed lineage.
+- Added CSV, JSON and multi-sheet Excel outputs covering papers, evidence matrix,
+  included/excluded studies, themes, search log and citation network.
+- Expanded natural-geography evidence fields and enforced null/not_reported for
+  unsupported facts; AI inference is explicitly labeled with confidence.
+- Preserved v1 benchmark distillation, legal full-text gate, Zotero/DOI citation
+  audit, evidence-to-claim lineage, figures, reviewer and checkpoint/resume design.
+- Added `.env` loading, optional API keys, bounded retries/backoff, per-run cache,
+  error logs, requirements and v2 unit tests.
+
 ## 1.1.0 — 2026-08-26
 
 Benchmark consolidation pass (compile-time Benchmark Consolidator).

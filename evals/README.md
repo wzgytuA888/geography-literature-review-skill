@@ -10,7 +10,7 @@ or recorded runs. LLM-judged items use the rubric dimensions from SKILL spec §2
 | --- | --- | --- | --- |
 | E01 | Benchmark pattern extraction quality | LLM-judge | ≥80% of sampled cards fields evidence-backed |
 | E02 | Benchmark vs task corpus separation | scripted+judge | leakage count = 0 |
-| E03 | Literature search only (Scholar) | scripted mock provider | 0 non-Scholar calls; log completeness 100% |
+| E03 | API-first literature discovery | scripted provider fixtures | S2/OpenAlex normalization and provenance pass |
 | E04 | Evidence matrix integrity | scripted | orphan ids = 0; source_location coverage = 100% |
 | E05 | Controversy detection | fixture judge | diagnosis ladder applied before "inconsistent" |
 | E06 | Geography conditional reasoning | fixture judge | no rule fired without trigger; missed triggers ≤1 |

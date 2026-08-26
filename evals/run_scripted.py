@@ -14,8 +14,12 @@ import sys
 import tempfile
 from pathlib import Path
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "scripts"))
+sys.path.insert(0, str(REPO / "src"))
 
 FIXTURES = Path(__file__).resolve().parent / "fixtures"
 RESULTS: dict[str, dict] = {}
@@ -44,40 +48,31 @@ def e02() -> None:
         "note": "consolidated method files must describe FORM, not findings"})
 
 
-# ---- E03-lite / E09: adapter behavior with a mock provider -----------------
+# ---- E03: v2 provider normalization ----------------------------------------
 def e03_mock() -> None:
-    """Adapter must hit ONLY the configured endpoint and normalize results."""
+    """Both primary provider schemas normalize into the shared record."""
     try:
-        import google_scholar_adapter as gsa
-    except Exception as exc:  # requests missing etc.
-        ev("E03_search_backend_only", False, {"error": str(exc)})
+        from geo_review.clients.semantic_scholar import SemanticScholarClient
+        from geo_review.clients.openalex import OpenAlexClient
+    except Exception as exc:
+        ev("E03_api_first_discovery", False, {"error": str(exc)})
         return
-
-    class MockResp:
-        status_code = 200
-        def raise_for_status(self): pass
-        def json(self):
-            return {"organic_results": [{
-                "position": 1, "title": "Mock paper on rivers",
-                "result_id": "abc123", "link": "https://example.org/p1",
-                "snippet": "River floods increased 2015–2024. doi: 10.1038/s41586-020-2949-3",
-                "publication_info": {"summary": "Nature - 2021"},
-                "inline_links": {"cited_by": {"total": 42, "cites_id": "cid9"}}}]}
-
-    seen = {}
-    def mock_get(url, params=None, timeout=0, headers=None):
-        seen["url"] = url
-        return MockResp()
-
-    gsa.requests.get = mock_get
-    cfg = gsa.ProviderConfig(provider="serpapi", api_key="dummy", endpoint="https://mock.local/search")
-    rows = gsa.search("rivers", page=0, cfg=cfg)
-    ok = (len(rows) == 1 and rows[0].scholar_result_id == "abc123"
-          and rows[0].doi == "10.1038/s41586-020-2949-3"
-          and rows[0].cited_by_count == 42
-          and seen["url"].startswith("https://mock.local/search"))
-    ev("E03_search_backend_only", ok,
-       {"endpoint_hit": seen.get("url"), "normalized_first": rows[0].to_dict() if rows else None})
+    s2 = SemanticScholarClient._normalize({
+        "paperId": "S2-1", "title": "Mock river paper", "year": 2024,
+        "authors": [{"name": "A Researcher"}], "externalIds": {"DOI": "10.1/X"},
+        "citationCount": 12, "referenceCount": 4,
+        "openAccessPdf": {"url": "https://example.org/p.pdf"}}, "river query")
+    oa = OpenAlexClient._normalize({
+        "id": "https://openalex.org/W1", "display_name": "Mock climate paper",
+        "publication_year": 2023, "doi": "https://doi.org/10.2/Y",
+        "cited_by_count": 7, "authorships": [], "referenced_works": [],
+        "abstract_inverted_index": {"climate": [0], "change": [1]}}, "climate query")
+    ok = (s2.semantic_scholar_id == "S2-1" and s2.doi == "10.1/x"
+          and s2.source_database == ["Semantic Scholar"]
+          and oa.openalex_id == "https://openalex.org/W1" and oa.abstract == "climate change"
+          and oa.source_database == ["OpenAlex"])
+    ev("E03_api_first_discovery", ok,
+       {"semantic_scholar": s2.to_dict(), "openalex": oa.to_dict()})
 
 
 # ---- E10: fake-citation detection ------------------------------------------

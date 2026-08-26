@@ -3,7 +3,7 @@ flowchart TB
 
     ORCH --> SS["Agent 2: Search Strategist<br/>search-plan.yaml"]
     SS --> SCOUTS
-    subgraph SCOUTS["Agents 3A–3E: Parallel Literature Scouts (Scholar API only)"]
+    subgraph SCOUTS["Agents 3A–3E: Parallel Literature Scouts (S2 + OpenAlex)"]
         SA["A seminal"] --- SB["B recent"]
         SB --- SC["C methods"]
         SC --- SD["D regional/spatial"]

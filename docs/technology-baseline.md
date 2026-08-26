@@ -1,5 +1,10 @@
 # Technology Baseline (Phase 0–1 evidence)
 
+> v2 update: runtime discovery now prioritizes the official Semantic Scholar
+> Graph API and OpenAlex Works API. Crossref is metadata validation/enrichment.
+> The Google Scholar provider analysis below is retained as v1 historical context;
+> Google Scholar is now optional manual supplementation and is never scraped.
+
 Checked: 2026-08-26 via live web fetch. Items marked NOT VERIFIED could not be
 confirmed from this network; they are treated as assumptions, not facts.
 
@@ -51,9 +56,8 @@ year & DOI from publication_info.summary/snippet (implemented). Related-articles
 only a link, emulate via query variants. ScraperAPI/HasData Scholar endpoints:
 NOT FOUND this session.
 
-Policy consequence: provider name/key/endpoint env config is mandatory;
-adapter normalizes schemas; unknown providers use the generic JSON contract.
-Discovery may NEVER silently switch backends (WoS/Scopus/OpenAlex/S2/web scraping).
+Historical v1 policy: a configured Scholar gateway was mandatory. In v2 this has
+been superseded by `docs/academic-api-setup.md` and the multi-API client layer.
 
 ## 5. Zotero
 

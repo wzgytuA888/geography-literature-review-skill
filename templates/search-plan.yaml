@@ -1,27 +1,21 @@
-# Search plan template → runs/<id>/search/search-plan.yaml
-# Google Scholar API only. Map every query to provider-supported params.
-
 topic: ""
-review_mode: ""
-concepts:
-  - concept: ""
-    synonyms: []
-    historical_terms: []
-    theory_terms: []
-    method_terms: []
-    geography_terms: []
-    region_terms: []
-    temporal_terms: []
+research_question: ""
+original_keywords: []
+boolean_query: ""
+filters:
+  year: {from: null, to: null}
+  language: []
+  journal: null
+  author: null
+  doi: []
+maximum_number_of_papers: 200
+provider_priority: [semantic_scholar, openalex]
+crossref_role: metadata_validation
+google_scholar_role: manual_supplement_only
 query_families:
   - qid: Q1
-    purpose: broad-recall   # broad-recall|high-precision|seminal|recent|methods|regional
-    boolean_string: '"exact phrase" OR synonym1 OR synonym2'
-    year_lo:
-    year_hi:
-    max_pages: 3            # <= provider cap from preflight
+    purpose: broad_recall
+    actual_query: ""
 stopping_rule:
-  max_total_results:
-  saturation_criteria: "two consecutive rounds with no new themes"
-date_coverage: {from: , to: }
-language_scope: [en]
-provider_limits_note: "filled from preflight capability report"
+  max_queries: 8
+  saturation: "two planned rounds with no material new eligible themes"

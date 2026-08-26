@@ -3,7 +3,7 @@
 
 Trigger condition (all must hold):
   1. a concrete review topic exists,
-  2. Google Scholar API search has been executed for this run,
+  2. API-first literature search has been executed for this run,
   3. at least one paper is screened INCLUDED_PENDING_FULLTEXT or
      HIGH_PRIORITY_PENDING_FULLTEXT,
   4. no legal full-text channel succeeded (Zotero / local / OA / publisher /

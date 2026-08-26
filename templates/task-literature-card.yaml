@@ -1,58 +1,75 @@
-# Task Literature Card schema (Runtime Evidence Corpus)
-
-> One file per included paper: runs/<id>/evidence/literature-cards/P###.yaml.
-> Physically & logically separate from Review Pattern Cards (benchmark_corpus/).
-
-```yaml
-paper_id: P021
-title:
+paper_id: null
+title: null
 authors: []
-year:
-journal:
-doi:
-zotero_key:
-citation_key:
+year: null
+journal: null
+publisher: null
+volume: null
+issue: null
+publication_date: null
+doi: null
+semantic_scholar_id: null
+openalex_id: null
+citation_count: null
+reference_count: null
+abstract: null
+url: null
+open_access_pdf: null
+source_database: []
+search_query: []
+retrieved_at: null
+discovery_method: database_search
+seed_paper_id: null
+possible_duplicate: false
+screening_status: retrieved
+include: null
+exclude_reason: null
 
-research_question:
-research_scope:
-
-geographic_scope:
-spatial_scale:
-temporal_scope:
-
-core_concepts: []
-theoretical_framework:
-
-data_sources:
-methods:
-spatial_methods:
-
-major_claims: []
-major_findings: []
-
-limitations: []            # as stated by authors
+research_question: null
+study_objective: null
+study_area: null
+study_location: null
+country: null
+region: null
+latitude: null
+longitude: null
+climate_zone: null
+ecosystem_type: null
+spatial_scale: null
+spatial_resolution: null
+temporal_scale: null
+temporal_resolution: null
+study_period: null
+data_source: []
+remote_sensing_dataset: []
+environmental_dataset: []
+climate_dataset: []
+environmental_variables: []
+dependent_variables: []
+independent_variables: []
+method: []
+statistical_method: []
+model: []
+machine_learning_method: []
+sample_size: null
+main_findings: []
+mechanism: []
+limitations: []
+future_research: []
+research_gap: []
+theme: []
+notes: null
+extraction_source: null
+inference: false
+confidence: null
 
 evidence_units:
-  - evidence_id: E088
-    claim:
-    result:
-    context:
-    method:
-    geography:
-    scale:
-    source_page: p.5 §2.1   # REQUIRED for every unit
-    confidence: high|medium|low
-
-relationship_to_review_topic:
-
-supporting_themes: []
-contradicting_themes: []
-
-source_provenance:
-  acquisition: AVAILABLE_LOCAL|AVAILABLE_ZOTERO|DOWNLOADED_LEGAL|OPEN_ACCESS_FOUND
-  local_path:
-  extraction_notes:
-```
-
-Rules: paraphrase (≤15-word quotes marked); numbers exact; UNKNOWN allowed;
-every evidence_unit must trace to a page/section.
+  - evidence_id: null
+    claim: null
+    result: null
+    context: null
+    method: null
+    geography: null
+    scale: null
+    source_page: null
+    confidence: null

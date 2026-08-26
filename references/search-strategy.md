@@ -1,45 +1,35 @@
-# Search Strategy (Google Scholar API only)
+# Reproducible API-first Search Strategy
 
-## Non-negotiables
-1. Discovery backend = configured Google-Scholar-compatible provider. Nothing else.
-2. Preflight (`scripts/google_scholar_preflight.py`) must pass before the first query.
-3. Provider failure ⇒ PAUSED_GOOGLE_SCHOLAR_API_NOT_READY. No WoS/Scopus/OpenAlex/
-   Semantic Scholar/PubMed/web-search/scraping fallback — ever.
-4. Crossref/DOI.org/OA resolvers: metadata validation, DOI resolution, availability
-   checks ONLY — never discovery.
-5. Every query and every result row lands in `search/google-scholar-search-log.csv`.
+## Inputs
 
-## Query construction
-From `search-plan.yaml` concept table build families:
-- **broad-recall**: core synonyms OR-ed, no year cap, first pages only;
-- **high-precision**: exact phrases ANDed, tighter years;
-- **seminal**: early window (e.g., ≤2005) or highest cited-by probes;
-- **recent**: last ~5y (`as_ylo`), possibly date-sort if provider supports;
-- **methods**: method-term × topic pairs;
-- **regional/spatial**: region terms × topic (only when spatially framed);
-- **controversy probes**: opposing-term pairs ("increases" vs "decreases" framings,
-  "uncertainty", "contradictory").
+Record the research topic/question, original keywords, Boolean query, year range,
+language, journal, author, DOI and paper cap. Parse a short topic into research
+object, outcome, region and a small synonym set, then show or log all generated
+queries. Never expand without a fixed bound.
 
-Map to provider params strictly: q, num≤20, start/page, as_ylo/as_yhi, hl/lr.
-Never assume undocumented fields.
+## Provider roles
 
-## Snowballing within policy
-- Forward: cited-by via provider fields (`cites_id` on SerpAPI-class providers) —
-  log as qid family FWD-*.
-- Related: no direct array on verified providers — emulate via variant queries;
-  record this limitation rather than scraping.
-- Backward: parse reference lists from legally obtained seed PDFs; verify each via
-  Scholar queries; add through normal screening.
+1. Semantic Scholar: primary relevance search, abstracts, identifiers, citation
+   and reference edges, OA PDF metadata.
+2. OpenAlex: primary broad-coverage search and bibliometric context—topics,
+   authorships, institutions, countries and referenced works. Use cursor paging.
+3. Crossref: DOI validation and publication metadata enrichment.
+4. Google Scholar: optional researcher-run manual supplementation. Log manually
+   added records and queries; do not scrape result pages.
 
-## Stopping rules (predefined in plan)
-- page/result budget per family; global result cap;
-- saturation: two consecutive expansion rounds adding no new themes/high-quality
-  candidates (log which themes stopped appearing);
-- quota guard: stop at provider threshold minus safety margin, checkpoint, resume
-  after refill.
+## Reproducibility
 
-## Logging schema (search/google-scholar-search-log.csv)
-query_id, query, provider, timestamp, page, rank, title, authors, year,
-publication, scholar_result_id, doi, result_url, pdf_or_fulltext_url,
-cited_by_count, cited_by_id, related_id, retrieval_status, dedup_status,
-screening_status, notes
+For each request, log database, exact query, actual filters, date range, returned
+count, time and status/error. Cache identical requests within a run. Preserve
+zero-result and failed-query rows rather than silently dropping them.
+
+## Stopping
+
+Stop at the user cap, query budget, quota guard or thematic saturation. Saturation
+requires consecutive planned query rounds with no material new eligible themes;
+do not claim exhaustive coverage from one database.
+
+## Ranking
+
+Use the disclosed relevance score only for triage. Citation count is neither
+quality nor authority. Inclusion remains a criterion-based screening decision.

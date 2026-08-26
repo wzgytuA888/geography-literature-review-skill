@@ -1,19 +1,15 @@
-# Workflow: Task Init (runtime start)
+# Workflow: Task Init (v2 runtime)
 
-Input: user gives topic / question / field / concept to review.
+1. Create `runs/<YYYYMMDD>-<slug>/` with search, evidence, writing, citation,
+   figures and evaluation folders.
+2. Interpret the user's topic into research object, outcome, region and bounded
+   candidate terms. Preserve the verbatim input.
+3. Record review mode, research question, year/language/journal/author/DOI filters,
+   maximum papers, inclusion/exclusion criteria and requested deliverables.
+4. Run `scripts/literature_review_pipeline.py preflight`. Continue when at least
+   one primary API is ready. Record unavailable providers as degraded capability;
+   do not replace them with a Google Scholar scraper.
+5. Route the review mode using `references/review-methods.md` and write the
+   resulting scope and rationale to state.json.
 
-1. mkdir `runs/<YYYYMMDD>-<slug>/` with subfolders search/ evidence/ writing/
-   citation/ figures/ evaluation/.
-2. Run preflight: `python scripts/google_scholar_preflight.py`
-   - exit 0 → continue;
-   - exit 2/3 → state PAUSED_GOOGLE_SCHOLAR_API_NOT_READY + report + STOP.
-3. Write `task.md`: interpreted topic, target audience/journal style hints,
-   deliverables requested, language scope.
-4. Router (`references/review-methods.md`) → `review-mode.yaml` (mode + rationale +
-   consequences).
-5. Scope definition: time window, geography/language coverage, exclusion defaults
-   (non-scholarly sources), depth target (section count range).
-6. Delegate Search Strategist; record all decisions in `state.json`
-   (stage=init, status=RUNNING).
-
-Checkpoint after this workflow = safe pause point before any quota spend.
+Checkpoint before any search quota is spent.

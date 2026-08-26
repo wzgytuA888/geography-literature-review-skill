@@ -1,83 +1,94 @@
 ---
 name: geography-literature-review-skill
-description: Distills how top geography/earth-science journals structure literature reviews (from a Reference Review Benchmark Corpus) and runs an evidence-first multi-agent pipeline to produce a new review on any user-specified topic: Google Scholar API-only discovery, legal full-text acquisition with a human pause gate when key PDFs are missing, evidence matrix + argument map + synthesis-driven drafting, Zotero-verified citations with zero hallucination policy, draft figures, independent review and audit. Use when the user asks to write/scaffold a literature review, systematic/scoping/narrative/conceptual review, or "geo-review" commands.
+description: Runs reproducible, traceable literature-review workflows for geography, Earth science, ecology, remote sensing, climate and environmental research. Use for literature, systematic, scoping or bibliometric reviews; research-progress/gap analysis; evidence matrices; citation networks; or `/geo-review` commands. Uses Semantic Scholar and OpenAlex for discovery, Crossref for DOI metadata validation, conservative screening, evidence-grounded synthesis and structured exports. Do not use for explaining one paper, ordinary knowledge questions, or concept explanations that need no external literature search.
 license: MIT
 metadata:
-  version: 1.0.0
+  version: 2.0.0
   corpus: 60 benchmark reviews (Nature Reviews Earth & Environment et al.)
-  hard-rules: google-scholar-only-discovery; missing-fulltext-pause-gate; zero-hallucinated-citations; benchmark-HOW-vs-task-WHAT
+  hard-rules: evidence-first; reproducible-search-log; no-invented-metadata; uncertain-duplicates-preserved; benchmark-HOW-vs-task-WHAT
 ---
 
 # Geography Literature Review Research Skill
 
-Two corpora, two jobs — never confuse them:
+Keep the two corpora separate:
 
-| | Reference Review Benchmark Corpus | Task-specific Evidence Corpus |
+| | Benchmark corpus | Task evidence corpus |
 |---|---|---|
-| Lives in | `benchmark_corpus/` (distilled patterns) | `runs/<run-id>/` (built fresh per topic) |
-| Teaches / provides | **HOW** to write a high-quality geography review | **WHAT** is true about the user's topic |
-| May supply facts to the manuscript? | **NEVER** | Yes — only source of facts/gaps/citations |
+| Location | `benchmark_corpus/` | `runs/<run-id>/` |
+| Purpose | teaches **HOW** strong reviews are structured | establishes **WHAT** is known about this topic |
+| May supply manuscript facts? | Never | Yes, after screening and evidence extraction |
 
-## When to use what
+## Route the request
 
-- Compile-time (ingest/distill/update benchmark): `workflows/benchmark-distillation.md`, `workflows/benchmark-update.md`.
-- Runtime (user gives a NEW topic): follow `workflows/full-review-workflow.md` stage by stage.
+- New review, evidence matrix, research-gap analysis, citation network or field-progress analysis: read `workflows/full-review-workflow.md`.
+- Search/acquisition stage: read `workflows/literature-search.md` and `references/search-strategy.md`.
+- Evidence extraction or synthesis: read `workflows/evidence-synthesis.md` and `references/synthesis-rules.md`.
+- Benchmark ingest/update: read the matching workflow only.
+- One-paper explanation or no-search concept question: do not invoke this skill.
 
-## Runtime non-negotiables (read before any search)
+## Runtime invariants
 
-1. **Google Scholar API only.** External discovery for a new topic must go through
-   the configured Google-Scholar-compatible provider (`GOOGLE_SCHOLAR_API_PROVIDER/_KEY/_ENDPOINT`).
-   Run `python scripts/google_scholar_preflight.py` first. If unavailable ⇒ set state
-   `PAUSED_GOOGLE_SCHOLAR_API_NOT_READY`, report, stop searching. Never fall back to
-   WoS/Scopus/OpenAlex/Semantic Scholar/web scraping.
-2. **MissingFullTextGate.** If an included/high-priority paper has no legally
-   obtainable full text: generate `missing_fulltext_literature.txt` (+ `.xlsx`),
-   save checkpoint, state `PAUSED_WAITING_FOR_USER_FULLTEXT`, ask the user for PDFs
-   or explicit skip. Do not synthesize results from title/abstract guesses.
-3. **Zero hallucinated citations.** Every citation needs Zotero item / DOI /
-   authoritative metadata; unsupported claims ⇒ `INSUFFICIENT EVIDENCE`;
-   unresolvable refs leave the bibliography into `unresolved_citations.csv`.
-4. **Synthesis > summary.** No paper-by-paper enumeration as primary mode;
-   organize around propositions, consensus, controversy, conditions.
-5. **Geography reasoning is conditional.** Apply spatial explanations only when task
-   evidence triggers them (`references/geography-reasoning-rules.md`).
-6. **Gaps come from task evidence**, never from the benchmark corpus content.
+1. **API-first discovery.** Search Semantic Scholar and OpenAlex. Crossref validates
+   and enriches DOI metadata; it is not the primary discovery engine. Google
+   Scholar is optional manual supplementation only—never scrape its result pages.
+2. **Reproducibility.** Preserve the user's terms, generated queries, filters,
+   database, counts and retrieval time in `Search_Log`. Bound query expansion.
+3. **Conservative records.** Never invent abstracts, DOIs, findings, methods or
+   geographic fields. Unknown evidence fields are `null` or `not_reported`.
+   Distinguish source facts, AI extraction and inference; inference requires an
+   explicit flag and confidence.
+4. **Deduplication order.** DOI → Semantic Scholar ID → OpenAlex ID → exact
+   normalized title. Keep uncertain fuzzy matches and set `possible_duplicate=true`.
+5. **Screening is explicit.** Retrieved results are not automatically included.
+   Track retrieved → deduplicated → title → abstract → full-text → included, plus
+   `include` and a controlled `exclude_reason`.
+6. **Full-text gate.** Important included papers without legally available full
+   text trigger `PAUSED_WAITING_FOR_USER_FULLTEXT`; do not infer results from titles
+   or abstracts.
+7. **Traceable synthesis.** Every claim records supporting and contradicting paper
+   IDs, conditions, confidence and notes. Gaps must emerge from included evidence,
+   not copied future-work sentences or benchmark content.
+8. **Citation truth.** Resolve references through the registry, Zotero/DOI and
+   authoritative metadata. Unverifiable references remain unresolved, never invented.
 
-## Stage map (runtime)
+## Standard workflow
 
 ```
-topic → preflight → interpret → mode → search-plan → parallel Scout retrieval
-→ screen/dedupe → full-text acquisition ⟂ MissingFullTextGate → extract evidence
-→ evidence-matrix → synthesize → argument-map → outline → draft (placeholders)
-→ cite (Zotero) → figures → reviewer → revise → audit → benchmark-QA → final
+question → bounded search strategy → Semantic Scholar + OpenAlex → normalize
+→ Search Log → deduplicate → title/abstract screening → full-text gate
+→ evidence matrix → core papers → backward/forward snowballing → re-screen
+→ iterative theme coding → consensus/disagreement/gap synthesis
+→ citation audit → structured exports → review/figure/final package
 ```
 
-Detailed per-stage instructions live in `workflows/*.md`; agent contracts in
-`agents/runtime/*.md`; distilled method knowledge in `benchmark_corpus/*.md`.
+Use `scripts/literature_review_pipeline.py` for deterministic acquisition,
+snowballing and exports. The evidence-first writing, Zotero, figure, independent
+review and benchmark-QA stages remain available from v1.
 
 ## Commands
 
 Natural language or `/geo-review <cmd>`:
 
-Compile-time: `benchmark-ingest <folder>` · `benchmark-update <folder>` · `benchmark-audit` · `benchmark-profile`
-Runtime: `scholar-check` · `start "<topic>"` · `search` · `screen` · `evidence` · `synthesize` · `outline` · `draft` · `cite` · `figures` · `review` · `audit` · `missing-fulltext` · `resume` · `full`
+`api-check` · `start` · `search` · `screen` · `snowball` · `evidence` ·
+`themes` · `synthesize` · `outline` · `draft` · `cite` · `figures` · `review` ·
+`audit` · `export` · `missing-fulltext` · `resume` · `full`
 
-If the host lacks slash commands, these map to the same workflows via intent matching.
+Legacy `scholar-check` remains an alias for an API readiness check, not a mandate
+to use Google Scholar.
 
-## Setup requirements (before runtime)
+## Setup
 
 ```bash
-export GOOGLE_SCHOLAR_API_PROVIDER=serpapi      # any compatible gateway
-export GOOGLE_SCHOLAR_API_KEY=...               # keep out of git
-export GOOGLE_SCHOLAR_API_ENDPOINT=https://...
-pip install pypdf pyyaml openpyxl requests       # optional: mermaid-cli for figure rendering
+pip install -r requirements.txt
+python scripts/literature_review_pipeline.py preflight --out-dir runs/preflight
 ```
 
-Zotero optional but recommended (Web API key or local Zotero 7 running). See
-`docs/google-scholar-setup.md`, `docs/zotero-setup.md`.
+`SEMANTIC_SCHOLAR_API_KEY` is optional; the public endpoint is attempted without
+it. `OPENALEX_MAILTO` and `CROSSREF_MAILTO` identify polite-pool requests. `.env`
+is supported and ignored by git. Read `docs/academic-api-setup.md` when configuring.
 
-## Priority order when anything conflicts
+## Priority
 
-citation truth > claim–evidence consistency > provenance > accuracy > completeness >
-synthesis quality > logic > style. If evidence is thin, say so
-(`INSUFFICIENT EVIDENCE`) instead of writing beautifully about nothing.
+citation truth > claim–evidence consistency > provenance > accuracy > completeness
+> synthesis quality > logic > style. Thin evidence must be reported as
+`INSUFFICIENT EVIDENCE`, not filled with plausible prose.

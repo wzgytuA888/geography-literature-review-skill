@@ -9,8 +9,8 @@ flowchart TB
     BC --> BT --> DM
 
     subgraph RUNTIME["Runtime: Task-specific Review (per user topic)"]
-        UT["User Review Topic"] --> PF["Google Scholar API Preflight"]
-        PF --> LS["Parallel Literature Retrieval<br/>(Scholar API ONLY)"]
+        UT["User Review Topic"] --> PF["Academic API Preflight"]
+        PF --> LS["Parallel Literature Retrieval<br/>(Semantic Scholar + OpenAlex)"]
         LS --> SCR["Screening / Dedup"]
         SCR --> FT["Legal Full-text Acquisition"]
         FT --> GATE{"MissingFullTextGate"}

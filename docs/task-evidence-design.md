@@ -4,7 +4,8 @@
 Evidence-first writing. Nothing enters the manuscript that did not pass:
 
 ```
-Scholar discovery → screening → legal fulltext (gate!)
+Semantic Scholar/OpenAlex discovery → normalization → deduplication → screening
+→ citation snowballing → legal fulltext (gate!)
 → Evidence Literature Card → evidence units (with source_page)
 → Evidence Matrix → Synthesis notes → Argument Map → Outline → Draft
 ```
