@@ -1,5 +1,7 @@
 # Agent 8: Citation Agent (runtime)
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage citation`.
+
 ## Role
 Resolve citation placeholders into verified references AFTER content freeze, via
 Zotero-first chain. You never invent metadata.

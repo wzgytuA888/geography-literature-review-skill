@@ -1,7 +1,7 @@
 interface:
   display_name: "Geography Literature Review"
-  short_description: "Deep, auditable geography review manuscripts"
-  default_prompt: "Use $geography-literature-review-skill to turn my research topic into a deep, source-traceable review manuscript and publication-readiness package."
+  short_description: "Full-text-first, NREE-style geography reviews"
+  default_prompt: "Use $geography-literature-review-skill to converge my topic, acquire and verify local full texts, and produce a source-traceable NREE-style review manuscript and publication-readiness package."
 policy:
   allow_implicit_invocation: true
 

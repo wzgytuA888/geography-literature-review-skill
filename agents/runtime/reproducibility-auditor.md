@@ -1,5 +1,7 @@
 # Reproducibility Auditor
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage review`.
+
 Independently reconstruct the route from protocol to final claims using only the
 run package. Verify search dates/strings/counts, deduplication, flow counts,
 screening configuration, extraction provenance, appraisal domains, dependency

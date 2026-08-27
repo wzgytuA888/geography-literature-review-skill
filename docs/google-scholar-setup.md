@@ -1,6 +1,6 @@
 # Google Scholar Manual Supplement (Legacy v1 Integration)
 
-Version 2 does not require Google Scholar. Primary discovery uses Semantic Scholar
+Version 4 does not require Google Scholar. Primary discovery uses Semantic Scholar
 and OpenAlex; configure them using `academic-api-setup.md`.
 
 If a researcher manually searches Google Scholar or already has a legal third-party

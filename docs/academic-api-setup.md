@@ -1,4 +1,4 @@
-# Academic API Setup (v2)
+# Academic API Setup (v4)
 
 The runtime discovery layer uses Semantic Scholar and OpenAlex. Crossref is used
 for DOI validation and metadata enrichment. Google Scholar is optional manual
@@ -26,13 +26,16 @@ Do not put keys in YAML or source code. `.env` and `*.local.yaml` are ignored.
 
 ```powershell
 & "F:\pj311\.venv\Scripts\python.exe" scripts/literature_review_pipeline.py `
-  preflight --out-dir runs/preflight
+  preflight --out-dir runs/preflight --timeout-seconds 8 --max-retries 0
 ```
 
 `ready` means at least one primary discovery API is available. A single provider
 failure produces a degraded log but does not destroy the run; later providers and
 papers continue. HTTP 429/5xx, timeout and connection failures use bounded
-exponential retry and are written to `errors.log`.
+retry and are written to `errors.log`; `preflight.json` is written on success or
+failure. For orientation only, `search --orientation-mode` uses a bounded Crossref
+bibliographic fallback when both primary discovery sources yield no usable record.
+That fallback is never treated as systematic/exhaustive coverage.
 
 ## Reproducibility and cache
 

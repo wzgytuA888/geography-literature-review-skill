@@ -19,7 +19,7 @@ values must match. Empty citation manifests cannot pass.
 ## Gate 3 — Method/reporting reproducibility
 
 Reconstruct source plan, exact queries, counts, deduplication, screening and
-adjudication, full-text tiers, extraction verification, appraisal, dependence,
+adjudication, local full-text paths/checksums/provenance, extraction verification, appraisal, dependence,
 synthesis, certainty, amendments and automation disclosure. Compute flow counts
 from tables. Check the current applicable PRISMA/PRISMA-S/ROSES/SWiM/CERQual
 version and record access date rather than assuming a frozen standard.
@@ -31,12 +31,17 @@ over enumeration, target-journal fit, figure/table integration, limitations,
 declarations and author queries. Benchmark patterns are optional style priors,
 never factual or universal structure requirements.
 
+For the NREE profile, add an independent Architecture Editor pass using
+`references/nree-review-writing.md` and the YAML scorecard. Score >=80 is necessary
+but not sufficient; any roadmap, full-text, proposition-synthesis, visual-argument,
+gap-derivation or phrase-overlap hard blocker fails the profile.
+
 ## Hard red lines
 
 hallucinated/unresolved final references >0 · unsupported material claims >0 ·
 benchmark leakage >0 · unsupported quantitative figures >0 · unsupported gap,
-causal or global-transfer statements >0 · hidden conclusion-critical missing full
-text >0 · false systematic/exhaustive label >0 · automation presented as human
+causal or global-transfer statements >0 · included manuscript evidence without
+verified local full text >0 · false systematic/exhaustive label >0 · automation presented as human
 review >0 · unresolved protocol deviation affecting the primary conclusion >0.
 
 Verdict: `SUBMISSION_CANDIDATE`, `RESEARCH_DRAFT_NOT_READY`, or

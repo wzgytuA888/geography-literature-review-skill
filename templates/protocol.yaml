@@ -1,7 +1,11 @@
 protocol_version: 1.0
 status: draft
 topic_verbatim: ""
+topic_specificity: pending_orientation_gate
+scope_selection_status: pending
 review_mode: critical_narrative
+writing_profile: nree
+manuscript_architecture_profile: nree
 label_constraints: [not_systematic, not_exhaustive]
 primary_question: ""
 secondary_questions: []
@@ -35,6 +39,15 @@ synthesis:
 certainty:
   framework: evidence_type_specific
 reporting_standard: journal_neutral_transparent_review
+review_reporting_framework: journal_neutral_transparent_review
 target_journal: null
+fulltext_policy:
+  manuscript_evidence_requires_verified_local_fulltext: true
+  abstract_use: orientation_and_screening_only
+  unresolved_included_report_action: xlsx_handoff_and_pause
+nree_profile:
+  progression_ladder: null
+  architecture_editor_required: true
+  visual_argument_required: true
 frozen_at: null
 

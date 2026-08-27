@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
-"""Deterministic integrity checks for a v3 review package."""
+"""Deterministic integrity checks for a v4 review package."""
 from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 from pathlib import Path
 
 import yaml
+
+from resume_helper import MIN_READABLE_ALNUM_CHARS, identity_from_content, inspect_pdf
 
 
 def csv_rows(path: Path) -> list[dict]:
@@ -123,11 +126,84 @@ def audit(run_dir: Path) -> dict:
     fulltexts = csv_rows(run_dir / "fulltext/fulltext-registry.csv")
     if not fulltexts:
         blockers.append("full-text registry is empty")
-    available = {"AVAILABLE_LOCAL", "AVAILABLE_ZOTERO", "DOWNLOADED_LEGAL", "OPEN_ACCESS_FOUND"}
+    available = {"AVAILABLE_LOCAL", "AVAILABLE_ZOTERO", "DOWNLOADED_LEGAL"}
+    verified_identity = {"true", "1", "yes", "verified", "verified_automatic",
+                         "verified_manual", "pass", "passed"}
+    accepted_text_quality = {"acceptable", "good"}
+    fulltext_by_report = {row.get("report_id"): row for row in fulltexts}
+    screening_by_report = {
+        row.get("report_id") or row.get("record_id"): row for row in screening}
+    included_reports = {
+        row.get("report_id") or row.get("record_id")
+        for row in screening
+        if (row.get("decision") or "").lower() in {"include", "included"}
+        or (row.get("screening_status") or "") in {
+            "INCLUDED", "INCLUDED_PENDING_FULLTEXT", "HIGH_PRIORITY_PENDING_FULLTEXT"}
+        or str(row.get("include") or "").lower() in {"true", "1", "yes"}
+    }
+    for report_id in sorted(r for r in included_reports if r):
+        row = fulltext_by_report.get(report_id)
+        if not row or row.get("fulltext_status") not in available:
+            blockers.append(f"included report lacks verified local full text: {report_id}")
+        elif not (row.get("local_path") or "").strip() or not (row.get("sha256") or "").strip():
+            blockers.append(f"included report lacks local path/checksum: {report_id}")
+        elif str(row.get("identity_verified") or "").strip().casefold() not in verified_identity:
+            blockers.append(f"included report identity is not verified: {report_id}")
+        elif not (row.get("identity_basis") or "").strip():
+            blockers.append(f"included report lacks content-based identity evidence: {report_id}")
+        elif str(row.get("text_quality") or "").strip().casefold() not in accepted_text_quality:
+            blockers.append(f"included report full text is not readable: {report_id}")
+        elif not str(row.get("page_count") or "").strip().isdigit() or int(row["page_count"]) < 1:
+            blockers.append(f"included report page count is not verified: {report_id}")
+        elif not (row.get("extracted_text_path") or "").strip():
+            blockers.append(f"included report lacks extracted local text: {report_id}")
+        else:
+            local_path = Path(row["local_path"])
+            if not local_path.is_absolute():
+                local_path = run_dir / local_path
+            if not local_path.is_file():
+                blockers.append(f"included report local full text does not exist: {report_id}")
+            else:
+                actual_sha256 = hashlib.sha256(local_path.read_bytes()).hexdigest()
+                if actual_sha256.casefold() != row["sha256"].strip().casefold():
+                    blockers.append(f"included report checksum mismatch: {report_id}")
+                if local_path.suffix.casefold() == ".pdf" or local_path.read_bytes()[:5] == b"%PDF-":
+                    inspection = inspect_pdf(local_path)
+                    if not inspection.get("ok"):
+                        blockers.append(f"included report PDF has no readable full text: {report_id}")
+                    elif int(row.get("page_count") or 0) != int(inspection.get("page_count") or 0):
+                        blockers.append(f"included report page-count verification mismatch: {report_id}")
+                    elif str(row.get("identity_verified") or "").strip().casefold() == "verified_automatic":
+                        identity_row = {**screening_by_report.get(report_id, {}), **row}
+                        matched, _, basis = identity_from_content(
+                            identity_row, inspection.get("text", ""),
+                            inspection.get("metadata_text", ""))
+                        if not matched or basis != row.get("identity_basis"):
+                            blockers.append(
+                                f"included report automatic identity cannot be reproduced: {report_id}")
+            text_path = Path(row["extracted_text_path"])
+            if not text_path.is_absolute():
+                text_path = run_dir / text_path
+            if not text_path.is_file():
+                blockers.append(f"included report extracted text does not exist: {report_id}")
+            else:
+                extracted = text_path.read_text(encoding="utf-8", errors="ignore")
+                if sum(ch.isalnum() for ch in extracted) < MIN_READABLE_ALNUM_CHARS:
+                    blockers.append(f"included report extracted text is too sparse: {report_id}")
     for row in fulltexts:
         if (row.get("importance_tier") or "").lower() in {"critical", "seminal"} and (
                 row.get("fulltext_status") or "") not in available:
             blockers.append(f"conclusion-critical full text missing: {row.get('report_id')}")
+
+    supported_ids = {
+        item for claim in claims
+        for item in (claim.get("supporting_evidence_ids") or "").split(";") if item
+    }
+    for row in evidence:
+        if (row.get("evidence_id") or "") in supported_ids and (
+                row.get("extraction_basis") or "").lower() in {
+                    "abstract", "abstract_limited", "partial_abstract"}:
+            blockers.append(f"manuscript claim relies on abstract-only evidence: {row.get('evidence_id')}")
 
     manuscript_path = run_dir / "writing/manuscript.md"
     if manuscript_path.exists():
@@ -136,6 +212,26 @@ def audit(run_dir: Path) -> dict:
             majors.append("manuscript is too short to assess as a full review")
         if re.search(r"<CITE\b|\bTODO\b|\bTBD\b", manuscript, re.I):
             blockers.append("manuscript contains unresolved placeholders")
+
+    if protocol_path.exists():
+        profile = str(protocol.get("writing_profile") or "").lower()
+        if profile == "nree":
+            nree_report = run_dir / "evaluation/nree-architecture-report.md"
+            nree_gate_path = run_dir / "evaluation/nree-architecture-gate.yaml"
+            if not nree_report.exists():
+                blockers.append("missing NREE architecture review")
+            elif not re.search(r"\bPASS\b", nree_report.read_text(encoding="utf-8", errors="ignore")):
+                blockers.append("NREE architecture review has not passed")
+            if not nree_gate_path.exists():
+                blockers.append("missing NREE architecture gate")
+            else:
+                nree_gate = yaml.safe_load(nree_gate_path.read_text(encoding="utf-8")) or {}
+                if str(nree_gate.get("status") or "").lower() not in {"pass", "passed"}:
+                    blockers.append("NREE architecture gate status is not PASS")
+                if int(nree_gate.get("score_total") or 0) < 80:
+                    blockers.append("NREE architecture score is below 80")
+                if nree_gate.get("hard_blockers"):
+                    blockers.append("NREE architecture gate has hard blockers")
 
     appraisal = csv_rows(run_dir / "appraisal/study-appraisal.csv")
     if not appraisal:
@@ -150,6 +246,9 @@ def audit(run_dir: Path) -> dict:
                           "reproducibilityauditor"}:
         if required_role not in roles:
             blockers.append(f"required independent role missing from agent manifest: {required_role}")
+    if protocol_path.exists() and str(protocol.get("writing_profile") or "").lower() == "nree":
+        if "nreearchitectureeditor" not in roles:
+            blockers.append("required independent role missing from agent manifest: nreearchitectureeditor")
 
     verdict = "SUBMISSION_CANDIDATE" if not blockers and not majors else (
         "RESEARCH_DRAFT_NOT_READY" if claims or manuscript_path.exists()

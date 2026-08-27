@@ -46,13 +46,15 @@ After selecting core seed papers, use the `snowball` command for backward and
 forward Semantic Scholar citation expansion. Record direction and seed ID, merge,
 deduplicate and screen all new papers under the same criteria.
 
-## 5. Legal full text by importance tier
+## 5. Legal local full text for the manuscript evidence set
 
-Acquisition order remains Zotero/local files → API-provided OA link → DOI/
-publisher OA → legal resolver → institutional/user-provided copy. Pre-assign
-critical/core/supplemental importance. Missing critical/seminal text triggers the
-gate; supplemental abstract-only records may inform field mapping but not detailed
-finding/mechanism claims.
+Read `workflows/fulltext-acquisition.md`. Acquisition order remains local/Zotero →
+API-provided OA link → Unpaywall/publisher OA → recognized repository/author manuscript
+→ institutional library or user-provided copy. Every report retained for manuscript
+synthesis must end as an identity-verified local file; abstract-only candidates can be
+mapped or excluded but cannot enter the claim ledger. Any unresolved screened-in report
+triggers the XLSX pause gate until a verified file arrives or a protocol-valid screening
+revision removes it from the included set.
 
 Outputs: literature registry, report→study→site links, Search Appendix/Log,
 sentinel-recall report, deduplication log, A/B/adjudicated screening tables, flow

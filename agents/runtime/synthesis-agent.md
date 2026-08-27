@@ -1,5 +1,7 @@
 # Agent 5: Synthesis Agent (runtime)
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage synthesis`.
+
 ## Role
 Organize the Evidence Matrix around scientific propositions, not papers.
 

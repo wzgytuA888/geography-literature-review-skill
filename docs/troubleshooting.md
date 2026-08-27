@@ -9,7 +9,7 @@
 | malformed response | provider schema drift | inspect errors.log and update the relevant client; do not invent missing fields |
 | Zotero usable=false | desktop off / local server disabled / no web key | docs/zotero-setup.md; otherwise DOI/Crossref fallback (more UNRESOLVED risk) |
 | Better BibTeX probe false | BBT not installed / wrong port | install extension; Juris-M uses port 24119 (unsupported by default) |
-| Gate triggered unexpectedly many items | screening too inclusive | tighten inclusion criteria in search-plan; or provide PDFs / mark skips |
+| Gate triggered unexpectedly many items | screening too inclusive | provide PDFs, or revise genuinely ineligible decisions with protocol reasons; never bypass included items with skip flags |
 | resume_helper "no confident match" for a supplied PDF | title mismatch/scanned first page | ensure filename contains DOI, or first page has title text |
 | mmdc render fails | Chrome path moved | edit ~/mmdc-env/puppeteer.json executablePath; or keep .mmd as source of truth |
 | Kroki 500 | service outage | offline fallback: local mmdc; .mmd remains authoritative |

@@ -1,7 +1,8 @@
-# Architecture v3
+# Architecture v4
 
-Version 3 retains the benchmark/task corpus firewall and wraps the executable
-acquisition utilities in a protocol-to-publication artifact graph.
+Version 4 retains the benchmark/task corpus firewall and adds evidence-informed
+scope convergence, verified local full text and an NREE-profile release gate to
+the protocol-to-publication artifact graph.
 
 ## Layers
 
@@ -18,10 +19,12 @@ acquisition utilities in a protocol-to-publication artifact graph.
 ## Control flow
 
 ```text
-topic → protocol/source plan → independent query review → discovery/imports
-→ report/study/site linkage → independent screen/adjudication → full-text tiers
+topic → specificity/orientation gate → user scope choice when broad
+→ protocol/source plan → independent query review → discovery/imports
+→ report/study/site linkage → independent screen/adjudication
+→ verified legal local full text for every included report (XLSX pause if missing)
 → verified extraction → appraisal/dependency/spatial audit → synthesis/certainty
-→ red team → claim ledger/outline/draft → citations/figures → independent audits
+→ red team → claim ledger/NREE outline/draft → citations/figures → independent audits
 → revision → deterministic readiness verdict
 ```
 
@@ -31,7 +34,7 @@ not determine the review label; protocol coverage and method gates do.
 
 ## Failure behavior
 
-Conclusion-critical missing text, invalid coverage for the chosen label and hard
+Any included missing or identity-unverified local text, invalid coverage for the chosen label and hard
 lineage/citation failures stop or downgrade the run. Other provider/access gaps are
 logged and reflected in certainty. The system prefers a qualified research draft
 over a fluent but unsupported submission claim.

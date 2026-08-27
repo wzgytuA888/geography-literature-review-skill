@@ -12,6 +12,7 @@ Outputs:
 """
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import statistics
@@ -231,11 +232,21 @@ def analyze(rec: dict) -> dict:
 
 
 def main() -> None:
-    if not MANIFEST.exists():
-        sys.exit("manifest.jsonl missing — run extract_documents.py first")
-    records = [json.loads(l) for l in MANIFEST.read_text(encoding="utf-8").splitlines()]
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--manifest", default=str(MANIFEST))
+    ap.add_argument("--out-index", default=str(OUT_INDEX))
+    ap.add_argument("--out-stats", default=str(OUT_STATS))
+    args = ap.parse_args()
+    manifest = Path(args.manifest)
+    out_index = Path(args.out_index)
+    out_stats = Path(args.out_stats)
+    if not manifest.exists():
+        sys.exit(f"manifest missing: {manifest} — run extract_documents.py first")
+    records = [json.loads(l) for l in manifest.read_text(encoding="utf-8").splitlines()]
     rows = [analyze(r) for r in records]
-    OUT_INDEX.write_text(
+    out_index.parent.mkdir(parents=True, exist_ok=True)
+    out_stats.parent.mkdir(parents=True, exist_ok=True)
+    out_index.write_text(
         "\n".join(json.dumps(r, ensure_ascii=False) for r in rows) + "\n", encoding="utf-8")
 
     med_dens = [r["citations_per_block_q25_50_75"][1] for r in rows if r.get("citations_per_block_q25_50_75")]
@@ -266,7 +277,7 @@ def main() -> None:
         "reference_entries_per_article": q(ref_counts),
         "most_common_headings": [{"heading": h, "count": c} for h, c in hc.most_common(30)],
     }
-    OUT_STATS.write_text(json.dumps(stats, indent=2, ensure_ascii=False), encoding="utf-8")
+    out_stats.write_text(json.dumps(stats, indent=2, ensure_ascii=False), encoding="utf-8")
 
     ok = sum(1 for r in rows if "error" not in r)
     print(f"indexed {ok}/{len(rows)} docs")
@@ -274,7 +285,7 @@ def main() -> None:
         print(r["document_id"], "blocks:", r.get("n_paragraph_blocks"),
               "cit/block:", r.get("citations_per_block_q25_50_75"),
               "heads:", len(r.get("headings") or []))
-    print(f"-> {OUT_INDEX}\n-> {OUT_STATS}")
+    print(f"-> {out_index}\n-> {out_stats}")
 
 
 if __name__ == "__main__":

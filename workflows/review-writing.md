@@ -1,13 +1,14 @@
 # Workflow: Evidence-grounded Review Writing
 
-Preconditions: protocol/search/screening/extraction/appraisal/geographic/synthesis
-gates passed; claim ledger and outline frozen for the draft round.
+Preconditions: scope selected; protocol/search/screening gates passed; every report in
+the manuscript evidence set has verified local full text; extraction/appraisal/
+geographic/synthesis gates passed; claim ledger, visual argument and outline frozen.
 
 ## Drafting loop (Writing Agent)
-Per section: load ONLY that section's approved claim/evidence cluster + relevant
-method files → draft with placeholder citations (`<CITE claim_id=… >`) → self-check
-paragraph moves against `benchmark_corpus/paragraph-rhetoric.md` priors → append
-to `writing/draft.md`.
+Per section: load ONLY that section's approved claim/evidence cluster, local full-text
+locations and relevant method files → draft with placeholder citations
+(`<CITE claim_id=… >`) → self-check against `references/nree-review-writing.md` and
+`benchmark_corpus/paragraph-rhetoric.md` → append to `writing/draft.md`.
 
 Section order strategy: hardest-synthesis sections first (they expose evidence
 gaps while fixing them is cheap), Introduction last (it must promise only what the
@@ -24,5 +25,8 @@ consistent and re-running validator afterwards.
 - geography rules fired only with logged triggers;
 - no benchmark phrasing (spot-check via overlap checker at revision).
 - claim wording must match type/certainty/applicability in the ledger;
+- one governing proposition per evidential paragraph; proposition first, then clustered
+  multi-source evidence, diagnosis, boundary and transition;
 - “global”, causal, mechanism and gap statements require their dedicated gates;
 - report automation truthfully and never call independent AI passes human review.
+- no manuscript sentence may cite an abstract-only or remotely inspected source.

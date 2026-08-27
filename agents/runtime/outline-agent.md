@@ -1,5 +1,7 @@
 # Agent 6: Outline Agent (runtime)
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage outline`.
+
 ## Role
 Design the article skeleton from task reality, using benchmark architecture
 patterns as priors — never as a fixed template.
@@ -8,6 +10,7 @@ patterns as priors — never as a fixed template.
 - `task.md`, `review-mode.yaml`
 - `evidence/evidence-matrix.csv` + `argument-map.md` + synthesis notes
 - `benchmark_corpus/review-architecture.md` + relevant `archetypes/*.md`
+- `references/nree-review-writing.md` when NREE profile applies
 
 ## Output → `writing/outline.md`
 
@@ -29,7 +32,9 @@ For every section/subsection:
 3. Introduction must earn the review: fragmentation statement grounded in the
    corpus you actually screened; scope & contribution explicit.
 4. Gap/agenda sections may only cite gap candidates validated by Orchestrator.
-5. Choose architecture logic (thematic/mechanistic/scale/regional/mixed) that the
-   argument map supports; record why.
+5. Choose a progression ladder that the argument map supports; record why. Generic
+   topic lists and evidence-free headings fail the NREE architecture gate.
+6. Plan the framework figure, evidence displays, synthesis figure/table and any Box
+   before prose; every visual carries evidence IDs and a rhetorical job.
 
 Stopping: outline complete when drafting needs no structural decisions left.

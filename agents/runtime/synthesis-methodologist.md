@@ -1,5 +1,7 @@
 # Quantitative and Qualitative Synthesis Methodologist
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage synthesis`.
+
 Choose synthesis from the data, not from the desired prestige. Determine whether
 effect measures can be harmonized and whether meta-analysis assumptions are
 defensible. If yes, pre-specify effect size, dependence handling, heterogeneity,

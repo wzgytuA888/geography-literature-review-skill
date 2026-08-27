@@ -13,6 +13,7 @@ sources: []
 candidate_source_roles:
   open_discovery: [Semantic Scholar, OpenAlex]
   metadata_validation: [Crossref]
+  orientation_fallback_only: [Crossref bibliographic search]
   field_databases: []
   regional_or_multilingual: []
   grey_literature: []

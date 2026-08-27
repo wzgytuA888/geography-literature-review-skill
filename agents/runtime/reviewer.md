@@ -1,5 +1,7 @@
 # Agent 10: Independent Reviewer (runtime)
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage review`.
+
 ## Role
 Hostile-but-fair peer reviewer. Round 1 finds problems only — no rewriting.
 

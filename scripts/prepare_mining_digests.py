@@ -83,21 +83,27 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--docs", help="comma-separated document_id filter, e.g. B001,B002")
     ap.add_argument("--slices", type=int, default=5)
+    ap.add_argument("--manifest", default=str(MANIFEST))
+    ap.add_argument("--index", default=str(INDEX))
+    ap.add_argument("--out-dir", default=str(DIGESTS))
     args = ap.parse_args()
 
-    records = [json.loads(l) for l in MANIFEST.read_text(encoding="utf-8").splitlines()]
+    manifest = Path(args.manifest)
+    index = Path(args.index)
+    out_dir = Path(args.out_dir)
+    records = [json.loads(l) for l in manifest.read_text(encoding="utf-8").splitlines()]
     try:
         idx_rows = {json.loads(l)["document_id"]: json.loads(l)
-                    for l in INDEX.read_text(encoding="utf-8").splitlines()}
+                    for l in index.read_text(encoding="utf-8").splitlines()}
     except FileNotFoundError:
         idx_rows = {}
     if args.docs:
         keep = {d.strip() for d in args.docs.split(",")}
         records = [r for r in records if r["document_id"] in keep]
-    DIGESTS.mkdir(parents=True, exist_ok=True)
+    out_dir.mkdir(parents=True, exist_ok=True)
     for rec in records:
         d = make_digest(rec, idx_rows.get(rec["document_id"]), n_slices=args.slices)
-        out = DIGESTS / f"{rec['document_id']}.txt"
+        out = out_dir / f"{rec['document_id']}.txt"
         out.write_text(d, encoding="utf-8")
         print(f"{rec['document_id']} -> {out.name} ({len(d)} chars)")
 

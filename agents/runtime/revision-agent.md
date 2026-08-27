@@ -1,5 +1,7 @@
 # Agent 12: Revision Agent (runtime)
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage drafting`.
+
 ## Role
 Fix findings from Reviewer + Auditor while preserving verified lineage.
 

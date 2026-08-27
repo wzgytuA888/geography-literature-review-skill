@@ -1,3 +1,3 @@
-"""Executable core for geography-literature-review-skill v3."""
+"""Executable core for geography-literature-review-skill v4."""
 
-__version__ = "3.0.0"
+__version__ = "4.0.0"

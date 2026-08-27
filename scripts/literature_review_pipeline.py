@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""API-first, reproducible literature-review acquisition pipeline (v2)."""
+"""API-first, reproducible literature-review acquisition pipeline (v4)."""
 from __future__ import annotations
 
 import argparse
@@ -7,6 +7,7 @@ import csv
 import json
 import math
 import sys
+import time
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
@@ -64,6 +65,8 @@ def run_search(args: argparse.Namespace) -> int:
     records: list[PaperRecord] = []
     logs: list[SearchLogEntry] = []
     for query in execution_queries:
+        query_record_count = 0
+        query_errors = 0
         for database, operation in [
             ("Semantic Scholar", lambda: s2.search(query, per_query, args.year_lo, args.year_hi)),
             ("OpenAlex", lambda: oa.search(query, per_query, args.year_lo, args.year_hi, args.language)),
@@ -71,13 +74,31 @@ def run_search(args: argparse.Namespace) -> int:
             try:
                 found = operation()
                 records.extend(found)
+                query_record_count += len(found)
                 logs.append(SearchLogEntry(database, query,
                     {"language": args.language, "journal": args.journal, "author": args.author},
                     f"{args.year_lo or ''}-{args.year_hi or ''}", len(found)))
             except APIRequestError as exc:
+                query_errors += 1
                 logs.append(SearchLogEntry(database, query,
                     {"language": args.language, "journal": args.journal, "author": args.author},
                     f"{args.year_lo or ''}-{args.year_hi or ''}", 0, status="error", error=str(exc)))
+        if getattr(args, "orientation_mode", False) and query_record_count == 0 and query_errors:
+            try:
+                found = crossref.search(query, per_query, args.year_lo, args.year_hi)
+                records.extend(found)
+                logs.append(SearchLogEntry(
+                    "Crossref orientation fallback", query,
+                    {"role": "bounded_orientation_fallback",
+                     "trigger": "primary providers returned no usable records"},
+                    f"{args.year_lo or ''}-{args.year_hi or ''}", len(found),
+                    status="degraded_fallback"))
+            except APIRequestError as exc:
+                logs.append(SearchLogEntry(
+                    "Crossref orientation fallback", query,
+                    {"role": "bounded_orientation_fallback"},
+                    f"{args.year_lo or ''}-{args.year_hi or ''}", 0,
+                    status="error", error=str(exc)))
 
     if args.doi:
         for doi in args.doi:
@@ -199,17 +220,30 @@ def run_screen(args: argparse.Namespace) -> int:
 def run_preflight(args: argparse.Namespace) -> int:
     load_environment(REPO)
     out = Path(args.out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+    started = time.monotonic()
+    timeout_seconds = max(1, min(60, int(args.timeout_seconds)))
+    max_retries = max(0, min(2, int(args.max_retries)))
+    client_kwargs = {"timeout": timeout_seconds, "max_retries": max_retries}
     checks = {}
     for name, operation in [
-        ("semantic_scholar", lambda: SemanticScholarClient(out / ".cache", out / "errors.log").search("geography", 1)),
-        ("openalex", lambda: OpenAlexClient(out / ".cache", out / "errors.log").search("geography", 1)),
+        ("semantic_scholar", lambda: SemanticScholarClient(
+            out / ".cache", out / "errors.log", **client_kwargs).search("geography", 1)),
+        ("openalex", lambda: OpenAlexClient(
+            out / ".cache", out / "errors.log", **client_kwargs).search("geography", 1)),
     ]:
         try:
             checks[name] = {"status": "ok", "results": len(operation())}
         except Exception as exc:
             checks[name] = {"status": "error", "error": str(exc)}
     status = "ready" if any(v["status"] == "ok" for v in checks.values()) else "degraded"
-    print(json.dumps({"status": status, "checks": checks}, indent=2))
+    report = {"status": status, "checks": checks,
+              "timeout_seconds_per_request": timeout_seconds,
+              "max_retries": max_retries,
+              "elapsed_seconds": round(time.monotonic() - started, 3)}
+    (out / "preflight.json").write_text(json.dumps(
+        report, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(json.dumps(report, indent=2))
     return 0 if status == "ready" else 2
 
 
@@ -261,6 +295,8 @@ def parser() -> argparse.ArgumentParser:
     sub = ap.add_subparsers(dest="command", required=True)
     pf = sub.add_parser("preflight")
     pf.add_argument("--out-dir", default="runs/preflight")
+    pf.add_argument("--timeout-seconds", type=int, default=8)
+    pf.add_argument("--max-retries", type=int, default=0)
     pf.set_defaults(func=run_preflight)
     search = sub.add_parser("search")
     search.add_argument("--topic", required=True)
@@ -279,6 +315,8 @@ def parser() -> argparse.ArgumentParser:
     search.add_argument("--per-query-limit", type=int,
                         help="Override records requested per query per provider")
     search.add_argument("--crossref-enrich-limit", type=int, default=25)
+    search.add_argument("--orientation-mode", action="store_true",
+                        help="Allow bounded Crossref discovery fallback; orientation only")
     search.add_argument("--out-dir", required=True)
     search.set_defaults(func=run_search)
     snow = sub.add_parser("snowball")

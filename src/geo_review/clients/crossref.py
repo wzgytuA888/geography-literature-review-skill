@@ -18,10 +18,37 @@ class CrossrefClient:
         self.mailto = os.getenv("CROSSREF_MAILTO", "").strip()
 
     def get_work(self, doi: str) -> PaperRecord | None:
-        headers = {"User-Agent": f"geography-literature-review-skill/2.0 ({self.mailto})"}
+        headers = {"User-Agent": f"geography-literature-review-skill/4.0 ({self.mailto})"}
         data = self.http.request_json("GET", f"{self.base_url}/works/{doi}", headers=headers)
         item = data.get("message") if isinstance(data, dict) else None
         return self._normalize(item, doi) if item else None
+
+    def search(self, query: str, limit: int = 20, year_lo: int | None = None,
+               year_hi: int | None = None) -> list[PaperRecord]:
+        """Bounded bibliographic fallback for orientation, never exhaustive search."""
+        filters = []
+        if year_lo:
+            filters.append(f"from-pub-date:{year_lo}-01-01")
+        if year_hi:
+            filters.append(f"until-pub-date:{year_hi}-12-31")
+        params: dict[str, Any] = {
+            "query.bibliographic": query,
+            "rows": max(1, min(100, limit)),
+            "select": "DOI,title,author,published,container-title,publisher,is-referenced-by-count,URL",
+        }
+        if filters:
+            params["filter"] = ",".join(filters)
+        if self.mailto:
+            params["mailto"] = self.mailto
+        headers = {"User-Agent": f"geography-literature-review-skill/4.0 ({self.mailto})"}
+        data = self.http.request_json("GET", f"{self.base_url}/works",
+                                      params=params, headers=headers)
+        items = ((data.get("message") or {}).get("items") or []) if isinstance(data, dict) else []
+        rows = [self._normalize(item, item.get("DOI") or "") for item in items]
+        for row in rows:
+            row.source_database = ["Crossref orientation fallback"]
+            row.search_query = [query]
+        return rows
 
     @staticmethod
     def _normalize(item: dict[str, Any], doi: str) -> PaperRecord:

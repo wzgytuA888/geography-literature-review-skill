@@ -1,13 +1,15 @@
 # Geography Literature Review Research Skill
 
-Version 3 upgrades the project from a literature-discovery pipeline into a
-protocol-first, multi-agent review system designed to produce a deeply synthesized,
-fully auditable **submission candidate** when the evidence and access permit it.
+Version 4 is a full-text-first, NREE-profile multi-agent workflow designed to
+produce a deeply synthesized, auditable **submission candidate** when the evidence,
+access and human verification permit it.
 
-Give the skill a research topic. It will frame the question, choose a defensible
-review type, design and peer-review the search, screen and appraise studies, analyze
-geographic/scale heterogeneity, synthesize claims with certainty ratings, draft the
-article, verify citations and run independent scientific and reproducibility gates.
+Give the skill a research topic. If the direction is broad, it first searches the
+landscape, offers 3-5 evidence-informed questions and pauses for your choice. It then
+designs and peer-reviews the final search, downloads lawful full text locally,
+screens and appraises studies, analyzes geographic/scale heterogeneity, synthesizes
+claims with certainty ratings, drafts the article, verifies citations and runs
+independent scientific and reproducibility gates.
 
 It does not promise journal acceptance or disguise missing database access, full
 text or human verification. When those constraints matter, it returns a complete
@@ -24,11 +26,26 @@ change and irrigation expansion alter groundwater depletion across arid regions.
 Target a journal-neutral English manuscript and include a geographic evidence map.
 ```
 
-When only a topic is supplied, v3 defaults to a deep critical narrative review.
-It records inferred scope and continues autonomously. It uses the word “systematic”
+When a sufficiently specific topic is supplied, v4 defaults to a deep NREE-profile
+critical narrative review. A broad topic triggers the scope-selection checkpoint.
+It uses the word “systematic”
 only when multi-source coverage, selection, appraisal and reporting gates justify it.
 
-## What is new in v3
+## What is new in v4
+
+- Evidence-informed scope convergence: broad directions produce 3-5 review-question
+  cards and `PAUSED_WAITING_FOR_SCOPE_SELECTION`.
+- Mandatory local full text for every report used in manuscript claims; abstracts are
+  limited to orientation and screening.
+- Lawful acquisition routes across local/Zotero, OA APIs, publisher OA, recognized
+  repositories, author manuscripts and library delivery.
+- Automatic missing-full-text XLSX handoff and resumable
+  `PAUSED_WAITING_FOR_USER_FULLTEXT` checkpoint.
+- An NREE-derived architecture and paragraph contract distilled from 60 full review
+  articles, plus an independent NREE Architecture Editor gate.
+- Visual-argument planning and proposal-to-heading roadmap fidelity before drafting.
+
+Version 4 retains the v3 foundations:
 
 - Protocol and contribution test before final searching.
 - Review-type routing: critical/integrative, systematic, scoping/map,
@@ -56,15 +73,17 @@ The Orchestrator owns state and merges artifacts. Specialists work in staged wav
 
 ```text
 Protocol Architect + Domain Theorist
+  → Research Landscape Cartographer (when broad) → user scope choice
   → Search Strategist + independent Search Peer Reviewer
   → parallel database/language Scouts
   → Screeners A/B → Adjudicator
-  → Extraction A/B + Full-text Verifier + Appraisal Specialist
+  → Legal Full-text Acquisition + Full-text Verifier → XLSX pause if missing
+  → Extraction A/B + Appraisal Specialist
   → Geospatial Analyst + Synthesis Methodologist + Certainty Agent
   → Contradiction/Gap Red Team
   → Outline Architect → Lead Writer
   → Citation + Figure/Table verification
-  → Scientific Reviewer + Journal Editor + Reproducibility Auditor
+  → NREE Architecture Editor + Scientific Reviewer + Journal Editor + Reproducibility Auditor
   → Revision → readiness gate
 ```
 
@@ -81,7 +100,7 @@ The benchmark/task firewall remains strict:
 | `benchmark_corpus/` | form, reasoning and writing priors | Never |
 | `runs/<run-id>/` | searched, screened, extracted topic evidence | Yes |
 
-The v3 entity model separates reports, underlying studies, sites/outcomes,
+The v4 entity model separates reports, underlying studies, sites/outcomes,
 evidence units and claims. Every material sentence must trace through:
 
 ```text
@@ -142,6 +161,28 @@ that spreading work across several queries does not collapse each lane to only a
 few records. `sentinel-check` blocks progression when the planned search misses too
 many known eligible seed papers.
 
+## Full-text acquisition and resume
+
+After screening, populate `fulltext/acquisition-queue.csv` and run the bounded
+lawful acquisition pass:
+
+```powershell
+& "F:\pj311\.venv\Scripts\python.exe" scripts/legal_fulltext_fetch.py `
+  --run-dir runs/permafrost-vegetation
+& "F:\pj311\.venv\Scripts\python.exe" scripts/missing_fulltext_gate.py `
+  --run-dir runs/permafrost-vegetation
+```
+
+If the second command pauses the run, give the generated XLSX to the researcher.
+After matching PDFs are placed in `fulltext/user_uploads/`, validate and resume:
+
+```powershell
+& "F:\pj311\.venv\Scripts\python.exe" scripts/resume_helper.py validate-pdf `
+  --run-dir runs/permafrost-vegetation `
+  --pdf runs/permafrost-vegetation/fulltext/user_uploads/R001.pdf `
+        runs/permafrost-vegetation/fulltext/user_uploads/R002.pdf
+```
+
 ## Readiness check
 
 After the manuscript and supplements are assembled:
@@ -158,7 +199,8 @@ The verdict is one of:
 - `INSUFFICIENT_EVIDENCE`
 
 Hard failures include an empty/unverified citation manifest, unsupported claims or
-figures, missing conclusion-critical text, false systematic/global/causal labels,
+figures, any included report without verified local full text, a failed NREE
+architecture review, false systematic/global/causal labels,
 hidden contradictions and automation described as human review.
 
 ## Tests

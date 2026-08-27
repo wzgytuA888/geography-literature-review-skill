@@ -1,5 +1,28 @@
 # Changelog
 
+## 4.0.0 — 2026-08-27
+
+- Added an evidence-informed topic-specificity gate: broad directions receive a
+  bounded orientation search, 3-5 review-question cards and a mandatory user scope
+  selection checkpoint.
+- Made the manuscript evidence base full-text-only. All included reports must be
+  stored and identity-verified locally before extraction or writing; abstracts are
+  restricted to orientation and screening.
+- Added lawful OA/local acquisition tooling, provenance/checksum fields, an XLSX
+  missing-literature handoff and a resumable full-text upload directory. Pirate and
+  paywall-bypass routes are explicitly prohibited.
+- Added an NREE-derived architecture/writing contract based on 60 local full review
+  PDFs, with progression, paragraph, visual-argument, closing and release gates.
+- Added Research Landscape Cartographer, Legal Full-text Acquisition Agent and NREE
+  Architecture Editor roles.
+- Added an atomic scope-convergence state machine, bounded provider preflight,
+  orientation-only Crossref fallback and executable paused-state guard.
+- Hardened resume validation against blank, damaged, filename-only and
+  reference-list-DOI false matches; validated PDFs and extracted text now receive
+  canonical paths, checksums, content identity evidence and pause-history records.
+- Upgraded scaffold/schema, quality gate, benchmark CLI path overrides, tests and
+  documentation for the v4 workflow.
+
 ## 3.0.0 — 2026-08-27
 
 - Reframed the product promise as an auditable submission-candidate workflow with

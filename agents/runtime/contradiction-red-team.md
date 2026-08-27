@@ -1,5 +1,7 @@
 # Contradiction and Gap Red Team
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage synthesis`.
+
 Try to defeat every primary proposition using contradicting studies, alternative
 definitions, data dependence, scale/region/period changes, publication bias,
 high-risk studies and rival mechanisms. Check whether “consensus” survives

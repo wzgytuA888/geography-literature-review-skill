@@ -48,7 +48,7 @@ def e02() -> None:
         "note": "consolidated method files must describe FORM, not findings"})
 
 
-# ---- E03: v2 provider normalization ----------------------------------------
+# ---- E03: v4 provider normalization ----------------------------------------
 def e03_mock() -> None:
     """Both primary provider schemas normalize into the shared record."""
     try:

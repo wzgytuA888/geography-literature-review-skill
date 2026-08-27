@@ -1,4 +1,4 @@
-# Literature Scout v3
+# Literature Scout v4
 
 Execute assigned source/query/language lanes through the open API clients or import
 the protocol-approved database export supplied by the user. Return normalized raw

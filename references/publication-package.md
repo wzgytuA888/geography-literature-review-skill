@@ -5,10 +5,15 @@
 Deliver a coherent article, not a collection of notes:
 
 1. informative title and 5–8 searchable keywords;
-2. structured abstract: background, objective, methods, synthesis, conclusion;
+2. abstract that completes background/problem, review scope, 2-4 synthesis findings
+   and implication; use a single unlabelled paragraph for the NREE profile unless
+   current author instructions require otherwise, and labelled structure for venues
+   that require it;
 3. introduction ending with the exact contribution and review questions;
-4. methods appropriate to review mode, including sources, search dates, selection,
-   extraction, appraisal, synthesis, spatial analysis and automation disclosure;
+4. transparent methods appropriate to review mode, including sources, search dates,
+   full-text acquisition, selection, extraction, appraisal, synthesis, spatial
+   analysis and automation disclosure; place this in the main text or supplement
+   according to current target-journal instructions;
 5. results/synthesis organized by propositions or mechanisms, with study and
    geographic characteristics before inferential synthesis;
 6. discussion that distinguishes robust findings, boundary conditions,
@@ -34,6 +39,9 @@ selection as an author decision, not a blocker.
 - applicable reporting checklist;
 - limitations and unresolved author queries;
 - reproducibility/readiness report.
+- local-full-text registry with path, checksum and provenance; when blocked, the
+  missing-literature XLSX and exact resume directory;
+- NREE architecture score/report when that profile is selected.
 
 ## Submission-readiness gates
 
@@ -44,7 +52,8 @@ Hard failures:
 - quantitative value/figure without a source location and unit;
 - systematic/exhaustive label without adequate source coverage and documented
   selection/appraisal;
-- missing conclusion-critical full text;
+- any included report used by the manuscript without identity-verified local full text;
+- NREE profile claimed without a passing independent architecture gate;
 - unreported screening/extraction automation or reviewer configuration;
 - unsupported gap, causal or transferability claim;
 - unresolved contradiction that is hidden rather than discussed.

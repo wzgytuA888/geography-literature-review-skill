@@ -1,5 +1,7 @@
 # Evidence Certainty Agent
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage synthesis`.
+
 Rate confidence per review finding after synthesis, never per paper by averaging
 scores. Choose a defensible framework for the evidence type: GRADE where applicable
 to quantitative effects, GRADE-CERQual for qualitative synthesis, or a transparent

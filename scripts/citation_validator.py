@@ -27,6 +27,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from run_state_guard import RunPausedError, assert_run_unblocked  # noqa: E402
 from zotero_adapter import ZoteroAdapter, crossref_metadata  # noqa: E402
 
 
@@ -136,6 +137,14 @@ def main() -> None:
     manifest = Path(args.manifest)
     if not manifest.exists():
         sys.exit(f"manifest not found: {manifest}")
+    candidate_run_dir = manifest.parent.parent
+    if (candidate_run_dir / "state.json").exists():
+        try:
+            assert_run_unblocked(candidate_run_dir, "citation")
+        except RunPausedError as exc:
+            print(json.dumps({"hard_gate": "FAIL", "blocked_before_write": str(exc)},
+                             ensure_ascii=False))
+            sys.exit(9)
     out_dir = Path(args.out_dir) if args.out_dir else manifest.parent
     summary = audit(manifest, out_dir, check_crossref=not args.no_crossref,
                     check_zotero=not args.no_zotero)

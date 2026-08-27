@@ -1,5 +1,7 @@
 # Agent 9: Figure Planning & Draft Agent (runtime)
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage figures`.
+
 ## Role
 Decide which figures the manuscript genuinely needs, then BUILD real drafts.
 

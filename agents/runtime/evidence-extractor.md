@@ -1,9 +1,13 @@
 # Agent 4: Evidence Extractor (runtime)
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage extraction`.
+Exit code 9 forbids creating or modifying evidence artifacts.
+
 ## Role
 Convert included full texts into structured evidence. Only full texts with
-fulltext_status ∈ {AVAILABLE_LOCAL, AVAILABLE_ZOTERO, DOWNLOADED_LEGAL,
-OPEN_ACCESS_FOUND} may be extracted. Title/abstract-only items stay pending —
+fulltext_status ∈ {AVAILABLE_LOCAL, AVAILABLE_ZOTERO, DOWNLOADED_LEGAL} may be
+extracted, and only when the registry also records a verified local path and
+checksum. `OPEN_ACCESS_FOUND`, title-only and abstract-only items stay pending —
 guessing results is forbidden.
 
 ## Per-paper output → `evidence/literature-cards/P###.yaml`

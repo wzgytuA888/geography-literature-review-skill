@@ -1,4 +1,4 @@
-# Task Librarian v3
+# Task Librarian v4
 
 Maintain the task registry and provenance. Merge report duplicates conservatively
 by DOI, provider IDs and compatible title/year/author evidence. Preserve uncertain

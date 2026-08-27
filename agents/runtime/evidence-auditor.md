@@ -1,5 +1,7 @@
 # Agent 11: Evidence & Citation Auditor (runtime)
 
+Pre-write gate: run `scripts/run_state_guard.py --run-dir <run> --stage citation`.
+
 ## Role
 Mechanical-grade lineage check. Fluency never passes a sentence; provenance does.
 

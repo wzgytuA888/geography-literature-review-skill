@@ -1,6 +1,6 @@
 # ARCHITECTURE_PLAN.md — Geography Literature Review Research Skill
 
-> Status: v3.0 · protocol-first, source-plan-first, multi-agent publication workflow.
+> Status: v4.0 · scope-convergent, full-text-first, NREE-profile multi-agent publication workflow.
 > This document fixes the architectural decisions for the whole repository.
 > Technology evidence lives in `docs/technology-baseline.md`.
 
@@ -16,7 +16,7 @@ evidence table is in `docs/technology-baseline.md`. Key conclusions:
 - **Agent Skills open standard**: `SKILL.md` with YAML frontmatter (`name`, `description`),
   progressive disclosure L1 metadata → L2 SKILL.md → L3 on-demand resources. We follow
   agentskills.io / Anthropic conventions and keep SKILL.md < 500 lines.
-- **Academic discovery v3**: source selection follows the protocol. Semantic
+- **Academic discovery v4**: source selection follows the protocol. Semantic
   Scholar/OpenAlex are open discovery layers and Crossref validates metadata;
   formal systematic reviews add field, grey and regional sources as required.
 - **Zotero**: Web API v3 + local HTTP server (Zotero 7) + Better BibTeX JSON-RPC;
@@ -71,11 +71,13 @@ parse PDFs → structural metadata → Review Pattern Cards → pattern mining
 rubric + anti-patterns. Agents: curator, miners (review/citation/geography/figure),
 consolidator.
 
-**Runtime** (per user topic): scaffold → protocol/review-mode routing → source plan
-and independent search review → parallel retrieval/import → report/study/site
-linkage → independent screening/adjudication → full-text tiers → verified
+**Runtime** (per user topic): scaffold → specificity/orientation gate → user scope
+choice when broad → protocol/review-mode routing → source plan and independent
+search review → parallel retrieval/import → report/study/site linkage → independent
+screening/adjudication → verified legal local full text for every included report
+(XLSX pause if missing) → verified
 extraction → design-matched appraisal/dependency/geographic audits → synthesis and
-certainty → contradiction/gap red team → claim ledger → outline/draft → verified
+certainty → contradiction/gap red team → claim ledger → NREE outline/draft → verified
 citations/figures → scientific/journal/reproducibility review → revision →
 readiness verdict. All state lives under `runs/<run-id>/` with checkpoints.
 
@@ -116,7 +118,7 @@ work; one owner merges canonical data and one writer owns the manuscript voice.
 ## 10. Skill ↔ MCP boundary
 
 Skills provide procedural knowledge and file artifacts; MCP provides tool access.
-Academic API calls go through the v2 REST clients (plain HTTPS, not an MCP
+Academic API calls go through the v4 REST clients (plain HTTPS, not an MCP
 dependency). Zotero access uses Web API/local server/
 Better BibTeX directly through `scripts/zotero_adapter.py`; if a Zotero MCP is
 present in the host it may be used opportunistically, but is not required.
@@ -166,9 +168,9 @@ missing-fulltext gate; missing report schema; pause/resume machine
 - MissingFullTextGate: INCLUDED_PENDING_FULLTEXT /
   HIGH_PRIORITY_PENDING_FULLTEXT items without legal fulltext ⇒ generate
   `missing_fulltext_literature.txt` (+ .xlsx when openpyxl available), save all
-  state, pause, request PDFs/Zotero uploads or explicit skip; resume validates
-  paper↔PDF↔DOI↔Zotero mapping and continues extraction. Explicit user skip sets
-  `explicit_user_skip=true` and keeps audit records.
+  state, pause and request PDFs/Zotero uploads; resume validates
+  paper↔PDF↔DOI↔Zotero mapping and continues extraction. Only a documented,
+  protocol-valid screening revision may remove an incorrectly included report.
 
 ## 25. Main risks & fallbacks
 

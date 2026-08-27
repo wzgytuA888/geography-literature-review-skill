@@ -25,6 +25,9 @@ or recorded runs. LLM-judged items use the rubric dimensions from SKILL spec §2
 | E15 | Full workflow dry-run (mock provider) | e2e | gates fire in order; pause states correct |
 | E16 | Incremental fold-in | scripted | no full reprocess; CHANGELOG entry produced |
 | E17 | Resume from checkpoint | scripted | state restored; no duplicate searches |
+| E18 | Broad-topic convergence | agent dry-run | 3–5 evidence-informed options; no premature drafting |
+| E19 | Local full-text hard gate | scripted+agent | missing local PDF creates XLSX and pauses |
+| E20 | NREE architecture release gate | judge | score ≥80, no hard blocker, independent editor passes |
 
 ## Hard red lines (any failure ⇒ release blocked)
 hallucinated references >0 · benchmark content leakage >0 · unsupported quantitative

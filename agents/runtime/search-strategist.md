@@ -1,4 +1,4 @@
-# Search Strategist v3
+# Search Strategist v4
 
 Translate the question into bounded concept blocks and a source plan. Preserve the
 exact wording. Produce `templates/search-plan.yaml`, including multilingual terms,
