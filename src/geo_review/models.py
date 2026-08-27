@@ -28,6 +28,10 @@ def normalize_title(value: str | None) -> str:
 
 @dataclass
 class PaperRecord:
+    report_id: str = ""
+    study_id: str | None = None
+    site_ids: list[str] = field(default_factory=list)
+    outcome_ids: list[str] = field(default_factory=list)
     paper_id: str = ""
     title: str = ""
     authors: list[str] = field(default_factory=list)
@@ -125,3 +129,37 @@ class SearchLogEntry:
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
+
+
+@dataclass
+class EvidenceUnit:
+    evidence_id: str
+    report_id: str
+    study_id: str | None
+    site_id: str | None
+    outcome_id: str | None
+    claim_type: str
+    claim: str
+    source_location: str
+    extraction_basis: str = "full_text"
+    result: str | None = None
+    context: str | None = None
+    geography: str | None = None
+    scale: str | None = None
+    inference: bool = False
+    confidence: str | None = None
+
+
+@dataclass
+class ClaimRecord:
+    claim_id: str
+    claim_type: str
+    claim_text: str
+    supporting_evidence_ids: list[str]
+    contradicting_evidence_ids: list[str] = field(default_factory=list)
+    study_ids: list[str] = field(default_factory=list)
+    conditions: list[str] = field(default_factory=list)
+    applicability_geography: str | None = None
+    applicability_scale: str | None = None
+    certainty: str | None = None
+    verified_citation_keys: list[str] = field(default_factory=list)

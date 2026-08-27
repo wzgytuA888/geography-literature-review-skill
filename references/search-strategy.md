@@ -1,35 +1,51 @@
-# Reproducible API-first Search Strategy
+# Source-plan-first Search Strategy
 
-## Inputs
+## Build concept blocks
 
-Record the research topic/question, original keywords, Boolean query, year range,
-language, journal, author, DOI and paper cap. Parse a short topic into research
-object, outcome, region and a small synonym set, then show or log all generated
-queries. Never expand without a fixed bound.
+Preserve the user's wording. Translate the question into 2–5 concept blocks and a
+small, justified set of synonyms, acronyms, spellings, controlled terms and
+multilingual variants. Keep geography as an eligibility condition when enumerating
+place names would damage recall. Record rejected terms and why.
 
-## Provider roles
+## Select complementary sources
 
-1. Semantic Scholar: primary relevance search, abstracts, identifiers, citation
-   and reference edges, OA PDF metadata.
-2. OpenAlex: primary broad-coverage search and bibliometric context—topics,
-   authorships, institutions, countries and referenced works. Use cursor paging.
-3. Crossref: DOI validation and publication metadata enrichment.
-4. Google Scholar: optional researcher-run manual supplementation. Log manually
-   added records and queries; do not scrape result pages.
+Choose sources for the topic and review label:
 
-## Reproducibility
+- Semantic Scholar/OpenAlex: open discovery, citation graph and broad metadata;
+- Crossref: DOI/publication metadata validation;
+- field databases available to the user (e.g. Web of Science, Scopus, GeoRef,
+  CAB Abstracts, discipline or regional databases): formal systematic coverage;
+- repositories, agencies, theses and institutional sites: grey literature;
+- backward/forward citation searching and expert/sentinel lists: gap detection.
 
-For each request, log database, exact query, actual filters, date range, returned
-count, time and status/error. Cache identical requests within a run. Preserve
-zero-result and failed-query rows rather than silently dropping them.
+Do not call a two-open-API search exhaustive. Imports from licensed databases are
+valid when their exact platform/query/export metadata is logged.
 
-## Stopping
+## Peer review and sentinel recall
 
-Stop at the user cap, query budget, quota guard or thematic saturation. Saturation
-requires consecutive planned query rounds with no material new eligible themes;
-do not claim exhaustive coverage from one database.
+Create a sentinel/test set from recent reviews, expert suggestions and clearly
+eligible seed papers without tuning to the final conclusions. Before final search,
+an independent Search Peer Reviewer tests whether combined sources retrieve the
+set. Diagnose misses by concept, syntax, indexing, date/language and source. Record
+recall as a calibration measure, not proof that all unknown papers were found.
 
-## Ranking
+## Reproducibility fields
 
-Use the disclosed relevance score only for triage. Citation count is neither
-quality nor authority. Inclusion remains a criterion-based screening decision.
+For every run store: database and platform/API; exact executable query; fields;
+filters; coverage dates; search date/time/time zone; page/cursor/query limits;
+raw count; export format; dedup count; software/API version; errors/deviations;
+raw snapshot/checksum where permitted. Keep zero-result and failed queries.
+
+## Stopping and updates
+
+- Formal systematic/map: complete the pre-specified source plan; do not use theme
+  saturation as a substitute for database coverage.
+- Critical narrative/conceptual: stop after the bounded plan plus two consecutive
+  planned expansion rounds add no material proposition or disconfirming evidence.
+- Update the search near manuscript submission; record the update and newly
+  included reports.
+
+Ranking is triage only. Citation counts measure visibility, not validity. Search
+automation may prioritize records but machine exclusions must be disclosed and
+validated; do not silently treat ranking cutoffs as eligibility criteria.
+

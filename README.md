@@ -1,57 +1,101 @@
 # Geography Literature Review Research Skill
 
-Version 2 turns the project from a Google-Scholar-gateway workflow into a
-reproducible, API-first literature-review system. It retrieves and normalizes
-research metadata, preserves search provenance, supports conservative screening
-and citation snowballing, builds a geography-aware evidence matrix, and retains
-the v1 evidence-to-claim audit and review-writing pipeline.
+Version 3 upgrades the project from a literature-discovery pipeline into a
+protocol-first, multi-agent review system designed to produce a deeply synthesized,
+fully auditable **submission candidate** when the evidence and access permit it.
 
-## What v2 does
+Give the skill a research topic. It will frame the question, choose a defensible
+review type, design and peer-review the search, screen and appraise studies, analyze
+geographic/scale heterogeneity, synthesize claims with certainty ratings, draft the
+article, verify citations and run independent scientific and reproducibility gates.
 
-1. Builds a bounded, reproducible search strategy from a topic, research
-   question, keywords, Boolean query and filters.
-2. Searches Semantic Scholar and OpenAlex. Semantic Scholar works without an API
-   key where public quota permits; a key improves rate limits.
-3. Uses Crossref to validate and enrich DOI metadata rather than as the primary
-   discovery source.
-4. Normalizes records and deduplicates by DOI → Semantic Scholar ID → OpenAlex ID
-   → exact normalized title. Fuzzy matches are retained and flagged.
-5. Records every database/query/filter/count/time tuple in `Search_Log`.
-6. Supports title, abstract and full-text screening with controlled exclusion
-   reasons. Retrieval never implies inclusion.
-7. Performs backward and forward citation snowballing from Semantic Scholar seed
-   papers while preserving `seed_paper_id` and discovery method.
-8. Exports CSV, JSON and an Excel workbook with `Papers`, `Evidence_Matrix`,
-   `Included`, `Excluded`, `Themes`, `Search_Log` and `Citation_Network` sheets.
-9. Retains legal full-text gating, evidence units, traceable synthesis, Zotero/
-   DOI citation validation, figure grounding and independent audit.
+It does not promise journal acceptance or disguise missing database access, full
+text or human verification. When those constraints matter, it returns a complete
+research draft plus a precise readiness report rather than polishing uncertainty
+into false confidence.
 
-Google Scholar is now an optional manual supplement. This project does not scrape
-Google Scholar result pages.
+## Quick use
 
-## Architecture
-
-The original dual-corpus design remains unchanged:
-
-| Corpus | Role | Can supply scientific facts? |
-|---|---|---|
-| `benchmark_corpus/` | teaches how high-quality geography reviews are structured | No |
-| `runs/<run-id>/` | records the retrieved, screened and extracted topic evidence | Yes |
-
-The v2 executable layer lives under `src/geo_review/`:
+Invoke the skill in Codex and provide a topic, for example:
 
 ```text
-models.py                  unified paper and search-log schemas
-http.py                    caching, throttling, retry and error logging
-clients/semantic_scholar.py
-clients/openalex.py
-clients/crossref.py
-pipeline.py                query planning, deduplication, screening, scoring
-export.py                  CSV, JSON and multi-sheet Excel exports
+Use $geography-literature-review-skill to produce a deep review of how climate
+change and irrigation expansion alter groundwater depletion across arid regions.
+Target a journal-neutral English manuscript and include a geographic evidence map.
 ```
 
-Existing `agents/`, `workflows/`, `references/`, `benchmark_corpus/`, Zotero,
-full-text gate, figure and audit modules remain part of the full workflow.
+When only a topic is supplied, v3 defaults to a deep critical narrative review.
+It records inferred scope and continues autonomously. It uses the word “systematic”
+only when multi-source coverage, selection, appraisal and reporting gates justify it.
+
+## What is new in v3
+
+- Protocol and contribution test before final searching.
+- Review-type routing: critical/integrative, systematic, scoping/map,
+  methodological, bibliometric, realist, quantitative and qualitative synthesis.
+- Source-plan-first search with independent query review and sentinel-paper recall.
+- Report → study → site/outcome linkage to prevent double-counting one dataset.
+- Independent A/B screening and adjudication contracts, with truthful AI/human
+  disclosure.
+- Design-matched critical appraisal, including remote-sensing and geospatial model
+  validity domains.
+- Geographic representativeness, scale, zoning, spatial dependence and
+  transferability audits.
+- Method selection for meta-analysis, SWiM-style structured synthesis, qualitative
+  synthesis and realist context–mechanism–outcome analysis.
+- Per-claim evidence certainty, contradiction testing and defensible gap derivation.
+- 20+ specialist roles executed in dependency-aware waves.
+- A deterministic run scaffold and a hard submission-readiness gate.
+- Publication package with manuscript, search appendix, screening flow, appraisal,
+  claim ledger, evidence profile, verified citations, figures/tables, reporting
+  checklist, AI disclosure and reproducibility report.
+
+## Multi-agent architecture
+
+The Orchestrator owns state and merges artifacts. Specialists work in staged waves:
+
+```text
+Protocol Architect + Domain Theorist
+  → Search Strategist + independent Search Peer Reviewer
+  → parallel database/language Scouts
+  → Screeners A/B → Adjudicator
+  → Extraction A/B + Full-text Verifier + Appraisal Specialist
+  → Geospatial Analyst + Synthesis Methodologist + Certainty Agent
+  → Contradiction/Gap Red Team
+  → Outline Architect → Lead Writer
+  → Citation + Figure/Table verification
+  → Scientific Reviewer + Journal Editor + Reproducibility Auditor
+  → Revision → readiness gate
+```
+
+Agents write separate staging artifacts; one owner merges canonical data and one
+Lead Writer controls the manuscript voice. Multiple AI agents are not represented
+as independent human reviewers.
+
+## Evidence architecture
+
+The benchmark/task firewall remains strict:
+
+| Corpus | Role | Scientific facts/citations in the new manuscript? |
+|---|---|---|
+| `benchmark_corpus/` | form, reasoning and writing priors | Never |
+| `runs/<run-id>/` | searched, screened, extracted topic evidence | Yes |
+
+The v3 entity model separates reports, underlying studies, sites/outcomes,
+evidence units and claims. Every material sentence must trace through:
+
+```text
+claim → evidence unit → report/study/site → source locator
+      → appraisal/dependence → verified citation → manuscript sentence
+```
+
+## Standards
+
+The router applies the current relevant guidance and records version/access date:
+PRISMA 2020/PRISMA-S, PRISMA-ScR, ROSES and CEE environmental-evidence guidance,
+SWiM for synthesis without meta-analysis, and GRADE-CERQual when appropriate.
+These improve conduct/reporting; citing a checklist never substitutes for doing the
+work.
 
 ## Installation
 
@@ -60,28 +104,25 @@ full-text gate, figure and audit modules remain part of the full workflow.
 Copy-Item .env.example .env
 ```
 
-Optional `.env` values:
+Optional keys identify polite/high-quota API access. Secrets and raw copyrighted
+full text remain git-ignored.
 
-```dotenv
-SEMANTIC_SCHOLAR_API_KEY=
-OPENALEX_MAILTO=researcher@example.org
-CROSSREF_MAILTO=researcher@example.org
-ZOTERO_API_KEY=
-ZOTERO_USER_ID=
-```
+## Start an auditable run
 
-See [`docs/academic-api-setup.md`](docs/academic-api-setup.md). Secrets are read
-from `.env` or process environment and must never be committed.
-
-## Readiness check
+Codex normally starts this automatically. The deterministic scaffold can also be
+called directly:
 
 ```powershell
-& "F:\pj311\.venv\Scripts\python.exe" scripts/literature_review_pipeline.py `
-  preflight --out-dir runs/preflight
+& "F:\pj311\.venv\Scripts\python.exe" scripts/review_scaffold.py init `
+  --topic "Permafrost degradation and vegetation response on the Tibetan Plateau" `
+  --language en --language zh --out-dir runs/permafrost-vegetation
 ```
 
-At least one working primary API yields `status: ready`. A provider failure is
-logged and the other provider can continue; cached completed requests are reused.
+Open discovery utilities currently provide executable `preflight`, `search`,
+`sentinel-check`, `screen` and `snowball` commands through
+`scripts/literature_review_pipeline.py`.
+The remaining `/geo-review` actions are skill-orchestrated agent stages, not
+misrepresented as standalone CLI commands.
 
 ## Search example
 
@@ -90,81 +131,53 @@ logged and the other provider can continue; cached completed requests are reused
   --topic "Permafrost degradation and vegetation response on the Tibetan Plateau" `
   --keywords "permafrost degradation" vegetation NDVI "Tibetan Plateau" `
   --year-lo 2000 --year-hi 2026 --language en --max-papers 200 `
-  --out-dir runs/permafrost-vegetation
+  --out-dir runs/permafrost-vegetation/search/open-discovery
 ```
 
-The generated `search_strategy.json` shows both original inputs and every actual
-query. Output records initially have `screening_status=retrieved` and
-`include=null`; the workflow does not silently include all hits.
+Semantic Scholar and OpenAlex are open discovery layers; Crossref validates DOI
+metadata. A formal systematic review additionally needs the field/grey/regional
+sources in its frozen protocol. Open APIs alone are not treated as exhaustive.
+The search command retrieves a candidate pool larger than the final paper cap so
+that spreading work across several queries does not collapse each lane to only a
+few records. `sentinel-check` blocks progression when the planned search misses too
+many known eligible seed papers.
 
-## Citation snowballing
+## Readiness check
+
+After the manuscript and supplements are assembled:
 
 ```powershell
-& "F:\pj311\.venv\Scripts\python.exe" scripts/literature_review_pipeline.py snowball `
-  --input runs/permafrost-vegetation/literature.json `
-  --topic "Permafrost degradation and vegetation response" `
-  --limit-per-seed 50 --out-dir runs/permafrost-vegetation-expanded
+& "F:\pj311\.venv\Scripts\python.exe" scripts/review_quality_gate.py `
+  --run-dir runs/permafrost-vegetation
 ```
 
-Backward and forward additions are labeled and linked to their seed paper.
+The verdict is one of:
 
-## Evidence model
+- `SUBMISSION_CANDIDATE`
+- `RESEARCH_DRAFT_NOT_READY`
+- `INSUFFICIENT_EVIDENCE`
 
-Alongside identifiers, bibliographic metadata, API provenance and screening
-status, the evidence matrix provides fields for research question, study area,
-coordinates, climate zone, ecosystem, spatial/temporal scale and resolution,
-remote-sensing/environmental/climate datasets, variables, methods, models,
-sample size, structured findings, mechanism, limitations and gaps.
-
-These evidence fields remain null until the abstract or full text explicitly
-supports them. AI inference is not treated as a paper fact; any necessary
-inference must carry `inference=true` and a confidence level.
-
-## Relevance scoring
-
-The optional score is a transparent screening aid, not a paper-quality score:
-
-```text
-0.55 topic-token overlap
-+ 0.20 recency within a 20-year window
-+ 0.15 log-scaled citation count
-+ 0.10 metadata completeness
-```
-
-Citation count alone never establishes authority or inclusion.
-
-## Full review workflow
-
-Natural language or `/geo-review` commands support:
-
-```text
-api-check  start  search  screen  snowball  evidence  themes  synthesize
-outline    draft  cite    figures review    audit     export  resume  full
-```
-
-A full run proceeds from search through screening and legal full-text acquisition,
-then evidence extraction, iterative themes, consensus/controversy/gap synthesis,
-outline, drafting, citation audit, figures, independent review and final exports.
+Hard failures include an empty/unverified citation manifest, unsupported claims or
+figures, missing conclusion-critical text, false systematic/global/causal labels,
+hidden contradictions and automation described as human review.
 
 ## Tests
 
 ```powershell
+$env:PYTHONUTF8=1
 & "F:\pj311\.venv\Scripts\python.exe" -m unittest discover -s tests -v
 & "F:\pj311\.venv\Scripts\python.exe" evals/run_scripted.py
 ```
 
-## Limitations
+## Limits and researcher responsibility
 
-- Public API quotas and coverage differ; no database is complete.
-- Abstract availability is uneven, and metadata-only fields cannot replace full
-  text for extracting findings or mechanisms.
-- Automated screening and theme coding require researcher review.
-- The benchmark corpus is dominated by one journal family; it guides form, not facts.
-- Live Zotero fields in Word remain a desktop-plugin action; generated DOCX files
-  use static CSL citations.
+- Database coverage, subscriptions, API quotas and full-text rights constrain what
+  the system can conclude.
+- High-quality systematic review decisions and statistical/causal conclusions need
+  accountable human/domain review before submission.
+- The benchmark corpus is a writing/reasoning prior dominated by one journal
+  family; task evidence and target-journal instructions always take precedence.
+- Live Zotero Word fields are not scriptable through a stable public API; generated
+  DOCX citations are static unless the researcher refreshes them in Zotero.
 
-## Privacy, copyright and license
-
-API keys, raw PDFs, full text, caches and local runs are git-ignored. Only legally
-available full text may be acquired. Code and prompts are MIT licensed; review
-outputs belong to their authors.
+Code and prompts are MIT licensed. Review outputs belong to their authors.

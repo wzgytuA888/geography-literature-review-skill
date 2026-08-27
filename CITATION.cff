@@ -1,16 +1,15 @@
 cff-version: 1.2.0
 title: Geography Literature Review Research Skill
 type: software
-version: 2.0.0
-date-released: "2026-08-26"
+version: 3.0.0
+date-released: "2026-08-27"
 license: MIT
 repository-code: "https://github.com/wzgytuA888/geography-literature-review-skill"
 abstract: >-
-  A research skill that distills review methodology from a benchmark corpus of
-  high-quality geography reviews (Book-to-Skill approach) and executes an
-  evidence-first multi-agent pipeline — Semantic Scholar/OpenAlex discovery,
-  human-gated full-text acquisition, provenance-tracked synthesis, Zotero-verified
-  citations, draft figures, and independent audit — for arbitrary user topics.
+  A protocol-first, evidence-grounded multi-agent skill for producing auditable
+  geography and environmental-science review manuscripts, including source-plan
+  validation, design-matched appraisal, geographic heterogeneity analysis,
+  claim-level certainty, verified citations, and publication-readiness audits.
 keywords:
   - literature-review
   - geography
@@ -21,3 +20,7 @@ keywords:
   - openalex
   - crossref
   - evidence-synthesis
+  - critical-appraisal
+  - systematic-review
+  - prisma
+  - roses

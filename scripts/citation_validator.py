@@ -116,8 +116,8 @@ def audit(manifest_path: Path, out_dir: Path, check_crossref: bool = True,
         "claim_unsupported": sum(1 for r in audited
                                  if r["final_status"] == "CLAIM_UNSUPPORTED"),
         "unresolved": sum(1 for r in audited if r["final_status"] == "UNRESOLVED"),
-        "hard_gate": "PASS" if all(
-            r["final_status"] in {"VERIFIED"} for r in audited) else "FAIL",
+        "hard_gate": "PASS" if audited and all(
+            r["final_status"] == "VERIFIED" for r in audited) else "FAIL",
     }
     (out_dir / "audit-summary.json").write_text(
         json.dumps(summary, indent=2), encoding="utf-8")
@@ -140,7 +140,7 @@ def main() -> None:
     summary = audit(manifest, out_dir, check_crossref=not args.no_crossref,
                     check_zotero=not args.no_zotero)
     print(json.dumps(summary, indent=2))
-    sys.exit(0 if summary["hard_gate"] == "PASS" or summary["total"] == 0 else 4)
+    sys.exit(0 if summary["hard_gate"] == "PASS" else 4)
 
 
 if __name__ == "__main__":

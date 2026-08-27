@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import math
 import sys
 from pathlib import Path
 
@@ -19,6 +20,17 @@ from geo_review.pipeline import (apply_screening, build_queries, deduplicate,
                                  merge_records, score_relevance)  # noqa: E402
 
 
+def allocate_per_query_limit(max_papers: int, query_count: int,
+                             provider_count: int = 2,
+                             candidate_pool_multiplier: float = 4.0,
+                             override: int | None = None) -> int:
+    if override is not None:
+        return max(1, min(1000, override))
+    return max(10, min(100, math.ceil(
+        max_papers * candidate_pool_multiplier /
+        max(1, query_count * provider_count))))
+
+
 def run_search(args: argparse.Namespace) -> int:
     load_environment(REPO)
     out = Path(args.out_dir)
@@ -30,11 +42,19 @@ def run_search(args: argparse.Namespace) -> int:
                           f'"{args.author}"' if args.author else ""] if part)
                          for query in queries]
     (out / "search_strategy.json").parent.mkdir(parents=True, exist_ok=True)
+    provider_count = 2
+    per_query = allocate_per_query_limit(
+        args.max_papers, len(queries), provider_count,
+        args.candidate_pool_multiplier, args.per_query_limit)
     (out / "search_strategy.json").write_text(json.dumps({
         "topic": args.topic, "keywords": args.keywords, "boolean_query": args.boolean_query,
         "generated_queries": queries, "actual_queries": execution_queries,
         "year_range": [args.year_lo, args.year_hi],
         "language": args.language, "maximum_number_of_papers": args.max_papers,
+        "candidate_pool_multiplier": args.candidate_pool_multiplier,
+        "per_query_per_provider_limit": per_query,
+        "providers": ["Semantic Scholar", "OpenAlex"],
+        "coverage_label": "open_discovery_not_exhaustive",
         "generated_at": utc_now(),
     }, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -43,7 +63,6 @@ def run_search(args: argparse.Namespace) -> int:
     crossref = CrossrefClient(cache, errors)
     records: list[PaperRecord] = []
     logs: list[SearchLogEntry] = []
-    per_query = max(1, args.max_papers // max(1, len(queries) * 2))
     for query in execution_queries:
         for database, operation in [
             ("Semantic Scholar", lambda: s2.search(query, per_query, args.year_lo, args.year_hi)),
@@ -97,6 +116,7 @@ def run_search(args: argparse.Namespace) -> int:
     unique = unique[:args.max_papers]
     for number, rec in enumerate(unique, 1):
         rec.paper_id = f"P{number:04d}"
+        rec.report_id = rec.report_id or f"R{number:04d}"
     paths = export_review(out, unique, logs, dedup_log=decisions)
     print(json.dumps({"status": "complete", "records": len(unique), "queries": len(queries),
                       "crossref_enriched": enriched,
@@ -193,6 +213,49 @@ def run_preflight(args: argparse.Namespace) -> int:
     return 0 if status == "ready" else 2
 
 
+def run_sentinel_check(args: argparse.Namespace) -> int:
+    from difflib import SequenceMatcher
+    from geo_review.models import normalize_doi, normalize_title
+
+    literature = json.loads(Path(args.input).read_text(encoding="utf-8"))
+    sentinel_path = Path(args.sentinels)
+    if sentinel_path.suffix.lower() == ".csv":
+        with sentinel_path.open(encoding="utf-8-sig") as handle:
+            sentinels = list(csv.DictReader(handle))
+    else:
+        sentinels = json.loads(sentinel_path.read_text(encoding="utf-8"))
+    dois = {normalize_doi(row.get("doi")) for row in literature if row.get("doi")}
+    titles = [(row.get("report_id") or row.get("paper_id"),
+               normalize_title(row.get("title"))) for row in literature if row.get("title")]
+    results = []
+    for sentinel in sentinels:
+        doi = normalize_doi(sentinel.get("doi"))
+        title = normalize_title(sentinel.get("title"))
+        matched = bool(doi and doi in dois)
+        match_id = None
+        score = 1.0 if matched else 0.0
+        if not matched and title:
+            for candidate_id, candidate in titles:
+                candidate_score = SequenceMatcher(None, title, candidate).ratio()
+                if candidate_score > score:
+                    score, match_id = candidate_score, candidate_id
+            matched = score >= args.title_threshold
+        results.append({"title": sentinel.get("title"), "doi": doi,
+                        "matched": matched, "match_id": match_id,
+                        "title_similarity": round(score, 3)})
+    retrieved = sum(row["matched"] for row in results)
+    recall = retrieved / len(results) if results else 0.0
+    report = {"retrieved": retrieved, "total": len(results),
+              "recall": round(recall, 4), "minimum_recall": args.minimum_recall,
+              "hard_gate": "PASS" if results and recall >= args.minimum_recall else "FAIL",
+              "results": results}
+    output = Path(args.out) if args.out else Path(args.input).parent / "sentinel-recall.json"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(json.dumps(report, indent=2, ensure_ascii=False))
+    return 0 if report["hard_gate"] == "PASS" else 8
+
+
 def parser() -> argparse.ArgumentParser:
     ap = argparse.ArgumentParser(description=__doc__)
     sub = ap.add_subparsers(dest="command", required=True)
@@ -211,6 +274,10 @@ def parser() -> argparse.ArgumentParser:
     search.add_argument("--doi", nargs="*", default=[])
     search.add_argument("--max-papers", type=int, default=200)
     search.add_argument("--max-queries", type=int, default=8)
+    search.add_argument("--candidate-pool-multiplier", type=float, default=4.0,
+                        help="Retrieve a larger candidate pool before relevance triage")
+    search.add_argument("--per-query-limit", type=int,
+                        help="Override records requested per query per provider")
     search.add_argument("--crossref-enrich-limit", type=int, default=25)
     search.add_argument("--out-dir", required=True)
     search.set_defaults(func=run_search)
@@ -226,6 +293,13 @@ def parser() -> argparse.ArgumentParser:
                         help="JSON object keyed by paper_id, or list of decision objects")
     screen.add_argument("--out-dir", required=True)
     screen.set_defaults(func=run_screen)
+    sentinel = sub.add_parser("sentinel-check")
+    sentinel.add_argument("--input", required=True, help="literature.json")
+    sentinel.add_argument("--sentinels", required=True, help="JSON or CSV with title/doi")
+    sentinel.add_argument("--minimum-recall", type=float, default=0.8)
+    sentinel.add_argument("--title-threshold", type=float, default=0.9)
+    sentinel.add_argument("--out")
+    sentinel.set_defaults(func=run_sentinel_check)
     return ap
 
 

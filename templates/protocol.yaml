@@ -1,0 +1,40 @@
+protocol_version: 1.0
+status: draft
+topic_verbatim: ""
+review_mode: critical_narrative
+label_constraints: [not_systematic, not_exhaustive]
+primary_question: ""
+secondary_questions: []
+contribution:
+  existing_reviews_do: ""
+  this_review_adds: ""
+  mechanism: ""
+scope:
+  concepts: []
+  geography: "global unless evidence requires a narrower inference domain"
+  time: {from: null, to: null}
+  languages: [en]
+  evidence_types: []
+  outcomes: []
+eligibility:
+  include: []
+  exclude: []
+source_plan: templates/search-plan.yaml
+screening:
+  reviewers: two_independent_ai_assisted_passes
+  human_signoff_required_for_systematic_submission: true
+extraction:
+  pilot_records: 5
+  critical_fields_second_check: true
+appraisal:
+  strategy: design_matched_domains
+synthesis:
+  decision: determine_after_comparability_assessment
+  dependency_handling: collapse_shared_study_families_in_sensitivity
+  geographic_heterogeneity: required_when_triggered
+certainty:
+  framework: evidence_type_specific
+reporting_standard: journal_neutral_transparent_review
+target_journal: null
+frozen_at: null
+

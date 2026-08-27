@@ -1,44 +1,59 @@
-# Synthesis Rules
+# Synthesis and Certainty Rules
 
-## Unit of synthesis = proposition
-Every paragraph makes a claim about the WORLD supported by ≥2 independent studies
-where available — not a claim about what Paper A said.
+## Entity and claim model
 
-## Theme analysis checklist (per theme)
-1. consensus — how many independent studies/systems/periods agree?
-2. competing explanations
-3. conflicting evidence — exact nature of conflict
-4. methodological differences
-5. data-source differences
-6. geographic differences
-7. temporal differences
-8. scale effects
-9. boundary conditions
-10. unresolved questions
-11. evidence quality
-12. gap candidates (validated separately)
+Keep `report_id → study_id → site_id/outcome_id`. Multiple reports from one field
+campaign, sample or data product are not independent replications. Each evidence
+unit and manuscript claim is typed as `descriptive`, `association`,
+`causal_effect`, `mechanism` or `hypothesis`.
 
-## Conflict diagnosis ladder (before ever writing "findings are inconsistent")
-Check divergence sources in order: indicator definition → data source → method/
-model assumptions → sample period → spatial scale/unit → regional context →
-scenario. Attribute each conflicting pair to identified causes; remainder =
-UNRESOLVED CONTROVERSY (state it plainly).
+## Choose the synthesis method
 
-## Conditional conclusions
-Pattern: "Under <condition C1>, evidence supports X (refs); under C2, Y (refs);
-whether X extends to C2 remains untested." Conditions come from the matrix
-(region, scale, period, method columns), never invented.
+1. Check construct/outcome definition, design, effect measure, population/system,
+   geography, scale, period and dependence.
+2. Meta-analyze only when a common estimand and defensible dependence model exist.
+   Pre-specify transformations, estimator, uncertainty, heterogeneity, prediction
+   interval, moderators, influence checks and sensitivity analyses.
+3. Otherwise use structured synthesis. Apply SWiM where relevant: explain grouping,
+   metric standardization, synthesis method, presentation, result summary and
+   limitations. Never vote-count significant versus non-significant studies.
+4. For qualitative synthesis, name the analytic method and use GRADE-CERQual only
+   for qualitative review findings. For realist work, trace context–mechanism–
+   outcome configurations and actively search for disconfirming cases.
 
-## Evidence weighting cues
-Prefer: multi-region replication > single-region; direct measurement > proxy;
-long records > short; transparent uncertainty > point estimates; independent
-datasets > re-used ones. Note dependence between studies sharing data/authors.
+## Proposition synthesis
 
-## Enumeration ceiling
-Consecutive study-by-study sentences ≤2. A third similar sentence must be
-converted to cluster form ("Across N baselines, …(refs)").
+For every proposition:
 
-## Benchmark relation
-These rules are runtime-enforced; their STYLE priors (how top reviews phrase
-consensus/reconciliation) live in `benchmark_corpus/synthesis-patterns.md`.
-When pattern guidance conflicts with evidence reality here, evidence wins.
+- supporting and contradicting evidence IDs;
+- number of independent study families/sites, not merely papers;
+- direction/magnitude and comparable conditions;
+- study limitations and dependence;
+- geographic/temporal/scale applicability;
+- rival explanations and unresolved contradictions;
+- sensitivity to high-risk/dependent evidence;
+- confidence/certainty and reason for any downgrade.
+
+Diagnose conflicts through definition → data → design/method → dependence → period
+→ spatial unit/scale → region/environment/institution → scenario. If no cause is
+supported, call it unresolved rather than smoothing it away.
+
+## Geography and causal restraint
+
+Pre-specified geographic moderators are confirmatory; post-hoc patterns are
+exploratory. Check spatial clustering/pseudoreplication and do not count sites or
+grid cells as independent studies. Use global/general language only when the
+evidence footprint and directness support it.
+
+Observational coherence does not upgrade an association to causation. Causal and
+mechanism claims must trace temporality, comparison, confounding, measurement,
+alternative explanations and the relevant appraisal domains.
+
+## Gap test
+
+A gap requires: observable absence/weakness in the mapped evidence; relevance to
+the review question; non-artifactual explanation (not merely search/access bias);
+and a specific answerable research design. Prioritize gaps by importance,
+geographic equity, tractability and expected information gain. Absence of evidence
+is not evidence that an effect or mechanism is absent.
+

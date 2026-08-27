@@ -1,21 +1,34 @@
-topic: ""
-research_question: ""
-original_keywords: []
-boolean_query: ""
-filters:
-  year: {from: null, to: null}
-  language: []
-  journal: null
-  author: null
-  doi: []
-maximum_number_of_papers: 200
-provider_priority: [semantic_scholar, openalex]
-crossref_role: metadata_validation
-google_scholar_role: manual_supplement_only
-query_families:
-  - qid: Q1
-    purpose: broad_recall
-    actual_query: ""
+topic_verbatim: ""
+review_mode: critical_narrative
+question:
+  primary: ""
+  secondary: []
+concept_blocks:
+  - id: C1
+    concept: ""
+    synonyms: []
+    controlled_terms: []
+    multilingual_terms: {}
+sources: []
+candidate_source_roles:
+  open_discovery: [Semantic Scholar, OpenAlex]
+  metadata_validation: [Crossref]
+  field_databases: []
+  regional_or_multilingual: []
+  grey_literature: []
+sentinel_set: []
+sentinel_recall:
+  status: pending
+  retrieved: 0
+  total: 0
+  missed: []
+  rationale_if_unavailable: ""
+peer_review:
+  reviewer: null
+  status: pending
+  blockers: []
 stopping_rule:
-  max_queries: 8
-  saturation: "two planned rounds with no material new eligible themes"
+  query_budget: 12
+  formal_review: complete_prespecified_source_plan
+  narrative_review: two_expansion_rounds_without_new_material_proposition
+search_update_due: null

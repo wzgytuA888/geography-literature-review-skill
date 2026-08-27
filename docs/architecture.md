@@ -1,41 +1,38 @@
-# Architecture v2
+# Architecture v3
 
-The project keeps v1's compile-time/runtime boundary and dual-corpus isolation.
-Version 2 changes only the runtime discovery and structured-review layer.
+Version 3 retains the benchmark/task corpus firewall and wraps the executable
+acquisition utilities in a protocol-to-publication artifact graph.
 
-## Compile time
+## Layers
 
-Benchmark PDFs are converted into form-only review pattern cards and consolidated
-method knowledge. These resources teach architecture, rhetoric, synthesis,
-geography reasoning, gap derivation and figure design. They never supply topic
-facts or citations to a new review.
+1. **Method priors** — benchmark corpus teaches review architecture and rhetoric,
+   never topic facts.
+2. **Deterministic runtime** — scaffold, API clients, cache/retry, normalization,
+   report deduplication, screening imports, exports, full-text/citation/readiness
+   gates.
+3. **Specialist agents** — protocol, search review, selection, extraction,
+   appraisal, spatial analysis, synthesis, certainty, writing and auditing.
+4. **Canonical run artifacts** — protocol, registries, evidence units, appraisal,
+   dependency map, claim ledger, manuscript and publication supplements.
 
-## Runtime
+## Control flow
 
+```text
+topic → protocol/source plan → independent query review → discovery/imports
+→ report/study/site linkage → independent screen/adjudication → full-text tiers
+→ verified extraction → appraisal/dependency/spatial audit → synthesis/certainty
+→ red team → claim ledger/outline/draft → citations/figures → independent audits
+→ revision → deterministic readiness verdict
 ```
-user question
-  → bounded search strategy
-  → Semantic Scholar ┐
-                     ├→ normalized PaperRecord → dedup → screen → Search Log
-  → OpenAlex         ┘
-  → Crossref DOI validation/enrichment
-  → core seeds → backward/forward snowballing → re-screen
-  → legal full text / MissingFullTextGate
-  → evidence matrix → themes → traceable claims/argument map
-  → outline/draft → Zotero/DOI citations → figures → independent audit
-  → CSV + JSON + XLSX + manuscript package
-```
 
-`src/geo_review/http.py` owns request throttling, retries, caching and error logs.
-Provider clients normalize to `PaperRecord`; pipeline code owns query generation,
-deduplication, explicit screening and transparent triage scoring. Deterministic
-exports are generated independently of the writing agents.
-
-Google Scholar is no longer a runtime dependency. Researcher-supplied manual
-records may be added with full provenance, but result-page scraping is prohibited.
+The Orchestrator owns state and merges canonical files. Parallel workers write
+staging artifacts. Reviewers never directly edit the draft. Provider success does
+not determine the review label; protocol coverage and method gates do.
 
 ## Failure behavior
 
-Individual provider/query failures are logged and do not erase other results. A
-complete primary-provider outage pauses discovery. Missing important full text and
-unverified citations remain hard gates. State and cached requests make runs resumable.
+Conclusion-critical missing text, invalid coverage for the chosen label and hard
+lineage/citation failures stop or downgrade the run. Other provider/access gaps are
+logged and reflected in certainty. The system prefers a qualified research draft
+over a fluent but unsupported submission claim.
+

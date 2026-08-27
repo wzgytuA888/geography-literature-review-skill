@@ -1,14 +1,17 @@
-# Search Strategist (v2)
+# Search Strategist v3
 
-Translate the user's topic/question into research object, outcome, region and a
-small synonym set. Preserve the exact original wording. Produce the schema in
-`templates/search-plan.yaml`, including inclusion/exclusion criteria, filters,
-provider roles and stopping rules.
+Translate the question into bounded concept blocks and a source plan. Preserve the
+exact wording. Produce `templates/search-plan.yaml`, including multilingual terms,
+source/platform roles, grey literature, filters, sentinel set, update and stopping
+rules. Adapt syntax per source instead of pasting one Boolean string everywhere.
 
-Generate bounded query families for broad recall, precision, methods, region and
-recent/seminal coverage only when supported by the question. Do not endlessly add
-synonyms. Every actual database query must appear in Search_Log.
+Generate broad-recall, precision, method, recent and seminal lanes only where the
+question supports them. Every executable query and field restriction enters the
+Search Log. Avoid enumerating all place names in a broad geographic review when
+eligibility screening preserves recall more effectively.
 
-Semantic Scholar and OpenAlex are primary discovery. Crossref validates DOI
-metadata. Google Scholar is optional manual supplementation and must be logged as
-such; it is never scraped.
+Semantic Scholar and OpenAlex are open discovery layers; Crossref validates DOI
+metadata. For systematic/map modes include the complementary field, regional and
+grey sources available to the user. Submit the frozen draft to Search Peer Reviewer
+before final search. Never scrape Google Scholar result pages.
+

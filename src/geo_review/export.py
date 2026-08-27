@@ -62,7 +62,8 @@ def export_review(out_dir: Path, records: list[PaperRecord], logs: list[SearchLo
 
         sheet("Papers", flat, fields)
         evidence_fields = [
-            "paper_id", "title", "authors", "year", "journal", "publisher", "volume",
+            "report_id", "paper_id", "study_id", "site_ids", "outcome_ids",
+            "title", "authors", "year", "journal", "publisher", "volume",
             "issue", "publication_date", "doi", "citation_count",
             "abstract", "research_question", "study_objective", "study_area", "study_location",
             "country", "region", "latitude", "longitude", "climate_zone", "ecosystem_type",

@@ -1,38 +1,45 @@
-# Quality Control
+# Publication-readiness Quality Control
 
-## Three independent gates before FINAL
+Run independent gates after content freeze and again after revision.
 
-### Gate 1 — Independent Reviewer (scholarly quality)
-Round-1 findings-only pass across science/literature/synthesis/writing/citations/
-figures (agents/runtime/reviewer.md). Verdict thresholds: any blocker ⇒ MAJOR
-REVISION loop.
+## Gate 1 — Scientific and contradiction review
 
-### Gate 2 — Evidence & Citation Auditor (lineage integrity)
-claim→evidence→card→source→metadata→citation→sentence chain verified row by row
-(`evaluation/evidence-errors.csv`). Zero blockers allowed. Numbers must match
-cards exactly.
+Test scope, construct definitions, causal logic, missing/disconfirming evidence,
+dependence, appraisal use, geographic transfer and conclusion strength. Reviewer
+findings include location, severity, evidence and required action; reviewers do not
+rewrite the draft.
 
-### Gate 3 — Benchmark Quality Matching (logic parity, NOT wording)
-Compare draft metrics against `benchmark_corpus/benchmark-stats.json` &
-consolidated patterns → `evaluation/corpus-quality-comparison.md`:
-- section organization vs dominant archetype(s);
-- argument density: propositions per major section;
-- synthesis density: share of paragraphs making clustered claims (>enumeration);
-- citation behavior vs corpus quartiles (median ~2–4/block);
-- consensus/controversy balance present;
-- geography reasoning conditional usage (rules fired logged);
-- gap derivation: every gap traces to documented deficit;
-- agenda specificity: concrete instruments/platforms/questions;
-- figure-text integration: each figure referenced by ≥1 paragraph it supports.
-Plus near-copy screen: `scripts/phrase_overlap_check.py` PASS required.
+## Gate 2 — Lineage and citation integrity
 
-## Hard red lines (auto-fail)
-hallucinated references >0 · benchmark leakage into task claims >0 · unsupported
-quantitative figures >0 · unsupported gap statements >0 · non-Scholar discovery
-use >0 · silent skips of high-priority missing full text >0 · continuing final
-stages while PAUSED_WAITING_FOR_USER_FULLTEXT.
+Verify every material sentence:
+`claim → evidence unit → report/study/site → source locator → appraisal → verified
+metadata/citation → final wording`. Numbers, units, directions and figure/table
+values must match. Empty citation manifests cannot pass.
 
-## Run-level QA artifacts
-runs/<id>/run-summary.md consolidates: stage timeline, screening counts, gate
-statuses, eval results, unresolved items, limitations declared (access limits,
-language bias, provider quotas).
+## Gate 3 — Method/reporting reproducibility
+
+Reconstruct source plan, exact queries, counts, deduplication, screening and
+adjudication, full-text tiers, extraction verification, appraisal, dependence,
+synthesis, certainty, amendments and automation disclosure. Compute flow counts
+from tables. Check the current applicable PRISMA/PRISMA-S/ROSES/SWiM/CERQual
+version and record access date rather than assuming a frozen standard.
+
+## Gate 4 — Journal and manuscript coherence
+
+Check contribution, title/abstract/full-text agreement, section jobs, synthesis
+over enumeration, target-journal fit, figure/table integration, limitations,
+declarations and author queries. Benchmark patterns are optional style priors,
+never factual or universal structure requirements.
+
+## Hard red lines
+
+hallucinated/unresolved final references >0 · unsupported material claims >0 ·
+benchmark leakage >0 · unsupported quantitative figures >0 · unsupported gap,
+causal or global-transfer statements >0 · hidden conclusion-critical missing full
+text >0 · false systematic/exhaustive label >0 · automation presented as human
+review >0 · unresolved protocol deviation affecting the primary conclusion >0.
+
+Verdict: `SUBMISSION_CANDIDATE`, `RESEARCH_DRAFT_NOT_READY`, or
+`INSUFFICIENT_EVIDENCE`. A submission candidate still requires author/domain
+responsibility; the gate does not predict journal acceptance.
+

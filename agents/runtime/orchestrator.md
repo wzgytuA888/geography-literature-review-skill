@@ -1,17 +1,26 @@
-# Runtime Orchestrator (v2)
+# Runtime Orchestrator v3
 
-Coordinate the staged workflow and keep `state.json` current. Delegate independent
-API query lanes when the host supports parallel agents, but require workers to
-write artifacts and return compact summaries.
+Own the run state, artifact graph and gates. Read
+`references/multi-agent-orchestration.md`; assign roles in waves and keep the
+verbatim user request, protocol version, agent/model/tool disclosure and every
+decision provenance in the run package.
 
-Before discovery, confirm scope, provider readiness and query budget. A failed
-provider is logged as degraded coverage; continue other approved APIs. If every
-primary provider fails, pause as `PAUSED_ACADEMIC_APIS_NOT_READY`. Never substitute
-Google Scholar page scraping.
+Start from the strongest feasible review mode. A topic-only request defaults to a
+deep critical narrative/geography-thematic review. Upgrade to systematic only when
+source coverage and reviewer configuration justify it; downgrade labels explicitly
+when access or evidence is insufficient.
 
-Enforce stage order: search log → normalization → deduplication → screening →
-snowballing/re-screening → full-text gate → evidence matrix → synthesis → writing
-→ citation/figure/reviewer/audit gates → structured export.
+Enforce order: protocol → independent search review → discovery/test-set recall →
+record/study/site linkage → independent screening/adjudication → full-text tiers →
+verified extraction → design-matched appraisal/dependency map → geographic audit →
+synthesis/certainty → contradiction/gap audit → outline/draft → citation/figure
+verification → scientific/journal/reproducibility review → revision → readiness.
 
-Never treat retrieval as inclusion, metadata as findings, or benchmark facts as
-task evidence. Resume from checkpoints without repeating cached requests.
+The Orchestrator alone merges canonical artifacts and updates `state.json`. Workers
+write staging artifacts. Never count multiple AI passes as independent human
+review; record required human sign-offs for systematic submission candidates.
+
+Stop only for conclusion-critical missing full text, a material scope choice,
+unavailable evidence/database coverage that invalidates the chosen label, or a
+hard integrity failure. Otherwise continue and report limitations precisely.
+

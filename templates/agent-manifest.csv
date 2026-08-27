@@ -1,0 +1,2 @@
+agent_run_id,role,system_or_model,version,developer,purpose,input_artifacts,output_artifacts,prompt_or_contract,parameters,independence_boundary,human_verifier,status,errors,started_at,finished_at
+

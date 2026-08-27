@@ -1,5 +1,29 @@
 # Changelog
 
+## 3.0.0 — 2026-08-27
+
+- Reframed the product promise as an auditable submission-candidate workflow with
+  explicit `SUBMISSION_CANDIDATE`, `RESEARCH_DRAFT_NOT_READY` and
+  `INSUFFICIENT_EVIDENCE` outcomes.
+- Added protocol-first review-mode routing, contribution testing, amendments and
+  reporting-standard selection (PRISMA/PRISMA-S, ROSES/CEE, SWiM and CERQual where
+  applicable).
+- Replaced API-convenience search assumptions with a source-plan-first strategy,
+  independent search peer review, sentinel recall, multilingual/grey/regional
+  source planning and honest label constraints.
+- Expanded runtime roles to cover protocol, domain theory, search validation,
+  independent screening/adjudication, full-text verification, design-matched
+  appraisal, geospatial heterogeneity, synthesis method, certainty, contradiction,
+  journal fit and reproducibility.
+- Added report→study→site/outcome linkage, dependency mapping, claim typing,
+  geographic applicability and per-claim certainty contracts.
+- Added `review_scaffold.py`, `review_quality_gate.py`, v3 templates and integrity
+  tests; fixed empty citation manifests incorrectly passing the hard gate and
+  repaired v2/v3 full-text gate interoperability.
+- Fixed query-budget dilution by retrieving a bounded candidate pool per
+  query/provider and added an executable sentinel-recall hard gate.
+- Added `agents/openai.yaml` for discoverable UI invocation.
+
 ## 2.0.0 — 2026-08-26
 
 - Replaced mandatory Google-Scholar-gateway discovery with Semantic Scholar and

@@ -1,33 +1,49 @@
-# Review Methods & Mode Router
+# Review Methods and Mode Router
 
-## Available modes and what changes between them
+Select the method that answers the question with the available access. Record the
+choice, rationale, required human checks and label constraints in
+`protocol/protocol.yaml`.
 
-| Mode | Search completeness | Screening rigor | Methods section | Reporting | Synthesis style |
-| --- | --- | --- | --- | --- | --- |
-| Narrative | targeted, saturation-based | light (documented) | brief | prose-led | argumentative |
-| Conceptual | concept-driven lanes | light-medium | brief | framework-centric | theory-building |
-| Systematic | exhaustive per protocol | strict PRISMA-like flow + counts | full protocol | flow diagram + tables | structured |
-| Scoping | broad, bounded | medium; counts kept | full | range-mapping tables | descriptive-analytic |
-| Bibliometric | database-driven | algorithmic + spot checks | full | metrics + maps | quantitative |
-| Methodological | method families | inclusion by method relevance | full | capability/comparison tables | evaluative |
-| Geography-thematic | thematic + spatial lanes | medium | full | region/scale matrices | thematic-spatial |
+| Mode | Best for | Non-negotiable |
+|---|---|---|
+| critical_narrative | broad, theory-rich state/controversy review | transparent bounded search; critical appraisal; no exhaustive claim |
+| integrative/conceptual | construct or framework development | rival concepts; theory-building chain; provenance for new synthesis |
+| systematic_review | focused effect/exposure/association question | a priori protocol, adequate multi-source coverage, independent human-verified selection/appraisal, PRISMA/ROSES |
+| systematic_map/scoping | distribution and evidence-gap mapping | comprehensive source plan, reproducible coding and flow counts |
+| methodological | evolution/performance/limits of methods | capability criteria, validation context and comparison matrix |
+| bibliometric | publication/network/topic structure | stable database export, reproducible cleaning, sensitivity to database bias |
+| realist | what works, for whom, when and why | iterative context–mechanism–outcome configurations and disconfirming cases |
+| quantitative/meta_analysis | comparable effect estimates | pre-specified effect metric, dependence, heterogeneity and sensitivity |
+| qualitative_evidence_synthesis | experience/context/implementation findings | named QES approach and finding-level confidence where applicable |
 
-## Router procedure (runtime start)
-1. If user named a mode → use it; record in `review-mode.yaml`.
-2. Else infer from topic phrasing:
-   - "what do we know / state of knowledge" → narrative or conceptual;
-   - "systematic mapping of X effects" → systematic or scoping;
-   - "how has method M evolved" → methodological;
-   - "bibliometric landscape" → bibliometric;
-   - explicitly spatial framing ("regional patterns of…") → geography-thematic.
-3. Record decision + one-line rationale + consequences for search stopping rule.
-4. Proceed without interrupting the user unless the inferred mode would materially
-   change deliverable expectations (e.g., they asked "quick overview" but router
-   infers systematic).
+## Topic-only default
 
-## Mode-specific hard notes
-- Systematic/scoping: pre-register search strings + inclusion/exclusion BEFORE the
-  first query; log every screen decision; deviations need explicit_user approval
-  recorded in run state.
-- Narrative/conceptual: evidence saturation allowed as stopping rule but must be
-  logged with concrete observations ("no new themes across last N results/pages").
+Use `critical_narrative` with geography-thematic analysis. This mode can produce a
+deep article without falsely claiming exhaustive search. Record inferred defaults
+and continue. Change to a formal systematic/scoping/meta mode only when the user's
+wording or the question requires it and its gates are feasible.
+
+## Framing tools
+
+Use a framework that matches the question: PICO/PECO for effects/exposures;
+Population–Concept–Context for scoping; Context–Mechanism–Outcome for realist;
+construct–relation–boundary for conceptual reviews. Framework labels are optional;
+the explicit elements are not.
+
+## Protocol freeze and amendments
+
+Before final searching, freeze question, eligibility, source plan, screening,
+extraction, appraisal, synthesis, heterogeneity, certainty and stopping rules.
+Systematic environmental work should consider PROCEED/another appropriate
+registration venue. Every post-freeze change records timestamp, trigger, rationale,
+affected stages and sensitivity consequence. Never rewrite a protocol to match
+results already seen.
+
+## Human accountability
+
+Multiple LLM agents provide redundancy, not independent human review. A systematic
+submission candidate requires named human responsibility/sign-off for the protocol,
+final eligibility decisions, critical appraisal/certainty, causal language and
+final manuscript. Without it, label the product an AI-assisted research draft and
+state what remains to be verified.
+

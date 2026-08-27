@@ -43,7 +43,7 @@ def build_queries(topic: str, keywords: list[str] | None = None,
 def merge_records(primary: PaperRecord, incoming: PaperRecord) -> PaperRecord:
     """Merge provider records without overwriting known values with missing ones."""
     list_fields = {
-        "authors", "source_database", "search_query", "topics", "institutions",
+        "site_ids", "outcome_ids", "authors", "source_database", "search_query", "topics", "institutions",
         "countries", "data_source", "remote_sensing_dataset", "environmental_dataset",
         "climate_dataset", "method", "statistical_method", "model",
         "machine_learning_method", "environmental_variables", "dependent_variables",
@@ -68,7 +68,7 @@ def merge_records(primary: PaperRecord, incoming: PaperRecord) -> PaperRecord:
     return primary
 
 
-def deduplicate(records: Iterable[PaperRecord], title_threshold: float = 0.94
+def deduplicate(records: Iterable[PaperRecord], title_threshold: float = 0.86
                 ) -> tuple[list[PaperRecord], list[dict]]:
     """Deduplicate DOI → S2 ID → OpenAlex ID → normalized title.
 
@@ -90,7 +90,13 @@ def deduplicate(records: Iterable[PaperRecord], title_threshold: float = 0.94
                 break
         title_norm = normalize_title(rec.title)
         if match is None and title_norm and ("title", title_norm) in index:
-            match, reason = index[("title", title_norm)], "normalized_title"
+            candidate = index[("title", title_norm)]
+            years_compatible = not (candidate.year and rec.year) or candidate.year == rec.year
+            first_a = normalize_title(candidate.authors[0]) if candidate.authors else ""
+            first_b = normalize_title(rec.authors[0]) if rec.authors else ""
+            authors_compatible = not (first_a and first_b) or first_a == first_b
+            if years_compatible and authors_compatible:
+                match, reason = candidate, "normalized_title"
         if match is not None:
             merge_records(match, rec)
             decisions.append({"action": "merged", "reason": reason,
@@ -105,7 +111,7 @@ def deduplicate(records: Iterable[PaperRecord], title_threshold: float = 0.94
                 score = SequenceMatcher(None, title_norm, normalize_title(prior.title)).ratio()
                 if score > best_score:
                     best, best_score = prior, score
-        if best is not None and best_score >= 0.86:
+        if best is not None and best_score >= title_threshold:
             rec.possible_duplicate = True
             rec.duplicate_of = best.paper_id or best.title
             decisions.append({"action": "flagged", "reason": "fuzzy_title",
@@ -122,6 +128,8 @@ def deduplicate(records: Iterable[PaperRecord], title_threshold: float = 0.94
     for number, rec in enumerate(unique, 1):
         if not rec.paper_id:
             rec.paper_id = f"P{number:04d}"
+        if not rec.report_id:
+            rec.report_id = f"R{number:04d}"
     return unique, decisions
 
 

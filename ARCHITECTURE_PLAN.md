@@ -1,6 +1,6 @@
 # ARCHITECTURE_PLAN.md — Geography Literature Review Research Skill
 
-> Status: v2.0 · v1 architecture retained with an incremental API-first runtime upgrade.
+> Status: v3.0 · protocol-first, source-plan-first, multi-agent publication workflow.
 > This document fixes the architectural decisions for the whole repository.
 > Technology evidence lives in `docs/technology-baseline.md`.
 
@@ -16,9 +16,9 @@ evidence table is in `docs/technology-baseline.md`. Key conclusions:
 - **Agent Skills open standard**: `SKILL.md` with YAML frontmatter (`name`, `description`),
   progressive disclosure L1 metadata → L2 SKILL.md → L3 on-demand resources. We follow
   agentskills.io / Anthropic conventions and keep SKILL.md < 500 lines.
-- **Academic discovery v2**: Semantic Scholar and OpenAlex are primary APIs;
-  Crossref validates/enriches DOI metadata. Google Scholar is a logged manual
-  supplement only and its result pages are never scraped.
+- **Academic discovery v3**: source selection follows the protocol. Semantic
+  Scholar/OpenAlex are open discovery layers and Crossref validates metadata;
+  formal systematic reviews add field, grey and regional sources as required.
 - **Zotero**: Web API v3 + local HTTP server (Zotero 7) + Better BibTeX JSON-RPC;
   adapter with capability detection and fallback chain.
 - **Multi-agent**: orchestrator-worker pattern (Anthropic research-system practice);
@@ -51,7 +51,7 @@ conditions, gap derivation logic, figure strategy, quality rubric.
 
 It must never supply WHAT is true about a new topic. Every runtime fact, number,
 consensus/controversy claim, gap, and citation comes exclusively from the
-task-specific Evidence Corpus built fresh via Semantic Scholar/OpenAlex search +
+task-specific Evidence Corpus built fresh via the protocol-approved sources and
 legal full-text acquisition. On conflict, task evidence wins.
 
 Enforcement mechanisms (defense in depth):
@@ -71,12 +71,13 @@ parse PDFs → structural metadata → Review Pattern Cards → pattern mining
 rubric + anti-patterns. Agents: curator, miners (review/citation/geography/figure),
 consolidator.
 
-**Runtime** (per user topic): academic-API preflight → task interpretation →
-review-mode routing → search planning → parallel retrieval → screening/dedup →
-full-text acquisition (**MissingFullTextGate**) → evidence extraction → evidence
-matrix → synthesis → argument map → outline → drafting → citation resolution →
-figures → independent review → revision → audit → benchmark quality matching →
-final manuscript. All state under `runs/<run-id>/` with checkpoints.
+**Runtime** (per user topic): scaffold → protocol/review-mode routing → source plan
+and independent search review → parallel retrieval/import → report/study/site
+linkage → independent screening/adjudication → full-text tiers → verified
+extraction → design-matched appraisal/dependency/geographic audits → synthesis and
+certainty → contradiction/gap red team → claim ledger → outline/draft → verified
+citations/figures → scientific/journal/reproducibility review → revision →
+readiness verdict. All state lives under `runs/<run-id>/` with checkpoints.
 
 Runtime reads distilled method rules (HOW) but no benchmark scientific content.
 
@@ -106,12 +107,11 @@ task matrix (`INSUFFICIENT EVIDENCE FOR GAP CLAIM` otherwise).
 
 ## 9. Multi-agent runtime construction
 
-Lead Orchestrator + specialized workers (librarian, strategist, scouts A–E in
-parallel, extractor, synthesizer, outline, writer, citation, figure, reviewer,
-auditor, revision). Each agent definition = markdown contract with role, inputs,
-outputs, stopping rules, and refusal conditions. Parallelism only for independent
-scouts/extraction. State machine in `state.json`; every stage idempotent and
-resumable.
+Lead Orchestrator + protocol/domain, search/peer-review, scout, screening/
+adjudication, full-text, extraction, appraisal, geospatial, synthesis/certainty,
+red-team, writing, citation/figure, journal/reproducibility and revision roles.
+Each agent definition is an artifact contract. Parallelism is limited to independent
+work; one owner merges canonical data and one writer owns the manuscript voice.
 
 ## 10. Skill ↔ MCP boundary
 

@@ -36,29 +36,33 @@ NON_BLOCKING = {
 }
 
 XLSX_FIELDS = [
-    "priority", "paper_id", "title", "authors", "year", "journal_or_source",
-    "doi", "google_scholar_result_url", "scholar_result_id", "citation_count",
+    "importance_tier", "report_id", "paper_id", "title", "authors", "year",
+    "journal_or_source", "doi", "url", "citation_count",
     "relevance_reason", "screening_status", "fulltext_status",
     "access_attempts", "failure_reason", "recommended_user_action",
     "zotero_status", "notes",
 ]
-TXT_FIELDS = ["priority", "title", "authors", "year", "doi",
-              "google_scholar_result_url", "relevance_reason",
+TXT_FIELDS = ["importance_tier", "title", "authors", "year", "doi", "url",
+              "relevance_reason",
               "fulltext_status", "failure_reason", "recommended_user_action"]
 
 
 def load_screening(run_dir: Path) -> list[dict]:
-    """Collect candidate rows from screening.csv and/or literature-registry.jsonl."""
+    """Collect candidates from v3, v2 and legacy screening artifacts."""
     rows: list[dict] = []
-    sc = run_dir / "screening.csv"
-    if sc.exists():
-        with sc.open(encoding="utf-8-sig") as fh:
-            rows.extend(dict(r) for r in csv.DictReader(fh))
+    for sc in (run_dir / "screening/adjudicated.csv", run_dir / "screening.csv"):
+        if sc.exists():
+            with sc.open(encoding="utf-8-sig") as fh:
+                rows.extend(dict(r) for r in csv.DictReader(fh))
+            break
     reg = run_dir / "literature-registry.jsonl"
     if reg.exists() and not rows:
         for line in reg.read_text(encoding="utf-8").splitlines():
             if line.strip():
                 rows.append(json.loads(line))
+    literature = run_dir / "literature.json"
+    if literature.exists() and not rows:
+        rows.extend(json.loads(literature.read_text(encoding="utf-8")))
     return rows
 
 
@@ -68,17 +72,24 @@ def blocking_rows(rows: list[dict]) -> list[dict]:
         st = (r.get("screening_status") or "").strip()
         ft = (r.get("fulltext_status") or "").strip()
         skipped = str(r.get("explicit_user_skip", "")).lower() in {"true", "1", "yes"}
-        if st in BLOCKING_STATUSES and ft not in {
+        tier = (r.get("importance_tier") or r.get("priority") or "").strip().lower()
+        included = st in BLOCKING_STATUSES or (
+            str(r.get("include", "")).lower() in {"true", "1", "yes"}
+            and tier in {"critical", "seminal", "core", "high"})
+        if included and ft not in {
             "AVAILABLE_LOCAL", "AVAILABLE_ZOTERO", "DOWNLOADED_LEGAL",
             "OPEN_ACCESS_FOUND"} and not skipped:
             out.append({**r, "_blocking": True})
     # order: HIGH first, then by citation_count desc
     out.sort(key=lambda r: (
-        0 if r.get("screening_status") == "HIGH_PRIORITY_PENDING_FULLTEXT" else 1,
+        0 if (r.get("importance_tier") or r.get("priority") or "").lower()
+        in {"critical", "seminal", "high"} else 1,
         -int(r.get("citation_count") or 0)))
     for i, r in enumerate(out, 1):
-        r["priority"] = ("HIGH" if r.get("screening_status") == "HIGH_PRIORITY_PENDING_FULLTEXT"
-                         else f"P{i}")
+        if not r.get("importance_tier"):
+            r["importance_tier"] = (
+                "critical" if r.get("screening_status") == "HIGH_PRIORITY_PENDING_FULLTEXT"
+                else "core")
         if not r.get("recommended_user_action"):
             r["recommended_user_action"] = (
                 "Please provide the PDF (or import it into Zotero), "
@@ -98,7 +109,7 @@ def write_txt(rows: list[dict], path: Path) -> None:
         "=" * 78, "",
     ]
     for r in rows:
-        lines.append(f"[{r.get('priority','?')}] {r.get('title') or '(no title)'}")
+        lines.append(f"[{r.get('importance_tier','?')}] {r.get('title') or '(no title)'}")
         for k in TXT_FIELDS[1:]:
             v = r.get(k)
             if v not in (None, "", []):
@@ -121,7 +132,7 @@ def write_xlsx(rows: list[dict], path: Path) -> bool:
         c.font = Font(bold=True)
     for r in rows:
         ws.append([r.get(f, "") for f in XLSX_FIELDS])
-    widths = {1: 8, 2: 10, 3: 60, 4: 30, 5: 6, 6: 24, 7: 22, 8: 40, 9: 20,
+    widths = {1: 14, 2: 12, 3: 12, 4: 60, 5: 30, 6: 6, 7: 24, 8: 22, 9: 40,
               10: 10, 11: 34, 12: 16, 13: 16, 14: 20, 15: 26, 16: 34, 17: 14, 18: 18}
     for col, w in widths.items():
         ws.column_dimensions[ws.cell(row=1, column=col).column_letter].width = w
@@ -168,6 +179,7 @@ def main() -> int:
 
     txt_path = run_dir / "missing_fulltext_literature.txt"
     xlsx_path = run_dir / "missing_fulltext_literature.xlsx"
+    xlsx_ok = False
     if not args.dry_run:
         write_txt(rows, txt_path)
         xlsx_ok = write_xlsx(rows, xlsx_path)
@@ -187,7 +199,7 @@ def main() -> int:
         "state": "PAUSED_WAITING_FOR_USER_FULLTEXT",
         "missing_count": len(rows),
         "report_txt": str(txt_path),
-        "report_xlsx": str(xlsx_path) if xlsx_path.with_suffix('.xlsx').exists() or True else None,
+        "report_xlsx": str(xlsx_path) if xlsx_ok else None,
         "user_options": [
             "Upload PDFs into the run folder or import into Zotero, then run resume",
             "Mark explicit_user_skip=true for items you allow to skip",

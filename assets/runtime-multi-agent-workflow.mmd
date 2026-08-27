@@ -1,37 +1,57 @@
 flowchart TB
-    UT["User Review Topic / Question"] --> ORCH["Agent 0: Research Orchestrator<br/>state.json · checkpoints · stopping rules"]
+    U["Research topic"] --> O["Orchestrator<br/>state · provenance · gates"]
+    O --> W0
 
-    ORCH --> SS["Agent 2: Search Strategist<br/>search-plan.yaml"]
-    SS --> SCOUTS
-    subgraph SCOUTS["Agents 3A–3E: Parallel Literature Scouts (S2 + OpenAlex)"]
-        SA["A seminal"] --- SB["B recent"]
-        SB --- SC["C methods"]
-        SC --- SD["D regional/spatial"]
-        SD --- SE["E snowball/controversy"]
+    subgraph W0["Wave 0 — framing"]
+      PA["Protocol Architect"] --- DT["Domain / Mechanism Theorist"]
     end
-    SCOUTS --> LOG["search-log.csv · search-plan.yaml"]
-    LOG --> LIB["Agent 1: Task Literature Librarian<br/>registry · dedup · fulltext status"]
-    LIB --> GATE{"MissingFullTextGate"}
-    GATE -- "triggered" --> PAUSE["PAUSED_WAITING_FOR_USER_FULLTEXT<br/>TXT/XLSX → user → resume_helper"]
-    GATE -- clear --> EXT["Agent 4: Evidence Extractor<br/>literature cards + evidence units"]
+    W0 --> W1
+    subgraph W1["Wave 1 — search design"]
+      SS["Search Strategist"] --> SPR["Independent Search Peer Reviewer"]
+    end
+    W1 --> W2
+    subgraph W2["Wave 2 — discovery"]
+      LA["Open API scout"] --- LB["Field database scout"]
+      LB --- LC["Grey / regional / multilingual scout"]
+      LC --- LD["Citation-chain scout"]
+    end
+    W2 --> LIB["Task Librarian<br/>report → study → site/outcome"]
+    LIB --> W3
+    subgraph W3["Wave 3 — selection"]
+      A["Screener A"] --- B["Screener B"]
+      A --> ADJ["Adjudicator"]
+      B --> ADJ
+    end
+    W3 --> FT["Full-text Verifier<br/>critical · core · supplemental"]
+    FT --> G{"Conclusion-critical text available?"}
+    G -- no --> P["Pause / downgrade with exact access gap"]
+    G -- yes --> W4
+    subgraph W4["Wave 4 — evidence"]
+      EA["Extractor A"] --- EB["Verifier B"]
+      EB --- CA["Critical Appraisal Specialist"]
+    end
+    W4 --> W5
+    subgraph W5["Wave 5 — synthesis"]
+      GA["Geospatial Heterogeneity Analyst"] --- SM["Synthesis Methodologist"]
+      SM --- CE["Certainty Agent"]
+    end
+    W5 --> RT["Contradiction & Gap Red Team"]
+    RT --> OL["Outline Architect"] --> WR["Lead Writing Agent"]
+    WR --> CV["Citation Verifier"]
+    WR --> FV["Figure / Table Agent"]
+    CV --> W9
+    FV --> W9
+    subgraph W9["Wave 9 — independent review"]
+      SR["Scientific Reviewer"] --- JE["Journal Editor"]
+      JE --- RA["Reproducibility Auditor"]
+    end
+    W9 --> REV["Revision Agent"] --> QG{"Readiness gate"}
+    QG --> SC["SUBMISSION_CANDIDATE"]
+    QG --> RD["RESEARCH_DRAFT_NOT_READY"]
+    QG --> IE["INSUFFICIENT_EVIDENCE"]
 
-    EXT --> POOL[("Evidence Matrix")]
-    POOL --> SYN["Agent 5: Synthesis Agent<br/>propositions · consensus · controversy"]
-    SYN --> AM["Argument Map"]
-    AM --> OUTA["Agent 6: Outline Agent"]
-    OUTA --> WRI["Agent 7: Writing Agent<br/>evidence-grounded · placeholders"]
-    WRI --> CITA["Agent 8: Citation Agent<br/>Zotero-first resolution + audit"]
-    CITA --> FIGA["Agent 9: Figure Agent<br/>plan + real drafts (DRAFT-marked)"]
-    FIGA --> REV["Agent 10: Independent Reviewer<br/>findings only, round 1"]
-    REV --> REVA["Agent 12: Revision Agent"]
-    REVA --> AUD["Agent 11: Evidence & Citation Auditor"]
-    AUD --> QA["Final QA + Benchmark Quality Matching"]
-    QA --> FIN["Final Manuscript"]
+    style SC fill:#d8f3dc
+    style RD fill:#fff3bf
+    style IE fill:#ffe3e3
+    style P fill:#ffe3e3
 
-    METHOD["Distilled Method Skill<br/>(benchmark_corpus HOW files)"] -.->|"priors only"| OUTA
-    METHOD -.-> WRI
-    METHOD -.-> FIGA
-
-    style PAUSE fill:#ffe0e0
-    style FIN fill:#e8f0e8
-    style SCOUTS fill:#e8eef8

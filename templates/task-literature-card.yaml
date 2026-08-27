@@ -1,4 +1,8 @@
+report_id: null
 paper_id: null
+study_id: null
+site_ids: []
+outcome_ids: []
 title: null
 authors: []
 year: null
@@ -52,6 +56,16 @@ statistical_method: []
 model: []
 machine_learning_method: []
 sample_size: null
+independent_unit: null
+sampling_design: null
+effect_measure: null
+effect_value: null
+effect_variance_or_ci: null
+comparison_or_baseline: null
+confounding_control: []
+funding: null
+conflicts_of_interest: null
+shared_dataset_or_sample: []
 main_findings: []
 mechanism: []
 limitations: []
@@ -65,11 +79,17 @@ confidence: null
 
 evidence_units:
   - evidence_id: null
+    report_id: null
+    study_id: null
+    site_id: null
+    outcome_id: null
+    claim_type: descriptive|association|causal_effect|mechanism|hypothesis
     claim: null
     result: null
     context: null
     method: null
     geography: null
     scale: null
-    source_page: null
+    source_location: null
+    extraction_basis: full_text|abstract_limited
     confidence: null
